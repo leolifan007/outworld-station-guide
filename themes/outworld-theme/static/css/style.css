@@ -433,6 +433,35 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .page-hero h1{margin-bottom:0.25rem}
 .page-hero p{color:var(--space-text-dim);max-width:600px}
 
+/* ─── Subpage Hero ─── */
+.page-hero-sub{
+  padding:2.5rem 2rem 1.5rem;
+  border-bottom:1px solid rgba(58,123,213,0.08);
+  background:linear-gradient(180deg, rgba(0,212,170,0.03) 0%, transparent 100%);
+  text-align:center;
+}
+.hero-badge-inline{
+  display:inline-block;font-size:0.78rem;padding:4px 14px;
+  border-radius:20px;
+  background:rgba(0,212,170,0.08);
+  border:1px solid rgba(0,212,170,0.15);
+  color:var(--space-cyan);
+  margin-bottom:0.75rem;
+  letter-spacing:0.02em;
+}
+.hero-title-sub{
+  font-size:1.8rem;line-height:1.25;margin-bottom:0.4rem;
+  color:var(--space-text-bright);
+}
+.hero-desc-sub{
+  color:var(--space-text-dim);max-width:600px;margin:0 auto;
+  font-size:0.9rem;line-height:1.6;
+}
+@media(max-width:768px){
+  .hero-title-sub{font-size:1.35rem}
+  .hero-desc-sub{font-size:0.82rem}
+}
+
 /* ─── Content body ─── */
 .content-figure{margin:24px 0;border-radius:12px;overflow:hidden;background:rgba(10,20,50,0.5);border:1px solid rgba(58,123,213,0.15)}
 .content-figure img{width:100%;height:auto;display:block;border-radius:12px 12px 0 0}
@@ -442,6 +471,15 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .content-figure figcaption{padding:8px 12px;font-size:0.72rem}}
 .content-body{
   max-width:var(--content-w);margin:0 auto;padding:2rem;
+  background:rgba(11,20,34,0.3);
+  border-radius:16px;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+}
+@media(max-width:768px){
+  .content-body{padding:1.25rem;border-radius:12px;margin-top:0.75rem;margin-bottom:0.75rem}
 }
 .content-body h2{
   margin-top:2.5rem;margin-bottom:0.75rem;

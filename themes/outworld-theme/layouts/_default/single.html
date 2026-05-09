@@ -1,13 +1,31 @@
 {{ define "main" }}
-<div class="page-hero">
-  <h1>{{ .Title }}</h1>
-  {{ with .Description }}<p>{{ . }}</p>{{ end }}
-</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero-sub">
+  <div class="hero-badge-inline">{{ if eq .RelPermalink "/beginner/" }}🚀{{ else if eq .RelPermalink "/automation-guide/" }}⚙️{{ else if eq .RelPermalink "/building-tutorial/" }}🏗️{{ else if eq .RelPermalink "/resources/" }}🪨{{ else if eq .RelPermalink "/map/" }}🌌{{ else if eq .RelPermalink "/contact/" }}📧{{ else }}📖{{ end }} {{ .Title | truncate 40 }}</div>
+  <h1 class="hero-title-sub">{{ .Title }}</h1>
+  {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
+</section>
+
+<!-- CONTENT -->
 <article class="content-body">
   {{ .Content }}
-  <div class="ad-slot">
+
+  <!-- Ad after content -->
+  <div class="ad-slot" style="margin: 32px 0;">
     <div class="ad-label">— 广告 —</div>
     <div class="ad-placeholder">广告位（上线前替换为 AdSense 代码）</div>
   </div>
 </article>
+
+<!-- CTA -->
+<div class="cta-block">
+  <div class="cta-inner">
+    <h2>📖 还没找到想要的？</h2>
+    <p>回到首页浏览全部攻略，或直接联系我们提需求。</p>
+    <a href="/" class="btn btn-ignite">🏠 返回首页</a>
+    <a href="/contact/" class="btn btn-outline">📧 联系我们</a>
+  </div>
+</div>
+
 {{ end }}

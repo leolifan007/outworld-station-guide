@@ -1,19 +1,19 @@
 {{ define "main" }}
-{{ partial "page-header" . }}
-<section class="section">
-  <div class="container">
-    <article class="main-content" style="max-width:var(--content-w);margin:0 auto;">
-      <h2>目录</h2>
-      <ul>
-      {{ range .Pages.ByWeight }}
-        <li style="margin-bottom:12px;">
-          <a href="{{ .RelPermalink }}" style="font-size:1.1rem;">{{ .Title }}</a>
-          {{ with .Description }}<p style="font-size:0.85rem;color:var(--cream-dark);margin-top:4px;">{{ . }}</p>{{ end }}
-        </li>
-      {{ end }}
-      </ul>
-      {{ .Content }}
-    </article>
-  </div>
+<section class="page-hero-sub">
+  <h1 class="hero-title-sub">{{ .Title }}</h1>
+  {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
 </section>
+<article class="content-body">
+  <div class="guide-grid" style="display:flex;flex-direction:column;gap:12px;margin-top:0;">
+  {{ range .Pages.ByWeight }}
+    <div class="guide-card" style="margin:0;">
+      <div class="guide-card-body">
+        <h3 style="margin:0 0 4px;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Description }}<p style="margin:0;font-size:0.85rem;">{{ . }}</p>{{ end }}
+      </div>
+    </div>
+  {{ end }}
+  </div>
+  {{ .Content }}
+</article>
 {{ end }}
