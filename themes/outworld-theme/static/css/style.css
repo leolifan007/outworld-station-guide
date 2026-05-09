@@ -267,8 +267,8 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 /* Keep "攻略站" on one line */
 .hero h1 .nobreak,.sidebar-logo .nobreak,.footer-logo .nobreak{white-space:nowrap}
 .hero .highlight{
-  color:var(--space-cyan);
-  text-shadow:0 0 30px var(--space-cyan-glow);
+  color:#FFD700;
+  text-shadow:0 0 30px rgba(255,215,0,0.5);
 }
 .hero-sub{
   font-size:1rem;color:var(--space-text);margin-bottom:1.75rem;
