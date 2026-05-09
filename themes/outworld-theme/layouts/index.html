@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero hero-kv" style="position:relative;overflow:hidden">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">🚀 Updated May 2026 — 全球首部中文攻略站</div>
+    <h1><span>Outworld Station</span></h1>
+    <p class="hero-subtitle">太空工厂自动化完全指南 — 从小行星开采到方舟飞船，中文图文攻略一站通</p>
+    <div class="hero-actions">
+      <a href="/beginner/" class="btn-primary">🚀 新手入门指南</a>
+      <a href="/automation-guide/" class="btn-secondary">⚙️ 自动化系统</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-number">4</div><div class="stat-label">核心攻略</div></div>
+      <div class="stat"><div class="stat-number">∞</div><div class="stat-label">星球探索</div></div>
+      <div class="stat"><div class="stat-number">4</div><div class="stat-label">联机合作</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES STRIP -->
+<div class="features-strip">
+  <div class="container features-strip">
+    <div class="feature-item">
+      <span class="feature-icon">⚡</span>
+      <div><h4>自动化</h4><p>隐形物流管线</p></div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🌌</span>
+      <div><h4>虫洞物流</h4><p>跨星系供应链</p></div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🚀</span>
+      <div><h4>星舰建造</h4><p>方舟终局目标</p></div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🛡️</span>
+      <div><h4>防御系统</h4><p>虫洞入侵对抗</p></div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🤝</span>
+      <div><h4>4人合作</h4><p>PVE联机组队</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- HOMEPAGE CONTENT FROM _index.md -->
+<section class="section">
+  <div class="container">
+    <article class="main-content" style="max-width:var(--content-w);margin:0 auto;">
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>🚀 开始你的星际空间站之旅</h2>
+      <p>从此攻略站开始，掌握 Outworld Station 的每一个系统。攻略内容随游戏更新持续补充。</p>
+      <a href="/beginner/" class="btn-primary">阅读新手入门指南 →</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+<section class="section">
+  <div class="container">
+    <article class="main-content" style="max-width:var(--content-w);margin:0 auto;">
+      <h2>目录</h2>
+      <ul>
+      {{ range .Pages.ByWeight }}
+        <li style="margin-bottom:12px;">
+          <a href="{{ .RelPermalink }}" style="font-size:1.1rem;">{{ .Title }}</a>
+          {{ with .Description }}<p style="font-size:0.85rem;color:var(--cream-dark);margin-top:4px;">{{ . }}</p>{{ end }}
+        </li>
+      {{ end }}
+      </ul>
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+{{ end }}

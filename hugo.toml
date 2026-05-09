@@ -1,0 +1,21 @@
+baseURL = 'https://outworldstation.guide/'
+locale = 'zh-CN'
+title = 'Outworld Station 攻略站 — 太空工厂自动化完全指南'
+theme = 'outworld-theme'
+enableRobotsTXT = true
+canonifyURLs = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  section = ['html']
+  taxonomy = ['html']
+
+[params]
+  description = 'Outworld Station 最新中文攻略站。新手入门、自动化系统、全建筑教程、资源指南，一站全攻略。'
+  keywords = 'Outworld Station攻略, Outworld Station中文, 星际空间站攻略, 异界空间站教程, 太空工厂自动化攻略'
+  steam_url = 'https://store.steampowered.com/app/2614220/Outworld_Station/'
+  google_adsense_id = 'ca-pub-XXXXXXXXXX'
