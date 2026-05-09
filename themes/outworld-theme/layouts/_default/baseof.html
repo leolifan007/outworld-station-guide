@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="zh-CN" href="https://translate.google.com/translate?hl=zh-CN&sl=en&u={{ .Permalink }}">
   <link rel="alternate" hreflang="ja" href="https://translate.google.com/translate?hl=ja&sl=en&u={{ .Permalink }}">
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
   {{ block "head" . }}{{ end }}
 </head>
@@ -21,8 +21,8 @@
 <div class="bg-canvas"><div class="stars"></div></div>
 
 <!-- Mobile sidebar toggle -->
-<button class="sidebar-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open');document.querySelector('.sidebar-overlay').classList.toggle('open')">☰</button>
-<div class="sidebar-overlay" onclick="document.querySelector('.sidebar').classList.remove('open');document.querySelector('.sidebar-overlay').classList.remove('open')"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 
 <div class="page-wrap">
 
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <nav class="sidebar-nav" onclick="if(window.innerWidth<=768){document.querySelector('.sidebar').classList.remove('open');document.querySelector('.sidebar-overlay').classList.remove('open')}">
+    <nav class="sidebar-nav" id="sidebarNav">
       <div class="section-label">指南</div>
       <a href="/" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> 首页</a>
       <a href="/beginner/" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> 新手入门</a>
@@ -75,12 +75,22 @@
 {{ partial "cookie-banner" . }}
 
 <script>
-// Add active class to sidebar links based on current path
-document.querySelectorAll('.sidebar-nav a').forEach(function(link){
-  if(link.getAttribute('href') === window.location.pathname){
-    link.classList.add('active');
-  }
-});
+(function(){
+  // Sidebar toggle
+  var btn=document.getElementById('sidebarToggle');
+  var sidebar=document.querySelector('.sidebar');
+  var overlay=document.getElementById('sidebarOverlay');
+  var nav=document.getElementById('sidebarNav');
+  function open(){sidebar.classList.add('open');overlay.classList.add('open')}
+  function close(){sidebar.classList.remove('open');overlay.classList.remove('open')}
+  if(btn){btn.onclick=function(e){e.stopPropagation();sidebar.classList.contains('open')?close():open()}}
+  if(overlay){overlay.onclick=close}
+  if(nav){nav.onclick=function(){if(window.innerWidth<=768)close()}}
+  // Active sidebar link
+  document.querySelectorAll('.sidebar-nav a').forEach(function(link){
+    if(link.getAttribute('href')===window.location.pathname)link.classList.add('active');
+  });
+})();
 </script>
 </body>
 </html>
