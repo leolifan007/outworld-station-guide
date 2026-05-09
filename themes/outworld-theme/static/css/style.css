@@ -359,10 +359,17 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .guide-card p{font-size:0.85rem;color:var(--space-text-dim);margin-bottom:1rem;line-height:1.7}
 .guide-card .card-link{
   display:inline-flex;align-items:center;gap:6px;
-  font-family:var(--font-display);font-size:0.75rem;color:var(--space-cyan);
-  transition:var(--transition);
+  font-family:var(--font-display);font-size:0.7rem;color:var(--space-bg) !important;
+  text-transform:uppercase;letter-spacing:0.08em;
+  background:linear-gradient(135deg, #E8983E 0%, #D47830 100%);
+  padding:4px 12px;border-radius:3px;
+  transition:var(--transition);text-decoration:none !important;
 }
-.guide-card .card-link:hover{color:var(--space-text-bright);gap:10px}
+.guide-card .card-link:hover{
+  box-shadow:0 0 10px var(--space-orange-glow);
+  transform:translateY(-1px);
+  gap:8px;
+}
 
 /* Introduction section */
 .intro-section{
@@ -576,7 +583,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   border-top:1px solid rgba(58,123,213,0.06);
   padding:2rem 2rem 1rem;margin-top:3rem;
 }
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.5rem;max-width:var(--content-w);margin:0 auto 1.5rem}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;max-width:var(--content-w);margin:0 auto 1.5rem}
 .footer-brand .footer-logo{font-family:var(--font-display);font-size:1.1rem;color:var(--space-text-bright);margin-bottom:0.5rem;display:block}
 .footer-brand p{font-size:0.82rem;color:var(--space-text-dim)}
 .footer-links h4{font-family:var(--font-display);font-size:0.8rem;color:var(--space-text-bright);margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:0.05em}
@@ -585,8 +592,8 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .footer-links a{display:block;padding:3px 0;font-size:0.82rem;color:var(--space-text-dim);text-decoration:none !important}
 .footer-links a:hover{color:var(--space-cyan)}
 .footer-bottom{text-align:center;max-width:var(--content-w);margin:0 auto;padding-top:1rem;border-top:1px solid rgba(58,123,213,0.06)}
-.footer-bottom p{font-size:0.75rem;color:var(--space-text-dim);margin:0}
-.footer-disclaimer{font-size:0.65rem;color:rgba(200,214,232,0.3);margin-top:4px !important}
+.footer-bottom p{font-size:0.75rem;color:var(--space-text-dim);margin:0;text-align:center}
+.footer-disclaimer{font-size:0.65rem;color:rgba(200,214,232,0.3);margin-top:4px !important;text-align:center}
 
 /* ─── Language Bar ─── */
 .lang-bar{
