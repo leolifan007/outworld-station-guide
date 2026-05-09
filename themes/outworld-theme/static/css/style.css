@@ -505,6 +505,8 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .content-body h2{
   margin-top:2.5rem;margin-bottom:0.75rem;
   border-bottom:1px solid rgba(58,123,213,0.06);padding-bottom:0.5rem;
+  color:var(--space-orange);
+  text-shadow:0 0 20px var(--space-orange-glow);
 }
 .content-body h3{margin-top:1.5rem;margin-bottom:0.5rem;color:var(--space-teal)}
 .content-body h3 .highlight-orange{color:var(--space-orange)}
