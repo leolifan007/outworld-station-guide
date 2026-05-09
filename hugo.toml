@@ -4,7 +4,7 @@ title = 'Outworld Station 攻略站 — 太空工厂自动化完全指南'
 theme = 'outworld-theme'
 enableRobotsTXT = true
 canonifyURLs = false
-relativeURLs = true
+relativeURLs = false
 
 [markup]
   [markup.goldmark]
