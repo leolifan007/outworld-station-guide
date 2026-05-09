@@ -66,26 +66,62 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 /* ─── Background Canvas ─── */
 .bg-canvas{
   position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+}
+.bg-canvas .bg-layer{
+  position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 20% 30%, rgba(58,123,213,0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, rgba(0,212,170,0.03) 0%, transparent 50%),
-    linear-gradient(180deg, #060A12 0%, #080C16 100%);
+    radial-gradient(ellipse at 15% 25%, rgba(58,123,213,0.08) 0%, transparent 45%),
+    radial-gradient(ellipse at 80% 35%, rgba(0,212,170,0.05) 0%, transparent 35%),
+    radial-gradient(ellipse at 50% 70%, rgba(130,80,200,0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 30% 80%, rgba(58,123,213,0.03) 0%, transparent 50%),
+    linear-gradient(180deg, #050810 0%, #080C16 100%);
 }
 .bg-canvas .stars{
   position:absolute;inset:0;
   background-image:
-    radial-gradient(1px 1px at 8% 13%, rgba(200,214,232,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 8% 13%, rgba(200,214,232,0.5) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 13% 42%, rgba(200,214,232,0.35) 0%, transparent 100%),
     radial-gradient(1px 1px at 22% 47%, rgba(200,214,232,0.3) 0%, transparent 100%),
+    radial-gradient(2px 2px at 28% 75%, rgba(0,212,170,0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 35% 10%, rgba(200,214,232,0.4) 0%, transparent 100%),
     radial-gradient(1.5px 1.5px at 37% 8%, rgba(200,214,232,0.5) 0%, transparent 100%),
-    radial-gradient(1px 1px at 52% 72%, rgba(200,214,232,0.2) 0%, transparent 100%),
-    radial-gradient(1px 1px at 68% 28%, rgba(200,214,232,0.35) 0%, transparent 100%),
-    radial-gradient(1.5px 1.5px at 82% 55%, rgba(200,214,232,0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 15% 85%, rgba(0,212,170,0.15) 0%, transparent 100%),
-    radial-gradient(1px 1px at 45% 90%, rgba(58,123,213,0.15) 0%, transparent 100%),
-    radial-gradient(1px 1px at 60% 15%, rgba(200,214,232,0.25) 0%, transparent 100%),
-    radial-gradient(1px 1px at 90% 20%, rgba(200,214,232,0.3) 0%, transparent 100%),
-    radial-gradient(1.5px 1.5px at 75% 80%, rgba(0,212,170,0.1) 0%, transparent 100%),
-    radial-gradient(1px 1px at 30% 55%, rgba(200,214,232,0.2) 0%, transparent 100%);
+    radial-gradient(1px 1px at 45% 90%, rgba(58,123,213,0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 52% 72%, rgba(200,214,232,0.25) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 58% 35%, rgba(0,212,170,0.15) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 15%, rgba(200,214,232,0.3) 0%, transparent 100%),
+    radial-gradient(2px 2px at 68% 28%, rgba(200,214,232,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 12%, rgba(200,214,232,0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 82% 55%, rgba(200,214,232,0.45) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 85% 82%, rgba(130,80,200,0.15) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 85%, rgba(0,212,170,0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 20%, rgba(200,214,232,0.35) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 75% 80%, rgba(0,212,170,0.15) 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 55%, rgba(200,214,232,0.25) 0%, transparent 100%),
+    radial-gradient(2px 2px at 92% 65%, rgba(200,214,232,0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 6% 60%, rgba(200,214,232,0.3) 0%, transparent 100%);
+}
+/* Twinkle animation */
+@keyframes twinkle{
+  0%,100%{opacity:1}
+  50%{opacity:0.3}
+}
+.bg-canvas .stars::after{
+  content:'';position:absolute;inset:0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 10% 22%, rgba(200,214,232,0.6) 0%, transparent 100%),
+    radial-gradient(2px 2px at 42% 55%, rgba(0,212,170,0.3) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 65% 8%, rgba(200,214,232,0.5) 0%, transparent 100%),
+    radial-gradient(2px 2px at 88% 73%, rgba(58,123,213,0.3) 0%, transparent 100%);
+  animation:twinkle 4s ease-in-out infinite;
+}
+/* Nebula haze */
+.bg-canvas .nebula{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 25% 30%, rgba(58,123,213,0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 40%, rgba(0,212,170,0.03) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 70%, rgba(130,80,200,0.02) 0%, transparent 40%);
+  filter:blur(40px);
 }
 
 /* ─── Layout: Sidebar + Content ─── */
@@ -176,18 +212,32 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 
 /* ─── Hero ─── */
 .hero{
-  min-height:80vh;display:flex;align-items:center;
+  min-height:85vh;display:flex;align-items:center;
   position:relative;overflow:hidden;padding:3rem 2rem;
 }
 .hero::before{
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 30% 40%, rgba(58,123,213,0.06) 0%, transparent 40%),
-    radial-gradient(ellipse at 70% 50%, rgba(0,212,170,0.04) 0%, transparent 35%),
-    linear-gradient(180deg, transparent 0%, rgba(8,12,22,0.4) 60%, var(--space-bg) 100%);
+    radial-gradient(ellipse at 15% 35%, rgba(58,123,213,0.08) 0%, transparent 40%),
+    radial-gradient(ellipse at 80% 30%, rgba(0,212,170,0.06) 0%, transparent 35%),
+    radial-gradient(ellipse at 50% 65%, rgba(120,60,200,0.03) 0%, transparent 50%),
+    linear-gradient(180deg, transparent 0%, rgba(8,12,22,0.3) 50%, var(--space-bg) 100%);
   pointer-events:none;
 }
-.hero-content{position:relative;z-index:2;max-width:680px}
+/* Hero glow orb */
+.hero::after{
+  content:'';position:absolute;top:15%;left:50%;
+  width:600px;height:600px;
+  background:radial-gradient(circle, rgba(0,212,170,0.04) 0%, transparent 70%);
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+  animation:orbPulse 8s ease-in-out infinite;
+}
+@keyframes orbPulse{
+  0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1.2)}
+}
+.hero-content{position:relative;z-index:2;max-width:720px}
 .hero-badge{
   display:inline-flex;align-items:center;gap:0.4rem;
   padding:0.35rem 0.8rem;border:1px solid var(--space-cyan);
@@ -197,10 +247,14 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   margin-bottom:1.5rem;background:rgba(0,212,170,0.06);
 }
 .hero h1{
-  font-size:3.2rem;line-height:1.05;margin-bottom:0.75rem;
-  text-shadow:0 0 30px rgba(0,212,170,0.2),0 2px 10px rgba(0,0,0,0.4);
+  font-size:3.5rem;line-height:1.05;margin-bottom:0.75rem;
+  text-shadow:0 0 40px rgba(0,212,170,0.15),0 0 80px rgba(0,212,170,0.05),0 2px 10px rgba(0,0,0,0.5);
+  letter-spacing:-0.02em;
 }
-.hero .highlight{color:var(--space-cyan)}
+.hero .highlight{
+  color:var(--space-cyan);
+  text-shadow:0 0 30px var(--space-cyan-glow);
+}
 .hero-sub{
   font-size:1rem;color:var(--space-text);margin-bottom:1.75rem;
   max-width:520px;line-height:1.7;
@@ -250,23 +304,37 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   margin:1.5rem 0;
 }
 .guide-card{
-  background:var(--space-bg-2);border:1px solid rgba(58,123,213,0.08);
-  border-radius:var(--radius-lg);padding:1.25rem;transition:var(--transition);
+  background:linear-gradient(135deg, rgba(11,20,34,0.7) 0%, rgba(8,12,22,0.9) 100%);
+  border:1px solid rgba(58,123,213,0.1);
+  border-radius:var(--radius-lg);padding:1.5rem;transition:var(--transition);
+  position:relative;overflow:hidden;
+  backdrop-filter:blur(4px);
+}
+.guide-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg, transparent, rgba(0,212,170,0.3), transparent);
+  opacity:0;transition:var(--transition);
 }
 .guide-card:hover{
-  border-color:rgba(0,212,170,0.2);transform:translateY(-2px);
-  box-shadow:0 4px 20px rgba(0,212,170,0.06);
+  border-color:rgba(0,212,170,0.25);transform:translateY(-3px);
+  box-shadow:0 8px 32px rgba(0,212,170,0.08),0 1px 4px rgba(0,0,0,0.3);
 }
+.guide-card:hover::before{opacity:1}
 .guide-card .card-tag{
   display:inline-block;font-family:var(--font-display);font-size:0.6rem;
   text-transform:uppercase;letter-spacing:0.1em;
   color:var(--space-cyan);margin-bottom:0.5rem;
+  background:rgba(0,212,170,0.06);padding:2px 8px;border-radius:2px;
+  border:1px solid rgba(0,212,170,0.1);
 }
-.guide-card h3{font-size:1rem;margin-bottom:0.4rem}
-.guide-card p{font-size:0.82rem;color:var(--space-text-dim);margin-bottom:0.75rem;line-height:1.6}
+.guide-card h3{font-size:1.05rem;margin-bottom:0.5rem}
+.guide-card p{font-size:0.85rem;color:var(--space-text-dim);margin-bottom:1rem;line-height:1.7}
 .guide-card .card-link{
+  display:inline-flex;align-items:center;gap:6px;
   font-family:var(--font-display);font-size:0.75rem;color:var(--space-cyan);
+  transition:var(--transition);
 }
+.guide-card .card-link:hover{color:var(--space-text-bright);gap:10px}
 
 /* Introduction section */
 .intro-section{
@@ -298,21 +366,26 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   background:var(--space-bg);padding:1rem;text-align:center;
 }
 .stat-item .stat-num{
-  font-family:var(--font-display);font-size:1.5rem;color:var(--space-cyan);
+  font-family:var(--font-display);font-size:1.8rem;color:var(--space-cyan);
+  filter: drop-shadow(0 0 6px var(--space-cyan-glow));
 }
-.stat-item .stat-desc{font-size:0.7rem;color:var(--space-text-dim)}
+.stat-item .stat-desc{font-size:0.75rem;color:var(--space-text);line-height:1.4}
 
 /* ─── CTA ─── */
 .cta-block{
   max-width:var(--content-w);margin:2rem auto;padding:0 2rem;
 }
 .cta-inner{
-  background:linear-gradient(135deg, rgba(0,212,170,0.04), rgba(58,123,213,0.04));
-  border:1px solid rgba(58,123,213,0.12);border-radius:var(--radius-lg);
-  padding:2rem;text-align:center;
+  background:linear-gradient(135deg, rgba(0,212,170,0.05) 0%, rgba(58,123,213,0.03) 100%);
+  border:1px solid rgba(0,212,170,0.12);border-radius:var(--radius-lg);
+  padding:2.5rem;text-align:center;position:relative;overflow:hidden;
+}
+.cta-inner::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg, transparent, rgba(0,212,170,0.4), transparent);
 }
 .cta-inner h2{margin-top:0;margin-bottom:0.5rem}
-.cta-inner p{color:var(--space-text-dim);max-width:450px;margin:0 auto 1.25rem}
+.cta-inner p{color:var(--space-text);max-width:480px;margin:0 auto 1.25rem}
 
 /* ─── Subpage hero ─── */
 .page-hero{
@@ -479,6 +552,8 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .footer-brand .footer-logo{font-family:var(--font-display);font-size:1.1rem;color:var(--space-text-bright);margin-bottom:0.5rem;display:block}
 .footer-brand p{font-size:0.82rem;color:var(--space-text-dim)}
 .footer-links h4{font-family:var(--font-display);font-size:0.8rem;color:var(--space-text-bright);margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:0.05em}
+.footer-links ul{list-style:none;padding:0;margin:0}
+.footer-links li{margin-bottom:2px}
 .footer-links a{display:block;padding:3px 0;font-size:0.82rem;color:var(--space-text-dim);text-decoration:none !important}
 .footer-links a:hover{color:var(--space-cyan)}
 .footer-bottom{text-align:center;max-width:var(--content-w);margin:0 auto;padding-top:1rem;border-top:1px solid rgba(58,123,213,0.06)}
