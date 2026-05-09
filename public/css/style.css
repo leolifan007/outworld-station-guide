@@ -529,4 +529,22 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 }
 .cookie-btn-accept{background:var(--space-cyan);color:var(--space-bg);border-color:var(--space-cyan)}
 .cookie-btn-accept:hover{opacity:0.85}
-.cookie-btn-reject{background:transparent;color:var(--space-text
+.cookie-btn-reject{background:transparent;color:var(--space-text-dim);border-color:rgba(200,214,232,0.2)}
+.cookie-btn-reject:hover{border-color:var(--space-text-dim)}
+
+/* ─── Responsive ─── */
+@media(max-width:768px){
+  .guide-grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .hero-sub{font-size:0.9rem}
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .hero{padding:2rem 1rem}
+  .hero-stats{gap:1rem}
+  .hero-stat-num{font-size:1.5rem}
+}
+
+/* ─── Gambonanza-style component aliases ─── */
+.starmap-wrapper{position:relative;background:radial-gradient(ellipse at 40% 30%,rgba(0,212,170,0.03) 0%,transparent 50%),radial-gradient(ellipse at 60% 70%,rgba(59,125,216,0.04) 0%,transparent 50%),linear-gradient(180deg,#050810 0%,#0A0E17 40%,#111927 100%);border:1px solid rgba(59,125,216,0.12);border-radius:8px;padding:40px 24px;margin:24px 0;overflow:hidden;}
