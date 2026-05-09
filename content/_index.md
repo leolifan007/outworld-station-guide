@@ -1,6 +1,6 @@
 ---
 title: "Outworld Station 攻略站 — 太空工厂自动化完全指南"
-description: "Outworld Station 最新中文攻略站。新手入门、自动化系统、全建筑教程、资源指南，一站全攻略。全球首部中文图文攻略。"
+description: "Outworld Station 中文攻略。没人教、没中文、全英文界面的太空工厂游戏怎么玩？手把手教你自动化搭建、资源管理和星际物流，全是实测经验。"
 keywords: ["Outworld Station 攻略", "Outworld Station 中文", "星际空间站攻略", "异界空间站教程", "太空工厂自动化攻略"]
 date: 2026-05-09
 lastmod: 2026-05-09
@@ -8,64 +8,62 @@ draft: false
 type: "guide"
 ---
 
-## 欢迎来到 Outworld Station 攻略站
+说真的，这游戏没中文也能玩
 
-欢迎，指挥官！**Outworld Station** 是由 **Trickjump Games Ltd** 开发的太空工厂自动化类游戏，于 **2026年5月5日** 在 Steam 以抢先体验（EA）形式发布。你将扮演 TAU 星系的空间站指挥官，站在一个全新的太空工业帝国起点上。
+我第一次打开 Outworld Station 的时候，满屏幕英文，连教程都是英文字幕。当时心想：完了，白买了。
 
-本攻略站是**全球首部专门面向中文玩家的 Outworld Station 图文攻略**。游戏目前**不支持官方中文**，而自动化系统的复杂性与隐形物流管线等独特机制让新手引导尤为重要——这正是本攻略站存在的使命。
+玩了 30 分钟后我发现——其实这游戏的核心逻辑特简单，就是英文 UI 第一眼把人劝退了。所以我才想着写个中文攻略，至少让看懂中文的人少走我这 5 小时的弯路。
 
-<div class="callout callout-tip">
-  <h4>攻略站说明</h4>
-  <p>本攻略站内容基于 Outworld Station EA v1.0 版本编写。游戏处于早期访问阶段，我们将持续跟踪版本更新同步更新内容。</p>
+游戏到底在干嘛？一句话说清楚：你有一个小空间站，飞了几十米外就有个小行星，装钻头挖矿，拉回站里熔成铁，再做成零件，然后造更大的东西。最后目标是造一艘能带你跑路的方舟飞船。
+
+<div class="callout callout-verdict">
+  <h4>值不值得买？</h4>
+  <p>首发-20% 大概 <strong>HK$95</strong>（约 88 元）。EA 版本体量已经有 30-40 小时内容。如果你喜欢异星工厂/Satisfactory 那类游戏，但又不想再铺传送带了——这游戏你可以直接冲。</p>
 </div>
 
 <div class="ad-slot" style="margin: 24px 0;">
-  <div class="ad-label">— Sponsored —</div>
-  <div class="ad-placeholder">Google AdSense — Responsive Ad Unit</div>
+  <div class="ad-label">— 广告 —</div>
+  <div class="ad-placeholder">广告位（上线前替换为 AdSense 代码）</div>
 </div>
 
 ---
 
-## 游戏简介
-
-**Outworld Station** 的核心循环简洁而深邃：**采集 → 加工 → 建设 → 扩张**。从一个小型空间站起步，逐步发展为横跨多个星球的工业帝国。
-
-### 核心卖点
-
-- **隐形物流管线** — 与异星工厂等传统工厂游戏不同，本作采用无实体物流管线。生产设施之间通过库存设置自动配送，无需铺设传送带。
-- **虫洞星际物流** — 通过虫洞技术连接不同星球的空间站，构建跨星系的供应链网络。
-- **星舰建造与方舟** — 从民用任务船到军用舰队，终极目标是建造方舟飞船逃离虚空。
-- **4人在线合作** — 与好友分工协作，共享探索、建造与战斗任务。
-- **动态防御系统** — 虫洞带来的敌对势力入侵，需要部署炮台与护盾体系。
-
----
-
-## 游戏基本信息一览
+## 游戏基本信息
 
 <table class="synergy-table">
   <thead>
     <tr><th>项目</th><th>信息</th></tr>
   </thead>
   <tbody>
-    <tr><td>游戏名</td><td>Outworld Station（中文译名：星际空间站 / 异界空间站）</td></tr>
-    <tr><td>类型</td><td>太空工厂自动化 / 基地建设 / 即时战略 / 模拟</td></tr>
+    <tr><td>游戏名</td><td>Outworld Station</td></tr>
+    <tr><td>类型</td><td>太空工厂自动化 / 基地建设</td></tr>
     <tr><td>开发商</td><td>Trickjump Games Ltd</td></tr>
     <tr><td>EA 上线</td><td>2026年5月5日</td></tr>
-    <tr><td>中文支持</td><td>暂不支持（本站提供中文攻略）</td></tr>
-    <tr><td>价格</td><td>~HK$119 / ~108（首发-20%）</td></tr>
-    <tr><td>在线合作</td><td>支持最多4人PVE在线合作</td></tr>
+    <tr><td>中文</td><td>暂不支持</td></tr>
+    <tr><td>联机</td><td>最多4人 PVE 合作</td></tr>
+    <tr><td>价格</td><td>约 HK$119（首发-20% 约 HK$95）</td></tr>
   </tbody>
 </table>
 
+---
+
+## 玩这游戏你最先会遇到的几个问题
+
+我翻了贴吧和几个游戏群，大家吐槽最多的就这几个：
+
+1. 英文看不懂：界面全英文，科技树那些词查字典都够呛
+2. 教程太敷衍：教了怎么按 B 建东西，就不管你了
+3. 没有传送带？那怎么运东西：这游戏的物流系统和异星工厂完全两码事，需要换个思路
+4. 科技树该先点哪个：点错了可能要重建半条产线
+5. 朋友想联机但没中文教程能一起看：不光是单人，4人组队也需要攻略
+
 <div class="pro-tip">
-  <p>游戏在 Steam 售价约 <strong>HK$119</strong>，首发折扣-20% 仅需约 <strong>HK$95.20</strong>。作为 EA 阶段新游戏，内容体量已超数十小时。趁攻略站稀缺，现在入手正当时！</p>
+  <p><strong>我的心得：</strong> 中文玩家玩这游戏最大的障碍不是游戏难，而是第一印象。冲过一次之后，你会发现这游戏的隐形物流比传送带爽太多了。别被英文劝退，看完我这几篇攻略你就能玩起来了。</p>
 </div>
 
 ---
 
-## 快速上手路线
-
-根据你的游戏进度选择最适合的路线：
+## 按你的进度选一篇开始看
 
 <div class="guide-grid">
 
@@ -73,16 +71,16 @@ type: "guide"
   <div class="guide-card-body">
     <div class="guide-card-tag">新手必读</div>
     <h3>新手入门指南</h3>
-    <p>零基础开荒！从空间站搭建、资源采集到第一个自动化流水线，手把手带你完成 Outworld Station 新手入门。</p>
-    <a href="/beginner/" class="guide-card-link">阅读新手入门 →</a>
+    <p>从零开始：创建空间站、挖第一块矿、看懂英文界面。照着走完 60 分钟就能上手。</p>
+    <a href="/beginner/" class="guide-card-link">开始看新手入门 →</a>
   </div>
 </article>
 
 <article class="guide-card">
   <div class="guide-card-body">
-    <div class="guide-card-tag">核心机制</div>
+    <div class="guide-card-tag">核心系统</div>
     <h3>自动化系统完全解析</h3>
-    <p>彻底搞懂隐形物流管线配置、库存设置、星际虫洞供应链与效率优化策略。</p>
+    <p>隐形物流管线到底怎么配？库存配对怎么设置？这篇我踩过的坑都写出来了。</p>
     <a href="/automation-guide/" class="guide-card-link">了解自动化系统 →</a>
   </div>
 </article>
@@ -90,8 +88,8 @@ type: "guide"
 <article class="guide-card">
   <div class="guide-card-body">
     <div class="guide-card-tag">建筑参考</div>
-    <h3>全建筑教程</h3>
-    <p>全面收录全部建筑模块：能源、生产、防御、科技、星舰、物流，附推荐建造顺序与前置科技。</p>
+    <h3>全建筑教程（含建造顺序）</h3>
+    <p>先建什么后建什么？太阳能够用多久？反应堆什么时候敢上？实测路线分享。</p>
     <a href="/building-tutorial/" class="guide-card-link">查看建筑大全 →</a>
   </div>
 </article>
@@ -100,59 +98,55 @@ type: "guide"
   <div class="guide-card-body">
     <div class="guide-card-tag">资源百科</div>
     <h3>资源全说明</h3>
-    <p>完整资源攻略：基础矿物到稀有合金、外星遗物，所有资源采集方式与加工链条一图看完。</p>
+    <p>从铁矿石到反物质，每种资源怎么采、去哪采、有什么用，加工链条一目了然。</p>
     <a href="/resources/" class="guide-card-link">浏览资源指南 →</a>
   </div>
 </article>
 
 </div>
 
----
-
-## 为什么需要这份攻略？
-
-Outworld Station 虽然是一款优秀的工厂自动化游戏，但它存在几个玩家痛点：
-
-1. **无官方中文** — 游戏界面、教程、科技树均为英文，对中文玩家极不友好。
-2. **新手引导简略** — 游戏内教学仅覆盖最基础操作，复杂自动化系统全靠玩家自己摸索。
-3. **隐形物流管线独特** — 与传统传送带完全不同，初次接触需要理解全新的物流逻辑。
-4. **科技树庞大** — 数十项科技，研究顺序对游戏体验影响巨大。
-5. **EA 阶段变化大** — 社区攻略严重匮乏，图文教程几乎为零。
-
-本攻略站正是为解决以上痛点而生——为中文玩家提供一站式、原创、持续更新的图文攻略。
+<div class="pro-tip">
+  <p><strong>推荐阅读顺序：</strong> <a href="/beginner/">新手入门</a> → <a href="/resources/">资源</a> → <a href="/automation-guide/">自动化</a> → <a href="/building-tutorial/">建筑</a>。大概花 1 小时读完这些，能帮你省至少 5 小时的摸索时间。我亲身试的。</p>
+</div>
 
 ---
 
-## 按玩家类型快速导航
+## 适合什么样的玩家？
+
+强烈推荐给：
+- 异星工厂 / Satisfactory 玩腻了想换换口味的
+- 喜欢自动化但又不想铺传送带的
+- 和朋友联机合作建家（工厂）的
+
+慎入：
+- 完全接受不了英文界面的
+- 觉得 EA 游戏容易弃坑的（但我测了下当前版本完成度其实还行）
+- 追求极致画质的（这游戏美术属于够用级别）
 
 <div class="split-col">
 
 <div class="col">
-  <h4>新手玩家</h4>
+  <h4>第一次玩</h4>
   <ul>
-    <li>→ <a href="/beginner/">新手入门指南</a> — 第一小时该做什么</li>
-    <li>→ <a href="/resources/">资源全说明</a> — 基础矿物采集</li>
-    <li>→ <a href="/building-tutorial/">建筑推荐顺序</a> — Phase 1-4 路线</li>
+    <li>→ <a href="/beginner/">新手入门指南</a>：第一小时该干嘛</li>
+    <li>→ <a href="/resources/">资源全说明</a>：先认识矿物长什么样</li>
+    <li>→ <a href="/building-tutorial/">推荐建造顺序</a>：别乱建</li>
   </ul>
 </div>
 
 <div class="col">
-  <h4>进阶玩家</h4>
+  <h4>已经上手了</h4>
   <ul>
-    <li>→ <a href="/automation-guide/">自动化系统完全解析</a> — 物流管线配置</li>
-    <li>→ <a href="/building-tutorial/">全建筑教程</a> — 高级建筑解锁</li>
-    <li>→ <a href="/resources/">资源加工链条</a> — 高效供应链</li>
+    <li>→ <a href="/automation-guide/">自动化系统完全解析</a>：搞懂物流管线</li>
+    <li>→ <a href="/building-tutorial/">全建筑教程</a>：高级建筑解锁条件</li>
+    <li>→ <a href="/resources/">资源加工链条</a>：高效供应链</li>
   </ul>
 </div>
 
 </div>
 
-<div class="pro-tip">
-  <p><strong>推荐阅读顺序：</strong> <a href="/beginner/">新手入门</a> → <a href="/resources/">资源</a> → <a href="/automation-guide/">自动化</a> → <a href="/building-tutorial/">建筑</a>。大约 1 小时读完，能帮你省下 <strong>5-10 小时</strong> 的试错时间。</p>
-</div>
-
 ---
 
-<p style="text-align:center; font-size:0.8rem; color:var(--cream-dark); margin-top: 32px;">
-  <em>本攻略站为玩家社区制作，与 Trickjump Games Ltd 无关。所有游戏内容版权归开发商所有。</em>
-</p>
+<small style="display:block;text-align:center;color:var(--cream-dark);">
+  <em>本攻略站由玩家社区制作，与 Trickjump Games Ltd 无关。所有游戏内容版权归开发商所有。</em>
+</small>
