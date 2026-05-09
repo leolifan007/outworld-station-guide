@@ -1,0 +1,291 @@
+---
+title: "星系地图 | 全资源星系与物流路线"
+description: "Outworld Station 星系地图：从小行星带到虫洞链路的完整布局图。交互式太空星图，让你一眼看清你的空间站在哪里、下一步往哪发展。"
+date: 2026-05-09
+lastmod: 2026-05-09
+draft: false
+---
+
+## 你的空间站，在星系中的位置
+
+Outworld Station 不是一张固定地图——**你的创业基地就是中心点**，周围的小行星带、近邻星球、虫洞链路都是你逐步扩张的舞台。
+
+下面这张星图展示了典型的太空产业链格局。**点击任意星球节点查看详情。**
+
+<div id="starmap" class="starmap-wrapper">
+
+<div class="starmap-flow">
+
+<!-- Node 1: 起始空间站 -->
+<div class="starmap-node sc-start" data-detail="start">
+  <div class="starmap-node-circle">🛸</div>
+  <div class="starmap-node-label">空间站核心</div>
+  <div class="starmap-node-sub">你的起点</div>
+</div>
+
+<div class="starmap-arrow">
+  <div class="starmap-arrow-line">
+    <span class="starmap-arrow-label">采矿</span>
+    <div class="arrow-body"></div>
+    <div class="arrow-head"></div>
+  </div>
+</div>
+
+<!-- Node 2: 小行星带 -->
+<div class="starmap-node sc-mining" data-detail="asteroid">
+  <div class="starmap-node-circle">🪨</div>
+  <div class="starmap-node-label">小行星带</div>
+  <div class="starmap-node-sub">铁 / 铜 / 基础矿</div>
+</div>
+
+<div class="starmap-arrow">
+  <div class="starmap-arrow-line">
+    <span class="starmap-arrow-label">运回</span>
+    <div class="arrow-body"></div>
+    <div class="arrow-head"></div>
+  </div>
+</div>
+
+<!-- Node 3: 加工卫星 -->
+<div class="starmap-node sc-processing" data-detail="refinery">
+  <div class="starmap-node-circle">🏭</div>
+  <div class="starmap-node-label">加工卫星</div>
+  <div class="starmap-node-sub">熔炼 / 组装</div>
+</div>
+
+<div class="starmap-arrow">
+  <div class="starmap-arrow-line">
+    <span class="starmap-arrow-label">虫洞</span>
+    <div class="arrow-body"></div>
+    <div class="arrow-head"></div>
+  </div>
+</div>
+
+<!-- Node 4: 稀有矿产星 -->
+<div class="starmap-node sc-rare" data-detail="rare">
+  <div class="starmap-node-circle">💎</div>
+  <div class="starmap-node-label">稀有矿星</div>
+  <div class="starmap-node-sub">钛 / 合金 / 遗物</div>
+</div>
+
+<div class="starmap-arrow">
+  <div class="starmap-arrow-line">
+    <span class="starmap-arrow-label">虫洞</span>
+    <div class="arrow-body"></div>
+    <div class="arrow-head"></div>
+  </div>
+</div>
+
+<!-- Node 5: 太空船坞 -->
+<div class="starmap-node sc-shipyard" data-detail="shipyard">
+  <div class="starmap-node-circle">🚀</div>
+  <div class="starmap-node-label">太空船坞</div>
+  <div class="starmap-node-sub">星舰建造</div>
+</div>
+
+<div class="starmap-arrow">
+  <div class="starmap-arrow-line">
+    <span class="starmap-arrow-label">虫洞</span>
+    <div class="arrow-body"></div>
+    <div class="arrow-head"></div>
+  </div>
+</div>
+
+<!-- Node 6: 终局遗物星 -->
+<div class="starmap-node sc-endgame" data-detail="endgame">
+  <div class="starmap-node-circle">👽</div>
+  <div class="starmap-node-label">遗物星域</div>
+  <div class="starmap-node-sub">方舟 / 终极科技</div>
+</div>
+
+</div>
+
+<!-- Detail Panels -->
+<div id="starmap-detail-start" class="starmap-detail">
+  <button class="starmap-close" onclick="closeStarDetail()">✕</button>
+  <h4>🛸 空间站核心</h4>
+  <p><strong>位置：</strong>TAU 系统的初始坐标，你的创业基地。</p>
+  <p><strong>功能：</strong>所有自动化产线的起点。存放初始熔炉、装配机、仓储。</p>
+  <p><strong>核心装备：</strong></p>
+  <ul>
+    <li>4-6 块太阳能板（开局够用）</li>
+    <li>1-2 个小型电池</li>
+    <li>至少 1 个中型容器（建议升 Storage II）</li>
+    <li>2-3 个炮台（第 30 分钟虫洞入侵用）</li>
+  </ul>
+  <p><strong>提示：</strong>把空间站拖到离最近的矿区越近越好——前 1 小时的运输效率看这一步。</p>
+  <a href="./beginner/" class="starmap-link">查看新手入门 →</a>
+</div>
+
+<div id="starmap-detail-asteroid" class="starmap-detail">
+  <button class="starmap-close" onclick="closeStarDetail()">✕</button>
+  <h4>🪨 小行星带</h4>
+  <p><strong>位置：</strong>空间站核心附近的陨石聚集区。</p>
+  <p><strong>产出资源：</strong>铁矿石（Iron Ore）、铜矿石（Copper Ore）、少量煤炭。</p>
+  <p><strong>发展时期：</strong><span class="phase-tag phase-early">早期</span></p>
+  <p><strong>操作流程：</strong></p>
+  <ul>
+    <li>在小行星表面架设 Mining Drill</li>
+    <li>建 Solar Panel 供电</li>
+    <li>Inventory → Pair 到空间站仓库</li>
+  </ul>
+  <p><strong>注意：</strong>一块小行星的矿采完，钻机要搬到下一块。前期至少踩 2-3 块小行星才能稳住基础产线。</p>
+  <a href="./resources/" class="starmap-link">查看资源指南 →</a>
+</div>
+
+<div id="starmap-detail-refinery" class="starmap-detail">
+  <button class="starmap-close" onclick="closeStarDetail()">✕</button>
+  <h4>🏭 加工卫星</h4>
+  <p><strong>位置：</strong>可在空间站扩建模块中设置，或另建独立站。</p>
+  <p><strong>功能：</strong>将原料转化为可用的材料和零件。</p>
+  <p><strong>发展时期：</strong><span class="phase-tag phase-early">早期</span> → <span class="phase-tag phase-mid">中期</span></p>
+  <p><strong>核心建筑：</strong></p>
+  <ul>
+    <li>Smelter（熔炉）：铁矿石 → 铁锭</li>
+    <li>Assembler（装配机）：铁锭 → 铁板 / 零件</li>
+    <li>Circuit Fabricator（电路工厂）：铜 + 硅 → 电路板</li>
+  </ul>
+  <p><strong>布局建议：</strong>加工卫星尽量靠近矿源和仓储中心。Inventory Pair 的逻辑是：输入端 Pair 到矿仓，输出端 Pair 到成品仓。</p>
+  <a href="./automation-guide/" class="starmap-link">查看自动化指南 →</a>
+</div>
+
+<div id="starmap-detail-rare" class="starmap-detail">
+  <button class="starmap-close" onclick="closeStarDetail()">✕</button>
+  <h4>💎 稀有矿产星</h4>
+  <p><strong>位置：</strong>通过虫洞连接的远程星球，离空间站 2-3 跳。</p>
+  <p><strong>产出资源：</strong>钛矿（Titanium）、硅（Silicon）、稀有合金、外星遗物碎片。</p>
+  <p><strong>发展时期：</strong><span class="phase-tag phase-mid">中期</span> → <span class="phase-tag phase-late">后期</span></p>
+  <p><strong>注意事项：</strong></p>
+  <ul>
+    <li>需要在科技树解锁 Logistics II 才能稳定供应</li>
+    <li>虫洞传输有延迟——远程矿仓容量要加倍</li>
+    <li>这些星球的敌对单位更强，先派侦察船探路</li>
+    <li>外星遗物碎片可以在核心站解锁特殊升级</li>
+  </ul>
+  <a href="./resources/" class="starmap-link">查看资源全说明 →</a>
+</div>
+
+<div id="starmap-detail-shipyard" class="starmap-detail">
+  <button class="starmap-close" onclick="closeStarDetail()">✕</button>
+  <h4>🚀 太空船坞</h4>
+  <p><strong>位置：</strong>需要在科技树解锁 Shipyard I 后建造。</p>
+  <p><strong>功能：</strong>建造侦察船、货运船、战斗舰。</p>
+  <p><strong>发展时期：</strong><span class="phase-tag phase-mid">中期</span> → <span class="phase-tag phase-late">后期</span></p>
+  <p><strong>造舰顺序建议：</strong></p>
+  <ol>
+    <li><strong>第一艘：侦察船</strong> — 探开周边星图，标记资源丰富的星区</li>
+    <li><strong>第二艘：货运船</strong> — 跑远程航线，把稀有矿星的东西拉回主站</li>
+    <li><strong>第三艘：武装船</strong> — 应对虫洞入侵升级版的敌人</li>
+  </ol>
+  <p><strong>隐藏技巧：</strong>货运船可以不配武器只配货舱，便宜又好用。等航线稳定了再升级武装版本。</p>
+  <a href="./building-tutorial/" class="starmap-link">查看建筑教程 →</a>
+</div>
+
+<div id="starmap-detail-endgame" class="starmap-detail">
+  <button class="starmap-close" onclick="closeStarDetail()">✕</button>
+  <h4>👽 遗物星域</h4>
+  <p><strong>位置：</strong>星系边缘，需要多条虫洞链路到达。</p>
+  <p><strong>产出：</strong>方舟飞船蓝图、终极科技升级、外星能量核心。</p>
+  <p><strong>发展时期：</strong><span class="phase-tag phase-late">终局</span></p>
+  <p><strong>这是游戏的最终目标吗？</strong></p>
+  <p>目前 EA 版本中，遗物星域是已知的最远端区域。推测后续更新会在此区域扩展更多内容。当前你能做的：</p>
+  <ul>
+    <li>探索遗物遗迹，解锁特殊升级</li>
+    <li>收集足够的方舟组件材料</li>
+    <li>与最多 3 名队友联机挑战强力敌人</li>
+  </ul>
+  <p><strong>注意：</strong>这条路线需要完整的星际供应链支持。如果你还在手动搬矿，就别急着跳虫洞了。</p>
+  <a href="./strategy/" class="starmap-link">进阶策略 →</a>
+</div>
+
+</div>
+
+<script>
+function openStarDetail(id) {
+  var all = document.querySelectorAll('.starmap-detail');
+  for (var i = 0; i < all.length; i++) { all[i].classList.remove('active'); }
+  var target = document.getElementById('starmap-detail-' + id);
+  if (target) { target.classList.add('active'); }
+}
+function closeStarDetail() {
+  var all = document.querySelectorAll('.starmap-detail');
+  for (var i = 0; i < all.length; i++) { all[i].classList.remove('active'); }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var nodes = document.querySelectorAll('.starmap-node');
+  for (var i = 0; i < nodes.length; i++) {
+    (function(node) {
+      node.addEventListener('click', function(e) {
+        var id = node.getAttribute('data-detail');
+        if (id) { openStarDetail(id); }
+      });
+    })(nodes[i]);
+  }
+});
+</script>
+
+---
+
+## 星图使用指南
+
+这张星图的逻辑建立在三条核心原则上：
+
+### ① 距离决定复杂程度
+
+越是靠近空间站核心的区域，资源越基础、建设越简单。越是远端的虫洞链路，资源越稀有、敌人越强。
+
+| 距离 | 区域 | 难度 | 主要产出 |
+|------|------|------|---------|
+| 0 | 空间站核心 | <!-- --> | 存储 / 加工 / 指挥 |
+| 近距 | 小行星带 | 低 | 铁、铜 |
+| 中距 | 加工卫星 | 中 | 铁锭、铁板、电路板 |
+| 远距 | 稀有矿星 | 中高 | 钛、合金、遗物 |
+| 远距 | 太空船坞 | 中 | 星舰 |
+| 极远 | 遗物星域 | 高 | 终极科技 |
+
+### ② 虫洞是真正的交通命脉
+
+没有传送带，虫洞就是高速公路。Inventory Pair 操作的本质就是建立虫洞物流链路。理解"需求驱动"的供需匹配逻辑，比任何单个建筑的操作都重要。
+
+### ③ 不要跳阶段
+
+很多新人走到稀有矿星发现"建不起生产线"，因为**基础产线还没自动化**。先把小行星带和加工卫星的产线跑顺了，再考虑跨虫洞扩张。
+
+<div class="pro-tip">
+  <p><strong>一句话记住这张图：</strong> 左边你管够 → 中间你加工 → 右边你扩张。按这个思路走，不会卡关。</p>
+</div>
+
+<hr>
+
+<h2 id=每个节点的详细攻略>每个节点的详细攻略</h2>
+
+<div class="guide-grid">
+
+<article class="guide-card">
+  <div class="guide-card-body">
+    <div class="guide-card-tag">新手必读</div>
+    <h3>空间站核心布局</h3>
+    <p>空间站该怎么布置效率最高？太阳能阵列、仓储区、加工区的动线设计。</p>
+    <a href="./beginner/" class="guide-card-link">查看新手入门 →</a>
+  </div>
+</article>
+
+<article class="guide-card">
+  <div class="guide-card-body">
+    <div class="guide-card-tag">核心系统</div>
+    <h3>自动化与物流管线</h3>
+    <p>Inventory Pair 详解：虫洞物流、多空间站联动、跨星际供应链。</p>
+    <a href="./automation-guide/" class="guide-card-link">了解自动化系统 →</a>
+  </div>
+</article>
+
+<article class="guide-card">
+  <div class="guide-card-body">
+    <div class="guide-card-tag">建筑大全</div>
+    <h3>全建筑教程与建造顺序</h3>
+    <p>先建什么后建什么？每个建筑在星图上的最佳位置建议。</p>
+    <a href="./building-tutorial/" class="guide-card-link">查看建筑大全 →</a>
+  </div>
+</article>
+
+</div>
