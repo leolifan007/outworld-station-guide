@@ -168,7 +168,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   .sidebar.open{transform:translateX(0)}
   .sidebar-toggle{display:flex}
   .sidebar-overlay{
-    display:none;position:fixed;inset:0;z-index:99;background:rgba(0,0,0,0.5);
+    display:none;position:fixed;inset:0;z-index:50;background:rgba(0,0,0,0.5);
   }
   .sidebar-overlay.open{display:block}
   .main-area{margin-left:0}
