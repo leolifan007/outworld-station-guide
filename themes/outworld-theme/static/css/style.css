@@ -1,5 +1,5 @@
 /* ============================================
-   OUTWORLD STATION GUIDE â€?v2.0 Space Factory
+   OUTWORLD STATION GUIDE ï¿½?v2.0 Space Factory
    Redesigned from scratch: left sidebar, glass UI,
    deep-space aesthetic, mobile-first responsive.
    ============================================ */
@@ -116,8 +116,8 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .sidebar-logo .logo-sub{
   font-size:0.6rem;color:var(--space-text-dim);text-transform:uppercase;letter-spacing:0.08em;
 }
-.sidebar-nav{padding:0.75rem 0.5rem;flex:1;}
-.sidebar-nav a{
+.sidebar-nav{padding:0.75rem 0.5rem;flex:1;position:relative;z-index:101}
+.sidebar-nav a{position:relative;z-index:102;
   display:flex;align-items:center;gap:0.5rem;
   padding:0.5rem 0.75rem;border-radius:var(--radius);
   font-size:0.82rem;color:var(--space-text);text-decoration:none !important;
@@ -133,7 +133,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .sidebar-steam{
   padding:0.75rem 0.5rem;border-top:1px solid rgba(58,123,213,0.08);
 }
-.sidebar-steam a{
+.sidebar-steam a{position:relative;z-index:102;
   display:flex;align-items:center;justify-content:center;gap:0.5rem;
   padding:0.6rem;border-radius:var(--radius);
   background:rgba(58,123,213,0.08);border:1px solid rgba(58,123,213,0.2);
@@ -150,7 +150,6 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 /* Main content area */
 .main-area{
   margin-left:var(--sidebar-w);flex:1;min-width:0;
-  position:relative;z-index:1;
 }
 
 /* Mobile sidebar toggle */
@@ -389,7 +388,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   margin:1.25rem 0;position:relative;
 }
 .pro-tip::before{
-  content:'âœ?PRO TIP';
+  content:'ï¿½?PRO TIP';
   position:absolute;top:-11px;left:12px;
   background:var(--space-gold);color:var(--space-bg);
   padding:1px 12px;font-family:var(--font-display);
@@ -452,7 +451,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   display:flex;align-items:center;gap:0.5rem;
   margin-bottom:0.5rem;font-size:1rem;
 }
-.content-card h3::before{content:'â–?;color:var(--space-cyan);font-size:0.85rem}
+.content-card h3::before{content:'ï¿½?;color:var(--space-cyan);font-size:0.85rem}
 
 /* â”€â”€â”€ Section Divider â”€â”€â”€ */
 .section-divider{
@@ -460,7 +459,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   margin:1.5rem 0;position:relative;text-align:center;
 }
 .section-divider::after{
-  content:'âœ?â‹?âœ?;
+  content:'ï¿½?ï¿½?ï¿½?;
   position:absolute;top:-0.65em;left:50%;
   transform:translateX(-50%);
   background:var(--space-bg);padding:0 0.75rem;
