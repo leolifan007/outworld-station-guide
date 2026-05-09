@@ -23,6 +23,11 @@ draft: false
 
 ### 空间站初始布局
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/station-core/800/400" alt="Outworld Station 初始空间站核心界面" loading="lazy">
+  <figcaption>一进游戏你就在空间站核心（Station Core）里。别慌，B 键是万能的。</figcaption>
+</figure>
+
 一进游戏你就在空间站核心（Station Core）里。别慌，先记住这个快捷键：**按 B 打开建造菜单**。
 
 **你第一个要做的三件事：**
@@ -36,6 +41,11 @@ draft: false
 </div>
 
 ### 能量系统怎么搭
+
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/solar-panel/800/400" alt="太阳能板阵列搭建示意" loading="lazy">
+  <figcaption>太阳能板是开局唯一可靠的能量来源，至少铺 4-6 块。</figcaption>
+</figure>
 
 没电什么都动不了。刚开局你的能量分三个阶段走：
 
@@ -64,6 +74,11 @@ draft: false
 
 ### 关键的隐形物流管线（没有传送带怎么运）
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/inventory-pair/800/400" alt="Inventory Pair 操作界面" loading="lazy">
+  <figcaption>Inventory → Pair 是这游戏最重要的操作之一，比任何快捷键都值得先记住。</figcaption>
+</figure>
+
 这是 Outworld Station 跟异星工厂最大的区别——**不铺传送带，而是做库存配对**。
 
 讲人话：你告诉钻机"挖出来的矿送到那边那个仓库"，系统会自动建一条看不见的物流通道。
@@ -81,6 +96,11 @@ draft: false
 </div>
 
 ### 第一条加工链
+
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/smelter-line/800/400" alt="熔炉+装配机：第一条自动化产线" loading="lazy">
+  <figcaption>熔炉（Smelter）+ 装配机（Assembler）= 你的第一条自动化产线。</figcaption>
+</figure>
 
 矿挖回来了，接下来把它变成能用的材料：
 

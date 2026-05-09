@@ -23,6 +23,11 @@ draft: false
 
 ## T1：基础矿物（满地都是）
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/iron-mining/800/400" alt="采矿钻机在小行星上挖掘铁矿" loading="lazy">
+  <figcaption>采矿钻机架在小行星表面。绿色的高亮区域就是可放置点——越贴近矿脉中心越好。</figcaption>
+</figure>
+
 ### 铁矿（Iron Ore）
 - **采集：** 采矿钻机 → 随便找个小行星
 - **用途：** 一切的基础——建筑材料、铁板、初级零件
@@ -47,6 +52,11 @@ draft: false
 
 ### 基础加工链
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/processing-chain/800/400" alt="从矿石到成品的完整加工链" loading="lazy">
+  <figcaption>矿石 → 熔炉 → 装配机 → 成品。这张流程图值得截个图贴在屏幕旁边。</figcaption>
+</figure>
+
 ```
 铁矿 → [熔炉] → 铁锭（Iron Ingot）
 铜矿 → [熔炉] → 铜锭（Copper Ingot）
@@ -66,6 +76,11 @@ draft: false
 ## T3：高科技材料（开始烧脑了）
 
 ### 电路板（Circuit Board）
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/circuit-board/800/400" alt="电路板生产线" loading="lazy">
+  <figcaption>电路板是中期最大的瓶颈，没有之一。保证 10-15 单位/秒的产量，否则高级建筑全部卡住。</figcaption>
+</figure>
+
 - **配方：** 铁锭 x2 + 硅晶 x1
 - **用途：** 几乎所有高级建筑都需要
 - **建议产量：** 10-15 单位/秒
@@ -87,6 +102,11 @@ draft: false
 ## T4：稀有物质（终局追求）
 
 ### 外星遗物（Alien Relic）
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/alien-relic/800/400" alt="外星遗物探索场景" loading="lazy">
+  <figcaption>外星遗物——见到了就囤，不要花在非必要升级上。终局方舟组件可能需要的量远超你想象。</figcaption>
+</figure>
+
 - **获取：** 探索新星球 / 击败虫洞入侵者
 - **用途：** 解锁强力升级、武装无人机
 - **稀有度：** 获取不稳定但也不至于绝版

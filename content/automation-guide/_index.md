@@ -8,6 +8,11 @@ draft: false
 
 ## 没有传送带，那怎么运？
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/no-conveyor/800/400" alt="Outworld Station 隐形物流管线示意" loading="lazy">
+  <figcaption>这游戏没有传送带。刚开始你可能觉得被砍了左手，实际上它给了你一套更省空间的方案。</figcaption>
+</figure>
+
 Outworld Station 最大的特点（也是最大的学习成本）就是——**没有传送带**。
 
 玩过异星工厂的都知道，光铺传送带就能铺几十个小时。这游戏直接砍掉了实体传送，换了一套"隐形物流管线"。我第一次玩的时候找了半天传送带按钮，后来才明白：不是我没找到，而是真的没有。
@@ -39,7 +44,10 @@ Outworld Station 最大的特点（也是最大的学习成本）就是——**�
 
 ### 配对操作（你真正需要记住的）
 
-新手最容易出问题的就是这个步骤，我详细写一下：
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/pair-button/800/400" alt="Pair 按钮在 Inventory 面板的位置" loading="lazy">
+  <figcaption>点 Pair → 选目标建筑 → 搞定。比想象中简单，但我第一次也找了五分钟这个按钮在哪。</figcaption>
+</figure>
 
 1. 左键点击**生产建筑**（比如熔炉 Smelter）
 2. 在弹出面板里选 **Inventory** 标签
@@ -66,6 +74,11 @@ Outworld Station 最大的特点（也是最大的学习成本）就是——**�
 
 ### 三种存储模式
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/storage-modes/800/400" alt="存储容器三种模式切换界面" loading="lazy">
+  <figcaption>Buffer / Priority Output / Reserve Stock — 三种模式决定你的库存策略。新手用 Buffer 就够。</figcaption>
+</figure>
+
 每个 Storage Container 可以设置三种模式（点击仓库 → Mode 栏切换）：
 
 - **Buffer Mode（缓冲模式）** — 默认。进出平衡，适合大多数场景
@@ -86,6 +99,11 @@ Outworld Station 最大的特点（也是最大的学习成本）就是——**�
 ## 第三章：跨星球运输——虫洞怎么用
 
 ### 虫洞不是传送门，是供应链
+
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/wormhole-link/800/400" alt="虫洞发生器连接两个星球示意" loading="lazy">
+  <figcaption>两个 Wormhole Generator 设相同编号 = 它们之间的库存自动同步。这就是星际高速公路。</figcaption>
+</figure>
 
 当你有了第二个空间站（或者去其他星球建了前哨站），你就需要虫洞来连接不同星球的库存。
 

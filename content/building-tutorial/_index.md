@@ -16,6 +16,11 @@ draft: false
 
 ## 能源类（永远先搞这个）
 
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/power-buildings/800/400" alt="从太阳能板到聚变反应堆的能源演进" loading="lazy">
+  <figcaption>从太阳能到聚变反应堆，能源升级是你扩张的命脉。顺序错了整条产线都会停。</figcaption>
+</figure>
+
 ### 太阳能板（Solar Panel）
 - **解锁：** 初始自带
 - **产出：** 5 电力/秒
@@ -34,6 +39,11 @@ draft: false
 </div>
 
 ### 聚变反应堆（Fusion Reactor）
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/fusion-reactor/800/400" alt="聚变反应堆结构示意" loading="lazy">
+  <figcaption>聚变反应堆：安静高效，终极能源。前提是你能搞到氦-3。</figcaption>
+</figure>
+
 - **解锁：** 科技 → Fusion Tech（后期）
 - **产出：** 100 电力/秒
 - **燃料：** 氦-3（需要去气体巨行星采集）
@@ -73,6 +83,11 @@ draft: false
 - **用途：** 做合金（钢合金、合金板等）
 
 ### 化工厂（Chemical Plant）
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/chemical-plant/800/400" alt="化工厂布局" loading="lazy">
+  <figcaption>化工厂是 T3 材料的核心建筑。铀加工请务必远程操作，安全第一。</figcaption>
+</figure>
+
 - **解锁：** 科技 Chemistry
 - **用途：** 高端材料（燃料棒等）
 - **条件：** 需要气体资源管线
@@ -92,6 +107,11 @@ draft: false
 - **注意：** 占空间，能不用就不用
 
 ### 虫洞发生器（Wormhole Generator）
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/wormhole-gen/800/400" alt="虫洞发生器装置" loading="lazy">
+  <figcaption>两个相同的编号 = 跨星球库存合并。Lv3 虫洞传输速率 20 单位/秒，够你养三条主产线。</figcaption>
+</figure>
+
 - **解锁：** 科技 Wormhole Tech
 - **用途：** 跨星球链接库存
 - **规则：** 两端各建一个，编号要一样
@@ -109,6 +129,11 @@ draft: false
 - **经验：** 我第一把没建炮台，第 30 分钟被入侵直接团灭。这教训很深刻。
 
 ### 护盾发生器（Shield Generator）
+<figure class="content-figure">
+  <img src="https://picsum.photos/seed/shield-gen/800/400" alt="护盾发生器保护范围示意" loading="lazy">
+  <figcaption>50 单位的保护罩——很能扛，但一秒吃掉 50 电力。没稳定能源之前别碰。</figcaption>
+</figure>
+
 - **解锁：** 科技 Shield Tech
 - **范围：** 50 单位
 - **代价：** 巨耗电——50 电力/秒
