@@ -16,11 +16,71 @@
   {{ block "head" . }}{{ end }}
 </head>
 <body>
-  {{ partial "header" . }}
-  {{ partial "cookie-banner" . }}
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  {{ partial "footer" . }}
+
+<!-- Background stars canvas -->
+<div class="bg-canvas"><div class="stars"></div></div>
+
+<!-- Mobile sidebar toggle -->
+<button class="sidebar-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open');document.querySelector('.sidebar-overlay').classList.toggle('open')">☰</button>
+<div class="sidebar-overlay" onclick="document.querySelector('.sidebar').classList.remove('open');document.querySelector('.sidebar-overlay').classList.remove('open')"></div>
+
+<div class="page-wrap">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🛸</div>
+      <div>
+        <div class="logo-text">Outworld Station</div>
+        <div class="logo-sub">攻略站 · Guide</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" onclick="if(window.innerWidth<=768){document.querySelector('.sidebar').classList.remove('open');document.querySelector('.sidebar-overlay').classList.remove('open')}">
+      <div class="section-label">指南</div>
+      <a href="/" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> 首页</a>
+      <a href="/beginner/" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> 新手入门</a>
+      <a href="/automation-guide/" class="{{ if eq .RelPermalink "/automation-guide/" }}active{{ end }}"><span class="nav-icon">⚙️</span> 自动化系统</a>
+      <a href="/building-tutorial/" class="{{ if eq .RelPermalink "/building-tutorial/" }}active{{ end }}"><span class="nav-icon">🏗️</span> 全建筑教程</a>
+      <a href="/resources/" class="{{ if eq .RelPermalink "/resources/" }}active{{ end }}"><span class="nav-icon">🪨</span> 资源全说明</a>
+
+      <div class="section-label">互动</div>
+      <a href="/map/" class="{{ if eq .RelPermalink "/map/" }}active{{ end }}"><span class="nav-icon">🌌</span> 星系星图</a>
+
+      <div class="section-label">更多</div>
+      <a href="/contact/" class="{{ if eq .RelPermalink "/contact/" }}active{{ end }}"><span class="nav-icon">📧</span> 联系</a>
+      <a href="/privacy/" class="{{ if eq .RelPermalink "/privacy/" }}active{{ end }}"><span class="nav-icon">🔒</span> 隐私政策</a>
+    </nav>
+
+    <div class="sidebar-steam">
+      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 Steam 页面</a>
+    </div>
+
+    <div class="sidebar-footer">
+      non-official · player community
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main-area">
+    {{ partial "lang-bar" . }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer" . }}
+  </div>
+
+</div>
+
+{{ partial "cookie-banner" . }}
+
+<script>
+// Add active class to sidebar links based on current path
+document.querySelectorAll('.sidebar-nav a').forEach(function(link){
+  if(link.getAttribute('href') === window.location.pathname){
+    link.classList.add('active');
+  }
+});
+</script>
 </body>
 </html>

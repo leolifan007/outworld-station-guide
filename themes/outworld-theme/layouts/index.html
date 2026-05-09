@@ -1,68 +1,107 @@
 {{ define "main" }}
 
 <!-- HERO -->
-<section class="hero hero-kv" style="position:relative;overflow:hidden">
-  <div class="hero-bg"></div>
-  <div class="container hero-content">
-    <div class="hero-badge">🚀 Updated May 2026 — 全球首部中文攻略站</div>
-    <h1><span>Outworld Station</span></h1>
-    <p class="hero-subtitle">太空工厂自动化完全指南 — 从小行星开采到方舟飞船，中文图文攻略一站通</p>
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🛸 2026年5月更新 · 全球首部中文攻略</div>
+    <h1>Outworld Station <span class="highlight">完全攻略站</span></h1>
+    <p class="hero-sub">
+      从小行星开采到方舟飞船，从隐形物流管线到虫洞供应链——这里是中文玩家社区为你打造的太空工厂自动化终极指南。
+    </p>
     <div class="hero-actions">
-      <a href="/beginner/" class="btn-primary">🚀 新手入门指南</a>
-      <a href="/automation-guide/" class="btn-secondary">⚙️ 自动化系统</a>
+      <a href="/beginner/" class="btn btn-primary">🚀 新手入门</a>
+      <a href="/automation-guide/" class="btn btn-outline">⚙️ 自动化系统</a>
+      <a href="/map/" class="btn btn-outline">🌌 星系星图</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-number">4</div><div class="stat-label">核心攻略</div></div>
-      <div class="stat"><div class="stat-number">∞</div><div class="stat-label">星球探索</div></div>
-      <div class="stat"><div class="stat-number">4</div><div class="stat-label">联机合作</div></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">6</div>
+        <div class="hero-stat-label">攻略页面</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">∞</div>
+        <div class="hero-stat-label">星系探索</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-label">多人合作</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FEATURES STRIP -->
-<div class="features-strip">
-  <div class="container features-strip">
-    <div class="feature-item">
-      <span class="feature-icon">⚡</span>
-      <div><h4>自动化</h4><p>隐形物流管线</p></div>
-    </div>
-    <div class="feature-item">
-      <span class="feature-icon">🌌</span>
-      <div><h4>虫洞物流</h4><p>跨星系供应链</p></div>
-    </div>
-    <div class="feature-item">
-      <span class="feature-icon">🚀</span>
-      <div><h4>星舰建造</h4><p>方舟终局目标</p></div>
-    </div>
-    <div class="feature-item">
-      <span class="feature-icon">🛡️</span>
-      <div><h4>防御系统</h4><p>虫洞入侵对抗</p></div>
-    </div>
-    <div class="feature-item">
-      <span class="feature-icon">🤝</span>
-      <div><h4>4人合作</h4><p>PVE联机组队</p></div>
-    </div>
+<!-- STATS BAR -->
+<div class="stats-bar" style="margin:0 auto 2rem;max-width:calc(var(--content-w) + 4rem)">
+  <div class="stat-item">
+    <div class="stat-num">⚡</div>
+    <div class="stat-desc">无传送带，完全靠隐形物流管线</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">🌌</div>
+    <div class="stat-desc">虫洞连接不同星球的供应链</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">🚀</div>
+    <div class="stat-desc">建造星舰，完成终局方舟飞船</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">🛡️</div>
+    <div class="stat-desc">虫洞入侵防御与自动炮塔</div>
   </div>
 </div>
 
-<!-- HOMEPAGE CONTENT FROM _index.md -->
-<section class="section">
-  <div class="container">
-    <article class="main-content" style="max-width:var(--content-w);margin:0 auto;">
-      {{ .Content }}
-    </article>
+<!-- GUIDE CARDS -->
+<section class="intro-section">
+  <h2>📖 攻略大全</h2>
+  <p>按你的游戏阶段选择最需要的攻略：</p>
+
+  <div class="guide-grid">
+    <div class="guide-card">
+      <div class="card-tag">🚀 新手上路</div>
+      <h3>新手入门指南</h3>
+      <p>从零开始：创建空间站、第一个采矿机、第一条产线、基础配对操作。30 分钟上手。</p>
+      <a href="/beginner/" class="card-link">阅读 →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">⚙️ 进阶</div>
+      <h3>自动化系统完全解析</h3>
+      <p>隐形物流管线原理、库存管理、虫洞供应链。没有传送带的工厂怎么玩？</p>
+      <a href="/automation-guide/" class="card-link">阅读 →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">🏗️ 建筑</div>
+      <h3>全建筑教程</h3>
+      <p>从采矿钻机到方舟船坞，每个建筑的用途、解锁条件与最佳布局。</p>
+      <a href="/building-tutorial/" class="card-link">阅读 →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">🪨 资源</div>
+      <h3>资源全说明</h3>
+      <p>铁矿到反物质，每种资源怎么采、怎么加工、去哪找。完整加工链条速查。</p>
+      <a href="/resources/" class="card-link">阅读 →</a>
+    </div>
   </div>
+
+  <h2>🤔 还没找到想要的？</h2>
+  <p>攻略站仍在建设中，以下内容即将上线：</p>
+  <ul>
+    <li><strong>火箭/星舰建造指南</strong> — 船体设计、引擎选择、武器配置完整指南</li>
+    <li><strong>科技树全解析</strong> — 最佳解锁顺序、必点科技、踩坑避雷</li>
+    <li><strong>能源系统详解</strong> — 太阳能/核能/聚变，燃料棒管理</li>
+    <li><strong>进阶技巧与秘密</strong> — 官方没说的机制、效率技巧合集</li>
+    <li><strong>防御系统与敌人图鉴</strong> — 虫子类型、炮塔配置、防御布局</li>
+    <li><strong>成就列表</strong> — 全成就解锁条件与达成攻略</li>
+  </ul>
+  <p>内容随游戏更新持续补充。有任何需求或发现错误，<a href="/contact/">欢迎联系</a>。</p>
 </section>
 
 <!-- CTA -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="cta-banner">
-      <h2>🚀 开始你的星际空间站之旅</h2>
-      <p>从此攻略站开始，掌握 Outworld Station 的每一个系统。攻略内容随游戏更新持续补充。</p>
-      <a href="/beginner/" class="btn-primary">阅读新手入门指南 →</a>
-    </div>
+<div class="cta-block">
+  <div class="cta-inner">
+    <h2>🚀 准备好了吗？</h2>
+    <p>无论你是自动化老手还是首次接触太空工厂游戏，让这份攻略带你从零开始掌控 TAU 星系。</p>
+    <a href="/beginner/" class="btn btn-primary">开始你的星际空间站之旅 →</a>
   </div>
-</section>
+</div>
 
 {{ end }}
