@@ -1,4 +1,4 @@
-<footer class="site-footer">
+﻿<footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
@@ -9,19 +9,19 @@
       <div class="footer-links">
         <h4>快速导航</h4>
         <ul>
-          <li><a href="{{ "/" | relURL }}">首页</a></li>
-          <li><a href="{{ "/beginner/" | relURL }}">新手入门</a></li>
-          <li><a href="{{ "/automation-guide/" | relURL }}">自动化</a></li>
-          <li><a href="{{ "/building-tutorial/" | relURL }}">建筑</a></li>
-          <li><a href="{{ "/resources/" | relURL }}">资源</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "" }}">首页</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}">新手入门</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}">自动化</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}">建筑</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}">资源</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>链接</h4>
         <ul>
           <li><a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">Steam 购买</a></li>
-          <li><a href="{{ "/privacy/" | relURL }}">隐私</a></li>
-          <li><a href="{{ "/contact/" | relURL }}">联系</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}">隐私</a></li>
+          <li><a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}">联系</a></li>
         </ul>
       </div>
     </div>

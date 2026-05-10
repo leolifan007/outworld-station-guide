@@ -1,10 +1,10 @@
-<!-- Cookie Consent Banner -->
+﻿<!-- Cookie Consent Banner -->
 <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-modal="true">
   <div class="cookie-banner-inner">
     <div class="cookie-banner-text">
       <p id="cookie-title">
         🍪 We use cookies to deliver personalised advertisements and analyse site traffic.
-        <a href="{{ "/privacy/" | relURL }}" class="cookie-policy-link">Privacy Policy</a>
+        <a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}" class="cookie-policy-link">Privacy Policy</a>
       </p>
     </div>
     <div class="cookie-banner-actions">
