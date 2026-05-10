@@ -45,7 +45,7 @@ Outworld Station 最大的特点（也是最大的学习成本）就是——**�
 ### 配对操作（你真正需要记住的）
 
 <figure class="content-figure">
-  <img src="https://picsum.photos/seed/pair-button/800/400" alt="Pair 按钮在 Inventory 面板的位置" loading="lazy">
+  <img src="/outworld-station-guide/images/pair-button.webp" alt="Pair 按钮在 Inventory 面板的位置" loading="lazy">
   <figcaption>点 Pair → 选目标建筑 → 搞定。比想象中简单，但我第一次也找了五分钟这个按钮在哪。</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Outworld Station 最大的特点（也是最大的学习成本）就是——**�
 ### 三种存储模式
 
 <figure class="content-figure">
-  <img src="https://picsum.photos/seed/storage-modes/800/400" alt="存储容器三种模式切换界面" loading="lazy">
+  <img src="/outworld-station-guide/images/storage-modes.webp" alt="存储容器三种模式切换界面" loading="lazy">
   <figcaption>Buffer / Priority Output / Reserve Stock — 三种模式决定你的库存策略。新手用 Buffer 就够。</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ Outworld Station 最大的特点（也是最大的学习成本）就是——**�
 ### 虫洞不是传送门，是供应链
 
 <figure class="content-figure">
-  <img src="https://picsum.photos/seed/wormhole-link/800/400" alt="虫洞发生器连接两个星球示意" loading="lazy">
+  <img src="/outworld-station-guide/images/wormhole-link.webp" alt="虫洞发生器连接两个星球示意" loading="lazy">
   <figcaption>两个 Wormhole Generator 设相同编号 = 它们之间的库存自动同步。这就是星际高速公路。</figcaption>
 </figure>
 
