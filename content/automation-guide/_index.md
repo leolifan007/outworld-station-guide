@@ -9,7 +9,7 @@ draft: false
 ## 没有传送带，那怎么运？
 
 <figure class="content-figure">
-  <img src="https://picsum.photos/seed/no-conveyor/800/400" alt="Outworld Station 隐形物流管线示意" loading="lazy">
+  <img src="/outworld-station-guide/images/no-conveyor.webp" alt="Outworld Station 隐形物流管线示意" loading="lazy">
   <figcaption>这游戏没有传送带。刚开始你可能觉得被砍了左手，实际上它给了你一套更省空间的方案。</figcaption>
 </figure>
 
