@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,9 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="alternate" hreflang="en" href="{{ .Permalink }}">
-  <link rel="alternate" hreflang="zh-CN" href="https://translate.google.com/translate?hl=zh-CN&sl=en&u={{ .Permalink }}">
-  <link rel="alternate" hreflang="ja" href="https://translate.google.com/translate?hl=ja&sl=en&u={{ .Permalink }}">
-  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="en" href="{{ printf "%s%s" .Site.BaseURL "" }}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ printf "%s%s" .Site.BaseURL "zh/" }}">
+  <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" .Site.BaseURL "" }}">
   <link rel="stylesheet" href="{{ printf "%s%s" .Site.BaseURL "css/style.css" }}">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
   {{ block "head" . }}{{ end }}
@@ -36,11 +35,26 @@
       <div class="logo-icon">🛸</div>
       <div>
         <div class="logo-text">Outworld Station</div>
-        <div class="logo-sub">攻略站 · Guide</div>
+        <div class="logo-sub">{{ if eq .Site.Language.Lang "en" }}Guide{{ else }}攻略站{{ end }} · Guide</div>
       </div>
     </div>
 
     <nav class="sidebar-nav" id="sidebarNav">
+      {{ if eq .Site.Language.Lang "en" }}
+      <div class="section-label">Guides</div>
+      <a href="{{ printf "%s%s" .Site.BaseURL "" }}" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> Home</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> Beginner Guide</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="{{ if eq .RelPermalink "/automation-guide/" }}active{{ end }}"><span class="nav-icon">⚙️</span> Automation</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}" class="{{ if eq .RelPermalink "/building-tutorial/" }}active{{ end }}"><span class="nav-icon">🏗️</span> All Buildings</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}" class="{{ if eq .RelPermalink "/resources/" }}active{{ end }}"><span class="nav-icon">🪨</span> Resources</a>
+
+      <div class="section-label">Interactive</div>
+      <a href="{{ printf "%s%s" .Site.BaseURL "map/" }}" class="{{ if eq .RelPermalink "/map/" }}active{{ end }}"><span class="nav-icon">🌌</span> Star Map</a>
+
+      <div class="section-label">More</div>
+      <a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}" class="{{ if eq .RelPermalink "/contact/" }}active{{ end }}"><span class="nav-icon">📧</span> Contact</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}" class="{{ if eq .RelPermalink "/privacy/" }}active{{ end }}"><span class="nav-icon">🔒</span> Privacy</a>
+      {{ else }}
       <div class="section-label">指南</div>
       <a href="{{ printf "%s%s" .Site.BaseURL "" }}" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> 首页</a>
       <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> 新手入门</a>
@@ -54,10 +68,11 @@
       <div class="section-label">更多</div>
       <a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}" class="{{ if eq .RelPermalink "/contact/" }}active{{ end }}"><span class="nav-icon">📧</span> 联系</a>
       <a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}" class="{{ if eq .RelPermalink "/privacy/" }}active{{ end }}"><span class="nav-icon">🔒</span> 隐私政策</a>
+      {{ end }}
     </nav>
 
     <div class="sidebar-steam">
-      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 Steam 页面</a>
+      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 {{ if eq .Site.Language.Lang "en" }}Steam Page{{ else }}Steam 页面{{ end }}</a>
     </div>
 
     <div class="sidebar-footer">
