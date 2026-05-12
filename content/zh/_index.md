@@ -1,9 +1,9 @@
-﻿---
+---
 title: "Outworld Station 攻略站 — 太空工厂自动化完全指南"
 description: "Outworld Station 中文攻略。没人教、没中文、全英文界面的太空工厂游戏怎么玩？手把手教你自动化搭建、资源管理和星际物流，全是实测经验。"
 keywords: ["Outworld Station 攻略", "Outworld Station 中文", "星际空间站攻略", "异界空间站教程", "太空工厂自动化攻略"]
 date: 2026-05-09
-lastmod: 2026-05-09
+lastmod: 2026-05-12
 draft: false
 type: "guide"
 ---
@@ -79,6 +79,24 @@ type: "guide"
 <article class="guide-card">
   <div class="guide-card-body">
     <div class="guide-card-tag">核心系统</div>
+    <h3>电力管理完全指南</h3>
+    <p>从太阳能到聚变反应堆，如何避免断电危机？分区冗余设计、冷却系统配置，避坑指南。</p>
+    <a href="/power-management/" class="guide-card-link">了解电力管理 →</a>
+  </div>
+</article>
+
+<article class="guide-card">
+  <div class="guide-card-body">
+    <div class="guide-card-tag">核心系统</div>
+    <h3>气体系统完全指南</h3>
+    <p>O₂ 和 Nitrox 两套系统怎么建？聚变反应堆的燃料从哪里来？生命维持系统避坑。</p>
+    <a href="/gas-systems/" class="guide-card-link">了解气体系统 →</a>
+  </div>
+</article>
+
+<article class="guide-card">
+  <div class="guide-card-body">
+    <div class="guide-card-tag">核心系统</div>
     <h3>自动化系统完全解析</h3>
     <p>隐形物流管线到底怎么配？库存配对怎么设置？这篇我踩过的坑都写出来了。</p>
     <a href="/automation-guide/" class="guide-card-link">了解自动化系统 →</a>
@@ -89,7 +107,7 @@ type: "guide"
   <div class="guide-card-body">
     <div class="guide-card-tag">建筑参考</div>
     <h3>全建筑教程（含建造顺序）</h3>
-    <p>先建什么后建什么？太阳能够用多久？反应堆什么时候敢上？实测路线分享。</p>
+    <p>先建什么后建什么？太阳够用多久？反应堆什么时候敢上？实测路线分享。</p>
     <a href="/building-tutorial/" class="guide-card-link">查看建筑大全 →</a>
   </div>
 </article>
@@ -106,7 +124,7 @@ type: "guide"
 </div>
 
 <div class="pro-tip">
-  <p><strong>推荐阅读顺序：</strong> <a href="/beginner/">新手入门</a> → <a href="/resources/">资源</a> → <a href="/automation-guide/">自动化</a> → <a href="/building-tutorial/">建筑</a>。大概花 1 小时读完这些，能帮你省至少 5 小时的摸索时间。我亲身试的。</p>
+  <p><strong>推荐阅读顺序：</strong> <a href="/beginner/">新手入门</a> → <a href="/power-management/">电力管理</a> → <a href="/gas-systems/">气体系统</a> → <a href="/automation-guide/">自动化</a> → <a href="/building-tutorial/">建筑</a>。大概花 1.5 小时读完这些，能帮你省至少 8 小时的摸索时间。我亲身试的。</p>
 </div>
 
 ---
@@ -129,7 +147,7 @@ type: "guide"
   <h4>第一次玩</h4>
   <ul>
     <li>→ <a href="/beginner/">新手入门指南</a>：第一小时该干嘛</li>
-    <li>→ <a href="/resources/">资源全说明</a>：先认识矿物长什么样</li>
+    <li>→ <a href="/power-management/">电力管理</a>：别让空间站断电</li>
     <li>→ <a href="/building-tutorial/">推荐建造顺序</a>：别乱建</li>
   </ul>
 </div>
@@ -138,7 +156,7 @@ type: "guide"
   <h4>已经上手了</h4>
   <ul>
     <li>→ <a href="/automation-guide/">自动化系统完全解析</a>：搞懂物流管线</li>
-    <li>→ <a href="/building-tutorial/">全建筑教程</a>：高级建筑解锁条件</li>
+    <li>→ <a href="/gas-systems/">气体系统</a>：聚变反应堆燃料攻略</li>
     <li>→ <a href="/resources/">资源加工链条</a>：高效供应链</li>
   </ul>
 </div>

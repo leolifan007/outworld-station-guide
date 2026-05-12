@@ -1,4 +1,4 @@
-﻿{{ $isZh := or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}
+{{ $isZh := or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}
 {{ $prefix := "" }}{{ if $isZh }}{{ $prefix = "/zh" }}{{ end }}
 {{ $current := .RelPermalink }}
 
@@ -8,6 +8,8 @@
 
   {{ $links := slice
     (dict "path" "beginner/" "icon" "🚀" "en" "Beginner Guide" "zh" "新手入门")
+    (dict "path" "power-management/" "icon" "⚡" "en" "Power Management" "zh" "电力管理")
+    (dict "path" "gas-systems/" "icon" "💨" "en" "Gas Systems" "zh" "气体系统")
     (dict "path" "automation-guide/" "icon" "⚙️" "en" "Automation" "zh" "自动化系统")
     (dict "path" "building-tutorial/" "icon" "🏗️" "en" "All Buildings" "zh" "全建筑教程")
     (dict "path" "resources/" "icon" "🪨" "en" "Resources" "zh" "资源全说明")
