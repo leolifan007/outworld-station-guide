@@ -75,9 +75,11 @@
       <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 {{ if eq .Site.Language.Lang "en" }}Steam Page{{ else }}Steam 页面{{ end }}</a>
     </div>
 
+    {{ if eq .Site.Language.Lang "zh" }}
     <div class="sidebar-footer">
-      player community
+      玩家社区
     </div>
+    {{ end }}
   </aside>
 
   <!-- MAIN -->
