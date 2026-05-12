@@ -19,7 +19,7 @@ canonifyURLs = false
     locale = 'en'
     label = 'English'
     weight = 1
-    contentDir = 'content'
+    contentDir = 'content/en'
     title = 'Outworld Station Guide — Master Space Factory Automation'
     [languages.en.params]
       description = 'Complete Outworld Station guide: beginner tips, automation systems, building tutorials, resource management, and pro strategies.'
