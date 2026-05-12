@@ -1,6 +1,71 @@
-﻿{{ define "main" }}
+{{ define "main" }}
 
-<!-- HERO -->
+{{ if eq .Site.Language.Lang "en" }}
+
+<!-- ENGLISH HERO -->
+<section class="hero" style="--hero-bg: url('{{ printf "%s%s" .Site.BaseURL "images/hero-bg.jpg" }}')">
+  <div class="hero-content">
+    <div class="hero-badge">🛸 Updated May 2026 · Player-Tested Guide</div>
+    <h1>Outworld Station <span class="nobreak highlight">Guide</span></h1>
+    <p class="hero-sub">
+      Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.
+    </p>
+    <div class="hero-actions">
+      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="btn btn-ignite">🚀 Get Started</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="btn btn-outline">⚙️ Automations</a>
+      <a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}" class="btn btn-outline">🪨 Resources</a>
+    </div>
+  </div>
+</section>
+
+<!-- ENGLISH GUIDE CARDS -->
+<section class="intro-section">
+  <h2>📖 Guides</h2>
+  <p>Pick the guide that matches your experience level:</p>
+
+  <div class="guide-grid">
+    <div class="guide-card">
+      <div class="card-tag">🚀 Beginner</div>
+      <h3>Beginner Guide</h3>
+      <p>Zero to automated production in 60 minutes. Station setup, first drill, smelter, assembly line. No prior knowledge needed.</p>
+      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="card-link">Read →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">⚙️ Advanced</div>
+      <h3>Automation Deep Dive</h3>
+      <p>Inventory Pairing explained. Storage management, wormhole supply chains, bottleneck hunting. The system that makes belts obsolete.</p>
+      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="card-link">Read →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">🏗️ Reference</div>
+      <h3>All Buildings Guide</h3>
+      <p>Every building from Solar Panel to Ark Platform. Build order, common mistakes, and which buildings are traps.</p>
+      <a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}" class="card-link">Read →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">🪨 Encyclopedia</div>
+      <h3>Resources Guide</h3>
+      <p>Iron to antimatter. Where to find it, how to process it, what to build with it. Complete processing chains.</p>
+      <a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}" class="card-link">Read →</a>
+    </div>
+  </div>
+
+  <h2>🤔 Missing something?</h2>
+  <p>This guide is still growing. Need something specific? <a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}">Let me know</a>.</p>
+</section>
+
+<!-- CTA -->
+<div class="cta-block">
+  <div class="cta-inner">
+    <h2>🚀 Ready to build?</h2>
+    <p>One hour to your first production line.</p>
+    <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="btn btn-ignite">🔥 Start Here →</a>
+  </div>
+</div>
+
+{{ else }}
+
+<!-- CHINESE HERO -->
 <section class="hero" style="--hero-bg: url('{{ printf "%s%s" .Site.BaseURL "images/hero-bg.jpg" }}')">
   <div class="hero-content">
     <div class="hero-badge">🛸 2026年5月更新 · 全球首部中文攻略</div>
@@ -16,9 +81,7 @@
   </div>
 </section>
 
-<!-- STATS BAR removed – players come for guides, not fluff -->
-
-<!-- GUIDE CARDS -->
+<!-- CHINESE GUIDE CARDS -->
 <section class="intro-section">
   <h2>📖 攻略大全</h2>
   <p>按你的游戏阶段选择最需要的攻略：</p>
@@ -62,5 +125,7 @@
     <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="btn btn-ignite">🔥 开始探索 →</a>
   </div>
 </div>
+
+{{ end }}
 
 {{ end }}
