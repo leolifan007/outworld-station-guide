@@ -93,6 +93,24 @@ Scrolling through Steam discussions, here's what people actually struggle with:
 
 <article class="guide-card">
   <div class="guide-card-body">
+    <div class="guide-card-tag">Core System</div>
+    <h3>Power Management</h3>
+    <p>Solar panels, small reactors, fusion reactors, grid zoning, redundancy strategies. How to keep the lights on and not die at 2 AM.</p>
+    <a href="/power-management/" class="guide-card-link">Manage Power →</a>
+  </div>
+</article>
+
+<article class="guide-card">
+  <div class="guide-card-body">
+    <div class="guide-card-tag">Core System</div>
+    <h3>Gas Systems</h3>
+    <p>Oxygen for breathing, Nitrox for your fusion reactor. Build order, common problems, and why you should never mix the pipes.</p>
+    <a href="/gas-systems/" class="guide-card-link">Breathe Easy →</a>
+  </div>
+</article>
+
+<article class="guide-card">
+  <div class="guide-card-body">
     <div class="guide-card-tag">Encyclopedia</div>
     <h3>Resources Complete Guide</h3>
     <p>From iron ore to antimatter. Where to find it, how to process it, what to build with it. Processing chains at a glance.</p>
@@ -134,6 +152,8 @@ Scrolling through Steam discussions, here's what people actually struggle with:
 <div class="col">
   <h4>Already Playing</h4>
   <ul>
+    <li>→ <a href="/power-management/">Power Management</a>: Grid zoning & redundancy</li>
+    <li>→ <a href="/gas-systems/">Gas Systems</a>: Nitrox & oxygen setup</li>
     <li>→ <a href="/automation-guide/">Automation Deep Dive</a>: Master logistics</li>
     <li>→ <a href="/building-tutorial/">All Buildings</a>: Advanced unlocks</li>
     <li>→ <a href="/resources/">Processing Chains</a>: Efficient supply lines</li>
