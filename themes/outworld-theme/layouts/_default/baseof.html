@@ -1,22 +1,41 @@
 ﻿{{ $isZh := false }}{{ if or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}{{ $isZh = true }}{{ end }}
 <!DOCTYPE html>
 <html lang="{{ if $isZh }}zh{{ else }}en{{ end }}">
-<html lang="{{ .Site.Language.Lang }}">
-<!-- DEBUG:LANG={{ .Site.Language.Lang }},SUB={{ .Section }},URL={{ .RelPermalink }} -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-<meta name=x-lang content='{{ .Language.Lang }}'>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="alternate" hreflang="en" href="{{ printf "%s%s" .Site.BaseURL "" }}">
   <link rel="alternate" hreflang="zh-CN" href="{{ printf "%s%s" .Site.BaseURL "zh/" }}">
   <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" .Site.BaseURL "" }}">
   <link rel="stylesheet" href="{{ printf "%s%s" .Site.BaseURL "css/style.css" }}">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+  {{/* GSC Verification */}}
+  {{ with .Site.Params.google_site_verification }}
+  <meta name="google-site-verification" content="{{ . }}">
+  {{ end }}
+
+  {{/* GA4 gtag — loads only when ID is not placeholder */}}
+  {{ $gaId := .Site.Params.google_analytics_id }}
+  {{ if and $gaId (not (in $gaId "G-XXXXXXXXXX")) }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ $gaId }}');
+  </script>
+  {{ end }}
+
+  {{/* AdSense auto-ads — loads only when client ID is not placeholder */}}
+  {{ $adClient := .Site.Params.google_adsense_id }}
+  {{ if and $adClient (strings.HasPrefix $adClient "ca-pub-") (not (in $adClient "XXXXXXXXXX")) }}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $adClient }}" crossorigin="anonymous"></script>
+  {{ end }}
   {{ block "head" . }}{{ end }}
 </head>
 <body>
