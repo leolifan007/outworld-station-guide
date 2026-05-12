@@ -1,9 +1,14 @@
+﻿{{ $isZh := false }}{{ if or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}{{ $isZh = true }}{{ end }}
 <!DOCTYPE html>
+<html lang="{{ if $isZh }}zh{{ else }}en{{ end }}">
 <html lang="{{ .Site.Language.Lang }}">
+<!-- DEBUG:LANG={{ .Site.Language.Lang }},SUB={{ .Section }},URL={{ .RelPermalink }} -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+<meta name=x-lang content='{{ .Language.Lang }}'>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <link rel="canonical" href="{{ .Permalink }}">
@@ -35,12 +40,12 @@
       <div class="logo-icon">🛸</div>
       <div>
         <div class="logo-text">Outworld Station</div>
-        <div class="logo-sub">{{ if eq .Site.Language.Lang "en" }}Guide{{ else }}攻略站{{ end }} · Guide</div>
+        <div class="logo-sub">{{ if not $isZh }}Guide{{ else }}攻略站{{ end }} · Guide</div>
       </div>
     </div>
 
     <nav class="sidebar-nav" id="sidebarNav">
-      {{ if eq .Site.Language.Lang "en" }}
+      {{ if not $isZh }}
       <div class="section-label">Guides</div>
       <a href="{{ printf "%s%s" .Site.BaseURL "" }}" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> Home</a>
       <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> Beginner Guide</a>
@@ -72,14 +77,10 @@
     </nav>
 
     <div class="sidebar-steam">
-      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 {{ if eq .Site.Language.Lang "en" }}Steam Page{{ else }}Steam 页面{{ end }}</a>
+      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 {{ if not $isZh }}Steam Page{{ else }}Steam 页面{{ end }}</a>
     </div>
 
-    {{ if eq .Site.Language.Lang "zh" }}
-    <div class="sidebar-footer">
-      玩家社区
-    </div>
-    {{ end }}
+
   </aside>
 
   <!-- MAIN -->

@@ -1,7 +1,7 @@
-<div class="lang-bar">
+﻿<div class="lang-bar">
   <div class="lang-bar-inner">
     <span class="lang-bar-title">🌐</span>
-    {{ if eq .Site.Language.Lang "en" }}
+    {{ if not (or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/")) }}
       <span class="lang-flag current-lang" title="English">🇺🇸 English</span>
       <a class="lang-flag" href="/zh/" title="中文">🇨🇳 中文</a>
     {{ else }}

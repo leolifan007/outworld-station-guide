@@ -9,7 +9,7 @@ draft: false
 ## No Conveyor Belts — Then How Do Things Move?
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/no-conveyor.webp" alt="Outworld Station invisible logistics system" loading="lazy">
+  <img src="/images/no-conveyor.webp" alt="Outworld Station invisible logistics system" loading="lazy">
   <figcaption>No conveyor belts in this game. Feels like losing an arm at first. Turns out it's a better system.</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ When you link Building A's Output to Building B's Input, the game creates an inv
 ### The Pairing Operation (What You Actually Need to Remember)
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/pair-button.webp" alt="Pair button location in Inventory panel" loading="lazy">
+  <img src="/images/pair-button.webp" alt="Pair button location in Inventory panel" loading="lazy">
   <figcaption>Click Pair → select target building → done. Simple once you know where it is. Took me five minutes to find it the first time.</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ When you link Building A's Output to Building B's Input, the game creates an inv
 ### Three Storage Modes
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/storage-modes.webp" alt="Storage container mode switching interface" loading="lazy">
+  <img src="/images/storage-modes.webp" alt="Storage container mode switching interface" loading="lazy">
   <figcaption>Buffer / Priority Output / Reserve Stock — three modes that determine your inventory strategy. Buffer is your safe default.</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ Every Storage Container has three modes (click container → Mode tab):
 ### Wormholes Are Your Supply Chain, Not Just Teleporters
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/wormhole-link.webp" alt="Wormhole generators connecting two planets" loading="lazy">
+  <img src="/images/wormhole-link.webp" alt="Wormhole generators connecting two planets" loading="lazy">
   <figcaption>Two Wormhole Generators with the same ID = their inventories sync automatically. This is your interplanetary highway.</figcaption>
 </figure>
 

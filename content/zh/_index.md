@@ -1,4 +1,4 @@
----
+﻿---
 title: "Outworld Station 攻略站 — 太空工厂自动化完全指南"
 description: "Outworld Station 中文攻略。没人教、没中文、全英文界面的太空工厂游戏怎么玩？手把手教你自动化搭建、资源管理和星际物流，全是实测经验。"
 keywords: ["Outworld Station 攻略", "Outworld Station 中文", "星际空间站攻略", "异界空间站教程", "太空工厂自动化攻略"]

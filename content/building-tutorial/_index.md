@@ -95,7 +95,7 @@ Not completely useless, but expensive to research, takes up huge space, and earl
 ## Energy Buildings (Always Do These First)
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/power-evolution.webp" alt="Energy evolution from solar panels to fusion reactor" loading="lazy">
+  <img src="/images/power-evolution.webp" alt="Energy evolution from solar panels to fusion reactor" loading="lazy">
   <figcaption>From solar to fusion — your energy journey determines your expansion speed. Wrong order = dead production line.</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ Not completely useless, but expensive to research, takes up huge space, and earl
 
 ### Fusion Reactor
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/fusion-reactor.webp" alt="Fusion reactor structure" loading="lazy">
+  <img src="/images/fusion-reactor.webp" alt="Fusion reactor structure" loading="lazy">
   <figcaption>Fusion reactor: quiet, efficient, endgame power. If you can source the Helium-3.</figcaption>
 </figure>
 
@@ -162,7 +162,7 @@ Not completely useless, but expensive to research, takes up huge space, and earl
 
 ### Chemical Plant
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/chemical-plant.webp" alt="Chemical plant layout" loading="lazy">
+  <img src="/images/chemical-plant.webp" alt="Chemical plant layout" loading="lazy">
   <figcaption>Chemical plant = T3 materials hub. Process uranium remotely — radiation is no joke.</figcaption>
 </figure>
 
@@ -186,7 +186,7 @@ Not completely useless, but expensive to research, takes up huge space, and earl
 
 ### Wormhole Generator
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/wormhole-gen.webp" alt="Wormhole generator device" loading="lazy">
+  <img src="/images/wormhole-gen.webp" alt="Wormhole generator device" loading="lazy">
   <figcaption>Same channel number on two generators = merged cross-planet inventory. Lv3 wormholes push 20 units/sec, enough for three main production lines.</figcaption>
 </figure>
 
@@ -208,7 +208,7 @@ Not completely useless, but expensive to research, takes up huge space, and earl
 
 ### Shield Generator
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/shield-gen.webp" alt="Shield generator coverage area" loading="lazy">
+  <img src="/images/shield-gen.webp" alt="Shield generator coverage area" loading="lazy">
   <figcaption>50-unit protection bubble — tanky as hell, but eats 50 power/sec. Don't touch until you have stable power.</figcaption>
 </figure>
 

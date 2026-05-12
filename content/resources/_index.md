@@ -24,7 +24,7 @@ Resources come in four tiers — the higher the tier, the rarer and lower-volume
 ## T1: Basic Ores (Everywhere)
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/mining-drills.webp" alt="Mining drills on an asteroid" loading="lazy">
+  <img src="/images/mining-drills.webp" alt="Mining drills on an asteroid" loading="lazy">
   <figcaption>Mining drill on an asteroid surface. Green highlights = valid placement spots. Closer to vein center = better.</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Resources come in four tiers — the higher the tier, the rarer and lower-volume
 ### Basic Processing Chain
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/processing-chain.webp" alt="Full processing chain from ore to finished goods" loading="lazy">
+  <img src="/images/processing-chain.webp" alt="Full processing chain from ore to finished goods" loading="lazy">
   <figcaption>Ore → Smelter → Assembler → Finished goods. Worth screenshotting this and keeping it on a second monitor.</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ Iron Ingot + Silicon Crystal → [Assembler] → Circuit Board
 
 ### Circuit Board
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/circuit-board.webp" alt="Circuit board production line" loading="lazy">
+  <img src="/images/circuit-board.webp" alt="Circuit board production line" loading="lazy">
   <figcaption>Circuit boards are THE bottleneck of the mid-game. Nothing else comes close. Target 10-15/sec or your advanced buildings will starve.</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ Iron Ingot + Silicon Crystal → [Assembler] → Circuit Board
 
 ### Alien Relic
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/alien-relic.webp" alt="Alien relic exploration scene" loading="lazy">
+  <img src="/images/alien-relic.webp" alt="Alien relic exploration scene" loading="lazy">
   <figcaption>Alien relics — hoard them. The endgame Ark component requirements are no joke.</figcaption>
 </figure>
 

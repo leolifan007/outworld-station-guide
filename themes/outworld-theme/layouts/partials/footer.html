@@ -1,4 +1,4 @@
-{{ if eq .Site.Language.Lang "en" }}
+﻿{{ if not (or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/")) }}
 
 <footer class="site-footer">
   <div class="container">

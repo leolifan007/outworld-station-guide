@@ -24,7 +24,7 @@ This is the guide I needed that day. Follow these steps and you'll have a self-r
 ### Initial Station Setup
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/beginner-hero.webp" alt="Outworld Station initial station core interface" loading="lazy">
+  <img src="/images/beginner-hero.webp" alt="Outworld Station initial station core interface" loading="lazy">
   <figcaption>You spawn inside the Station Core. Hit B for the build menu — it's your best friend.</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ You start inside the **Station Core**. Don't panic. Remember one key: **B opens 
 ### Your Power Setup
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/solar-panel.webp" alt="Solar panel array placement guide" loading="lazy">
+  <img src="/images/solar-panel.webp" alt="Solar panel array placement guide" loading="lazy">
   <figcaption>Solar panels are your only reliable power source early on. Build at least 4-6.</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Build a **Mining Drill** on the asteroid surface:
 ### The Invisible Logistics (No Conveyor Belt? Here's How)
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/inventory-pair.webp" alt="Inventory Pair interface" loading="lazy">
+  <img src="/images/inventory-pair.webp" alt="Inventory Pair interface" loading="lazy">
   <figcaption>Inventory → Pair. This is the single most important mechanic in the game. Memorize it.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Plain English: You tell the drill "send ore to that storage container over there
 ### Your First Processing Line
 
 <figure class="content-figure">
-  <img src="/outworld-station-guide/images/smelter-line.webp" alt="Smelter + Assembler first automated production line" loading="lazy">
+  <img src="/images/smelter-line.webp" alt="Smelter + Assembler first automated production line" loading="lazy">
   <figcaption>Smelter + Assembler = your first production line. Pair the inputs and outputs and it runs itself.</figcaption>
 </figure>
 
