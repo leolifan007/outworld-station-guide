@@ -25,7 +25,7 @@ canonifyURLs = false
       keywords = 'Outworld Station guide, Outworld Station tips, space factory automation, space station building, building game guide'
       steam_url = 'https://store.steampowered.com/app/3242950/Outworld_Station/'
       google_adsense_id = 'ca-pub-XXXXXXXXXX'
-      google_analytics_id = 'G-XXXXXXXXXX'
+      google_analytics_id = 'G-C3HBMT7CFK'
       google_site_verification = ''
 
   [languages.zh]
@@ -38,5 +38,5 @@ canonifyURLs = false
       keywords = 'Outworld Station攻略, Outworld Station中文, 星际空间站攻略, 异界空间站教程, 太空工厂自动化攻略'
       steam_url = 'https://store.steampowered.com/app/3242950/Outworld_Station/'
       google_adsense_id = 'ca-pub-XXXXXXXXXX'
-      google_analytics_id = 'G-XXXXXXXXXX'
+      google_analytics_id = 'G-C3HBMT7CFK'
       google_site_verification = ''
