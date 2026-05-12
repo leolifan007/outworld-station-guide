@@ -45,35 +45,7 @@
     </div>
 
     <nav class="sidebar-nav" id="sidebarNav">
-      {{ if not $isZh }}
-      <div class="section-label">Guides</div>
-      <a href="{{ printf "%s%s" .Site.BaseURL "" }}" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> Home</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> Beginner Guide</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="{{ if eq .RelPermalink "/automation-guide/" }}active{{ end }}"><span class="nav-icon">⚙️</span> Automation</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}" class="{{ if eq .RelPermalink "/building-tutorial/" }}active{{ end }}"><span class="nav-icon">🏗️</span> All Buildings</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}" class="{{ if eq .RelPermalink "/resources/" }}active{{ end }}"><span class="nav-icon">🪨</span> Resources</a>
-
-      <div class="section-label">Interactive</div>
-      <a href="{{ printf "%s%s" .Site.BaseURL "map/" }}" class="{{ if eq .RelPermalink "/map/" }}active{{ end }}"><span class="nav-icon">🌌</span> Star Map</a>
-
-      <div class="section-label">More</div>
-      <a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}" class="{{ if eq .RelPermalink "/contact/" }}active{{ end }}"><span class="nav-icon">📧</span> Contact</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}" class="{{ if eq .RelPermalink "/privacy/" }}active{{ end }}"><span class="nav-icon">🔒</span> Privacy</a>
-      {{ else }}
-      <div class="section-label">指南</div>
-      <a href="{{ printf "%s%s" .Site.BaseURL "" }}" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> 首页</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="{{ if eq .RelPermalink "/beginner/" }}active{{ end }}"><span class="nav-icon">🚀</span> 新手入门</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="{{ if eq .RelPermalink "/automation-guide/" }}active{{ end }}"><span class="nav-icon">⚙️</span> 自动化系统</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}" class="{{ if eq .RelPermalink "/building-tutorial/" }}active{{ end }}"><span class="nav-icon">🏗️</span> 全建筑教程</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}" class="{{ if eq .RelPermalink "/resources/" }}active{{ end }}"><span class="nav-icon">🪨</span> 资源全说明</a>
-
-      <div class="section-label">互动</div>
-      <a href="{{ printf "%s%s" .Site.BaseURL "map/" }}" class="{{ if eq .RelPermalink "/map/" }}active{{ end }}"><span class="nav-icon">🌌</span> 星系星图</a>
-
-      <div class="section-label">更多</div>
-      <a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}" class="{{ if eq .RelPermalink "/contact/" }}active{{ end }}"><span class="nav-icon">📧</span> 联系</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}" class="{{ if eq .RelPermalink "/privacy/" }}active{{ end }}"><span class="nav-icon">🔒</span> 隐私政策</a>
-      {{ end }}
+      {{ partial "sidebar-nav" . }}
     </nav>
 
     <div class="sidebar-steam">

@@ -1,0 +1,27 @@
+﻿{{ $isZh := or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}
+{{ $prefix := "" }}{{ if $isZh }}{{ $prefix = "/zh" }}{{ end }}
+{{ $current := .RelPermalink }}
+
+<nav class="sidebar-nav" id="sidebarNav">
+  <div class="section-label">{{ if $isZh }}指南{{ else }}Guides{{ end }}</div>
+  <a href="{{ $prefix }}/" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span>{{ if $isZh }} 首页{{ else }} Home{{ end }}</a>
+
+  {{ $links := slice
+    (dict "path" "beginner/" "icon" "🚀" "en" "Beginner Guide" "zh" "新手入门")
+    (dict "path" "automation-guide/" "icon" "⚙️" "en" "Automation" "zh" "自动化系统")
+    (dict "path" "building-tutorial/" "icon" "🏗️" "en" "All Buildings" "zh" "全建筑教程")
+    (dict "path" "resources/" "icon" "🪨" "en" "Resources" "zh" "资源全说明")
+  }}
+  {{ range $links }}
+    {{ $href := printf "%s/%s" $prefix .path }}
+    {{ $active := "" }}{{ if eq $current $href }}{{ $active = "active" }}{{ end }}
+    <a href="{{ $href }}" class="{{ $active }}"><span class="nav-icon">{{ .icon }}</span>{{ if $isZh }} {{ .zh }}{{ else }} {{ .en }}{{ end }}</a>
+  {{ end }}
+
+  <div class="section-label">{{ if $isZh }}互动{{ else }}Interactive{{ end }}</div>
+  <a href="{{ $prefix }}/map/"><span class="nav-icon">🌌</span>{{ if $isZh }} 星系星图{{ else }} Star Map{{ end }}</a>
+
+  <div class="section-label">{{ if $isZh }}更多{{ else }}More{{ end }}</div>
+  <a href="{{ $prefix }}/contact/"><span class="nav-icon">📧</span>{{ if $isZh }} 联系{{ else }} Contact{{ end }}</a>
+  <a href="{{ $prefix }}/privacy/"><span class="nav-icon">🔒</span>{{ if $isZh }} 隐私政策{{ else }} Privacy{{ end }}</a>
+</nav>
