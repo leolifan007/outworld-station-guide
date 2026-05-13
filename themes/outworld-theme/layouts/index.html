@@ -22,25 +22,25 @@
   <p>Start here if you are new. These cover everything you need to get your station running.</p>
 
   <div class="guide-grid">
-    <div class="guide-card">
+    <div class="guide-card must-read">
       <div class="card-tag">🚀 Beginner</div>
       <h3>Beginner Guide</h3>
       <p>Zero to automated production in 60 minutes. Station setup, first drill, smelter, assembly line. No prior knowledge needed.</p>
       <a href="{{ "beginner/" | relURL }}" class="card-link">Read →</a>
     </div>
-    <div class="guide-card">
+    <div class="guide-card must-read">
       <div class="card-tag">⚡ Power</div>
       <h3>Power Management</h3>
       <p>Solar panels to fusion reactors. Grid zoning, battery ratios, and how to never black out again. Real tested build order.</p>
       <a href="{{ "power-management/" | relURL }}" class="card-link">Read →</a>
     </div>
-    <div class="guide-card">
+    <div class="guide-card must-read">
       <div class="card-tag">💨 Gas</div>
       <h3>Gas Systems</h3>
       <p>Oxygen keeps you alive. Nitrox fuels your reactor. Build the gas setup right the first time instead of scrambling.</p>
       <a href="{{ "gas-systems/" | relURL }}" class="card-link">Read →</a>
     </div>
-    <div class="guide-card">
+    <div class="guide-card must-read">
       <div class="card-tag">⚙️ Automation</div>
       <h3>Automation Deep Dive</h3>
       <p>Inventory Pairing, wormhole supply chains, bottleneck hunting. The invisible logistics system — once it clicks, it is genius.</p>
@@ -61,8 +61,8 @@
     <div class="section-heading">🔥 Hot Guides</div>
     <div class="guide-grid">
       {{ range first 8 $guidePages.ByDate.Reverse }}
-      <a href="{{ .RelPermalink }}" class="guide-card" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-        <div class="card-tag" style="font-family:var(--font-display);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--space-orange,#E8983E);margin-bottom:0.5rem;background:rgba(232,152,62,0.06);padding:2px 8px;border-radius:2px;border:1px solid rgba(232,152,62,0.1);">{{ .Date.Format "Jan 2, 2006" }}</div>
+      <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+        <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
         <h3 style="font-size:1.05rem;margin-bottom:0.5rem;color:inherit;">{{ .Title | truncate 50 }}</h3>
         {{ with .Description }}<p style="font-size:0.85rem;color:var(--space-text-dim, rgba(255,255,255,0.5));margin-bottom:1rem;line-height:1.7;">{{ . | truncate 120 }}</p>{{ end }}
         <div class="card-link" style="margin-top:auto;">Read More →</div>
