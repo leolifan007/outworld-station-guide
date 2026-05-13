@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    OUTWORLD STATION GUIDE �?v2.0 Space Factory
    Redesigned from scratch: left sidebar, glass UI,
    deep-space aesthetic, mobile-first responsive.
@@ -482,14 +482,37 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   .hero-desc-sub{font-size:0.82rem}
 }
 
-/* ─── Content body ─── */
-.content-figure{margin:24px 0;border-radius:12px;overflow:hidden;background:rgba(10,20,50,0.5);border:1px solid rgba(58,123,213,0.15)}
-.content-figure img{width:100%;height:auto;max-height:240px;object-fit:cover;display:block;border-radius:12px 12px 0 0}
-@media(max-width:768px){.content-figure img{max-height:150px}}
-.content-figure figcaption{padding:10px 16px;font-size:0.78rem;color:var(--space-text-dim);border-top:1px solid rgba(58,123,213,0.08);line-height:1.5}
-@media(max-width:768px){.content-figure{margin:16px -8px;border-radius:8px;width:calc(100% + 16px)}
-.content-figure img{border-radius:8px 8px 0 0}
-.content-figure figcaption{padding:8px 12px;font-size:0.72rem}}
+/* ─── Figure / Media Responsive ─── */
+.content-figure {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(10,20,50,0.4);
+  border: 1px solid rgba(58,123,213,0.12);
+}
+.content-figure img,
+.content-figure svg {
+  width: 100%;
+  height: auto;
+  max-height: none !important;
+  object-fit: none;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+.content-figure figcaption {
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  color: var(--space-text-dim);
+  border-top: 1px solid rgba(58,123,213,0.08);
+  line-height: 1.5;
+}
+@media(max-width:768px){
+  .content-figure { margin: 16px -8px; border-radius: 8px; width: calc(100% + 16px); }
+  .content-figure img,
+  .content-figure svg { border-radius: 8px 8px 0 0; }
+  .content-figure figcaption { padding: 8px 12px; font-size: 0.72rem; }
+}
+
 .content-body{
   max-width:var(--content-w);margin:0 auto;padding:2rem;
   background:rgba(11,20,34,0.3);
@@ -781,4 +804,98 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 }
 @media(max-width:480px){
   .starmap-panel{max-height:60%;}
+}
+
+/* ─── Collapsible Accordion Cards ─── */
+details {
+  margin-bottom: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(200,214,232,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+details:last-child {
+  margin-bottom: 0;
+}
+details[open] {
+  border-color: rgba(0,212,170,0.18);
+  background: rgba(0,212,170,0.02);
+}
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+  font-size: 1.05rem;
+  -webkit-tap-highlight-color: transparent;
+  list-style: none;
+}
+.collapsible-header::-webkit-details-marker { display: none; }
+.collapsible-header::marker { content: ""; display: none; }
+.collapsible-header:hover {
+  background: rgba(255,255,255,0.03);
+}
+details[open] .collapsible-header {
+  border-bottom: 1px solid rgba(200,214,232,0.06);
+}
+.ch-icon {
+  flex-shrink: 0;
+  font-size: 1.3rem;
+  line-height: 1;
+  width: 28px;
+  text-align: center;
+}
+.ch-title {
+  flex: 1;
+  font-weight: 600;
+  color: #C8D6E8;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+.ch-toggle {
+  font-size: 0.85rem;
+  color: #4A5E78;
+  white-space: nowrap;
+  transition: transform 0.25s ease, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+details[open] .ch-toggle {
+  transform: rotate(180deg);
+  color: #00D4AA;
+}
+details[open] .ch-title {
+  color: #E0ECFA;
+}
+
+/* ─── Page Banner ─── */
+.page-banner {
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(58,123,213,0.08);
+}
+.page-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── SVG Figure Responsive ─── */
+details .content-figure svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  display: block;
+}
 }

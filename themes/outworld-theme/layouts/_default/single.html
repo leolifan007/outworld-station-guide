@@ -9,6 +9,13 @@
   {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
 </section>
 
+<!-- BANNER (injected per-page, optional) -->
+{{ with .Params.banner }}
+<div class="page-banner">
+  <img src="{{ . }}" alt="" class="page-banner-img" loading="lazy">
+</div>
+{{ end }}
+
 <!-- CONTENT -->
 <article class="content-body">
   {{ .Content }}
