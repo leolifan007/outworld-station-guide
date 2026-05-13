@@ -1,5 +1,5 @@
 {{ $isZh := or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}
-{{ $prefix := "" }}{{ if $isZh }}{{ $prefix = "/zh" }}{{ end }}
+{{ $prefix := "/en" }}{{ if $isZh }}{{ $prefix = "/zh" }}{{ end }}
 {{ $current := .RelPermalink }}
 
 <nav class="sidebar-nav" id="sidebarNav">

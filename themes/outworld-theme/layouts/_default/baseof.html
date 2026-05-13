@@ -9,9 +9,9 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="alternate" hreflang="en" href="{{ printf "%s%s" .Site.BaseURL "" }}">
+  <link rel="alternate" hreflang="en" href="{{ printf "%s%s" .Site.BaseURL "en" }}">
   <link rel="alternate" hreflang="zh-CN" href="{{ printf "%s%s" .Site.BaseURL "zh/" }}">
-  <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" .Site.BaseURL "" }}">
+  <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" .Site.BaseURL "en" }}">
   <link rel="stylesheet" href="{{ printf "%s%s" .Site.BaseURL "css/style.css" }}">
 
   {{/* GSC Verification */}}
