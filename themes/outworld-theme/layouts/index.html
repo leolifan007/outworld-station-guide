@@ -58,7 +58,7 @@
   {{ $hotCount := len $guidePages }}
   {{ if gt $hotCount 0 }}
   <div class="hot-guides-section">
-    <div class="section-heading">🔥 Hot Guides &amp; Community Favorites</div>
+    <div class="section-heading">🔥 Hot Guides</div>
     <div class="hot-guides-grid">
       {{ range first 8 $guidePages.ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="hot-guide-card" style="text-decoration:none;color:inherit;">
