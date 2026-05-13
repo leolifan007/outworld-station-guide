@@ -59,13 +59,13 @@
   {{ if gt $hotCount 0 }}
   <div class="hot-guides-section">
     <div class="section-heading">🔥 Hot Guides</div>
-    <div class="hot-guides-grid">
+    <div class="guide-grid">
       {{ range first 8 $guidePages.ByDate.Reverse }}
-      <a href="{{ .RelPermalink }}" class="hot-guide-card" style="text-decoration:none;color:inherit;">
-        <div class="hot-guide-date">{{ .Date.Format "Jan 2, 2006" }}</div>
-        <h3>{{ .Title | truncate 50 }}</h3>
-        {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
-        <div class="card-tag-hot">Read More</div>
+      <a href="{{ .RelPermalink }}" class="guide-card" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+        <div class="card-tag" style="font-family:var(--font-display);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--space-orange,#E8983E);margin-bottom:0.5rem;background:rgba(232,152,62,0.06);padding:2px 8px;border-radius:2px;border:1px solid rgba(232,152,62,0.1);">{{ .Date.Format "Jan 2, 2006" }}</div>
+        <h3 style="font-size:1.05rem;margin-bottom:0.5rem;color:inherit;">{{ .Title | truncate 50 }}</h3>
+        {{ with .Description }}<p style="font-size:0.85rem;color:var(--space-text-dim, rgba(255,255,255,0.5));margin-bottom:1rem;line-height:1.7;">{{ . | truncate 120 }}</p>{{ end }}
+        <div class="card-link" style="margin-top:auto;">Read More →</div>
       </a>
       {{ end }}
     </div>
