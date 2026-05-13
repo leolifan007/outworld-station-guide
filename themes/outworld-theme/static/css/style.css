@@ -1006,4 +1006,55 @@ details .content-figure svg {
   .hot-guide-card h3 { font-size: 0.95rem; }
   .hot-guide-card p { font-size: 0.8rem; -webkit-line-clamp: 3; }
 }
+
+/* ─── Breadcrumb Navigation ─── */
+.breadcrumb {
+  max-width: var(--content-w, 900px);
+  margin: 0 auto;
+  padding: 1rem 2rem 0;
+}
+.breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.breadcrumb li {
+  font-size: 0.7rem;
+  color: var(--space-text-dim, rgba(255,255,255,0.45));
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.breadcrumb .bc-sep {
+  color: var(--space-text-dim, rgba(255,255,255,0.3));
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding: 0 2px;
+}
+.breadcrumb a {
+  color: var(--space-cyan, #3b7dd3);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.breadcrumb a:hover {
+  color: var(--space-text-bright, #fff);
+  text-decoration: underline;
+}
+.breadcrumb .bc-icon {
+  font-size: 0.65rem;
+  margin-right: 2px;
+}
+.breadcrumb .bc-current {
+  color: var(--space-text, rgba(255,255,255,0.7));
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .breadcrumb { padding: 0.75rem 1rem 0; }
+  .breadcrumb li { font-size: 0.65rem; }
+}
 }

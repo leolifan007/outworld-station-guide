@@ -87,6 +87,7 @@
   <div class="main-area">
     {{ partial "lang-bar" . }}
     <main>
+      {{ if not .IsHome }}{{ partial "breadcrumb" . }}{{ end }}
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer" . }}
