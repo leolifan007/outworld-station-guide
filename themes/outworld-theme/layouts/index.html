@@ -10,16 +10,16 @@
     </p>
     <div class="hero-actions">
       <a href="{{ "beginner/" | relURL }}" class="btn btn-ignite">🚀 Get Started</a>
-      <a href="{{ "automation-guide/" | relURL }}" class="btn btn-outline">⚙️ Automations</a>
-      <a href="{{ "resources/" | relURL }}" class="btn btn-outline">🪨 Resources</a>
+      <a href="{{ "power-management/" | relURL }}" class="btn btn-outline">⚡ Power</a>
+      <a href="{{ "automation-guide/" | relURL }}" class="btn btn-outline">⚙️ Automation</a>
     </div>
   </div>
 </section>
 
-<!-- GUIDE CARDS -->
+<!-- MUST-READ GUIDES (Row 1: 4 fixed cards) -->
 <section class="intro-section">
-  <h2>📖 Guides</h2>
-  <p>Pick the guide that matches your experience level:</p>
+  <h2>📖 Must-Read Guides</h2>
+  <p>Start here if you are new. These cover everything you need to get your station running.</p>
 
   <div class="guide-grid">
     <div class="guide-card">
@@ -29,28 +29,58 @@
       <a href="{{ "beginner/" | relURL }}" class="card-link">Read →</a>
     </div>
     <div class="guide-card">
-      <div class="card-tag">⚙️ Advanced</div>
+      <div class="card-tag">⚡ Power</div>
+      <h3>Power Management</h3>
+      <p>Solar panels to fusion reactors. Grid zoning, battery ratios, and how to never black out again. Real tested build order.</p>
+      <a href="{{ "power-management/" | relURL }}" class="card-link">Read →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">💨 Gas</div>
+      <h3>Gas Systems</h3>
+      <p>Oxygen keeps you alive. Nitrox fuels your reactor. Build the gas setup right the first time instead of scrambling.</p>
+      <a href="{{ "gas-systems/" | relURL }}" class="card-link">Read →</a>
+    </div>
+    <div class="guide-card">
+      <div class="card-tag">⚙️ Automation</div>
       <h3>Automation Deep Dive</h3>
-      <p>Inventory Pairing explained. Storage management, wormhole supply chains, bottleneck hunting. The system that makes belts obsolete.</p>
+      <p>Inventory Pairing, wormhole supply chains, bottleneck hunting. The invisible logistics system — once it clicks, it is genius.</p>
       <a href="{{ "automation-guide/" | relURL }}" class="card-link">Read →</a>
-    </div>
-    <div class="guide-card">
-      <div class="card-tag">🏗️ Reference</div>
-      <h3>All Buildings Guide</h3>
-      <p>Every building from Solar Panel to Ark Platform. Build order, common mistakes, and which buildings are traps.</p>
-      <a href="{{ "building-tutorial/" | relURL }}" class="card-link">Read →</a>
-    </div>
-    <div class="guide-card">
-      <div class="card-tag">🪨 Encyclopedia</div>
-      <h3>Resources Guide</h3>
-      <p>Iron to antimatter. Where to find it, how to process it, what to build with it. Complete processing chains.</p>
-      <a href="{{ "resources/" | relURL }}" class="card-link">Read →</a>
     </div>
   </div>
 
-  <h2>🤔 Missing something?</h2>
+  <!-- HOT GUIDES (Rows 2-3: dynamic, up to 8 cards) -->
+  {{ $guidePages := slice }}
+  {{ range where .Site.Pages "Section" "guides" }}
+    {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) }}
+      {{ $guidePages = $guidePages | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $hotCount := len $guidePages }}
+  {{ if gt $hotCount 0 }}
+  <div class="hot-guides-section">
+    <div class="section-heading">🔥 Hot Guides &amp; Community Favorites</div>
+    <div class="hot-guides-grid">
+      {{ range first 8 $guidePages.ByDate.Reverse }}
+      <a href="{{ .RelPermalink }}" class="hot-guide-card" style="text-decoration:none;color:inherit;">
+        <div class="hot-guide-date">{{ .Date.Format "Jan 2, 2006" }}</div>
+        <h3>{{ .Title | truncate 50 }}</h3>
+        {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
+        <div class="card-tag-hot">Read More</div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <h2 style="margin-top:2.5rem;">🤔 Missing something?</h2>
   <p>This guide is still growing. Need something specific? <a href="{{ "contact/" | relURL }}">Let me know</a>.</p>
 </section>
+
+<!-- AD -->
+<div class="ad-slot" style="max-width:800px;margin:0 auto 24px;">
+  <div class="ad-label">— Ad —</div>
+  <div class="ad-placeholder">Ad unit (replace with AdSense code before launch)</div>
+</div>
 
 <!-- CTA -->
 <div class="cta-block">

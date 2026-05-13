@@ -6,11 +6,12 @@
 
   {{ $links := slice
     (dict "path" "beginner/" "icon" "🚀" "name" "Beginner Guide")
-    (dict "path" "power-management/" "icon" "⚡" "name" "Power Management")
+    (dict "path" "power-management/" "icon" "⚡" "name" "Power")
     (dict "path" "gas-systems/" "icon" "💨" "name" "Gas Systems")
     (dict "path" "automation-guide/" "icon" "⚙️" "name" "Automation")
-    (dict "path" "building-tutorial/" "icon" "🏗️" "name" "All Buildings")
+    (dict "path" "building-tutorial/" "icon" "🏗️" "name" "Buildings")
     (dict "path" "resources/" "icon" "🪨" "name" "Resources")
+    (dict "path" "guides/" "icon" "📚" "name" "All Guides")
   }}
   {{ range $links }}
     {{ $href := printf "/%s" .path }}

@@ -898,4 +898,112 @@ details .content-figure svg {
   max-width: 100%;
   display: block;
 }
+
+/* ─── Hot Guides Section (Homepage Rows 2-3) ─── */
+.hot-guides-section {
+  margin: 2.5rem 0;
+}
+.hot-guides-section .section-heading {
+  font-family: var(--font-display, 'Inter', sans-serif);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--space-orange, #E8983E);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hot-guides-section .section-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(232,152,62,0.3), transparent);
+}
+
+.hot-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+}
+
+.hot-guide-card {
+  background: linear-gradient(135deg, rgba(35,25,15,0.5) 0%, rgba(20,15,10,0.7) 100%);
+  border: 1px solid rgba(232,152,62,0.08);
+  border-radius: 10px;
+  padding: 1rem 1rem 0.9rem;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.hot-guide-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(232,152,62,0.25), transparent);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.hot-guide-card:hover {
+  border-color: rgba(232,152,62,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232,152,62,0.06), 0 1px 3px rgba(0,0,0,0.2);
+}
+.hot-guide-card:hover::before { opacity: 1; }
+
+.hot-guide-date {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--space-orange, #E8983E);
+  opacity: 0.6;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-display, 'Inter', sans-serif);
+}
+.hot-guide-card h3 {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0 0 0.25rem;
+  color: var(--space-text-bright, #fff);
+  font-weight: 600;
+}
+.hot-guide-card p {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--space-text-dim, rgba(255,255,255,0.5));
+  margin: 0 0 auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hot-guide-card .card-tag-hot {
+  display: inline-block;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(232,152,62,0.7);
+  background: rgba(232,152,62,0.08);
+  padding: 1px 6px;
+  border-radius: 2px;
+  border: 1px solid rgba(232,152,62,0.1);
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  font-family: var(--font-display, 'Inter', sans-serif);
+}
+
+/* Responsive: 4→2→1 columns */
+@media (max-width: 900px) {
+  .hot-guides-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .hot-guides-grid { grid-template-columns: 1fr; }
+  .hot-guide-card h3 { font-size: 0.95rem; }
+  .hot-guide-card p { font-size: 0.8rem; -webkit-line-clamp: 3; }
+}
 }
