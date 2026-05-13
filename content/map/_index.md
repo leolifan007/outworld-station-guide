@@ -2,6 +2,7 @@
 title: "Star Map | R-TAU Galaxy Systems & Logistics Routes"
 description: "Outworld Station star map — from the asteroid belt to the endgame relic sector. Interactive canvas star map showing all 6 major nodes, wormhole links, and resource zones."
 date: 2026-05-09
+breadcrumb: Map Guide
 lastmod: 2026-05-12
 draft: false
 ---

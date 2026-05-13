@@ -2,6 +2,7 @@
 title: "Beginner Guide — First Hour Survival & Setup"
 description: "Outworld Station beginner tips from someone who already made the mistakes. 60 minutes to your first automated production line. No conveyor belt knowledge required."
 date: 2026-05-09
+breadcrumb: Beginner Guide
 lastmod: 2026-05-12
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: "Power Management - Solar Panels to Fusion Reactors"
 description: "Outworld Station power system explained. Solar panels, small reactors, fusion reactors, grid zoning, and how to not black out."
 date: 2026-05-13
+breadcrumb: Power Guide
 lastmod: 2026-05-13
 draft: false
 ---

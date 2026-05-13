@@ -17,10 +17,11 @@
     {{ $idx = add $idx 1 }}
   {{ end }}
 {{ end }}
+{{ $shortTitle := .Params.breadcrumb | default (truncate 45 $.Title) }}
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     {{ range $crumbs }}
-      <li>{{ if .last }}<span class="bc-current">{{ $.Title }}</span>{{ else }}<a href="{{ .url | relURL }}">{{ if eq .label "Home" }}<span class="bc-icon">🏠</span> {{ end }}{{ .label }}</a>{{ end }}</li>{{ if not .last }}<li class="bc-sep" aria-hidden="true">›</li>{{ end }}
+      <li>{{ if .last }}<span class="bc-current">{{ $shortTitle }}</span>{{ else }}<a href="{{ .url | relURL }}">{{ .label }}</a>{{ end }}</li>{{ if not .last }}<li class="bc-sep" aria-hidden="true">›</li>{{ end }}
     {{ end }}
   </ol>
 </nav>

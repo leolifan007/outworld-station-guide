@@ -2,6 +2,7 @@
 title: "Automation Deep Dive — Invisible Logistics & Wormhole Supply Chains"
 description: "Outworld Station automation guide. No conveyor belts? No problem. Master Inventory Pairing, bottleneck hunting, and cross-planet supply chains with real gameplay examples."
 date: 2026-05-09
+breadcrumb: Automation
 lastmod: 2026-05-12
 draft: false
 ---

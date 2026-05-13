@@ -2,6 +2,7 @@
 title: "All Buildings Guide — From Solar Panels to the Ark Platform"
 description: "Outworld Station complete building guide. Every building across Energy, Production, Defense, Tech, Ship, and Logistics categories. Build order included, trap buildings exposed."
 date: 2026-05-09
+breadcrumb: Buildings
 lastmod: 2026-05-12
 draft: false
 ---

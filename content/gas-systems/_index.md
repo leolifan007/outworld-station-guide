@@ -2,6 +2,7 @@
 title: "Gas Systems Guide - Oxygen and Nitrox"
 description: "Outworld Station gas system guide. Oxygen keeps you alive. Nitrox keeps your fusion reactor running."
 date: 2026-05-13
+breadcrumb: Gas Systems
 lastmod: 2026-05-13
 draft: false
 ---

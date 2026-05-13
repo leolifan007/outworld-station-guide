@@ -1015,10 +1015,6 @@ details .content-figure svg {
   color: var(--space-text-bright, #fff);
   text-decoration: underline;
 }
-.breadcrumb .bc-icon {
-  font-size: 0.65rem;
-  margin-right: 2px;
-}
 .breadcrumb .bc-current {
   color: var(--space-text, rgba(255,255,255,0.7));
   font-weight: 500;

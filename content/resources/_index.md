@@ -2,6 +2,7 @@
 title: "Resources Complete Guide — Ores, Alloys, Relics & Endgame Materials"
 description: "Outworld Station resources guide. Every material from iron ore to antimatter. Where to find it, how to process it, and what to use it for. Processing chains included."
 date: 2026-05-09
+breadcrumb: Resources
 lastmod: 2026-05-12
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 description: "Outworld Station Guide privacy policy. How we collect, use, and protect your data."
 date: 2026-05-09
+breadcrumb: Privacy Policy
 lastmod: 2026-05-12
 draft: false
 ---
