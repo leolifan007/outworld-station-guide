@@ -19,7 +19,6 @@ canonifyURLs = false
     locale = 'en'
     label = 'English'
     weight = 1
-    contentDir = 'content/en'
     title = 'Outworld Station Guide — Master Space Factory Automation'
     [languages.en.params]
       description = 'Complete Outworld Station guide: beginner tips, automation systems, building tutorials, resource management, and pro strategies.'
@@ -33,7 +32,6 @@ canonifyURLs = false
     locale = 'zh-CN'
     label = '中文'
     weight = 2
-    contentDir = 'content/zh'
     title = 'Outworld Station 攻略站 — 太空工厂自动化完全指南'
     [languages.zh.params]
       description = 'Outworld Station 最新中文攻略站。新手入门、自动化系统、全建筑教程、资源指南，一站全攻略。'
