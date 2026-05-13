@@ -16,10 +16,14 @@ canonifyURLs = false
 
 [languages]
   [languages.en]
+    contentDir = 'content/en'
     locale = 'en'
     label = 'English'
     weight = 1
     title = 'Outworld Station Guide — Master Space Factory Automation'
+    [[languages.en.mounts]]
+      source = 'content/en'
+      target = 'content'
     [languages.en.params]
       description = 'Complete Outworld Station guide: beginner tips, automation systems, building tutorials, resource management, and pro strategies.'
       keywords = 'Outworld Station guide, Outworld Station tips, space factory automation, space station building, building game guide'
@@ -29,10 +33,14 @@ canonifyURLs = false
       google_site_verification = ''
 
   [languages.zh]
+    contentDir = 'content/zh'
     locale = 'zh-CN'
     label = '中文'
     weight = 2
     title = 'Outworld Station 攻略站 — 太空工厂自动化完全指南'
+    [[languages.zh.mounts]]
+      source = 'content/zh'
+      target = 'content'
     [languages.zh.params]
       description = 'Outworld Station 最新中文攻略站。新手入门、自动化系统、全建筑教程、资源指南，一站全攻略。'
       keywords = 'Outworld Station攻略, Outworld Station中文, 星际空间站攻略, 异界空间站教程, 太空工厂自动化攻略'
