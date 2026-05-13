@@ -1,9 +1,7 @@
 {{ define "main" }}
 
-{{ if eq .Site.Language.Lang "en" }}
-
-<!-- ENGLISH HERO -->
-<section class="hero" style="--hero-bg: url('{{ printf "%s%s" .Site.BaseURL "images/hero-bg.jpg" }}')">
+<!-- HERO -->
+<section class="hero" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')">
   <div class="hero-content">
     <div class="hero-badge">🛸 Updated May 2026 · Player-Tested Guide</div>
     <h1>Outworld Station <span class="nobreak highlight">Guide</span></h1>
@@ -11,14 +9,14 @@
       Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.
     </p>
     <div class="hero-actions">
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/beginner/" }}" class="btn btn-ignite">🚀 Get Started</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/automation-guide/" }}" class="btn btn-outline">⚙️ Automations</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/resources/" }}" class="btn btn-outline">🪨 Resources</a>
+      <a href="{{ "beginner/" | relURL }}" class="btn btn-ignite">🚀 Get Started</a>
+      <a href="{{ "automation-guide/" | relURL }}" class="btn btn-outline">⚙️ Automations</a>
+      <a href="{{ "resources/" | relURL }}" class="btn btn-outline">🪨 Resources</a>
     </div>
   </div>
 </section>
 
-<!-- ENGLISH GUIDE CARDS -->
+<!-- GUIDE CARDS -->
 <section class="intro-section">
   <h2>📖 Guides</h2>
   <p>Pick the guide that matches your experience level:</p>
@@ -28,30 +26,30 @@
       <div class="card-tag">🚀 Beginner</div>
       <h3>Beginner Guide</h3>
       <p>Zero to automated production in 60 minutes. Station setup, first drill, smelter, assembly line. No prior knowledge needed.</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/beginner/" }}" class="card-link">Read →</a>
+      <a href="{{ "beginner/" | relURL }}" class="card-link">Read →</a>
     </div>
     <div class="guide-card">
       <div class="card-tag">⚙️ Advanced</div>
       <h3>Automation Deep Dive</h3>
       <p>Inventory Pairing explained. Storage management, wormhole supply chains, bottleneck hunting. The system that makes belts obsolete.</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/automation-guide/" }}" class="card-link">Read →</a>
+      <a href="{{ "automation-guide/" | relURL }}" class="card-link">Read →</a>
     </div>
     <div class="guide-card">
       <div class="card-tag">🏗️ Reference</div>
       <h3>All Buildings Guide</h3>
       <p>Every building from Solar Panel to Ark Platform. Build order, common mistakes, and which buildings are traps.</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/building-tutorial/" }}" class="card-link">Read →</a>
+      <a href="{{ "building-tutorial/" | relURL }}" class="card-link">Read →</a>
     </div>
     <div class="guide-card">
       <div class="card-tag">🪨 Encyclopedia</div>
       <h3>Resources Guide</h3>
       <p>Iron to antimatter. Where to find it, how to process it, what to build with it. Complete processing chains.</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "en/resources/" }}" class="card-link">Read →</a>
+      <a href="{{ "resources/" | relURL }}" class="card-link">Read →</a>
     </div>
   </div>
 
   <h2>🤔 Missing something?</h2>
-  <p>This guide is still growing. Need something specific? <a href="{{ printf "%s%s" .Site.BaseURL "en/contact/" }}">Let me know</a>.</p>
+  <p>This guide is still growing. Need something specific? <a href="{{ "contact/" | relURL }}">Let me know</a>.</p>
 </section>
 
 <!-- CTA -->
@@ -59,73 +57,8 @@
   <div class="cta-inner">
     <h2>🚀 Ready to build?</h2>
     <p>One hour to your first production line.</p>
-    <a href="{{ printf "%s%s" .Site.BaseURL "en/beginner/" }}" class="btn btn-ignite">🔥 Start Here →</a>
+    <a href="{{ "beginner/" | relURL }}" class="btn btn-ignite">🔥 Start Here →</a>
   </div>
 </div>
-
-{{ else }}
-
-<!-- CHINESE HERO -->
-<section class="hero" style="--hero-bg: url('{{ printf "%s%s" .Site.BaseURL "images/hero-bg.jpg" }}')">
-  <div class="hero-content">
-    <div class="hero-badge">🛸 2026年5月更新 · 全球首部中文攻略</div>
-    <h1>Outworld Station <span class="nobreak highlight">完全攻略站</span></h1>
-    <p class="hero-sub">
-      全球首部 Outworld Station 中文图文攻略，全是实测经验。
-    </p>
-    <div class="hero-actions">
-      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="btn btn-ignite">🔥 新手入门</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="btn btn-outline">⚙️ 自动化系统</a>
-      <a href="{{ printf "%s%s" .Site.BaseURL "map/" }}" class="btn btn-outline">🌌 星系星图</a>
-    </div>
-  </div>
-</section>
-
-<!-- CHINESE GUIDE CARDS -->
-<section class="intro-section">
-  <h2>📖 攻略大全</h2>
-  <p>按你的游戏阶段选择最需要的攻略：</p>
-
-  <div class="guide-grid">
-    <div class="guide-card">
-      <div class="card-tag">🚀 新手上路</div>
-      <h3>新手入门指南</h3>
-      <p>从零开始：创建空间站、第一个采矿机、第一条产线、基础配对操作。30 分钟上手。</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="card-link">阅读 →</a>
-    </div>
-    <div class="guide-card">
-      <div class="card-tag">⚙️ 进阶</div>
-      <h3>自动化系统完全解析</h3>
-      <p>隐形物流管线原理、库存管理、虫洞供应链。没有传送带的工厂怎么玩？</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}" class="card-link">阅读 →</a>
-    </div>
-    <div class="guide-card">
-      <div class="card-tag">🏗️ 建筑</div>
-      <h3>全建筑教程</h3>
-      <p>从采矿钻机到方舟船坞，每个建筑的用途、解锁条件与最佳布局。</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}" class="card-link">阅读 →</a>
-    </div>
-    <div class="guide-card">
-      <div class="card-tag">🪨 资源</div>
-      <h3>资源全说明</h3>
-      <p>铁矿到反物质，每种资源怎么采、怎么加工、去哪找。完整加工链条速查。</p>
-      <a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}" class="card-link">阅读 →</a>
-    </div>
-  </div>
-
-  <h2>🤔 还没找到想要的？</h2>
-  <p>攻略站仍在建设中，更多内容即将上线。有需求或发现错误，<a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}">欢迎联系</a>。</p>
-</section>
-
-<!-- CTA -->
-<div class="cta-block">
-  <div class="cta-inner">
-    <h2>🚀 准备好了吗？</h2>
-    <p>从零开始，一小时上手。</p>
-    <a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}" class="btn btn-ignite">🔥 开始探索 →</a>
-  </div>
-</div>
-
-{{ end }}
 
 {{ end }}

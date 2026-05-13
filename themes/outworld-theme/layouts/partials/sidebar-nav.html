@@ -1,29 +1,27 @@
-{{ $isZh := or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/") }}
-{{ $prefix := "/en" }}{{ if $isZh }}{{ $prefix = "/zh" }}{{ end }}
 {{ $current := .RelPermalink }}
 
 <nav class="sidebar-nav" id="sidebarNav">
-  <div class="section-label">{{ if $isZh }}指南{{ else }}Guides{{ end }}</div>
-  <a href="{{ $prefix }}/" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span>{{ if $isZh }} 首页{{ else }} Home{{ end }}</a>
+  <div class="section-label">Guides</div>
+  <a href="/" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> Home</a>
 
   {{ $links := slice
-    (dict "path" "beginner/" "icon" "🚀" "en" "Beginner Guide" "zh" "新手入门")
-    (dict "path" "power-management/" "icon" "⚡" "en" "Power Management" "zh" "电力管理")
-    (dict "path" "gas-systems/" "icon" "💨" "en" "Gas Systems" "zh" "气体系统")
-    (dict "path" "automation-guide/" "icon" "⚙️" "en" "Automation" "zh" "自动化系统")
-    (dict "path" "building-tutorial/" "icon" "🏗️" "en" "All Buildings" "zh" "全建筑教程")
-    (dict "path" "resources/" "icon" "🪨" "en" "Resources" "zh" "资源全说明")
+    (dict "path" "beginner/" "icon" "🚀" "name" "Beginner Guide")
+    (dict "path" "power-management/" "icon" "⚡" "name" "Power Management")
+    (dict "path" "gas-systems/" "icon" "💨" "name" "Gas Systems")
+    (dict "path" "automation-guide/" "icon" "⚙️" "name" "Automation")
+    (dict "path" "building-tutorial/" "icon" "🏗️" "name" "All Buildings")
+    (dict "path" "resources/" "icon" "🪨" "name" "Resources")
   }}
   {{ range $links }}
-    {{ $href := printf "%s/%s" $prefix .path }}
+    {{ $href := printf "/%s" .path }}
     {{ $active := "" }}{{ if eq $current $href }}{{ $active = "active" }}{{ end }}
-    <a href="{{ $href }}" class="{{ $active }}"><span class="nav-icon">{{ .icon }}</span>{{ if $isZh }} {{ .zh }}{{ else }} {{ .en }}{{ end }}</a>
+    <a href="{{ $href }}" class="{{ $active }}"><span class="nav-icon">{{ .icon }}</span> {{ .name }}</a>
   {{ end }}
 
-  <div class="section-label">{{ if $isZh }}互动{{ else }}Interactive{{ end }}</div>
-  <a href="{{ $prefix }}/map/"><span class="nav-icon">🌌</span>{{ if $isZh }} 星系星图{{ else }} Star Map{{ end }}</a>
+  <div class="section-label">Interactive</div>
+  <a href="/map/"><span class="nav-icon">🌌</span> Star Map</a>
 
-  <div class="section-label">{{ if $isZh }}更多{{ else }}More{{ end }}</div>
-  <a href="{{ $prefix }}/contact/"><span class="nav-icon">📧</span>{{ if $isZh }} 联系{{ else }} Contact{{ end }}</a>
-  <a href="{{ $prefix }}/privacy/"><span class="nav-icon">🔒</span>{{ if $isZh }} 隐私政策{{ else }} Privacy{{ end }}</a>
+  <div class="section-label">More</div>
+  <a href="/contact/"><span class="nav-icon">📧</span> Contact</a>
+  <a href="/privacy/"><span class="nav-icon">🔒</span> Privacy</a>
 </nav>

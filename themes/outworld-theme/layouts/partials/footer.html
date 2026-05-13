@@ -1,5 +1,3 @@
-﻿{{ if not (or (eq .RelPermalink "/zh/") (hasPrefix .RelPermalink "/zh/")) }}
-
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -10,19 +8,19 @@
       <div class="footer-links">
         <h4>Quick Nav</h4>
         <ul>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}">Beginner Guide</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}">Automation</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}">All Buildings</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}">Resources</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "map/" }}">Star Map</a></li>
+          <li><a href="{{ "beginner/" | relURL }}">Beginner Guide</a></li>
+          <li><a href="{{ "automation-guide/" | relURL }}">Automation</a></li>
+          <li><a href="{{ "building-tutorial/" | relURL }}">All Buildings</a></li>
+          <li><a href="{{ "resources/" | relURL }}">Resources</a></li>
+          <li><a href="{{ "map/" | relURL }}">Star Map</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>Links</h4>
         <ul>
           <li><a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">Steam Page</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}">Privacy Policy</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}">Contact</a></li>
+          <li><a href="{{ "privacy/" | relURL }}">Privacy Policy</a></li>
+          <li><a href="{{ "contact/" | relURL }}">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -31,40 +29,3 @@
     </div>
   </div>
 </footer>
-
-{{ else }}
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="footer-logo">🛸 Outworld Station 攻略<span class="nobreak">站</span></span>
-        <p>全球首部 Outworld Station 中文图文攻略站。内容随游戏更新持续补充。</p>
-      </div>
-      <div class="footer-links">
-        <h4>快速导航</h4>
-        <ul>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "beginner/" }}">新手入门</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "automation-guide/" }}">自动化</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "building-tutorial/" }}">建筑</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "resources/" }}">资源</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "map/" }}">星图</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>链接</h4>
-        <ul>
-          <li><a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">Steam 购买</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "privacy/" }}">隐私</a></li>
-          <li><a href="{{ printf "%s%s" .Site.BaseURL "contact/" }}">联系</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Outworld Station 攻略站（非官方）.</p>
-      <p class="footer-disclaimer">本攻略站为玩家社区制作，与 Trickjump Games Ltd 无关。所有游戏内容版权归开发商所有。</p>
-    </div>
-  </div>
-</footer>
-
-{{ end }}

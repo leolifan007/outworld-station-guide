@@ -1,9 +1,9 @@
 ﻿---
 title: "Outworld Station Guide — Space Factory Automation"
-description: "Outworld Station tips and tricks from someone who actually played it. No conveyor belts, no hand-holding. Real builds, real mistakes, real solutions."
+description: "Master Outworld Station with our complete strategy guide. Covers all buildings, automation logistics, power systems, and resource chains with step-by-step walkthroughs. Updated May 2026."
 keywords: ["Outworld Station guide", "Outworld Station tips", "space factory automation", "space station building", "factory game guide"]
 date: 2026-05-09
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 draft: false
 type: "guide"
 ---
