@@ -3,6 +3,13 @@
   <h1 class="hero-title-sub">{{ .Title }}</h1>
   {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
 </section>
+
+{{ with .Params.banner }}
+<div class="page-banner">
+  <img src="{{ . }}" alt="" class="page-banner-img" loading="lazy">
+</div>
+{{ end }}
+
 <article class="content-body">
   <div class="guide-grid" style="display:flex;flex-direction:column;gap:12px;margin-top:0;">
   {{ range .Pages.ByWeight }}

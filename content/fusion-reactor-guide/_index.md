@@ -1,9 +1,9 @@
----
+﻿---
 title: "Fusion Reactor Guide — Never Let Your Station Black Out Again"
 description: "Outworld Station fusion reactor fuel management, common failure scenarios, and step-by-step recovery. Real solutions from someone who lost a lv7 station to a fuel crisis."
 date: 2026-05-13
 lastmod: 2026-05-13
-draft: true
+draft: false
 ---
 
 ## What Happens When Your Reactors Run Dry
@@ -21,7 +21,8 @@ Welcome to the dead station spiral. It happened to me. It happened to DuncanPerh
 
 ---
 
-## Chapter 1: Why Fusion Reactors Run Out of Fuel
+<details>
+<summary class="collapsible-header"><span class="ch-icon">⚡</span> <span class="ch-title">Why Fusion Reactors Run Out of Fuel</span> <span class="ch-toggle">↓</span></summary>
 
 ### It Is Not a Bug, It Is a Design Trap
 
@@ -38,40 +39,36 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 | Small Fusion Reactor | 12/min | ~8 minutes without resupply |
 | Large Fusion Reactor | 30/min | ~5 minutes without resupply |
 
-Yes, you read that right. Your reactors are minutes from death if your Nitrox supply chain is not solid.
+<figure class="content-figure">
+  <img src="/images/fusion-nitrox-chain.svg" alt="Nitrox fuel supply chain diagram from asteroid through refinery to fusion reactor" loading="lazy">
+  <figcaption>The Nitrox supply chain. Every link must stay powered or your reactor runs dry within minutes.</figcaption>
+</figure>
 
 <div class="callout callout-tip">
   <h4>What I Learned the Hard Way</h4>
-  <p>I had 50+ solar panels sitting unused because I switched to fusion and thought I was done with solar forever. When the reactors died, those solar panels could not power my refineries (they need way more juice), so I could not restart the Nitrox chain. Catch-22.</p>
+  <p>I had 50+ solar panels sitting unused because I switched to fusion and thought I was done with solar forever. When the reactors died, those solar panels could not power my refineries, so I could not restart the Nitrox chain. Catch-22.</p>
 </div>
 
----
+</details>
 
-## Chapter 2: The Three-Phase Recovery Plan
+<details>
+<summary class="collapsible-header"><span class="ch-icon">🔧</span> <span class="ch-title">The Three-Phase Recovery Plan</span> <span class="ch-toggle">↓</span></summary>
 
-### Phase 1: Emergency Power — Do Not Touch the Reactors
-
-The single biggest mistake people make is trying to restart the fusion reactors first.
+<figure class="content-figure">
+  <img src="/images/fusion-recovery-phases.svg" alt="Three-phase recovery plan from total blackout to full operation" loading="lazy">
+  <figcaption>Follow these three phases in order. Skipping Phase 1 is the most common mistake.</figcaption>
+</figure>
 
 **Step-by-step:**
 
-1. **Disconnect all non-critical buildings** from your power grid. Cut power lines to smelters, assemblers, laboratories — everything except life support and basic drills.
-2. **Build 10-15 extra solar panels.** Yes, even if you have a fusion setup. You need enough juice to get ONE refinery running.
+1. **Disconnect all non-critical buildings** from your power grid. Cut power lines to everything except life support and basic drills.
+2. **Build 10-15 extra solar panels.** You need enough juice to get ONE refinery running.
 3. **Drain 1-2 batteries** into a dedicated power sub-grid that only powers a single refinery.
 4. **Priority override your drone network** — make sure all mining drones are assigned to asteroid extraction.
 
 <div class="pro-tip">
   <p><strong>Only 10+ hour players know this:</strong> You can manually drag resources between inventories. If you have stored Hydrogen and Oxygen somewhere on your station (from before the crash), you can bypass the refinery and combine them manually to kickstart Nitrox production. Takes 30 seconds but saves you 30 minutes.</p>
 </div>
-
-### Phase 2: Restart the Nitrox Chain
-
-Once you have enough solar power to run one refinery:
-
-1. **Build a dedicated Nitrox production line** — Mining Drill → Smelter → Refinery → Nitrox synthesis. Keep this on its own isolated power grid.
-2. **Set up a dedicated storage container** for Nitrox that is NOT shared with any other supply chain.
-3. **Route the Nitrox output directly to the fusion reactor.** Do not let it go through shared wormholes or inventory pairing.
-4. **Let it run for 10 minutes** to build a buffer of at least 200 Nitrox before restarting the reactor.
 
 **Budget fusion starter kit:**
 - 1 Small Reactor
@@ -85,32 +82,20 @@ Once you have enough solar power to run one refinery:
   <p>An Advanced Refinery produces 50% more Nitrox per unit of raw ore than a standard refinery. Research it before switching to fusion — you will need fewer refineries to keep your reactors fed.</p>
 </div>
 
-### Phase 3: Reconnect and Stabilize
+</details>
 
-Once the fusion reactor is running again with a healthy Nitrox buffer:
+<details>
+<summary class="collapsible-header"><span class="ch-icon">🛡️</span> <span class="ch-title">Preventing the Next Blackout</span> <span class="ch-toggle">↓</span></summary>
 
-1. **Reconnect buildings one by one**, starting with critical production.
-2. **Monitor your Nitrox consumption** for 15 minutes before adding more buildings.
-3. **Spread your power generators** — do not put all reactors in one location. An enemy attack can take out your entire grid.
-4. **Keep 30% power headroom** at all times.
-
----
-
-## Chapter 3: Preventing the Next Blackout
-
-### The Golden Rule: Dedicated Fuel Lines
-
-Do not share your Nitrox supply chain with other production. Your fusion reactor should have its own:
+**The Golden Rule:** Do not share your Nitrox supply chain with other production. Your fusion reactor should have its own:
 - Dedicated asteroid mining drone
 - Dedicated storage container
 - Dedicated refinery
 - Priority wormhole channel (if using interplanetary logistics)
 
-### The Buffer Rule: 30 Minutes of Fuel
+**The Buffer Rule:** Build a dedicated storage container that can hold at least 400 Nitrox (30+ minutes for a Small Reactor). Set your reactor to auto-pause production at 15% fuel remaining and resume at 50%.
 
-Build a dedicated storage container that can hold at least 400 Nitrox (30+ minutes for a Small Reactor). Set your reactor to auto-pause production at 15% fuel remaining and resume at 50%.
-
-### The Redundancy Rule: Solar + Reactor Hybrid
+**The Redundancy Rule:**
 
 | Component | Count | Purpose |
 |---|---|---|
@@ -120,43 +105,40 @@ Build a dedicated storage container that can hold at least 400 Nitrox (30+ minut
 | Dedicated Nitrox Refinery | 2 | One primary + one backup on a separate grid |
 | Nitrox Buffer Tank | 1 | 400+ capacity, never below 30% |
 
-### The Monitoring Rule
+**The Monitoring Rule:** The Production Overview lets you see input/output rates. Check: Is Nitrox production > Nitrox consumption? Are buffers increasing or decreasing over the last hour? Has your refinery throughput dropped?
 
-The Production Overview (unlocked earlier in 1.0) lets you see input/output rates. Use it to check:
-- Is Nitrox production > Nitrox consumption?
-- Are buffers increasing or decreasing over the last hour?
-- Has your refinery throughput dropped?
+</details>
 
 ---
 
-## Quick Reference: What to Do When the Lights Go Out
+<details open>
+<summary class="collapsible-header"><span class="ch-icon">📋</span> <span class="ch-title">Quick Reference — What to Do When the Lights Go Out</span> <span class="ch-toggle">↓</span></summary>
 
 <div class="split-col">
-
 <div class="col">
-  <h4>If It Just Happened</h4>
-  <ol>
-    <li>Disconnect non-essential buildings</li>
-    <li>Build emergency solar</li>
-    <li>Find stored O2/H2 for manual Nitrox jumpstart</li>
-    <li>Kickstart one dedicated refinery</li>
-    <li>Let buffer build 30 min before reconnecting</li>
-  </ol>
+<h4>If It Just Happened</h4>
+<ol>
+<li>Disconnect non-essential buildings</li>
+<li>Build emergency solar</li>
+<li>Find stored O2/H2 for manual Nitrox jumpstart</li>
+<li>Kickstart one dedicated refinery</li>
+<li>Let buffer build 30 min before reconnecting</li>
+</ol>
 </div>
-
 <div class="col">
-  <h4>If You Want to Prevent It</h4>
-  <ol>
-    <li>Keep dedicated Nitrox line (separate grid)</li>
-    <li>Maintain 400+ Nitrox buffer</li>
-    <li>Run 2 smaller reactors instead of 1 big one</li>
-    <li>Keep 20+ solar panels as emergency reserve</li>
-    <li>Check Production Overview weekly</li>
-  </ol>
+<h4>If You Want to Prevent It</h4>
+<ol>
+<li>Keep dedicated Nitrox line (separate grid)</li>
+<li>Maintain 400+ Nitrox buffer</li>
+<li>Run 2 smaller reactors instead of 1 big one</li>
+<li>Keep 20+ solar panels as emergency reserve</li>
+<li>Check Production Overview weekly</li>
+</ol>
+</div>
 </div>
 
-</div>
+<hr>
 
----
+<p><small style="display:block;text-align:center;color:var(--space-text-dim);"><em>This guide is based on my experience and the community discussion that got 11 replies in 9 hours. Shoutout to DuncanPerham and everyone else learning how to keep their stations alive.</em></small></p>
 
-<small style="display:block;text-align:center;color:var(--cream-dark);"><em>This guide is based on my experience and the community discussion that got 11 replies in 9 hours. Shoutout to DuncanPerham and everyone else learning how to keep their stations alive.</em></small>
+</details>
