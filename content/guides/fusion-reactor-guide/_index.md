@@ -24,7 +24,7 @@ Welcome to the dead station spiral. I spent two full days researching this, comb
 ---
 
 <details>
-<summary class="collapsible-header"><span class="ch-icon">⚡</span> <span class="ch-title">Why Fusion Reactors Run Out of Fuel</span> <span class="ch-toggle">↓</span></summary>
+<summary class="collapsible-header"><span class="ch-title">Why Fusion Reactors Run Out of Fuel</span> <span class="ch-toggle">↓</span></summary>
 
 ### It Is Not a Bug, It Is a Design Trap
 
@@ -54,7 +54,7 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 </details>
 
 <details>
-<summary class="collapsible-header"><span class="ch-icon">🔧</span> <span class="ch-title">The Three-Phase Recovery Plan</span> <span class="ch-toggle">↓</span></summary>
+<summary class="collapsible-header"><span class="ch-title">The Three-Phase Recovery Plan</span> <span class="ch-toggle">↓</span></summary>
 
 <figure class="content-figure">
   <img src="/images/fusion-recovery-phases.svg" alt="Three-phase recovery plan from total blackout to full operation" loading="lazy">
@@ -87,7 +87,7 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 </details>
 
 <details>
-<summary class="collapsible-header"><span class="ch-icon">🛡️</span> <span class="ch-title">Preventing the Next Blackout</span> <span class="ch-toggle">↓</span></summary>
+<summary class="collapsible-header"><span class="ch-title">Preventing the Next Blackout</span> <span class="ch-toggle">↓</span></summary>
 
 **The Golden Rule:** Do not share your Nitrox supply chain with other production. Your fusion reactor should have its own:
 - Dedicated asteroid mining drone
@@ -114,7 +114,7 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 ---
 
 <details open>
-<summary class="collapsible-header"><span class="ch-icon">📋</span> <span class="ch-title">Quick Reference — What to Do When the Lights Go Out</span> <span class="ch-toggle">↓</span></summary>
+<summary class="collapsible-header"><span class="ch-title">Quick Reference — What to Do When the Lights Go Out</span> <span class="ch-toggle">↓</span></summary>
 
 <div class="split-col">
 <div class="col">
