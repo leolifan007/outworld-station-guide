@@ -1,10 +1,10 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} â€” {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} ¡ª {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <link rel="canonical" href="{{ .Permalink }}">
@@ -21,14 +21,14 @@
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="twitter:image" content="{{ "og-image.png" | absURL }}">
-  <link rel="stylesheet" href="{{ "css/style.css?v=20260514121500" | absURL }}">
+  <link rel="stylesheet" href="{{ "css/style.css?v=20260514124509" | absURL }}">
 
   {{/* GSC Verification */}}
   {{ with .Site.Params.google_site_verification }}
   <meta name="google-site-verification" content="{{ . }}">
   {{ end }}
 
-  {{/* GA4 gtag â€” loads only when ID is not placeholder */}}
+  {{/* GA4 gtag ¡ª loads only when ID is not placeholder */}}
   {{ $gaId := .Site.Params.google_analytics_id }}
   {{ if and $gaId (not (in $gaId "G-XXXXXXXXXX")) }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaId }}"></script>
@@ -40,7 +40,7 @@
   </script>
   {{ end }}
 
-  {{/* AdSense auto-ads â€” loads only when client ID is not placeholder */}}
+  {{/* AdSense auto-ads ¡ª loads only when client ID is not placeholder */}}
   {{ $adClient := .Site.Params.google_adsense_id }}
   {{ if and $adClient (strings.HasPrefix $adClient "ca-pub-") (not (in $adClient "XXXXXXXXXX")) }}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $adClient }}" crossorigin="anonymous"></script>
@@ -57,7 +57,7 @@
 </div>
 
 <!-- Mobile sidebar toggle -->
-<button class="sidebar-toggle" id="sidebarToggle">â˜°</button>
+<button class="sidebar-toggle" id="sidebarToggle">?</button>
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
 <div class="page-wrap">
@@ -65,7 +65,7 @@
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <div class="logo-icon">ðŸ›¸</div>
+      <div class="logo-icon">??</div>
       <div>
         <div class="logo-text">Outworld Station</div>
         <div class="logo-sub">Guide</div>
@@ -77,7 +77,7 @@
     </nav>
 
     <div class="sidebar-steam">
-      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">ðŸŽ® Steam Page</a>
+      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">?? Steam Page</a>
     </div>
 
 
