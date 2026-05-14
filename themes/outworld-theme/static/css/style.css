@@ -233,9 +233,10 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   background-position:center 30%;
   background-repeat:no-repeat;
 }
-/* .hero::before overlay temporarily disabled for background image debugging */
 .hero::before{
-  content:none;
+  content:'';position:absolute;bottom:0;left:0;right:0;height:55%;
+  background:linear-gradient(to bottom, transparent 0%, rgba(8,10,20,0.65) 100%);
+  pointer-events:none;
 }
 /* Hero glow orb */
 .hero::after{
