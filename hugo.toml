@@ -1,4 +1,4 @@
-baseURL = 'https://leolifan007.github.io/outworld-station-guide/'
+baseURL = 'https://outworldstationguide.com/'
 theme = 'outworld-theme'
 publishDir = 'public'
 enableRobotsTXT = true
