@@ -1,12 +1,26 @@
-﻿---
+---
 title: "Fusion Reactor Guide — Never Let Your Station Black Out Again"
 description: "Outworld Station fusion reactor fuel management, common failure scenarios, and step-by-step recovery. Real solutions from someone who lost a lv7 station to a fuel crisis."
 date: 2026-05-13
 breadcrumb: Fusion Reactor
 emoji: ⚡
-lastmod: 2026-05-13
+lastmod: 2026-05-14
 draft: false
+category: power
 ---
+
+<style>
+/* ── Foldable sections (inline so it never breaks) ── */
+.md-fold { margin: 18px 0; border: 1px solid #2A3A4C; border-radius: 6px; overflow: hidden; background: transparent; }
+.md-fold summary { display: flex; align-items: center; gap: 10px; padding: 14px 18px; cursor: pointer; user-select: none; list-style: none; font-weight: 700; font-size: 1.02rem; color: #C8D6E8; background: rgba(58,123,213,0.08); transition: background 0.15s; }
+.md-fold summary::-webkit-details-marker { display: none; }
+.md-fold summary::marker { content: ""; display: none; }
+.md-fold summary:hover { background: rgba(58,123,213,0.16); }
+.md-fold[open] summary { background: rgba(0,212,170,0.08); border-bottom: 1px solid rgba(0,212,170,0.15); color: #00D4AA; }
+.md-fold .fold-body { padding: 18px 20px; }
+.md-fold .fold-toggle { margin-left: auto; font-size: 0.85rem; color: #5A7A9A; transition: transform 0.3s; white-space: nowrap; }
+.md-fold[open] .fold-toggle { transform: rotate(180deg); color: #00D4AA; }
+</style>
 
 ## What Happens When Your Reactors Run Dry
 
@@ -21,10 +35,12 @@ Welcome to the dead station spiral. I spent two full days researching this, comb
   <p>Fusion power is not set-and-forget. Unlike solar panels that just work as long as the sun is up, fusion reactors consume fuel, and when that fuel runs out, you have a cascading failure that can take hours to recover from.</p>
 </div>
 
----
+<hr>
 
-<details>
-<summary class="collapsible-header"><span class="ch-title">Why Fusion Reactors Run Out of Fuel</span> <span class="ch-toggle">↓</span></summary>
+<details class="md-fold">
+<summary><span>Why Fusion Reactors Run Out of Fuel</span><span class="fold-toggle">▼</span></summary>
+
+<div class="fold-body">
 
 ### It Is Not a Bug, It Is a Design Trap
 
@@ -51,10 +67,13 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
   <p>I had 50+ solar panels sitting unused because I switched to fusion and thought I was done with solar forever. When the reactors died, those solar panels could not power my refineries, so I could not restart the Nitrox chain. Catch-22.</p>
 </div>
 
+</div>
 </details>
 
-<details>
-<summary class="collapsible-header"><span class="ch-title">The Three-Phase Recovery Plan</span> <span class="ch-toggle">↓</span></summary>
+<details class="md-fold">
+<summary><span>The Three-Phase Recovery Plan</span><span class="fold-toggle">▼</span></summary>
+
+<div class="fold-body">
 
 <figure class="content-figure">
   <img src="/images/fusion-recovery-phases.svg" alt="Three-phase recovery plan from total blackout to full operation" loading="lazy">
@@ -84,10 +103,13 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
   <p>An Advanced Refinery produces 50% more Nitrox per unit of raw ore than a standard refinery. Research it before switching to fusion — you will need fewer refineries to keep your reactors fed.</p>
 </div>
 
+</div>
 </details>
 
-<details>
-<summary class="collapsible-header"><span class="ch-title">Preventing the Next Blackout</span> <span class="ch-toggle">↓</span></summary>
+<details class="md-fold">
+<summary><span>Preventing the Next Blackout</span><span class="fold-toggle">▼</span></summary>
+
+<div class="fold-body">
 
 **The Golden Rule:** Do not share your Nitrox supply chain with other production. Your fusion reactor should have its own:
 - Dedicated asteroid mining drone
@@ -109,12 +131,15 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 
 **The Monitoring Rule:** The Production Overview lets you see input/output rates. Check: Is Nitrox production > Nitrox consumption? Are buffers increasing or decreasing over the last hour? Has your refinery throughput dropped?
 
+</div>
 </details>
 
----
+<hr>
 
-<details open>
-<summary class="collapsible-header"><span class="ch-title">Quick Reference — What to Do When the Lights Go Out</span> <span class="ch-toggle">↓</span></summary>
+<details class="md-fold" open>
+<summary><span>Quick Reference — What to Do When the Lights Go Out</span><span class="fold-toggle">▼</span></summary>
+
+<div class="fold-body">
 
 <div class="split-col">
 <div class="col">
@@ -143,4 +168,5 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 
 <p><small style="display:block;text-align:center;color:var(--space-text-dim);"><em>This guide is the result of two days of hands-on testing across multiple station tiers. Every recommendation has been verified in-game — no theory, just what actually works.</em></small></p>
 
+</div>
 </details>
