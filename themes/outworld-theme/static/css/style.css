@@ -982,13 +982,21 @@ details .content-figure svg {
 }
 .guides-section-title {
   font-family: var(--font-display, 'Inter', sans-serif);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--space-text-bright, #fff);
   margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.guides-section .guide-card-body h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.guides-section .guide-card-body p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .guides-section .guide-grid {
   display: grid;

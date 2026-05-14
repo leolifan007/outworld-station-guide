@@ -18,16 +18,13 @@
   {{ $children = where $children "RelPermalink" "ne" .RelPermalink }}
   {{ if gt (len $children) 0 }}
   <div class="guides-section">
-    <h2 class="guides-section-title">📖 In-Depth Guides</h2>
+    <h2 class="guides-section-title">In-Depth Guides</h2>
     <div class="guide-grid">
       {{ range $children.ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="guide-card">
         <div class="guide-card-body">
-          {{ $emoji := .Params.emoji | default "📄" }}
-          <span class="guide-card-emoji">{{ $emoji }}</span>
           <h3>{{ .Title | truncate 55 }}</h3>
           {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
-          {{ with .Params.breadcrumb }}<span class="guide-card-tag">{{ . }}</span>{{ end }}
         </div>
       </a>
       {{ end }}
