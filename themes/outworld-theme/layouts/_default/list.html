@@ -1,4 +1,4 @@
-﻿{{ define "main" }}
+{{ define "main" }}
 <section class="page-hero-sub">
   <h1 class="hero-title-sub">{{ .Title }}</h1>
   {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
@@ -12,16 +12,35 @@
 {{ end }}
 
 <article class="content-body">
-  <div class="guide-grid" style="display:flex;flex-direction:column;gap:12px;margin-top:0;">
-  {{ range .Pages.ByWeight }}
-    <div class="guide-card" style="margin:0;">
-      <div class="guide-card-body">
-        <h3 style="margin:0 0 4px;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        {{ with .Description }}<p style="margin:0;font-size:0.85rem;">{{ . }}</p>{{ end }}
-      </div>
+  {{/* ── Guides section: card grid for child pages ── */}}
+  {{/* Use .Pages (includes section-kind branch bundles) not .RegularPages */}}
+  {{ $children := where .Site.Pages "Section" "guides" }}
+  {{ $children = where $children "RelPermalink" "ne" .RelPermalink }}
+  {{ if gt (len $children) 0 }}
+  <div class="guides-section">
+    <h2 class="guides-section-title">📖 In-Depth Guides</h2>
+    <div class="guide-grid">
+      {{ range $children.ByDate.Reverse }}
+      <a href="{{ .RelPermalink }}" class="guide-card">
+        <div class="guide-card-body">
+          {{ $emoji := .Params.emoji | default "📄" }}
+          <span class="guide-card-emoji">{{ $emoji }}</span>
+          <h3>{{ .Title | truncate 55 }}</h3>
+          {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
+          {{ with .Params.breadcrumb }}<span class="guide-card-tag">{{ . }}</span>{{ end }}
+        </div>
+      </a>
+      {{ end }}
     </div>
-  {{ end }}
   </div>
+  {{ end }}
+
   {{ .Content }}
+
+  <!-- Ad after content -->
+  <div class="ad-slot" style="margin: 32px 0;">
+    <div class="ad-label">— Advertisement —</div>
+    <div class="ad-placeholder">Ad placement (replace with AdSense code before launch)</div>
+  </div>
 </article>
 {{ end }}

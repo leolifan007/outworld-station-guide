@@ -1,27 +1,18 @@
-﻿{{ $crumbs := slice (dict "url" "" "label" "Home" "last" false) }}
 {{ $segments := split (strings.TrimPrefix "/" .RelPermalink) "/" }}
-{{ $fullPath := "" }}
-{{ $numSegments := 0 }}
-{{ range $seg := $segments }}
-  {{ if and $seg (ne $seg "") }}
-    {{ $numSegments = add $numSegments 1 }}
-  {{ end }}
-{{ end }}
-{{ $idx := 0 }}
-{{ range $seg := $segments }}
-  {{ if and $seg (ne $seg "") }}
-    {{ $fullPath = printf "%s/%s" $fullPath $seg }}
-    {{ $label := $seg | replaceRE "[-_]" " " | title }}
-    {{ $isLast := eq $idx (sub $numSegments 1) }}
-    {{ $crumbs = $crumbs | append (dict "url" (printf "%s/" $fullPath) "label" $label "last" $isLast) }}
-    {{ $idx = add $idx 1 }}
-  {{ end }}
-{{ end }}
+{{ $validSegs := slice }}
+{{ range $seg := $segments }}{{ if and $seg (ne $seg "") }}{{ $validSegs = $validSegs | append $seg }}{{ end }}{{ end }}
 {{ $shortTitle := .Params.breadcrumb | default (truncate 45 $.Title) }}
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    {{ range $crumbs }}
-      <li>{{ if .last }}<span class="bc-current">{{ $shortTitle }}</span>{{ else }}<a href="{{ .url | relURL }}">{{ .label }}</a>{{ end }}</li>{{ if not .last }}<li class="bc-sep" aria-hidden="true">›</li>{{ end }}
+  <div class="bc-row">
+    <a href="/" class="bc-link">Home</a>
+    {{ range $i, $seg := $validSegs }}
+      <span class="bc-sep" aria-hidden="true">›</span>
+      {{ $url := printf "/%s/" (delimit (first (add $i 1) $validSegs) "/") }}
+      {{ if eq $i (sub (len $validSegs) 1) }}
+        <span class="bc-current">{{ $shortTitle }}</span>
+      {{ else }}
+        <a href="{{ $url }}" class="bc-link">{{ $seg | replaceRE "[-_]" " " | title }}</a>
+      {{ end }}
     {{ end }}
-  </ol>
+  </div>
 </nav>
