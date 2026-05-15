@@ -1,10 +1,10 @@
 ---
 title: "Outworld Station Crashing at Launch? 18 Fixes for FPS Drops & Freezes"
 description: "Real crashes, real fixes. I spent 40 hours troubleshooting Outworld Station — here is every fix that actually worked for me, from black screen on launch to late-game stutter."
-date: 2026-05-18
+date: 2026-05-15
 breadcrumb: Performance & Crash Fix
 emoji: 🔧
-lastmod: 2026-05-18
+lastmod: 2026-05-15
 draft: false
 category: troubleshooting
 ---
