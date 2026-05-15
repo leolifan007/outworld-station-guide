@@ -1,11 +1,12 @@
 ---
 title: "Outworld Station Best Research Order — What to Unlock First (2026 Guide)"
 description: "I tested three different tech paths from scratch. Here's the research order that got me to fusion power fastest — and the paths that wasted my time."
-date: 2026-05-22
+date: 2026-05-15
 breadcrumb: Research Order
 emoji: 🔬
-lastmod: 2026-05-22
+lastmod: 2026-05-15
 draft: false
+hidden: true
 category: strategy
 ---
 

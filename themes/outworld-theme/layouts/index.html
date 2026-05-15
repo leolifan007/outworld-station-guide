@@ -47,7 +47,7 @@
   <!-- HOT GUIDES (Rows 2-3: dynamic, up to 8 cards) -->
   {{ $guidePages := slice }}
   {{ range where .Site.Pages "Section" "guides" }}
-    {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) }}
+    {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) (not .Params.hidden) }}
       {{ $guidePages = $guidePages | append . }}
     {{ end }}
   {{ end }}

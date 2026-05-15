@@ -1,11 +1,12 @@
 ---
 title: "15 Things I Wish I Knew Before Playing Outworld Station — Don't Make These Beginner Mistakes"
 description: "I wasted 20 hours learning these the hard way. From tech order to base layout, here are 15 things I wish someone had told me before my first run."
-date: 2026-05-20
+date: 2026-05-15
 breadcrumb: Beginner Tips
 emoji: 💡
-lastmod: 2026-05-20
+lastmod: 2026-05-15
 draft: false
+hidden: true
 category: beginner
 ---
 
