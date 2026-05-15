@@ -228,11 +228,77 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .hero{
   min-height:42vh;display:flex;align-items:center;
   position:relative;overflow:hidden;padding:2rem 2rem;
-  background-image:var(--hero-bg);
+  background:var(--space-bg);
+}
+
+/* Hero background layer — image + gradient overlays (adapted from Gambonanza Guide) */
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  pointer-events:none;
+  background:
+    /* Bottom-to-top gradient fade */
+    linear-gradient(180deg,
+      rgba(8,12,22,0.0) 0%,
+      rgba(8,12,22,0.50) 45%,
+      rgba(8,12,22,0.95) 100%
+    ),
+    /* Warm nebula tint at top-left */
+    radial-gradient(ellipse at 25% 30%, rgba(232,152,62,0.04) 0%, transparent 55%),
+    /* Cool cyan glow from the right side */
+    radial-gradient(ellipse at 85% 50%, rgba(0,212,170,0.03) 0%, transparent 50%),
+    /* Background image */
+    var(--hero-bg);
   background-size:cover;
   background-position:center 30%;
   background-repeat:no-repeat;
 }
+
+/* Decorative diamond-grid pattern — like Gambonanza's repeating diagonals */
+.hero-bg::before{
+  content:'';position:absolute;inset:0;
+  pointer-events:none;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(0,212,170,0.02) 35px,
+      rgba(0,212,170,0.02) 36px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 35px,
+      rgba(58,123,213,0.015) 35px,
+      rgba(58,123,213,0.015) 36px
+    );
+}
+
+/* Decorative grid widget — right side, like Gambonanza's ::before grid */
+.hero-bg::after{
+  content:'';position:absolute;
+  right:-60px;top:50%;transform:translateY(-50%);
+  width:350px;height:350px;
+  pointer-events:none;opacity:0.3;
+  border-radius:8px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,212,170,0.05) 0px,
+      rgba(0,212,170,0.05) 40px,
+      transparent 40px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,212,170,0.05) 0px,
+      rgba(0,212,170,0.05) 40px,
+      transparent 40px,
+      transparent 80px
+    );
+}
+
+/* Bottom gradient overlay (above hero-bg) */
 .hero::before{
   content:'';position:absolute;bottom:0;left:0;right:0;height:55%;
   background:linear-gradient(to bottom, transparent 0%, rgba(8,10,20,0.65) 100%);
@@ -803,6 +869,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 }
 @media(max-width:768px){
   .hero{min-height:36vh;padding:1.5rem 1rem}
+  .hero-bg::before,.hero-bg::after{display:none}
   .guide-grid{gap:0.75rem}
   .guide-card{flex:1 1 calc(50% - 0.4rem);min-width:200px}
   .hero h1{font-size:2.2rem}
