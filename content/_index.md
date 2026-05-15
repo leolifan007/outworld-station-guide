@@ -165,5 +165,5 @@ Scrolling through Steam discussions, here's what people actually struggle with:
 ---
 
 <small style="display:block;text-align:center;color:var(--cream-dark);">
-  <em>Fan-made guide. Not affiliated with Trickjump Games Ltd. All game content belongs to the developer.</em>
+  <em>Fan-made guide. All game content belongs to the developer.</em>
 </small>

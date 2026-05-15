@@ -13,7 +13,7 @@ Thanks for visiting Outworld Station Guide! We welcome your feedback, suggestion
 
 ### About This Guide
 
-This is a fan-made guide built by players for players. It's not official and not affiliated with Trickjump Games Ltd. Since we're a small team, some sections may be incomplete — we appreciate your patience.
+This is a fan-made guide built by players for players. It's not official. Since we're a small team, some sections may be incomplete — we appreciate your patience.
 
 ### How to Reach Us
 
@@ -45,7 +45,7 @@ This is a fan-made guide built by players for players. It's not official and not
 
 ### Disclaimer
 
-- This is a fan site, not affiliated with Trickjump Games Ltd
+- This is a fan site
 - Guide content based on EA v1.0 — may differ after updates
 - We reserve the right to update content without notice
 

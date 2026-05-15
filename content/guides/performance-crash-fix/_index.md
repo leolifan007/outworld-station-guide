@@ -305,7 +305,7 @@ Launch the game through this instead of Steam directly. It is a workaround, but 
 
 <hr>
 
-<p><small style="display:block;text-align:center;color:var(--space-text-dim);margin-top:20px;"><em>Every fix in this guide was tested on my personal rigs across hundreds of hours of play. I have no affiliation with Trickjump Games — I am just a player who spent way too long troubleshooting and wants to save you the headache.</em></small></p>
+
 
 </div>
 </details>

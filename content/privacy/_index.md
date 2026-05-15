@@ -13,7 +13,7 @@ Last updated: May 12, 2026
 
 ### Who We Are
 
-Outworld Station Guide (referred to as "the website") is a fan-made community guide site operated by individual contributors. We are not affiliated with Trickjump Games Ltd.
+Outworld Station Guide is a fan-made community guide site operated by individual contributors.
 
 ### Information We Collect
 
