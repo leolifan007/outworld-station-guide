@@ -1,7 +1,7 @@
 ---
 title: "Outworld Station Tier List [S to D]: Best Ships, Station Modules & Buildings Ranked"
 description: "Not everything is worth building. I ranked every ship, module, and building from S (must-have) to D (trap) based on 100+ hours of testing."
-date: 2026-05-15
+date: 2026-05-27
 breadcrumb: Tier List
 emoji: 📊
 lastmod: 2026-05-15
