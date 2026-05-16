@@ -6,23 +6,21 @@
         <p>Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.</p>
       </div>
       <div class="footer-links">
-        <h4>Guides</h4>
+        <h4>📌 Cornerstones</h4>
         <ul>
-          <li><a href="/beginner/">Beginner</a></li>
-          <li><a href="/power-management/">Power</a></li>
+          <li><a href="/beginner/">Beginner Guide</a></li>
+          <li><a href="/power-management/">Power Management</a></li>
           <li><a href="/gas-systems/">Gas Systems</a></li>
-          <li><a href="/automation-guide/">Automation</a></li>
-          <li><a href="/building-tutorial/">Buildings</a></li>
-          <li><a href="/guides/">All Guides</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h4>More</h4>
+        <h4>🔥 Latest Guides</h4>
         <ul>
-          <li><a href="/resources/">Resources</a></li>
-          <li><a href="/map/">Star Map</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/privacy/">Privacy</a></li>
+          {{ range first 5 (where .Site.Pages "Section" "guides").ByDate.Reverse }}
+          {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 35 }}</a></li>
+          {{ end }}
+          {{ end }}
         </ul>
       </div>
     </div>
