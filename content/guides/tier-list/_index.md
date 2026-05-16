@@ -4,9 +4,9 @@ description: "Not everything is worth building. I ranked every ship, module, and
 date: 2026-05-27
 breadcrumb: Tier List
 emoji: 📊
-lastmod: 2026-05-15
+lastmod: 2026-05-16
 draft: false
-hidden: true
+hidden: false
 category: reference
 ---
 
