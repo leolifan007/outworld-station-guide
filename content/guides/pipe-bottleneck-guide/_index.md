@@ -1,9 +1,9 @@
 ---
-title: "Pipe & Connector Bottlenecks 鈥?How to Fix Your Factory's Slowest Link"
+title: "Pipe & Connector Bottlenecks — How to Fix Your Factory's Slowest Link"
 description: "Outworld Station pipe bottlenecks, connector throughput limits, and real layouts that keep production flowing. Based on months of testing and community reports."
 date: 2026-05-14
 breadcrumb: Pipe Bottlenecks
-emoji: 馃敡
+emoji: 🔧
 lastmod: 2026-05-14
 draft: false
 category: logistics
@@ -21,7 +21,7 @@ category: logistics
 .md-fold[open] .fold-toggle { transform: rotate(180deg); color: #00D4AA; }
 </style>
 
-## Your Factory Is Starving 鈥?And It Is Not the Miners' Fault
+## Your Factory Is Starving — And It Is Not the Miners' Fault
 
 You have built a beautiful production chain. Miners are extracting ore. Smelters are turning it into bars. Assemblers are cranking out advanced components. And yet your final output is a trickle.
 
@@ -31,11 +31,11 @@ Pipe bottlenecks are the single most common failure point in mid-to-late-game Ou
 
 <div class="callout callout-verdict">
   <h4>The Cold Truth</h4>
-  <p>Connectors have a fixed throughput per tick. Upgrading them makes them faster, but "faster" in Outworld Station does not mean "handles more items per second." It means the animation speeds up 鈥?the actual items/sec cap stays the same. This is the trap.</p>
+  <p>Connectors have a fixed throughput per tick. Upgrading them makes them faster, but "faster" in Outworld Station does not mean "handles more items per second." It means the animation speeds up — the actual items/sec cap stays the same. This is the trap.</p>
 </div>
 
 <details class="md-fold">
-<summary><span>How Connectors Actually Work (The Mechanic Nobody Explains)</span><span class="fold-toggle">鈻?/span></summary>
+<summary><span>How Connectors Actually Work (The Mechanic Nobody Explains)</span><span class="fold-toggle">▼/span></summary>
 
 <div class="fold-body">
 
@@ -45,14 +45,14 @@ Every Connector in Outworld Station has two properties:
 - **Items per transfer**: how many it picks up each cycle
 - **Transfer interval**: how many ticks between pickups
 
-When you upgrade a Connector from Mk1 to Mk2, you get better items-per-transfer, but the core tick-based limitation remains. The result: feeding 3 high-output Smelters through 1 Mk3 Connector produces the same throughput as feeding 1 Smelter 鈥?because the Connector empties its buffer before the Smelters finish their cycle.
+When you upgrade a Connector from Mk1 to Mk2, you get better items-per-transfer, but the core tick-based limitation remains. The result: feeding 3 high-output Smelters through 1 Mk3 Connector produces the same throughput as feeding 1 Smelter — because the Connector empties its buffer before the Smelters finish their cycle.
 
 | Connector | Items/Tick | Pipes Supported | Bottleneck Rating |
 |---|---|---|---|
-| Mk1 | 1 | 1 input pipe | 馃敶 Severe 鈥?will throttle anything more than 1 machine |
-| Mk2 | 2 | 1-2 input pipes | 馃煛 Moderate 鈥?good for small chains |
-| Mk3 | 4 | 2-3 input pipes | 馃煝 Acceptable 鈥?needs careful balancing |
-| Mk4 | 6 | 3-4 input pipes | 馃煝 Good 鈥?main line workhorse |
+| Mk1 | 1 | 1 input pipe | 🔴 Severe — will throttle anything more than 1 machine |
+| Mk2 | 2 | 1-2 input pipes | 🟡 Moderate — good for small chains |
+| Mk3 | 4 | 2-3 input pipes | 🟢 Acceptable — needs careful balancing |
+| Mk4 | 6 | 3-4 input pipes | 🟢 Good — main line workhorse |
 
 <div class="callout callout-tip">
   <h4>What I Learned the Hard Way</h4>
@@ -63,7 +63,7 @@ When you upgrade a Connector from Mk1 to Mk2, you get better items-per-transfer,
 </details>
 
 <details class="md-fold">
-<summary><span>The Three Most Common Bottleneck Patterns</span><span class="fold-toggle">鈻?/span></summary>
+<summary><span>The Three Most Common Bottleneck Patterns</span><span class="fold-toggle">▼/span></summary>
 
 <div class="fold-body">
 
@@ -95,7 +95,7 @@ Assembly Connector Buffer Connector Next Stage and Recycling
 </details>
 
 <details class="md-fold">
-<summary><span>The 12-Step Bottleneck Diagnosis Checklist</span><span class="fold-toggle">鈻?/span></summary>
+<summary><span>The 12-Step Bottleneck Diagnosis Checklist</span><span class="fold-toggle">▼/span></summary>
 
 <div class="fold-body">
 
@@ -121,13 +121,13 @@ When your factory is underperforming, run through this list:
 **Scoring:**
 - 0-3 Yes: Your factory is fine, check your raw material supply
 - 4-7 Yes: Moderate bottlenecks, restructure your Connector layout
-- 8-12 Yes: Critical 鈥?total redesign needed
+- 8-12 Yes: Critical — total redesign needed
 
 </div>
 </details>
 
 <details class="md-fold">
-<summary><span>Bulletproof Layout Patterns</span><span class="fold-toggle">鈻?/span></summary>
+<summary><span>Bulletproof Layout Patterns</span><span class="fold-toggle">▼/span></summary>
 
 <div class="fold-body">
 
@@ -171,7 +171,7 @@ An emergency bypass that kicks in when your primary Connector faces overload. Es
 <hr>
 
 <details class="md-fold" open>
-<summary><span>Quick Reference 鈥?Bottleneck Fix Cheat Sheet</span><span class="fold-toggle">鈻?/span></summary>
+<summary><span>Quick Reference — Bottleneck Fix Cheat Sheet</span><span class="fold-toggle">▼/span></summary>
 
 <div class="fold-body">
 

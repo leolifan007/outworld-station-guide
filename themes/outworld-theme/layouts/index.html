@@ -56,8 +56,9 @@
   <div class="hot-guides-section">
     <div class="section-heading">🔥 Hot Guides</div>
     <div class="guide-grid">
-      {{ range first 8 $guidePages.ByDate.Reverse }}
+      {{ range $idx, $page := first 8 $guidePages.ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+        {{ if eq $idx 0 }}<span class="new-badge">NEW</span>{{ end }}
         <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
         <h3 style="font-size:1.05rem;margin-bottom:0.5rem;color:inherit;">{{ .Title | truncate 50 }}</h3>
         {{ with .Description }}<p style="font-size:0.85rem;color:var(--space-text-dim, rgba(255,255,255,0.5));margin-bottom:1rem;line-height:1.7;">{{ . | truncate 120 }}</p>{{ end }}
