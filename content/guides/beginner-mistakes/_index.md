@@ -4,9 +4,9 @@ description: "I wasted 20 hours learning these the hard way. From tech order to 
 date: 2026-05-20
 breadcrumb: Beginner Tips
 emoji: 💡
-lastmod: 2026-05-15
+lastmod: 2026-05-16
 draft: false
-hidden: true
+hidden: false
 category: beginner
 ---
 
