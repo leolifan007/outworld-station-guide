@@ -224,7 +224,26 @@ This order got me to fusion power in 7 hours on my third playthrough. My first p
 
 ---
 
-<div class="callout callout-synergy">
-  <h4>Related guides</h4>
-  <p><a href="/power-management/">Power Management</a> covers reactor setup in detail. <a href="/gas-systems/">Gas Systems</a> explains oxygen and Nitrox infrastructure. <a href="/beginner/">Beginner Guide</a> if you're still in your first hour.</p>
+<div class="guides-section" style="margin-top:2rem">
+  <h2 class="guides-section-title">📖 Related Guides</h2>
+  <div class="guide-grid">
+    <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚡ Power</div>
+      <h3>Power Management</h3>
+      <p>Solar panels to fusion reactors. Grid zoning, battery ratios, and how to never black out again. Covers reactor setup in detail.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/gas-systems/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">💨 Gas</div>
+      <h3>Gas Systems Guide</h3>
+      <p>Oxygen and Nitrox infrastructure explained. Keep your crew breathing and your fusion reactor running on the right gas mix.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/beginner/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🚀 Beginner</div>
+      <h3>Beginner Guide</h3>
+      <p>Step-by-step first 60 minutes. If you're still in your first hour, start here for station setup and basic automation.</p>
+      <div class="card-link">Read →</div>
+    </a>
+  </div>
 </div>

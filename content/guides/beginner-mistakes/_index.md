@@ -207,6 +207,6 @@ Don't aim for perfect on day one. Aim for functional.
 ---
 
 <div class="callout callout-synergy">
-  <h4>What to read next</h4>
+  <h4>Keep Learning</h4>
   <p>If you're still in your first few hours, check the <a href="/beginner/">Beginner Guide</a> for a step-by-step first 60 minutes. Already past that? The <a href="/automation-guide/">Automation Deep Dive</a> explains the inventory pairing system in detail.</p>
 </div>

@@ -212,6 +212,20 @@ Checklist before you go exploring on your own:
 
 ---
 
-<p style="text-align:center; font-size:0.8rem; color:var(--cream-dark); margin-top: 32px;">
-  <em>Next up: <a href="/automation-guide/">Automation Deep Dive</a> — Master invisible logistics and wormhole supply chains</em>
-</p>
+<div class="guides-section" style="margin-top:2rem">
+  <h2 class="guides-section-title">📖 What's Next</h2>
+  <div class="guide-grid">
+    <a href="/automation-guide/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚙️ Automation</div>
+      <h3>Automation Deep Dive</h3>
+      <p>Inventory Pairing, wormhole supply chains, bottleneck hunting. Once you've got your first production line, master the invisible logistics that run your station.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚡ Power</div>
+      <h3>Power Management</h3>
+      <p>Solar panels to fusion reactors. Don't let your station go dark. Covers battery ratios, grid zoning, and the upgrade path from solar to fusion.</p>
+      <div class="card-link">Read →</div>
+    </a>
+  </div>
+</div>

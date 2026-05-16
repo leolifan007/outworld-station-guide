@@ -240,7 +240,26 @@ Mining ships are unique — they generate resources directly from asteroids, not
 
 ---
 
-<div class="callout callout-synergy">
-  <h4>Next steps</h4>
-  <p>With ships running, you're ready for <a href="/guides/research-order/">optimizing your tech path</a> or tackling <a href="/power-management/">fusion power</a> for larger fleets. The <a href="/beginner/">Beginner Guide</a> covers earlier game fundamentals if you skipped ahead.</p>
+<div class="guides-section" style="margin-top:2rem">
+  <h2 class="guides-section-title">📖 Next Steps</h2>
+  <div class="guide-grid">
+    <a href="/guides/research-order/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🔬 Tech</div>
+      <h3>Research Order Guide</h3>
+      <p>Optimize your tech path from hour 0 to endgame. Tested across multiple playthroughs — what to unlock first and what can wait.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚡ Power</div>
+      <h3>Power Management</h3>
+      <p>Tackle fusion power for larger fleets. Solar panels to reactors — everything you need to keep your station running 24/7.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/beginner/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🚀 Beginner</div>
+      <h3>Beginner Guide</h3>
+      <p>Covers earlier game fundamentals if you skipped ahead. 60 minutes to your first automated production line.</p>
+      <div class="card-link">Read →</div>
+    </a>
+  </div>
 </div>

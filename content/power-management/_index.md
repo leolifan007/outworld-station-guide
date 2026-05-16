@@ -171,8 +171,20 @@ You do not have a Nitrox system. The reactor is burning through stored tritium w
 
 ---
 
-## Next Up
-
-You have got power covered. Now you need the other half of the equation - the gas system (Nitrox and Oxygen). It is not just for breathing, it is what makes your fusion reactor work.
-
-Read the [Gas Systems Guide](/gas-systems/)
+<div class="guides-section" style="margin-top:2rem">
+  <h2 class="guides-section-title">📖 Continue Reading</h2>
+  <div class="guide-grid">
+    <a href="/gas-systems/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">💨 Gas</div>
+      <h3>Gas Systems Guide</h3>
+      <p>Oxygen keeps you alive. Nitrox fuels your reactor. Build the gas setup right the first time instead of scrambling when O2 runs low.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/automation-guide/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚙️ Automation</div>
+      <h3>Automation Deep Dive</h3>
+      <p>Inventory Pairing, wormhole supply chains, bottleneck hunting. Master the invisible logistics system that ties your whole station together.</p>
+      <div class="card-link">Read →</div>
+    </a>
+  </div>
+</div>

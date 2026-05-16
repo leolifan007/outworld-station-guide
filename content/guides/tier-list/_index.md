@@ -327,7 +327,26 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 
 ---
 
-<div class="callout callout-synergy">
-  <h4>Related guides</h4>
-  <p><a href="/guides/research-order/">Research Order Guide</a> explains when to unlock these buildings. <a href="/beginner/">Beginner Guide</a> covers the first hour setup. <a href="/power-management/">Power Management</a> details solar vs reactor strategies.</p>
+<div class="guides-section" style="margin-top:2rem">
+  <h2 class="guides-section-title">📖 Related Guides</h2>
+  <div class="guide-grid">
+    <a href="/guides/research-order/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🔬 Tech</div>
+      <h3>Research Order Guide</h3>
+      <p>Explains when to unlock each building. Tested tech paths from hour 0 to fusion power — avoid the research traps I fell into.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/beginner/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🚀 Beginner</div>
+      <h3>Beginner Guide</h3>
+      <p>Covers the first hour setup. Power, drilling, smelting, and your first automated production line — everything a new player needs.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚡ Power</div>
+      <h3>Power Management</h3>
+      <p>Solar vs reactor strategies detailed. Grid zoning, battery ratios, and the upgrade path that keeps your station online.</p>
+      <div class="card-link">Read →</div>
+    </a>
+  </div>
 </div>

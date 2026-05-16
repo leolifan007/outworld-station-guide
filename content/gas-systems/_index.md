@@ -149,9 +149,21 @@ You might have a leak. Check station segment connections.
 
 ---
 
-## What Next
-
-Gas system running? Now make sure resources can keep up.
-
-Read the [Power Management Guide](/power-management/)
-Read the [Resources Guide](/resources/)
+<div class="guides-section" style="margin-top:2rem">
+<div class="guides-section" style="margin-top:2rem">
+  <h2 class="guides-section-title">📖 Continue Reading</h2>
+  <div class="guide-grid">
+    <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">⚡ Power</div>
+      <h3>Power Management</h3>
+      <p>Solar panels to fusion reactors. Grid zoning, battery ratios, and how to never black out again. Your gas system needs stable power to run.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="/resources/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🪨 Resources</div>
+      <h3>Resources Reference</h3>
+      <p>Full material list, processing chains, and what you need for each station level. From water extraction to endgame alloys.</p>
+      <div class="card-link">Read →</div>
+    </a>
+  </div>
+</div>
