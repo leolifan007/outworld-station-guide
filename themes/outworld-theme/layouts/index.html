@@ -44,7 +44,37 @@
     </a>
   </div>
 
-  <!-- HOT GUIDES (Rows 2-3: dynamic, up to 8 cards) -->
+  <!-- REFERENCE GUIDES (Row 2: Buildings + Resources + Map + Contact) -->
+  <h2 style="margin-top:2rem;">🧰 Reference Guides</h2>
+  <p>Deep dives on station logistics, blueprints, and interactive tools.</p>
+  <div class="guide-grid">
+    <a href="{{ "building-tutorial/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🏗️ Buildings</div>
+      <h3>Building Tutorial</h3>
+      <p>Every station module explained — miners, smelters, assemblers, connectors, and storage. Blueprint layouts that just work.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="{{ "resources/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🪨 Resources</div>
+      <h3>Resources Reference</h3>
+      <p>Full material list, processing chains, and what you need for each station level. From iron to endgame alloys.</p>
+      <div class="card-link">Read →</div>
+    </a>
+    <a href="{{ "map/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">🌌 Star Map</div>
+      <h3>Interactive Star Map</h3>
+      <p>Visual guide to all station modules, resource nodes, and production chains. Click to explore.</p>
+      <div class="card-link">Explore →</div>
+    </a>
+    <a href="{{ "guides/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+      <div class="card-tag">📚 All Guides</div>
+      <h3>Browse All Guides</h3>
+      <p>Fusion reactors, pipe bottlenecks, beginner mistakes, ship building, tier lists — every guide in one place.</p>
+      <div class="card-link">Browse →</div>
+    </a>
+  </div>
+
+  <!-- HOT GUIDES (Rows 3-4: dynamic, up to 8 cards) -->
   {{ $guidePages := slice }}
   {{ range where .Site.Pages "Section" "guides" }}
     {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) (not .Params.hidden) }}
@@ -65,6 +95,9 @@
         <div class="card-link" style="margin-top:auto;">Read More →</div>
       </a>
       {{ end }}
+    </div>
+    <div style="text-align:center;margin-top:1rem;">
+      <a href="/guides/" class="btn btn-outline">📚 View All Guides →</a>
     </div>
   </div>
   {{ end }}
