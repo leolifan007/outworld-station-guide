@@ -82,9 +82,7 @@ A Freighter Dock is a two-way building. It both sends and receives ships. Think 
 
 ### The Loop
 
-```
-Main Station Dock → Ship launches → Flies to Mining Outpost Dock → Unloads cargo → Loads ore → Flies back → Unloads ore at Main Station → Repeat
-```
+{{< diagram src="freighter-ship-cycle.svg" caption="Freighter ship travel cycle from main station dock to mining outpost and back" >}}
 
 Each ship in your fleet follows this loop automatically. You do not assign routes. You do not schedule departures. The dock handles everything — as long as you set it up correctly.
 
@@ -189,13 +187,7 @@ Once you hit Station Level 8, one mining outpost is not enough. You need multipl
 
 ### The Hub-and-Spoke Model
 
-```
-                    [Planet B: Tungsten]
-                           |
-[Planet C: Titanium] --- MAIN STATION --- [Planet D: Silicon]
-                           |
-                    [Planet A: Iron]
-```
+{{< diagram src="wormhole-planet-chain.svg" caption="Multi-planet wormhole chain routing through intermediate stations to the main hub" >}}
 
 Your main station is the hub. Every mining outpost is a spoke. Freighters fly directly between each outpost and the main station. Do not try to create outpost-to-outpost routes — it complicates everything and doubles your transit time.
 

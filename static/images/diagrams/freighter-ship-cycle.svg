@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <!-- Main Station Dock -->
+  <rect x="10" y="25" width="100" height="38" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="60" y="49" text-anchor="middle" fill="#00D4AA" font-size="10" font-weight="bold">Main Dock</text>
+
+  <line x1="110" y1="44" x2="145" y2="44" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Ship launches -->
+  <rect x="150" y="25" width="100" height="38" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="200" y="44" text-anchor="middle" fill="#4A9EFF" font-size="9">🚀 Ship launches</text>
+  <text x="200" y="56" text-anchor="middle" fill="#6A8AAA" font-size="8">&amp; flies out</text>
+
+  <line x1="250" y1="44" x2="285" y2="44" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Flies to outpost -->
+  <rect x="290" y="25" width="100" height="38" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="340" y="44" text-anchor="middle" fill="#FFB347" font-size="9">Flies to</text>
+  <text x="340" y="56" text-anchor="middle" fill="#FFB347" font-size="9">Mining Outpost</text>
+
+  <line x1="390" y1="44" x2="425" y2="44" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Unload cargo -->
+  <rect x="430" y="25" width="100" height="38" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="480" y="44" text-anchor="middle" fill="#4A9EFF" font-size="9">🗃️ Unloads</text>
+  <text x="480" y="56" text-anchor="middle" fill="#4A9EFF" font-size="9">cargo / Loads ore</text>
+
+  <line x1="530" y1="44" x2="565" y2="44" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Flies back -->
+  <rect x="570" y="25" width="100" height="38" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="620" y="44" text-anchor="middle" fill="#FFB347" font-size="9">✈️ Flies back</text>
+  <text x="620" y="56" text-anchor="middle" fill="#FFB347" font-size="9">to Main Station</text>
+
+  <line x1="670" y1="44" x2="705" y2="44" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Unload ore -->
+  <rect x="710" y="25" width="80" height="38" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="750" y="44" text-anchor="middle" fill="#00D4AA" font-size="9">Unloads</text>
+  <text x="750" y="56" text-anchor="middle" fill="#00D4AA" font-size="9">ore</text>
+
+  <!-- Repeat arrow (back to start) -->
+  <path d="M 750 63 Q 750 95 400 95 Q 60 95 60 63" fill="none" stroke="#6A8AAA" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="420" y="90" text-anchor="middle" fill="#6A8AAA" font-size="9">🔄 Repeat cycle</text>
+
+  <!-- bottom label -->
+  <text x="400" y="125" text-anchor="middle" fill="#4A6070" font-size="9">Freighter Ship Travel Cycle — Round Trip</text>
+</svg>

@@ -49,11 +49,7 @@ You need two ores:
 
 ### Processing Chain
 
-```
-Tungsten Ore → Smelter → Tungsten Ingot ─┐
-                                           ├→ Superalloy Forge → Superalloy
-Titanium Ore → Smelter → Titanium Ingot ─┘
-```
+{{< diagram src="superalloy-chain.svg" caption="Superalloy production chain combining tungsten and titanium ore through smelters into the forge" >}}
 
 Simple on paper. The problem is volume.
 
@@ -109,11 +105,7 @@ You probably already have Titanium miners running. If not, set one up. Titanium 
 
 Place your Superalloy Forge at your main station, close to your Smelter cluster. The layout should look like this:
 
-```
-[Tungsten Miner] → [Freighter] → [Tungsten Smelter] → [Buffer] ─┐
-                                                                    ├→ [Superalloy Forge] → [Output Buffer]
-[Titanium Miner] → [Titanium Smelter] → [Buffer] ────────────────┘
-```
+{{< diagram src="superalloy-chain.svg" caption="Full superalloy supply chain from remote miners through freighters and smelters into the forge" >}}
 
 ### Step 4: Buffer Everything
 
@@ -142,12 +134,7 @@ One Forge produces ~20/min. Mid-game needs 10-15/sec (600-900/min). Late-game ne
 
 ### The Parallel Forge Array
 
-```
-[Tungsten Supply Line] → Buffer → [Forge 1] → Output
-                            ├────→ [Forge 2] → Output
-                            ├────→ [Forge 3] → Output
-                            └────→ [Forge 4] → Output
-```
+{{< diagram src="superalloy-parallel-forges.svg" caption="Scaling superalloy production with multiple parallel forges sharing a single output buffer" >}}
 
 Each Forge needs its own dedicated input buffers but can share a common output buffer.
 

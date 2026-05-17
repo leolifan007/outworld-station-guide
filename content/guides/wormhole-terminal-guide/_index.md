@@ -120,10 +120,7 @@ Use Inventory Pairing between the remote Miner's output container and the Wormho
 
 Then set up Inventory Pairing on the main station side between the Generator's storage and your processing buffer. Items that arrive through the wormhole are automatically pulled out.
 
-```
-[Miner] → [Storage] →(Pairing)→ [Wormhole Gen A] ==== [Wormhole Gen B] →(Pairing)→ [Buffer] → [Smelter]
-          Remote Side                                               Main Station Side
-```
+{{< diagram src="wormhole-pairing-flow.svg" caption="Wormhole inventory pairing flow from remote miner through paired storage across wormhole to main station" >}}
 
 ### Power Warning
 
@@ -148,14 +145,7 @@ You can connect more than two locations. Here are the patterns that work.
 
 ### The Star Network (Recommended)
 
-```
-              [Planet B: Tungsten]
-                     | (Channel 2)
-[Planet C: Titanium] --- MAIN --- [Planet D: Uranium]
-                     | (Channel 3)    | (Channel 4)
-              [Planet A: Iron]
-                (Channel 1)
-```
+{{< diagram src="wormhole-planet-chain.svg" caption="Planet-to-planet wormhole chain linking stations through dedicated channels" >}}
 
 Each remote location connects to the main station on its own channel. The main station has 4 Wormhole Generators, one per channel.
 
@@ -163,9 +153,7 @@ Each remote location connects to the main station on its own channel. The main s
 
 ### The Daisy Chain (Not Recommended)
 
-```
-[Planet A] → [Planet B] → [Planet C] → [Main Station]
-```
+{{< diagram src="wormhole-planet-chain.svg" caption="Planet-to-planet wormhole chain linking stations through dedicated channels" >}}
 
 All on the same channel. Items from Planet A pass through Planet B's storage on their way to the main station.
 
@@ -175,11 +163,7 @@ All on the same channel. Items from Planet A pass through Planet B's storage on 
 
 ### The Ring Network
 
-```
-[Station A] ←→ [Station B]
-     ↕              ↕
-[Station D] ←→ [Station C]
-```
+{{< diagram src="wormhole-mesh-2x2.svg" caption="Full mesh wormhole network with 4 interconnected stations" >}}
 
 Four stations, each with 2 generators on different channels. Every station can reach every other station in one hop.
 

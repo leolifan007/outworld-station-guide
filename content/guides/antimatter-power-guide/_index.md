@@ -79,10 +79,7 @@ Do not jump to antimatter early. The production chain is expensive and the radia
 
 This is the longest production chain in the game. Buckle up.
 
-```
-Uranium Ore → Refinery → Uranium Fuel Rod → Neutron Initiator → Antimatter Reactor
-                                         ↘ Radiation Shielding (required)
-```
+{{< diagram src="antimatter-basic-chain.svg" caption="Antimatter power production chain from uranium ore through refining and neutron initiator processing to the reactor" >}}
 
 ### Step-by-Step
 
@@ -145,11 +142,7 @@ Build Shield Panels in a ring around the reactor, covering all adjacent building
 
 **Optimal layout:**
 
-```
-     [Shield] [Shield] [Shield]
-  [Shield]  [REACTOR]  [Shield]
-     [Shield] [Shield] [Shield]
-```
+{{< diagram src="antimatter-chain.svg" caption="Radiation shield placement around antimatter reactor - required before startup" >}}
 
 Eight panels in a ring around the reactor. Add more on the sides facing your production buildings.
 
@@ -172,11 +165,7 @@ Lead comes from refining certain ore types (check your Refinery recipes). It is 
 
 ### The Hybrid Grid (Recommended)
 
-```
-[Fusion Reactors] → Baseline power (40-50% of demand)
-[Antimatter Reactor] → Peak power (50-60% of demand)
-[Solar Panels] → Emergency backup (auto-kicks in during blackout)
-```
+{{< diagram src="power-source-balance.svg" caption="Station power source strategy balancing fusion baseline, antimatter peak, and solar emergency backup" >}}
 
 This gives you:
 - Stable baseline from fusion (well-understood, easy to fuel)
