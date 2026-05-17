@@ -12,8 +12,9 @@
 {{ end }}
 
 <article class="content-body">
-  {{/* ── Guides section: card grid for child pages ── */}}
-  {{/* Use .Pages (includes section-kind branch bundles) not .RegularPages */}}
+  {{ .Content }}
+
+  {{/* ── In-Depth Guides section: moved to bottom, above CTA ── */}}
   {{ $children := where .Site.Pages "Section" "guides" }}
   {{ $children = where $children "RelPermalink" "ne" .RelPermalink }}
   {{ if gt (len $children) 0 }}
@@ -21,24 +22,16 @@
     <h2 class="guides-section-title">In-Depth Guides</h2>
     <div class="guide-grid">
       {{ range $children.ByDate.Reverse }}
-      <a href="{{ .RelPermalink }}" class="guide-card">
+      <a href="{{ .RelPermalink }}" class="guide-card guide-index-card">
         <div class="guide-card-body">
           <h3>{{ .Title | truncate 55 }}</h3>
-          {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
+          {{ with .Description }}<p>{{ . | truncate 80 }}</p>{{ end }}
         </div>
       </a>
       {{ end }}
     </div>
   </div>
   {{ end }}
-
-  {{ .Content }}
-
-  <!-- Ad after content -->
-  <div class="ad-slot" style="margin: 32px 0;">
-    <div class="ad-label">— Advertisement —</div>
-    <div class="ad-placeholder">Ad placement (replace with AdSense code before launch)</div>
-  </div>
 </article>
 
 <!-- CTA -->

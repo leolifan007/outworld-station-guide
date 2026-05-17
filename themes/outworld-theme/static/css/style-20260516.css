@@ -1081,6 +1081,28 @@ details .content-figure svg {
 
 /* Hot guides reuse .guide-grid / .guide-card styling */
 
+/* ─── In-Depth Guide Cards (List Pages) — bordered + compact ─── */
+.guide-card.guide-index-card {
+  background: linear-gradient(135deg, rgba(11,20,34,0.6) 0%, rgba(8,12,22,0.85) 100%);
+  border: 1px solid rgba(58,123,213,0.25);
+  padding: 0.9rem 1rem;
+  transition: var(--transition);
+}
+.guide-card.guide-index-card:hover {
+  border-color: rgba(0,212,170,0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,212,170,0.06), 0 1px 3px rgba(0,0,0,0.3);
+}
+.guide-card.guide-index-card .guide-card-body h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+.guide-card.guide-index-card .guide-card-body p {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
 /* ─── Guides Section (Aggregation / List Pages) ─── */
 .guides-section {
   margin: 2rem 0;
