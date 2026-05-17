@@ -2,7 +2,7 @@
 title: "Superalloy Production Guide: Scale Your Manufacturing"
 description: "Outworld Station superalloy production chain, material requirements, factory layouts, and throughput targets. From first batch to 50/sec output."
 date: 2026-05-17
-publishedAt: 2026-05-18T08:00:00+08:00
+publishedAt: 2026-05-17T23:00:00+08:00
 breadcrumb: Superalloy
 emoji: ⚙️
 lastmod: 2026-05-17
