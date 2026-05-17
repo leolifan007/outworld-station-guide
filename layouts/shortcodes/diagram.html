@@ -1,0 +1,11 @@
+<div class="diagram-wrapper" style="margin:20px 0;text-align:center;">
+  <img src="/images/diagrams/{{ .Get "src" }}" 
+       alt="{{ .Get "caption" }}" 
+       loading="lazy" 
+       style="max-width:100%;height:auto;border-radius:8px;" />
+  {{ if .Get "caption" }}
+  <p style="margin:8px 0 0 0;font-size:0.88rem;color:var(--space-text-dim, #6A8AAA);text-align:center;">
+    <em>{{ .Get "caption" }}</em>
+  </p>
+  {{ end }}
+</div>

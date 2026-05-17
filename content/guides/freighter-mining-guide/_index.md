@@ -1,4 +1,4 @@
----
+﻿---
 title: "Freighter & Mining Station Guide: Automate Remote Mining"
 description: "Outworld Station freighter dock setup, mining station automation, and remote resource collection. Step-by-step from first dock to a 4-planet supply network."
 date: 2026-05-17
@@ -66,6 +66,12 @@ Skip nothing in this chain. Each tier builds on the last.
 
 </div>
 </details>
+
+---
+
+{{< diagram src="freighter-outpost-flow.svg" caption="Freighter mining outpost setup process from main station dock to 3 remote outposts with automated defense" >}}
+
+
 
 <details class="md-fold">
 <summary><span>How Freighter Docks Actually Work</span><span class="fold-toggle">▼</span></summary>

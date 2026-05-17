@@ -1,4 +1,4 @@
----
+﻿---
 title: "Antimatter Power Guide: Endgame Energy Strategy"
 description: "Outworld Station antimatter power setup, neutron initiator production, radiation shielding, and endgame energy strategy. From fusion to the singularity."
 date: 2026-05-17
@@ -65,6 +65,12 @@ Do not jump to antimatter early. The production chain is expensive and the radia
 
 </div>
 </details>
+
+---
+
+{{< diagram src="antimatter-chain.svg" caption="Antimatter power production chain from uranium mining through neutron initiator processing to the reactor and station power grid" >}}
+
+
 
 <details class="md-fold">
 <summary><span>The Antimatter Production Chain</span><span class="fold-toggle">▼</span></summary>

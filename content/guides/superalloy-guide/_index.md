@@ -1,4 +1,4 @@
----
+﻿---
 title: "Superalloy Production Guide: Scale Your Manufacturing"
 description: "Outworld Station superalloy production chain, material requirements, factory layouts, and throughput targets. From first batch to 50/sec output."
 date: 2026-05-17
@@ -78,6 +78,12 @@ And each Smelter needs a constant stream of ore. Which means your miners need to
 
 </div>
 </details>
+
+---
+
+{{< diagram src="superalloy-chain.svg" caption="Superalloy production chain from tungsten and titanium mining through input buffers to the forge and output" >}}
+
+
 
 <details class="md-fold">
 <summary><span>Building Your First Superalloy Line</span><span class="fold-toggle">▼</span></summary>

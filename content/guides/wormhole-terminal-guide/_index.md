@@ -1,4 +1,4 @@
----
+﻿---
 title: "Wormhole Terminal Guide: Interplanetary Logistics"
 description: "Outworld Station wormhole terminal setup, channel configuration, inventory syncing across planets, and multi-station logistics. Everything the tutorial skipped."
 date: 2026-05-17
@@ -72,6 +72,12 @@ Think of it like a portal. Anything that goes in one side comes out the other.
 
 </div>
 </details>
+
+---
+
+{{< diagram src="wormhole-network.svg" caption="Wormhole network topology showing multiple remote stations linked to the main station through Channel 1 with rules and best practices" >}}
+
+
 
 <details class="md-fold">
 <summary><span>Setting Up Your First Wormhole Link</span><span class="fold-toggle">▼</span></summary>
