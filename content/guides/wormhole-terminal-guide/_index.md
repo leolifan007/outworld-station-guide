@@ -1,10 +1,11 @@
-﻿---
+---
 title: "Wormhole Terminal Guide: Interplanetary Logistics"
 description: "Outworld Station wormhole terminal setup, channel configuration, inventory syncing across planets, and multi-station logistics. Everything the tutorial skipped."
 date: 2026-05-17
+publishedAt: 2026-05-20T20:48:00+08:00
 breadcrumb: Wormhole Terminal
 emoji: 🌀
-lastmod: 2026-05-17
+lastmod: 2026-05-20
 draft: false
 category: logistics
 ---
@@ -71,6 +72,13 @@ Think of it like a portal. Anything that goes in one side comes out the other.
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 ---
@@ -134,6 +142,13 @@ Wormhole Generators draw power continuously while linked. If the power at either
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <details class="md-fold">
@@ -175,6 +190,13 @@ Four stations, each with 2 generators on different channels. Every station can r
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <details class="md-fold">
@@ -210,6 +232,13 @@ If you need to send AND receive different items between two locations, use two s
 This prevents items from both directions competing for the same generator's storage space.
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <details class="md-fold">
@@ -248,6 +277,13 @@ This prevents items from both directions competing for the same generator's stor
 **Fix:** Use wormholes OR freighters for a given resource — not both. Or use separate storage containers for each delivery method.
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <hr>
@@ -301,3 +337,9 @@ This prevents items from both directions competing for the same generator's stor
 
 </div>
 </details>
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)

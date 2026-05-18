@@ -4,8 +4,8 @@ description: "Outworld Station freighter dock setup, mining station automation, 
 date: 2026-05-17
 publishedAt: 2026-05-18T20:47:00+08:00
 breadcrumb: Freighter Mining
-emoji: 🚀
-lastmod: 2026-05-17
+emoji: 馃殌
+lastmod: 2026-05-18
 draft: false
 category: logistics
 ---
@@ -22,7 +22,7 @@ category: logistics
 .md-fold[open] .fold-toggle { transform: rotate(180deg); color: #00D4AA; }
 </style>
 
-## Your Miners Are Right There — And Your Base Is Starving
+## Your Miners Are Right There 鈥?And Your Base Is Starving
 
 You found a titanium vein on the other side of the asteroid belt. You built a mining rig on it. You watched it extract ore. And then you realized: how do you get that ore back to your smelter?
 
@@ -38,7 +38,7 @@ I wasted six hours on my first mining outpost because I connected the freighter 
 ---
 
 <details class="md-fold">
-<summary><span>Prerequisites — What You Need Before Building Freighters</span><span class="fold-toggle">▼</span></summary>
+<summary><span>Prerequisites 鈥?What You Need Before Building Freighters</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -75,7 +75,7 @@ Skip nothing in this chain. Each tier builds on the last.
 
 
 <details class="md-fold">
-<summary><span>How Freighter Docks Actually Work</span><span class="fold-toggle">▼</span></summary>
+<summary><span>How Freighter Docks Actually Work</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -85,7 +85,7 @@ A Freighter Dock is a two-way building. It both sends and receives ships. Think 
 
 {{< diagram src="freighter-ship-cycle.svg" caption="Freighter ship travel cycle from main station dock to mining outpost and back" >}}
 
-Each ship in your fleet follows this loop automatically. You do not assign routes. You do not schedule departures. The dock handles everything — as long as you set it up correctly.
+Each ship in your fleet follows this loop automatically. You do not assign routes. You do not schedule departures. The dock handles everything 鈥?as long as you set it up correctly.
 
 ### Cargo Flow Direction
 
@@ -121,7 +121,7 @@ For your first mining outpost, a Small Freighter is enough. You can always upgra
 </details>
 
 <details class="md-fold">
-<summary><span>Step-by-Step: Setting Up Your First Mining Outpost</span><span class="fold-toggle">▼</span></summary>
+<summary><span>Step-by-Step: Setting Up Your First Mining Outpost</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -137,12 +137,12 @@ Open your star map and look for asteroids with resource icons. Fly there in your
 
 Land on the asteroid and place these buildings in this order:
 
-1. **Solar Panels** (4-6) — power first, always
-2. **Miner** — on the ore vein
-3. **Storage Container** — next to the miner
-4. **Freighter Dock** — as close to the storage container as possible
-5. **Connector** — from Miner → Storage Container
-6. **Connector** — from Storage Container → Freighter Dock (Export side)
+1. **Solar Panels** (4-6) 鈥?power first, always
+2. **Miner** 鈥?on the ore vein
+3. **Storage Container** 鈥?next to the miner
+4. **Freighter Dock** 鈥?as close to the storage container as possible
+5. **Connector** 鈥?from Miner 鈫?Storage Container
+6. **Connector** 鈥?from Storage Container 鈫?Freighter Dock (Export side)
 
 ### Step 3: Connect the Docks
 
@@ -180,7 +180,7 @@ If any of these fail, trace backwards from the problem point.
 </details>
 
 <details class="md-fold">
-<summary><span>Scaling Up: Multi-Planet Mining Networks</span><span class="fold-toggle">▼</span></summary>
+<summary><span>Scaling Up: Multi-Planet Mining Networks</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -190,7 +190,7 @@ Once you hit Station Level 8, one mining outpost is not enough. You need multipl
 
 {{< diagram src="wormhole-planet-chain.svg" caption="Multi-planet wormhole chain routing through intermediate stations to the main hub" >}}
 
-Your main station is the hub. Every mining outpost is a spoke. Freighters fly directly between each outpost and the main station. Do not try to create outpost-to-outpost routes — it complicates everything and doubles your transit time.
+Your main station is the hub. Every mining outpost is a spoke. Freighters fly directly between each outpost and the main station. Do not try to create outpost-to-outpost routes 鈥?it complicates everything and doubles your transit time.
 
 ### How Many Freighters Per Route?
 
@@ -205,7 +205,7 @@ Your main station is the hub. Every mining outpost is a spoke. Freighters fly di
 
 ### Wormhole Integration
 
-Once you unlock Wormhole Generators, you can skip freighters entirely for planets that have a wormhole connection. Wormholes sync inventories instantly — no ship travel time needed.
+Once you unlock Wormhole Generators, you can skip freighters entirely for planets that have a wormhole connection. Wormholes sync inventories instantly 鈥?no ship travel time needed.
 
 But freighters still have a role: for planets too far for wormholes, or for moving items that you do not want cluttering your wormhole-linked storage.
 
@@ -218,7 +218,7 @@ But freighters still have a role: for planets too far for wormholes, or for movi
 </details>
 
 <details class="md-fold">
-<summary><span>Troubleshooting Common Freighter Problems</span><span class="fold-toggle">▼</span></summary>
+<summary><span>Troubleshooting Common Freighter Problems</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -258,7 +258,7 @@ But freighters still have a role: for planets too far for wormholes, or for movi
 <hr>
 
 <details class="md-fold" open>
-<summary><span>Quick Reference — Freighter Setup Cheat Sheet</span><span class="fold-toggle">▼</span></summary>
+<summary><span>Quick Reference 鈥?Freighter Setup Cheat Sheet</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -268,8 +268,8 @@ But freighters still have a role: for planets too far for wormholes, or for movi
 <ol>
 <li>Solar Panels / Small Reactor</li>
 <li>Miner on ore vein</li>
-<li>Connector: Miner → Storage</li>
-<li>Connector: Storage → Dock Export</li>
+<li>Connector: Miner 鈫?Storage</li>
+<li>Connector: Storage 鈫?Dock Export</li>
 <li>Freighter Dock (Export = ore out)</li>
 </ol>
 </div>
@@ -277,8 +277,8 @@ But freighters still have a role: for planets too far for wormholes, or for movi
 <h4>At the Main Station</h4>
 <ol>
 <li>Freighter Dock (Import = ore in)</li>
-<li>Connector: Dock Import → Buffer Storage</li>
-<li>Connector: Buffer → Smelter</li>
+<li>Connector: Dock Import 鈫?Buffer Storage</li>
+<li>Connector: Buffer 鈫?Smelter</li>
 <li>Assign freighter ship to the route</li>
 <li>Watch one full cycle to verify</li>
 </ol>
@@ -297,22 +297,13 @@ But freighters still have a role: for planets too far for wormholes, or for movi
 </div>
 <div class="meta-badge">
   <span class="meta-rating rating-c">C-Tier Setup</span>
-  <span>Manual resource hauling with personal ship — works but wastes your time</span>
+  <span>Manual resource hauling with personal ship 鈥?works but wastes your time</span>
 </div>
 
 <p><small style="display:block;text-align:center;color:var(--space-text-dim);margin-top:20px;"><em>Tested across multiple save files at Station Levels 5 through 12. Freight behavior verified in version 1.0.0.2.</em></small></p>
 
 </div>
 </details>
-
----
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-
 
 ### External Resources
 

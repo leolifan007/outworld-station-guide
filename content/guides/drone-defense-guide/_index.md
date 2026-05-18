@@ -1,10 +1,11 @@
-﻿---
+---
 title: "Drone Defense & Shield Guide: Protect Your Station"
 description: "Outworld Station drone shields, missile turrets, laser defense, and base protection strategies. Real loadouts that survived raids at Station Level 10+."
 date: 2026-05-17
+publishedAt: 2026-05-19T11:22:00+08:00
 breadcrumb: Drone Defense
 emoji: 🛡️
-lastmod: 2026-05-17
+lastmod: 2026-05-19
 draft: false
 category: defense
 ---
@@ -68,6 +69,13 @@ Enemies target the **nearest unprotected building** to their spawn point. They d
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 ---
@@ -113,6 +121,13 @@ One Drone Bay controls up to 4 drones. Their patrol circles can overlap, creatin
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <details class="md-fold">
@@ -162,6 +177,13 @@ The Ion Cannon is your endgame defense. It one-shots most enemies and two-shots 
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <details class="md-fold">
@@ -215,6 +237,13 @@ Full perimeter defense with Ion Cannons on elevated central platforms, turrets o
 </div>
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <details class="md-fold">
@@ -253,6 +282,13 @@ Laser Turrets and Ion Cannons spike your power draw. If your grid was already at
 **Fix:** Keep 20% power headroom. Or add a dedicated Small Reactor just for defense systems. Our [Antimatter Power Guide](/guides/antimatter-power-guide/) covers endgame power scaling.
 
 </div>
+
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
 </details>
 
 <hr>
@@ -323,3 +359,9 @@ Laser Turrets and Ion Cannons spike your power draw. If your grid was already at
 
 </div>
 </details>
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
