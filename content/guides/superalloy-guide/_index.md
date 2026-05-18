@@ -1,7 +1,8 @@
-﻿---
+---
 title: "Superalloy Production Guide: Scale Your Manufacturing"
 description: "Outworld Station superalloy production chain, material requirements, factory layouts, and throughput targets. From first batch to 50/sec output."
 date: 2026-05-17
+publishedAt: 2026-05-18T23:43:00+08:00
 publishedAt: 2026-05-17T23:00:00+08:00
 breadcrumb: Superalloy
 emoji: ⚙️
@@ -293,6 +294,13 @@ Tungsten asteroids have lower yield per minute than Titanium. Players often buil
 </details>
 
 ---
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
+
 
 ### External Resources
 

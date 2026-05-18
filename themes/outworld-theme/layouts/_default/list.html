@@ -24,8 +24,8 @@
       {{ range $children.ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="guide-card guide-index-card">
         <div class="guide-card-body">
-          <h3>{{ .Title | truncate 55 }}</h3>
-          {{ with .Description }}<p>{{ . | truncate 80 }}</p>{{ end }}
+          <h3>{{ .Title | truncate 30 }}</h3>
+          {{ with .Description }}<p>{{ . | truncate 60 }}</p>{{ end }}
         </div>
       </a>
       {{ end }}

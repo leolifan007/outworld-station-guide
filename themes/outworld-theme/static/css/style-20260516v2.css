@@ -1083,19 +1083,20 @@ details .content-figure svg {
 
 /* ─── In-Depth Guide Cards (List Pages) — bordered + compact ─── */
 .guide-card.guide-index-card {
-  background: linear-gradient(135deg, rgba(11,20,34,0.6) 0%, rgba(8,12,22,0.85) 100%);
-  border: 1px solid rgba(58,123,213,0.25);
+  background: linear-gradient(135deg, rgba(11,20,34,0.7) 0%, rgba(14,24,42,0.9) 100%);
+  border: 1px solid rgba(58,123,213,0.45);
   padding: 0.9rem 1rem;
   transition: var(--transition);
 }
 .guide-card.guide-index-card:hover {
-  border-color: rgba(0,212,170,0.35);
+  border-color: rgba(0,212,170,0.5);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0,212,170,0.06), 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 24px rgba(0,212,170,0.1), 0 1px 3px rgba(0,0,0,0.3);
 }
 .guide-card.guide-index-card .guide-card-body h3 {
   font-size: 0.95rem;
   margin-bottom: 0.3rem;
+  color: var(--space-text-bright, #E8F0FA);
 }
 .guide-card.guide-index-card .guide-card-body p {
   font-size: 0.78rem;
@@ -1117,14 +1118,7 @@ details .content-figure svg {
   align-items: center;
   gap: 8px;
 }
-.guides-section .guide-card-body h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.guides-section .guide-card-body p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
+/* .guide-index-card provides its own h3/p sizing; remove redundant overrides */
 .guides-section .guide-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
