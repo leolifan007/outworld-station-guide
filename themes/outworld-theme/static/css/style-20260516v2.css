@@ -1083,25 +1083,45 @@ details .content-figure svg {
 
 /* ─── In-Depth Guide Cards (List Pages) — bordered + compact ─── */
 .guide-card.guide-index-card {
-  background: linear-gradient(135deg, rgba(11,20,34,0.7) 0%, rgba(14,24,42,0.9) 100%);
-  border: 1px solid rgba(58,123,213,0.45);
-  padding: 0.9rem 1rem;
+  background: linear-gradient(145deg, rgba(16,30,56,0.92) 0%, rgba(10,18,35,0.97) 100%);
+  border: 1px solid rgba(58,123,213,0.35);
+  padding: 1rem 1.1rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+.guide-card.guide-index-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0,212,170,0.35), transparent);
+  opacity: 0;
   transition: var(--transition);
 }
 .guide-card.guide-index-card:hover {
-  border-color: rgba(0,212,170,0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0,212,170,0.1), 0 1px 3px rgba(0,0,0,0.3);
+  border-color: rgba(0,212,170,0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,212,170,0.1), 0 2px 6px rgba(0,0,0,0.35);
+}
+.guide-card.guide-index-card:hover::before {
+  opacity: 1;
 }
 .guide-card.guide-index-card .guide-card-body h3 {
-  font-size: 0.95rem;
-  margin-bottom: 0.3rem;
+  font-size: 0.92rem;
+  margin-bottom: 0.35rem;
   color: var(--space-text-bright, #E8F0FA);
+  line-height: 1.35;
 }
 .guide-card.guide-index-card .guide-card-body p {
   font-size: 0.78rem;
-  line-height: 1.4;
+  line-height: 1.45;
   margin-bottom: 0;
+  color: var(--space-text-dim);
 }
 
 /* ─── Guides Section (Aggregation / List Pages) ─── */

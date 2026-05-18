@@ -3,7 +3,6 @@ title: "Freighter & Mining Station Guide: Automate Remote Mining"
 description: "Outworld Station freighter dock setup, mining station automation, and remote resource collection. Step-by-step from first dock to a 4-planet supply network."
 date: 2026-05-17
 publishedAt: 2026-05-18T20:47:00+08:00
-publishedAt: 2026-05-17T23:28:00+08:00
 breadcrumb: Freighter Mining
 emoji: 🚀
 lastmod: 2026-05-17
