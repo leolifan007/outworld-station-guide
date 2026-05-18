@@ -2,9 +2,10 @@
 title: "Antimatter Power Guide: Endgame Energy Strategy"
 description: "Outworld Station antimatter power setup, neutron initiator production, radiation shielding, and endgame energy strategy. From fusion to the singularity."
 date: 2026-05-17
+publishedAt: 2026-05-18T16:37:00+08:00
 breadcrumb: Antimatter Power
 emoji: ⚛️
-lastmod: 2026-05-17
+lastmod: 2026-05-18
 draft: false
 category: power
 ---
@@ -300,3 +301,9 @@ If your Antimatter Reactor runs out of fuel, you lose 500+ power/sec instantly. 
 
 </div>
 </details>
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
