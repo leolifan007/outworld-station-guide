@@ -452,6 +452,10 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   background:linear-gradient(135deg, rgba(40,25,10,0.6) 0%, rgba(25,15,5,0.85) 100%);
   border:1px solid rgba(232,152,62,0.15);
   box-shadow:inset 0 0 30px rgba(232,152,62,0.03);
+  padding:1rem;
+  min-height:unset;
+  max-height:220px;
+  overflow:hidden;
 }
 .guide-card.hot::before{
   content:'';position:absolute;top:0;left:0;right:0;height:2px;
