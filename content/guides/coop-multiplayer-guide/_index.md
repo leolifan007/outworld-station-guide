@@ -53,13 +53,7 @@ Your friends will see your game in their Steam friends list or can join via the 
 
 In co-op mode, you're all working on the same station:
 
-| Shared | Not Shared |
-|--------|------------|
-| Station buildings | Personal inventory (mostly) |
-| Resources in storage | Research progress (host only) |
-| Power grid | Ship controls (whoever's in it) |
-| Enemies/threats | Personal equipment loadout |
-| Station level | XP/achievements (individual) |
+![What's Shared in Co-op Mode](/images/diagrams/coop-shared-items.svg)
 
 This means if one person builds a smelter, everyone can use it. If someone empties a storage chest, it's empty for everyone.
 
@@ -90,6 +84,8 @@ Assign each player a focus area:
 - Manages power grid
 - Balances resource flow
 - Handles freighter routes
+
+![Specialist Roles Strategy](/images/diagrams/coop-roles.svg)
 
 This works well because each person can focus without stepping on each other's work.
 

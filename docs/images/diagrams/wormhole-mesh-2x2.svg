@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowTwo" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <text x="350" y="25" text-anchor="middle" fill="#C8D6E8" font-size="15" font-weight="bold">Full Mesh Wormhole Network</text>
+  <text x="350" y="45" text-anchor="middle" fill="#6A8AAA" font-size="11">All stations connect to all others — maximum redundancy</text>
+
+  <!-- Station A (top-left) -->
+  <rect x="30" y="80" width="160" height="60" rx="10" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="2"/>
+  <text x="110" y="105" text-anchor="middle" fill="#00D4AA" font-size="13" font-weight="bold">🏠 Station A</text>
+  <text x="110" y="123" text-anchor="middle" fill="#8AACCD" font-size="10">Main Hub</text>
+  <text x="110" y="136" text-anchor="middle" fill="#6A8AAA" font-size="9">Channel 1 &amp; 2</text>
+
+  <!-- Station B (top-right) -->
+  <rect x="510" y="80" width="160" height="60" rx="10" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="590" y="105" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">🛸 Station B</text>
+  <text x="590" y="123" text-anchor="middle" fill="#8AACCD" font-size="10">Mining Base</text>
+  <text x="590" y="136" text-anchor="middle" fill="#6A8AAA" font-size="9">Channel 1 &amp; 3</text>
+
+  <!-- Station D (bottom-left) -->
+  <rect x="30" y="220" width="160" height="60" rx="10" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="110" y="245" text-anchor="middle" fill="#FFB347" font-size="13" font-weight="bold">🛡 Station D</text>
+  <text x="110" y="263" text-anchor="middle" fill="#8AACCD" font-size="10">Defense Outpost</text>
+  <text x="110" y="276" text-anchor="middle" fill="#6A8AAA" font-size="9">Channel 2 &amp; 4</text>
+
+  <!-- Station C (bottom-right) -->
+  <rect x="510" y="220" width="160" height="60" rx="10" fill="url(#boxGrad)" stroke="#FF6BB5" stroke-width="2"/>
+  <text x="590" y="245" text-anchor="middle" fill="#FF6BB5" font-size="13" font-weight="bold">☢️ Station C</text>
+  <text x="590" y="263" text-anchor="middle" fill="#8AACCD" font-size="10">Uranium Outpost</text>
+  <text x="590" y="276" text-anchor="middle" fill="#6A8AAA" font-size="9">Channel 3 &amp; 4</text>
+
+  <!-- Links: A ↔ B -->
+  <line x1="190" y1="110" x2="510" y2="110" stroke="#D4A0FF" stroke-width="3" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="350" y="103" text-anchor="middle" fill="#D4A0FF" font-size="9">Ch 1</text>
+
+  <!-- Links: A ↔ D -->
+  <line x1="110" y1="140" x2="110" y2="220" stroke="#D4A0FF" stroke-width="3" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="125" y="183" text-anchor="middle" fill="#D4A0FF" font-size="9">Ch 2</text>
+
+  <!-- Links: B ↔ C -->
+  <line x1="590" y1="140" x2="590" y2="220" stroke="#D4A0FF" stroke-width="3" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="575" y="183" text-anchor="middle" fill="#D4A0FF" font-size="9">Ch 3</text>
+
+  <!-- Links: C ↔ D -->
+  <line x1="190" y1="250" x2="510" y2="250" stroke="#D4A0FF" stroke-width="3" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="350" y="243" text-anchor="middle" fill="#D4A0FF" font-size="9">Ch 4</text>
+
+  <!-- Links: A ↔ C (diagonal) -->
+  <line x1="170" y1="135" x2="530" y2="225" stroke="#D4A0FF" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+  <text x="345" y="190" text-anchor="middle" fill="#6A8AAA" font-size="8">Ch 5 (backup)</text>
+
+  <!-- Links: B ↔ D (diagonal) -->
+  <line x1="530" y1="135" x2="170" y2="225" stroke="#D4A0FF" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+  <text x="355" y="190" text-anchor="middle" fill="#6A8AAA" font-size="8" visibility="hidden">...</text>
+
+  <!-- Note -->
+  <text x="350" y="310" text-anchor="middle" fill="#4A6070" font-size="9">Full Mesh Topology — Each station has 2+ wormhole channels — Outworld Station Guide</text>
+</svg>

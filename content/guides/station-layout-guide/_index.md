@@ -35,13 +35,7 @@ I ignored all of this my first playthrough. My "compact" design became a maze of
 
 If you've played Factorio, you know this one. Set up a central belt highway carrying your most-used materials:
 
-```
-[Iron Ore] [Copper Ore] [Titanium] [Carbon]
-    ↓          ↓           ↓         ↓
-[Smelters] [Smelters] [Processors] [Chemistry]
-    ↓          ↓           ↓         ↓
-[Main Production Area]
-```
+![Main Bus Layout](/images/diagrams/main-bus-layout.svg)
 
 **Why it works:** You pull from the bus when you need something, feed back to it when you produce intermediates. Expanding means extending the bus, not reworking your whole factory.
 
@@ -51,17 +45,7 @@ If you've played Factorio, you know this one. Set up a central belt highway carr
 
 The game gives you two levels for a reason. Here's how I use them:
 
-**Lower Level (Foundation):**
-- Raw ore processing (smelters, crushers)
-- Power generation
-- Storage buffers
-- Heavy machinery that doesn't need frequent access
-
-**Upper Level (Platform):**
-- Assembly machines
-- Research labs
-- Control rooms
-- Anything you interact with often
+![Two-Level Strategy](/images/diagrams/two-level-strategy.svg)
 
 This split keeps your heavy industry below and your fiddly production above. When you're tweaking assembler recipes, you're not climbing over power plants to get there.
 
@@ -71,10 +55,7 @@ This is where I kept messing up. A belt can only move so much material per secon
 
 **The fix:** Use splitters to balance flow, and insert buffer storage at key points:
 
-```
-[Source] → [Splitter] → [Buffer Storage] → [Splitter] → [Consumers]
-                          (1-2 stacks)
-```
+![Throughput Buffer Pattern](/images/diagrams/throughput-buffer.svg)
 
 That buffer absorbs demand spikes. Without it, your production line stalls every time you add a new consumer.
 
@@ -93,9 +74,7 @@ Every time I thought "this is plenty of space," I was wrong. Here's what I learn
 
 Best for: Single-product lines like "Iron Ore → Iron Plate → Steel"
 
-```
-[Input Dock] → [Processing] → [Processing] → [Output Storage]
-```
+![Linear Production Chain](/images/diagrams/linear-chain.svg)
 
 Simple, easy to extend, hard to mess up. Use this for your first station.
 
@@ -103,13 +82,7 @@ Simple, easy to extend, hard to mess up. Use this for your first station.
 
 Best for: Central processing with multiple inputs
 
-```
-        [Input A]
-            ↓
-[Input B] → [Central Processing] → [Output]
-            ↑
-        [Input C]
-```
+![Hub-and-Spoke Pattern](/images/diagrams/hub-spoke.svg)
 
 Good for your main station where everything converges. The hub handles common operations, spokes feed in raw materials.
 
@@ -117,11 +90,7 @@ Good for your main station where everything converges. The hub handles common op
 
 Best for: Mid-to-late game when you're repeating similar setups
 
-```
-[Module A: Power]    [Module B: Smelting]    [Module C: Assembly]
-      ↓                      ↓                       ↓
-[Module D: Research]  [Module E: Storage]    [Module F: Shipping]
-```
+![Modular Blocks Pattern](/images/diagrams/modular-blocks.svg)
 
 Each module is self-contained with its own inputs/outputs. You can copy-paste working modules to new stations.
 
@@ -241,11 +210,7 @@ The bottleneck is usually where items back up. Fix that point, then find the nex
 
 When several machines feed one belt:
 
-```
-[A] → [Splitter] → [Merge]
-[B] → [Splitter] → [Merge] → [Main Line]
-[C] → [Splitter] → [Merge]
-```
+![Balancing Multiple Outputs](/images/diagrams/balancing-outputs.svg)
 
 Splitters ensure each machine gets equal input. Mergers combine outputs evenly. Without them, one machine hogs all the resources.
 
@@ -282,11 +247,8 @@ Power buildings need:
 - Space for expansion
 
 **Pattern:**
-```
-[Fuel Storage] → [Power Gen 1] [Power Gen 2] [Power Gen 3]
-                      ↓           ↓           ↓
-                   [Power Grid Connection Point]
-```
+
+![Power Generation Layout](/images/diagrams/power-gen-layout.svg)
 
 Keep all power in one area. Don't scatter generators around your station.
 
@@ -298,13 +260,8 @@ Research labs need:
 - Easy access (you'll check them often)
 
 **Pattern:**
-```
-[Research Items Storage]
-        ↓
-[Lab 1] [Lab 2] [Lab 3] [Lab 4]
-        ↓
-[Output/Completion Storage]
-```
+
+![Research Layout](/images/diagrams/research-layout.svg)
 
 Put research near your main working area. You'll be checking progress frequently.
 
@@ -316,13 +273,8 @@ Central storage should be:
 - Expandable
 
 **Pattern:**
-```
-        [Production Area]
-              ↓
-[Input] → [Central Storage] → [Output]
-              ↑
-        [Shipping/Receiving]
-```
+
+![Storage Hub Layout](/images/diagrams/storage-hub.svg)
 
 Everyone routes through central storage. Keep it central.
 
