@@ -1,5 +1,37 @@
 {{ define "main" }}
 
+<!-- HOT GUIDES (moved to top, only articles published in last 30 days) -->
+{{ $recentPages := slice }}
+{{ range where .Site.Pages "Section" "guides" }}
+  {{ if and (not .Params.hidden) .Params.publishedAt }}
+    {{ $daysSince := div (sub now.Unix .Params.publishedAt.Unix) 86400 }}
+    {{ if le $daysSince 30 }}
+      {{ $recentPages = $recentPages | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $recentPages) 0 }}
+<section class="intro-section" style="padding-top:1.5rem;padding-bottom:0.5rem;">
+  <div class="hot-guides-section">
+    <div class="section-heading">🔥 Hot Guides</div>
+    <div class="guide-grid">
+      {{ range $idx, $page := first 8 $recentPages.ByDate.Reverse }}
+      <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
+        {{ if eq $idx 0 }}<span class="new-badge">NEW</span>{{ end }}
+        <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
+        <h3 style="font-size:0.9rem;margin-bottom:0.3rem;color:inherit;line-height:1.3;">{{ .Title | truncate 55 }}</h3>
+        {{ with .Description }}<p style="font-size:0.78rem;color:var(--space-text-dim,rgba(255,255,255,0.5));margin-bottom:0.5rem;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{{ . | truncate 70 }}</p>{{ end }}
+        <div class="card-link" style="margin-top:auto;">Read More →</div>
+      </a>
+      {{ end }}
+    </div>
+    <div style="text-align:center;margin-top:0.75rem;">
+      <a href="/guides/" class="btn btn-outline">📚 View All Guides →</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')"></div>
@@ -12,8 +44,8 @@
   </div>
 </section>
 
-<!-- MUST-READ GUIDES (Row 1: 4 fixed cards) -->
-<section class="intro-section">
+<!-- MUST-READ GUIDES -->
+<section class="intro-section" style="padding-top:1.5rem;">
   <h2>📖 Must-Read Guides</h2>
   <p>Start here if you are new. These cover everything you need to get your station running.</p>
 
@@ -44,7 +76,7 @@
     </a>
   </div>
 
-  <!-- REFERENCE GUIDES (Row 2: Buildings + Resources + Map + Contact) -->
+  <!-- REFERENCE GUIDES -->
   <h2 style="margin-top:2rem;">🧰 Reference Guides</h2>
   <p>Deep dives on station logistics, blueprints, and interactive tools.</p>
   <div class="guide-grid">
@@ -74,35 +106,7 @@
     </a>
   </div>
 
-  <!-- HOT GUIDES (Rows 3-4: dynamic, up to 8 cards) -->
-  {{ $guidePages := slice }}
-  {{ range where .Site.Pages "Section" "guides" }}
-    {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) (not .Params.hidden) }}
-      {{ $guidePages = $guidePages | append . }}
-    {{ end }}
-  {{ end }}
-  {{ $hotCount := len $guidePages }}
-  {{ if gt $hotCount 0 }}
-  <div class="hot-guides-section">
-    <div class="section-heading">🔥 Hot Guides</div>
-    <div class="guide-grid">
-      {{ range $idx, $page := first 8 $guidePages.ByDate.Reverse }}
-      <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-        {{ if eq $idx 0 }}<span class="new-badge">NEW</span>{{ end }}
-        <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
-        <h3 style="font-size:1.05rem;margin-bottom:0.5rem;color:inherit;">{{ .Title | truncate 50 }}</h3>
-        {{ with .Description }}<p style="font-size:0.85rem;color:var(--space-text-dim, rgba(255,255,255,0.5));margin-bottom:1rem;line-height:1.7;">{{ . | truncate 120 }}</p>{{ end }}
-        <div class="card-link" style="margin-top:auto;">Read More →</div>
-      </a>
-      {{ end }}
-    </div>
-    <div style="text-align:center;margin-top:1rem;">
-      <a href="/guides/" class="btn btn-outline">📚 View All Guides →</a>
-    </div>
-  </div>
-  {{ end }}
-
-  <h2 style="margin-top:2.5rem;">🤔 Missing something?</h2>
+  <h2 style="margin-top:2rem;">🤔 Missing something?</h2>
   <p>This guide is still growing. Need something specific? <a href="{{ "contact/" | relURL }}">Let me know</a>.</p>
 </section>
 
