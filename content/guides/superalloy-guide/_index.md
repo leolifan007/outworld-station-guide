@@ -4,7 +4,7 @@ description: "Outworld Station superalloy production chain, material requirement
 date: 2026-05-17
 publishedAt: 2026-05-18T23:43:00+08:00
 breadcrumb: Superalloy
-emoji: 閳挎瑱绗?lastmod: 2026-05-18
+lastmod: 2026-05-18
 draft: false
 category: production
 ---
