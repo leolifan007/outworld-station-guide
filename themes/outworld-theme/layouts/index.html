@@ -1,6 +1,18 @@
 {{ define "main" }}
 
-<!-- HOT GUIDES (moved to top, only articles published in last 30 days) -->
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🛸 Updated May 2026 · Player-Tested Guide</div>
+    <h1>Outworld Station <span class="nobreak highlight">Guide</span></h1>
+    <p class="hero-sub">
+      Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.
+    </p>
+  </div>
+</section>
+
+<!-- HOT GUIDES (only articles published in last 30 days) -->
 {{ $recentPages := slice }}
 {{ range where .Site.Pages "Section" "guides" }}
   {{ if and (not .Params.hidden) .Params.publishedAt }}
@@ -18,7 +30,7 @@
       {{ range $idx, $page := first 8 $recentPages.ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
         {{ if eq $idx 0 }}<span class="new-badge">NEW</span>{{ end }}
-        <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
+        <div class="card-tag">{{ .Params.publishedAt.Format "Jan 2, 2006" }}</div>
         <h3 style="font-size:0.9rem;margin-bottom:0.3rem;color:inherit;line-height:1.3;">{{ .Title | truncate 55 }}</h3>
         {{ with .Description }}<p style="font-size:0.78rem;color:var(--space-text-dim,rgba(255,255,255,0.5));margin-bottom:0.5rem;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{{ . | truncate 70 }}</p>{{ end }}
         <div class="card-link" style="margin-top:auto;">Read More →</div>
@@ -31,18 +43,6 @@
   </div>
 </section>
 {{ end }}
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')"></div>
-  <div class="hero-content">
-    <div class="hero-badge">🛸 Updated May 2026 · Player-Tested Guide</div>
-    <h1>Outworld Station <span class="nobreak highlight">Guide</span></h1>
-    <p class="hero-sub">
-      Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.
-    </p>
-  </div>
-</section>
 
 <!-- MUST-READ GUIDES -->
 <section class="intro-section" style="padding-top:1.5rem;">
