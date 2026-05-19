@@ -2,6 +2,7 @@
 title: "Co-op Multiplayer Guide: Play Outworld Station With Friends"
 description: "Everything you need to know about 4-player co-op in Outworld Station. How to host, join, share tasks, and avoid common multiplayer headaches."
 date: 2026-05-19
+publishedAt: 2026-05-19T19:42:00+08:00
 lastmod: 2026-05-19
 draft: false
 ---
@@ -211,11 +212,7 @@ Sometimes you build something that just doesn't work. Agree upfront: "If we need
 
 ## FAQ
 
-**Q: Does everyone need to own the game?**
-
-A: Yes. Each player needs their own copy of Outworld Station on Steam.
-
-**Q: What happens if the host leaves?**
+**Q: What happens if the host leaves?
 
 A: The session ends for everyone. Only the host's save file is updated, so progress persists in their save. Guests should coordinate with the host if they need to leave mid-session.
 

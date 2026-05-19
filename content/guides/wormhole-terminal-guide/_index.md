@@ -338,6 +338,12 @@ This prevents items from both directions competing for the same generator's stor
 </div>
 </details>
 
+## FAQ
+
+**Q: What wormhole level do I need?**
+
+Lv1 works fine early game (5 units/sec). Don't wait for Lv3 — get Lv1 up first to connect your first resource planet.
+
 ### External Resources
 
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)

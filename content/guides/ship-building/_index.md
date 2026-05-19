@@ -240,6 +240,14 @@ Mining ships are unique — they generate resources directly from asteroids, not
 
 ---
 
+## FAQ
+
+**Q: Shipyard I vs II — what's the difference?**
+
+I builds small ships (scout, cargo). II builds combat ships and Ark components. Only build I early game; II is a mid/late-game investment.
+
+---
+
 <div class="guides-section" style="margin-top:2rem">
   <h2 class="guides-section-title">📖 Next Steps</h2>
   <div class="guide-grid">

@@ -2,6 +2,7 @@
 title: "Station Layout Guide: Build Efficient Factories"
 description: "Design compact, efficient station layouts in Outworld Station. Two-level building, throughput optimization, expansion planning, and common mistakes."
 date: 2026-05-19
+publishedAt: 2026-05-19T19:42:00+08:00
 lastmod: 2026-05-19
 draft: false
 ---
@@ -191,6 +192,10 @@ A: Design each for a purpose:
 - Station 3: Ship building and freight operations
 
 Use freighters to move materials between them.
+
+**Q: Where do I build a second station?**
+
+Research the Telescope to scan nearby planets. Look for planets with rare minerals (silicon, uranium). That's where you build next.
 
 ## Layout Optimization Techniques
 

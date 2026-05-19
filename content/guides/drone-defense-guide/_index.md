@@ -360,6 +360,16 @@ Laser Turrets and Ion Cannons spike your power draw. If your grid was already at
 </div>
 </details>
 
+## FAQ
+
+**Q: Is Shield Generator worth it?**
+
+Only after you have stable power (fusion level or 3+ small reactors). At 50 power/sec, it'll cripple your early game. Turrets early, missiles mid, shields late.
+
+**Q: How do turrets get ammo?**
+
+They auto-pull iron plates from their paired Inventory link. Keep your iron plate line running and turrets stay fed. Line goes down, turrets go silent.
+
 ### External Resources
 
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)

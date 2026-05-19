@@ -254,23 +254,7 @@ Two things to check. 80% of the time it's power. 20% of the time it's missing In
 ### Q: Mining Drill not producing?
 Three possibilities: ① No power ② Storage full ③ No Output Pair. Number 3 is the easiest to forget.
 
-### Q: Why did my reactor explode?
-Not enough cooling. Every reactor needs at least 2 Cooling Towers. Don't place them too close to other large buildings either.
 
-### Q: What wormhole level do I need?
-Lv1 works fine early game (5 units/sec). Don't wait for Lv3 — get Lv1 up first to connect your first resource planet.
-
-### Q: Is Shield Generator worth it?
-Only after you have stable power (fusion level or 3+ small reactors). At 50 power/sec, it'll cripple your early game. Turrets early, missiles mid, shields late.
-
-### Q: Shipyard I vs II — what's the difference?
-I builds small ships (scout, cargo). II builds combat ships and Ark components. Only build I early game; II is a mid/late-game investment.
-
-### Q: How do turrets get ammo?
-They auto-pull iron plates from their paired Inventory link. Keep your iron plate line running and turrets stay fed. Line goes down, turrets go silent.
-
-### Q: Where do I build a second station?
-Research the Telescope to scan nearby planets. Look for planets with rare minerals (silicon, uranium). That's where you build next.
 
 ---
 

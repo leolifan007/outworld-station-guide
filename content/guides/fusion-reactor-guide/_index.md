@@ -164,6 +164,12 @@ If any link in that chain breaks — power outage, full storage, wrong prioritiz
 </div>
 </div>
 
+## FAQ
+
+**Q: Why did my reactor explode?**
+
+Not enough cooling. Every reactor needs at least 2 Cooling Towers. Don't place them too close to other large buildings either.
+
 <hr>
 
 <p><small style="display:block;text-align:center;color:var(--space-text-dim);"><em>This guide is the result of two days of hands-on testing across multiple station tiers. Every recommendation has been verified in-game — no theory, just what actually works.</em></small></p>
