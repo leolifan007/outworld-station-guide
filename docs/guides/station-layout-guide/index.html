@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Station Layout Guide: Build Efficient Factories in Outworld Station — </title>
-<meta name="description" content="Learn how to design compact, efficient station layouts in Outworld Station. Covers two-level building, throughput optimization, expansion planning, and common layout mistakes to avoid.">
+  <title>Station Layout Guide: Build Efficient Factories — </title>
+<meta name="description" content="Design compact, efficient station layouts in Outworld Station. Two-level building, throughput optimization, expansion planning, and common mistakes.">
   <meta name="keywords" content="Outworld Station guide, Outworld Station tips, space factory automation, space station building, building game guide">
   <link rel="canonical" href="https://outworldstationguide.com/guides/station-layout-guide/">
   
-  <meta property="og:title" content="Station Layout Guide: Build Efficient Factories in Outworld Station">
-  <meta property="og:description" content="Learn how to design compact, efficient station layouts in Outworld Station. Covers two-level building, throughput optimization, expansion planning, and common layout mistakes to avoid.">
+  <meta property="og:title" content="Station Layout Guide: Build Efficient Factories">
+  <meta property="og:description" content="Design compact, efficient station layouts in Outworld Station. Two-level building, throughput optimization, expansion planning, and common mistakes.">
   <meta property="og:url" content="https://outworldstationguide.com/guides/station-layout-guide/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Outworld Station Guide">
@@ -18,8 +18,8 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Station Layout Guide: Build Efficient Factories in Outworld Station">
-  <meta name="twitter:description" content="Learn how to design compact, efficient station layouts in Outworld Station. Covers two-level building, throughput optimization, expansion planning, and common layout mistakes to avoid.">
+  <meta name="twitter:title" content="Station Layout Guide: Build Efficient Factories">
+  <meta name="twitter:description" content="Design compact, efficient station layouts in Outworld Station. Two-level building, throughput optimization, expansion planning, and common mistakes.">
   <meta name="twitter:image" content="https://outworldstationguide.com/og-image.png">
   <link rel="stylesheet" href="https://outworldstationguide.com/css/style-20260516v2.css">
 
@@ -131,8 +131,8 @@
     <main>
       
 <section class="page-hero-sub">
-  <h1 class="hero-title-sub">Station Layout Guide: Build Efficient Factories in Outworld Station</h1>
-  <p class="hero-desc-sub">Learn how to design compact, efficient station layouts in Outworld Station. Covers two-level building, throughput optimization, expansion planning, and common layout mistakes to avoid.</p>
+  <h1 class="hero-title-sub">Station Layout Guide: Build Efficient Factories</h1>
+  <p class="hero-desc-sub">Design compact, efficient station layouts in Outworld Station. Two-level building, throughput optimization, expansion planning, and common mistakes.</p>
   
 
 
@@ -182,36 +182,18 @@
 <h2 id="core-layout-principles">Core Layout Principles</h2>
 <h3 id="1-the-main-bus-approach">1. The Main Bus Approach</h3>
 <p>If you&rsquo;ve played Factorio, you know this one. Set up a central belt highway carrying your most-used materials:</p>
-<pre tabindex="0"><code>[Iron Ore] [Copper Ore] [Titanium] [Carbon]
-    ↓          ↓           ↓         ↓
-[Smelters] [Smelters] [Processors] [Chemistry]
-    ↓          ↓           ↓         ↓
-[Main Production Area]
-</code></pre><p><strong>Why it works:</strong> You pull from the bus when you need something, feed back to it when you produce intermediates. Expanding means extending the bus, not reworking your whole factory.</p>
+<p><img src="/images/diagrams/main-bus-layout.svg" alt="Main Bus Layout"></p>
+<p><strong>Why it works:</strong> You pull from the bus when you need something, feed back to it when you produce intermediates. Expanding means extending the bus, not reworking your whole factory.</p>
 <p><strong>Common mistake:</strong> Running the bus through the middle of your production area. Keep it on one edge so you can extend it.</p>
 <h3 id="2-two-level-strategy">2. Two-Level Strategy</h3>
 <p>The game gives you two levels for a reason. Here&rsquo;s how I use them:</p>
-<p><strong>Lower Level (Foundation):</strong></p>
-<ul>
-<li>Raw ore processing (smelters, crushers)</li>
-<li>Power generation</li>
-<li>Storage buffers</li>
-<li>Heavy machinery that doesn&rsquo;t need frequent access</li>
-</ul>
-<p><strong>Upper Level (Platform):</strong></p>
-<ul>
-<li>Assembly machines</li>
-<li>Research labs</li>
-<li>Control rooms</li>
-<li>Anything you interact with often</li>
-</ul>
+<p><img src="/images/diagrams/two-level-strategy.svg" alt="Two-Level Strategy"></p>
 <p>This split keeps your heavy industry below and your fiddly production above. When you&rsquo;re tweaking assembler recipes, you&rsquo;re not climbing over power plants to get there.</p>
 <h3 id="3-throughput-thinking">3. Throughput Thinking</h3>
 <p>This is where I kept messing up. A belt can only move so much material per second. When you stack five assemblers pulling from the same line, the last one starves.</p>
 <p><strong>The fix:</strong> Use splitters to balance flow, and insert buffer storage at key points:</p>
-<pre tabindex="0"><code>[Source] → [Splitter] → [Buffer Storage] → [Splitter] → [Consumers]
-                          (1-2 stacks)
-</code></pre><p>That buffer absorbs demand spikes. Without it, your production line stalls every time you add a new consumer.</p>
+<p><img src="/images/diagrams/throughput-buffer.svg" alt="Throughput Buffer Pattern"></p>
+<p>That buffer absorbs demand spikes. Without it, your production line stalls every time you add a new consumer.</p>
 <h3 id="4-expansion-planning">4. Expansion Planning</h3>
 <p>Every time I thought &ldquo;this is plenty of space,&rdquo; I was wrong. Here&rsquo;s what I learned:</p>
 <ul>
@@ -223,22 +205,16 @@
 <h2 id="layout-patterns-that-work">Layout Patterns That Work</h2>
 <h3 id="pattern-1-linear-production-chain">Pattern 1: Linear Production Chain</h3>
 <p>Best for: Single-product lines like &ldquo;Iron Ore → Iron Plate → Steel&rdquo;</p>
-<pre tabindex="0"><code>[Input Dock] → [Processing] → [Processing] → [Output Storage]
-</code></pre><p>Simple, easy to extend, hard to mess up. Use this for your first station.</p>
+<p><img src="/images/diagrams/linear-chain.svg" alt="Linear Production Chain"></p>
+<p>Simple, easy to extend, hard to mess up. Use this for your first station.</p>
 <h3 id="pattern-2-hub-and-spoke">Pattern 2: Hub-and-Spoke</h3>
 <p>Best for: Central processing with multiple inputs</p>
-<pre tabindex="0"><code>        [Input A]
-            ↓
-[Input B] → [Central Processing] → [Output]
-            ↑
-        [Input C]
-</code></pre><p>Good for your main station where everything converges. The hub handles common operations, spokes feed in raw materials.</p>
+<p><img src="/images/diagrams/hub-spoke.svg" alt="Hub-and-Spoke Pattern"></p>
+<p>Good for your main station where everything converges. The hub handles common operations, spokes feed in raw materials.</p>
 <h3 id="pattern-3-modular-blocks">Pattern 3: Modular Blocks</h3>
 <p>Best for: Mid-to-late game when you&rsquo;re repeating similar setups</p>
-<pre tabindex="0"><code>[Module A: Power]    [Module B: Smelting]    [Module C: Assembly]
-      ↓                      ↓                       ↓
-[Module D: Research]  [Module E: Storage]    [Module F: Shipping]
-</code></pre><p>Each module is self-contained with its own inputs/outputs. You can copy-paste working modules to new stations.</p>
+<p><img src="/images/diagrams/modular-blocks.svg" alt="Modular Blocks Pattern"></p>
+<p>Each module is self-contained with its own inputs/outputs. You can copy-paste working modules to new stations.</p>
 <h2 id="common-layout-mistakes">Common Layout Mistakes</h2>
 <h3 id="mistake-1-the-compact-trap">Mistake 1: The &ldquo;Compact&rdquo; Trap</h3>
 <p>I tried to squeeze everything into minimum space. Result: To expand anything, I had to tear down three other things.</p>
@@ -309,6 +285,109 @@
 <li>Station 3: Ship building and freight operations</li>
 </ul>
 <p>Use freighters to move materials between them.</p>
+<p><strong>Q: Where do I build a second station?</strong></p>
+<p>Research the Telescope to scan nearby planets. Look for planets with rare minerals (silicon, uranium). That&rsquo;s where you build next.</p>
+<h2 id="layout-optimization-techniques">Layout Optimization Techniques</h2>
+<p>Once you&rsquo;ve got a working station, you can optimize it further.</p>
+<h3 id="throughput-analysis">Throughput Analysis</h3>
+<p>Walk your production lines and identify bottlenecks:</p>
+<ol>
+<li><strong>Find the slowest point</strong> — Where do items pile up before, and starve after?</li>
+<li><strong>Measure belt saturation</strong> — Is the belt full or half-empty?</li>
+<li><strong>Check buffer levels</strong> — Are buffers always full (over-supplied) or always empty (under-supplied)?</li>
+</ol>
+<p>The bottleneck is usually where items back up. Fix that point, then find the next one.</p>
+<h3 id="balancing-multiple-outputs">Balancing Multiple Outputs</h3>
+<p>When several machines feed one belt:</p>
+<p><img src="/images/diagrams/balancing-outputs.svg" alt="Balancing Multiple Outputs"></p>
+<p>Splitters ensure each machine gets equal input. Mergers combine outputs evenly. Without them, one machine hogs all the resources.</p>
+<h3 id="compact-vs-expandable">Compact vs Expandable</h3>
+<p><strong>Compact layouts:</strong></p>
+<ul>
+<li>Pros: Short belt runs, fast construction, easy to monitor</li>
+<li>Cons: Hard to expand, can&rsquo;t fix mistakes without tearing down</li>
+</ul>
+<p><strong>Expandable layouts:</strong></p>
+<ul>
+<li>Pros: Easy to add capacity, can fix problems incrementally</li>
+<li>Cons: Longer belts, more spread out, harder to see everything</li>
+</ul>
+<p><strong>My recommendation:</strong> Start expandable. Go compact once you know exactly what you need.</p>
+<h3 id="visual-debugging">Visual Debugging</h3>
+<p>When something&rsquo;s not working:</p>
+<ol>
+<li><strong>Follow the belt</strong> — Walk from source to consumer, watch where items stop</li>
+<li><strong>Check inserter coverage</strong> — Is every machine actually connected?</li>
+<li><strong>Verify belt direction</strong> — Items flowing the right way?</li>
+<li><strong>Look for crossovers</strong> — Two belts feeding each other creates a loop</li>
+</ol>
+<p>Most problems are visible if you just walk the line.</p>
+<h2 id="layout-patterns-for-specific-situations">Layout Patterns for Specific Situations</h2>
+<h3 id="power-generation-layout">Power Generation Layout</h3>
+<p>Power buildings need:</p>
+<ul>
+<li>Fuel input line</li>
+<li>Connection to grid</li>
+<li>Space for expansion</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<p><img src="/images/diagrams/power-gen-layout.svg" alt="Power Generation Layout"></p>
+<p>Keep all power in one area. Don&rsquo;t scatter generators around your station.</p>
+<h3 id="research-layout">Research Layout</h3>
+<p>Research labs need:</p>
+<ul>
+<li>Research items input</li>
+<li>Power</li>
+<li>Easy access (you&rsquo;ll check them often)</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<p><img src="/images/diagrams/research-layout.svg" alt="Research Layout"></p>
+<p>Put research near your main working area. You&rsquo;ll be checking progress frequently.</p>
+<h3 id="storage-hub-layout">Storage Hub Layout</h3>
+<p>Central storage should be:</p>
+<ul>
+<li>Accessible from all directions</li>
+<li>Near high-traffic areas</li>
+<li>Expandable</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<p><img src="/images/diagrams/storage-hub.svg" alt="Storage Hub Layout"></p>
+<p>Everyone routes through central storage. Keep it central.</p>
+<h2 id="planning-for-late-game">Planning for Late Game</h2>
+<p>Your early game layout won&rsquo;t work for late game. Plan for the transition.</p>
+<h3 id="what-changes-late-game">What Changes Late Game</h3>
+<ul>
+<li><strong>Production volume:</strong> You&rsquo;ll need 10x what you have now</li>
+<li><strong>Material variety:</strong> Late game needs materials you haven&rsquo;t unlocked yet</li>
+<li><strong>Power demand:</strong> Skyrockets with advanced machines</li>
+<li><strong>Station size:</strong> You&rsquo;ll expand to multiple zones</li>
+</ul>
+<h3 id="future-proofing-your-layout">Future-Proofing Your Layout</h3>
+<p><strong>Leave expansion corridors:</strong></p>
+<ul>
+<li>Wide paths that can become belt highways</li>
+<li>Empty zones marked for future production</li>
+<li>Power grid that can extend</li>
+</ul>
+<p><strong>Don&rsquo;t lock in:</strong></p>
+<ul>
+<li>Avoid permanent structures blocking expansion directions</li>
+<li>Keep main bus on an edge, not the center</li>
+<li>Build in modules you can replicate elsewhere</li>
+</ul>
+<h3 id="when-to-rebuild">When to Rebuild</h3>
+<p><strong>Rebuild early if:</strong></p>
+<ul>
+<li>Your layout is actively slowing you down</li>
+<li>You&rsquo;re spending more time fighting it than working with it</li>
+<li>You can&rsquo;t add something you obviously need</li>
+</ul>
+<p><strong>Don&rsquo;t rebuild if:</strong></p>
+<ul>
+<li>It&rsquo;s ugly but functional</li>
+<li>You&rsquo;re just optimizing prematurely</li>
+<li>The rebuild would take longer than working around it</li>
+</ul>
 <h2 id="related-guides">Related Guides</h2>
 <ul>
 <li><a href="/guides/beginner-mistakes/">Beginner Mistakes to Avoid</a> — More ways to not sabotage yourself</li>
@@ -325,6 +404,38 @@
   <div class="guides-section">
     <h2 class="guides-section-title">In-Depth Guides</h2>
     <div class="guide-grid">
+      
+      <a href="/guides/tier-list/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Tier List [S to D]: …</h3>
+          <p>Not everything is worth building. I ranked every ship, module, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/ship-building/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Ship Building Guide: …</h3>
+          <p>Ships confused me for hours. Here&#39;s everything I figured out about …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/research-order/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Best Research Order — …</h3>
+          <p>I tested three different tech paths from scratch. Here&#39;s the research …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/beginner-mistakes/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>15 Things I Wish I Knew Before Playing …</h3>
+          <p>I wasted 20 hours learning these the hard way. From tech order to base …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
       
       <a href="/guides/coop-multiplayer-guide/" class="guide-card guide-index-card">
         <div class="guide-card-body">
@@ -412,14 +523,6 @@
 </article>
 
 
-<div class="cta-block">
-  <div class="cta-inner">
-    <h2>📖 Didn't find what you need?</h2>
-    <p>Head back to the homepage for all guides, or reach out directly.</p>
-    <a href="/" class="btn btn-ignite">🏠 Back to Home</a>
-    <a href="/contact/" class="btn btn-outline">📧 Contact</a>
-  </div>
-</div>
 
 
     </main>
@@ -427,37 +530,19 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-links">
-        <h4>📌 Cornerstones</h4>
+        <h4>📚 All Guides</h4>
         <ul>
+          <li><a href="/guides/">View All Guides</a></li>
           <li><a href="/beginner/">Beginner Guide</a></li>
-          <li><a href="/power-management/">Power Management</a></li>
-          <li><a href="/gas-systems/">Gas Systems</a></li>
+          <li><a href="/building-tutorial/">Building Tutorial</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h4>🔥 Latest Guides</h4>
+        <h4>🔗 Quick Links</h4>
         <ul>
-          
-          
-          <li><a href="/guides/station-layout-guide/">Station Layout Guide: Build …</a></li>
-          
-          
-          
-          <li><a href="/guides/coop-multiplayer-guide/">Co-op Multiplayer Guide: Play …</a></li>
-          
-          
-          
-          <li><a href="/guides/wormhole-terminal-guide/">Wormhole Terminal Guide: …</a></li>
-          
-          
-          
-          <li><a href="/guides/superalloy-guide/">Superalloy Production Guide: Scale …</a></li>
-          
-          
-          
-          <li><a href="/guides/freighter-mining-guide/">Freighter &amp; Mining Station Guide: …</a></li>
-          
-          
+          <li><a href="/resources/">Resources Reference</a></li>
+          <li><a href="/map/">Interactive Star Map</a></li>
+          <li><a href="/contact/">Contact & Feedback</a></li>
         </ul>
       </div>
     </div>
