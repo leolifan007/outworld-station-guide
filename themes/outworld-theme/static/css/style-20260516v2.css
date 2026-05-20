@@ -1088,7 +1088,8 @@ details .content-figure svg {
 /* ─── In-Depth Guide Cards (List Pages) — bordered + compact ─── */
 .guide-card.guide-index-card {
   background: linear-gradient(145deg, rgba(16,30,56,0.92) 0%, rgba(10,18,35,0.97) 100%);
-  border: 1px solid rgba(58,123,213,0.35);
+  border: 2px solid rgba(58,123,213,0.6);
+  box-shadow: 0 0 15px rgba(58,123,213,0.15);
   padding: 1rem 1.1rem;
   transition: var(--transition);
   position: relative;

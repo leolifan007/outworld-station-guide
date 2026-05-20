@@ -834,7 +834,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   .footer-grid{grid-template-columns:1fr;gap:1.5rem}
 }
 
-.footer-bottom{text-align:center;max-width:100%;margin:0;padding-top:1rem;border-top:1px solid rgba(58,123,213,0.06)}
+.footer-bottom{text-align:center;max-width:100%;margin:0;padding-top:1rem;border-top:1px solid rgba(58,123,213,0.06);display:flex;justify-content:center;align-items:center;}
 .footer-bottom p{font-size:0.75rem;color:var(--space-text-dim);margin:0;text-align:center}
 
 /* ─── Language Bar ─── */

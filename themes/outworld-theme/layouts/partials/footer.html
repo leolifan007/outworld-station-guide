@@ -2,21 +2,19 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-links">
-        <h4>📌 Cornerstones</h4>
+        <h4>📚 All Guides</h4>
         <ul>
+          <li><a href="/guides/">View All Guides</a></li>
           <li><a href="/beginner/">Beginner Guide</a></li>
-          <li><a href="/power-management/">Power Management</a></li>
-          <li><a href="/gas-systems/">Gas Systems</a></li>
+          <li><a href="/building-tutorial/">Building Tutorial</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h4>🔥 Latest Guides</h4>
+        <h4>🔗 Quick Links</h4>
         <ul>
-          {{ range first 5 (where .Site.Pages "Section" "guides").ByDate.Reverse }}
-          {{ if and (ne .RelPermalink "/guides/") (ne .RelPermalink "/" ) }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 35 }}</a></li>
-          {{ end }}
-          {{ end }}
+          <li><a href="/resources/">Resources Reference</a></li>
+          <li><a href="/map/">Interactive Star Map</a></li>
+          <li><a href="/contact/">Contact & Feedback</a></li>
         </ul>
       </div>
     </div>
