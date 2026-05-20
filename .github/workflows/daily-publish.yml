@@ -1,0 +1,56 @@
+name: Daily Guide Publishing
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish guides
+        run: |
+          set -e
+          candidates=()
+          for dir in content/guides/*/; do
+            file="${dir}_index.md"
+            [ -f "$file" ] || continue
+            grep -q "publishedAt:" "$file" && continue
+            grep -q "hidden: true" "$file" && continue
+            candidates+=("$file")
+          done
+          count=${#candidates[@]}
+          echo "Unpublished: $count"
+          [ "$count" -eq 0 ] && { echo "Done"; exit 0; }
+          [ "$count" -eq 1 ] && pick=1 || pick=$(( RANDOM % 2 + 1 ))
+          selected=($(printf "%s\n" "${candidates[@]}" | shuf -n $pick))
+          today=$(date +%Y-%m-%d)
+          for file in "${selected[@]}"; do
+            hour=$(( RANDOM % 8 + 15 ))
+            min=$(( RANDOM % 58 + 1 ))
+            day_offset=$(( RANDOM % 2 ))
+            pub_date=$(date -d "+${day_offset} day" +%Y-%m-%d)
+            pt="${pub_date}T$(printf '%02d' $hour):$(printf '%02d' $min):00+08:00"
+            echo "Publish: $(basename $(dirname $file)) at $pt"
+            sed -i "s/^lastmod:.*/lastmod: $today/" "$file"
+            awk -v pt="$pt" '"'"'/^---/{c++;if(c==2){print pt;print}else print;next}1'"'"' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+            if ! grep -q "### External Resources" "$file"; then
+              cat >> "$file" << 'EOF'
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
+EOF
+            fi
+            slug=$(basename $(dirname $file))
+            git add "$file"
+            git commit -m "Publish guide: $slug"
+          done
+          git push origin main
