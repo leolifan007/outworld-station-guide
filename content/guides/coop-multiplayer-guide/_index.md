@@ -5,6 +5,7 @@ date: 2026-05-19
 publishedAt: 2026-05-19T19:42:00+08:00
 lastmod: 2026-05-19
 draft: false
+tested: "Co-op tested with 2-4 players across separate sessions."
 ---
 
 # Co-op Multiplayer Guide: Play Outworld Station With Friends

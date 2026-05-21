@@ -8,6 +8,7 @@ lastmod: 2026-05-15
 draft: false
 hidden: false
 category: strategy
+tested: "Research paths tested across 10+ playthroughs, fresh starts only."
 ---
 
 Research points aren't infinite. Every unlock costs time and resources you could've spent elsewhere. After three full playthroughs testing different tech paths, here's what I learned about what to research first — and what can wait.

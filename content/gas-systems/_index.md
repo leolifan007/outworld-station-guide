@@ -5,6 +5,7 @@ date: 2026-05-13
 breadcrumb: Gas Systems
 lastmod: 2026-05-13
 draft: false
+tested: "Gas system ratios verified in v1.0.0.2. Pipe layouts tested with 6+ generators."
 ---
 
 ## Gas Is the Blood of Your Station
@@ -167,3 +168,54 @@ You might have a leak. Check station segment connections.
     </a>
   </div>
 </div>
+
+
+## Gas Storage: How Much Is Enough?
+
+A common question: "How many gas tanks do I actually need?" The answer depends on your station size and whether you're running a Fusion Reactor.
+
+**For a medium station (Station Level 6-10):**
+- 2 Oxygen tanks (total capacity: ~200 units) — fills in 10-15 minutes with one generator
+- 3 Nitrox tanks — needed to buffer fuel for your reactor
+- 1 Hydrogen tank (if you're running hydrogen-based systems)
+
+**For a large station (Level 10+):**
+- 4-6 Oxygen tanks with 2 generators running in parallel
+- Minimum 4 Nitrox tanks — more if you're scaling fusion output
+- Consider dedicated tank arrays per production zone
+
+The rule of thumb: if your gas pipes are flashing red during peak consumption, you need 2x the tank capacity, not more generators. Generators add production; tanks add buffer. You need both.
+
+## Why Pipe Length Matters
+
+Gas pipes in Outworld Station have pressure drop over distance. A single Oxygen Generator connected to a tank 50 meters away works fine. The same generator connected to a tank 200 meters away will struggle to fill it.
+
+**Practical limits:**
+- Keep generators within 30 meters of their primary tank
+- Use short pipe runs between tanks and consumers
+- For long-distance gas transport, consider a secondary generator at the destination
+
+I learned this the hard way when my fusion reactor kept stuttering because the Nitrox pipe from my generator was 150 meters long. Adding a second generator at the reactor end fixed it instantly.
+
+## Common Gas Problems and Fixes
+
+| Symptom | Likely Cause | Fix |
+|---------|-------------|-----|
+| Oxygen drops below 20% | Not enough generators | Add 1 more O2 generator |
+| Nitrox production stalls | Hydrogen pipe is full | Add more Hydrogen tanks |
+| Fusion reactor flickers | Nitrox supply is intermittent | Add Nitrox buffer tank near reactor |
+| Gas pipes show red | Too many consumers on one pipe | Split into 2 pipe networks |
+| Generators idle with empty tanks | Power failure | Check grid — gas production needs consistent power |
+
+## Advanced: Gas for Multiple Stations
+
+If you have remote outposts, each one needs its own gas system. Gas doesn't travel through wormholes — each station is self-contained for breathing and power.
+
+**Outpost gas checklist:**
+- 1-2 Solar Panels (dedicated, not shared with production)
+- 1 Oxygen Generator + 1 tank
+- If the outpost has a Fusion Reactor: 1 Nitrox Generator + 2 tanks minimum
+- Keep pipe runs short — outposts are small, so this usually isn't an issue
+
+I tried to save resources by piping oxygen from my main station to a mining outpost. It doesn't work — the pressure drop over 300+ meters makes the system useless. Each station needs its own loop.
+

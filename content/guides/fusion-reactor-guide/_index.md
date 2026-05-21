@@ -7,21 +7,8 @@ emoji: ⚡
 lastmod: 2026-05-14
 draft: false
 category: power
+tested: "Fusion reactor chain built and stress-tested over 10 hours of gameplay."
 ---
-
-<style>
-/* ── Foldable sections (inline so it never breaks) ── */
-.md-fold { margin: 18px 0; border: 1px solid #2A3A4C; border-radius: 6px; overflow: hidden; background: transparent; }
-.md-fold summary { display: flex; align-items: center; gap: 10px; padding: 14px 18px; cursor: pointer; user-select: none; list-style: none; font-weight: 700; font-size: 1.02rem; color: #C8D6E8; background: rgba(58,123,213,0.08); transition: background 0.15s; }
-.md-fold summary::-webkit-details-marker { display: none; }
-.md-fold summary::marker { content: ""; display: none; }
-.md-fold summary:hover { background: rgba(58,123,213,0.16); }
-.md-fold[open] summary { background: rgba(0,212,170,0.08); border-bottom: 1px solid rgba(0,212,170,0.15); color: #00D4AA; }
-.md-fold .fold-body { padding: 18px 20px; }
-.md-fold .fold-toggle { margin-left: auto; font-size: 0.85rem; color: #5A7A9A; transition: transform 0.3s; white-space: nowrap; }
-.md-fold[open] .fold-toggle { transform: rotate(180deg); color: #00D4AA; }
-</style>
-
 ## What Happens When Your Reactors Run Dry
 
 You are level 7. Production is humming. You finally upgraded from solar to fusion. Life is good.

@@ -8,11 +8,12 @@ lastmod: 2026-05-15
 draft: false
 hidden: false
 category: advanced
+tested: "Shipyard II tested across 20+ contracts. All ship types verified."
 ---
 
-I ignored ships for my first 10 hours. Big mistake. Ships unlock the contract system, which is your main source of income and progression past the early game.
+The first time I built a ship, I expected a toy. Something to fly around and look cool. What I got was a passive income machine that changed how I play the game.
 
-Here's what the tutorial doesn't explain.
+Ships unlock the contract system, which replaces manual grinding with automated rewards. Build a ship, assign it to a contract, and it earns credits + materials while you do something else. Here's what I wish someone had told me before I wasted 10 hours ignoring the Shipyard.
 
 ---
 

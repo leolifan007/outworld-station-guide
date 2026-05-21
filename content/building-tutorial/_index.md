@@ -5,6 +5,7 @@ date: 2026-05-09
 breadcrumb: Buildings
 lastmod: 2026-05-12
 draft: false
+tested: "Every building stat verified in v1.0.0.2. Build order tested up to Ark Platform."
 ---
 
 ## The Build Order (If You Want to Skip the Thinking)

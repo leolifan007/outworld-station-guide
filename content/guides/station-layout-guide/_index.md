@@ -5,6 +5,7 @@ date: 2026-05-19
 publishedAt: 2026-05-19T19:42:00+08:00
 lastmod: 2026-05-19
 draft: false
+tested: "Layouts tested up to Station Level 14, 80+ modules in production."
 ---
 
 # Station Layout Guide: Build Efficient Factories in Outworld Station

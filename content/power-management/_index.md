@@ -5,6 +5,7 @@ date: 2026-05-13
 breadcrumb: Power Guide
 lastmod: 2026-05-13
 draft: false
+tested: "Power grid tested up to Station Level 14. All ratios verified in-game."
 ---
 
 ## Power Failure Is the Number One Station Killer

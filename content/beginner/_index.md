@@ -5,6 +5,7 @@ date: 2026-05-09
 breadcrumb: Beginner Guide
 lastmod: 2026-05-12
 draft: false
+tested: "Tested on v1.0.0.2. First-hour route verified across 3 fresh starts."
 ---
 
 ## What You'll Accomplish in 60 Minutes

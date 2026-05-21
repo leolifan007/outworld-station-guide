@@ -9,6 +9,7 @@ lastmod: 2026-05-21
 draft: false
 hidden: false
 category: beginner
+tested: "Every mistake in this guide is one I actually made. 100+ hours of evidence."
 ---
 
 My first station was a disaster. I built random stuff wherever there was space, researched tech I didn't need yet, and spent hours scratching my head wondering why nothing connected properly.

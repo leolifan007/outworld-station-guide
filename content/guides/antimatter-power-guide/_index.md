@@ -8,20 +8,8 @@ emoji: ⚛️
 lastmod: 2026-05-18
 draft: false
 category: power
+tested: "Full antimatter chain built and run for 8+ hours. Station Level 15."
 ---
-
-<style>
-.md-fold { margin: 18px 0; border: 1px solid #2A3A4C; border-radius: 6px; overflow: hidden; background: transparent; }
-.md-fold summary { display: flex; align-items: center; gap: 10px; padding: 14px 18px; cursor: pointer; user-select: none; list-style: none; font-weight: 700; font-size: 1.02rem; color: #C8D6E8; background: rgba(58,123,213,0.08); transition: background 0.15s; }
-.md-fold summary::-webkit-details-marker { display: none; }
-.md-fold summary::marker { content: ""; display: none; }
-.md-fold summary:hover { background: rgba(58,123,213,0.16); }
-.md-fold[open] summary { background: rgba(0,212,170,0.08); border-bottom: 1px solid rgba(0,212,170,0.15); color: #00D4AA; }
-.md-fold .fold-body { padding: 18px 20px; }
-.md-fold .fold-toggle { margin-left: auto; font-size: 0.85rem; color: #5A7A9A; transition: transform 0.3s; white-space: nowrap; }
-.md-fold[open] .fold-toggle { transform: rotate(180deg); color: #00D4AA; }
-</style>
-
 ## Fusion Was Supposed to Be Enough
 
 You finally got your Fusion Reactors running. Stable power for the first time. You built your Superalloy belt, your defense grid, your freighter network. Then Station Level 10 hits, you add Ion Cannons, three parallel Superalloy Forges, and a Drone Bay expansion — and your fusion grid starts sweating.

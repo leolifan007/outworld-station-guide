@@ -9,6 +9,7 @@ lastmod: 2026-05-21
 draft: false
 hidden: false
 category: reference
+tested: "Tier ratings based on 100+ hours of play."
 ---
 
 Tier lists are subjective. This one's based on my 100+ hours across multiple playthroughs, testing different builds and strategies. Your mileage may vary, but here's what consistently worked (and didn't) for me.

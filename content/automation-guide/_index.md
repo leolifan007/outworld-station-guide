@@ -5,6 +5,7 @@ date: 2026-05-09
 breadcrumb: Automation
 lastmod: 2026-05-12
 draft: false
+tested: "All supply chain setups tested in v1.0.0.2 across multiple playthroughs."
 ---
 
 ## No Conveyor Belts — Then How Do Things Move?

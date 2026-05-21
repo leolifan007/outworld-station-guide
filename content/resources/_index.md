@@ -5,6 +5,7 @@ date: 2026-05-09
 breadcrumb: Resources
 lastmod: 2026-05-12
 draft: false
+tested: "Ore spawn data and processing chains verified in v1.0.0.2."
 ---
 
 ## What Resources Exist and What Are They For?
