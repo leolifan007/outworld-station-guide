@@ -4,7 +4,8 @@ description: "Not everything is worth building. I ranked every ship, module, and
 date: 2026-05-27
 breadcrumb: Tier List
 emoji: 📊
-lastmod: 2026-05-16
+publishedAt: 2026-05-21T15:52:00+08:00
+lastmod: 2026-05-21
 draft: false
 hidden: false
 category: reference
@@ -296,7 +297,7 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 |----------|--------|--------|--------|----------|
 | Ships | Scout, Freighter | Mining, Construction | Combat | Luxury |
 | Modules | Solar, Battery, Oxygen | Reactor, Wormhole, Storage | Large Storage, Drone, Repair | Decorations |
-| Production | Drill, Smelter, Assembler | Electronics, Chemical | Alloy, Composite | — |
+| Production | Drill, Smelter, Assembler | Electronics, Chemical | Alloy, Composite | —|
 
 ---
 
@@ -333,20 +334,29 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
     <a href="/guides/research-order/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
       <div class="card-tag">🔬 Tech</div>
       <h3>Research Order Guide</h3>
-      <p>Explains when to unlock each building. Tested tech paths from hour 0 to fusion power — avoid the research traps I fell into.</p>
-      <div class="card-link">Read →</div>
+      <p>Explains when to unlock each building. Tested tech paths from hour 0 to fusion power —avoid the research traps I fell into.</p>
+      <div class="card-link">Read →/div>
     </a>
     <a href="/beginner/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
       <div class="card-tag">🚀 Beginner</div>
       <h3>Beginner Guide</h3>
-      <p>Covers the first hour setup. Power, drilling, smelting, and your first automated production line — everything a new player needs.</p>
-      <div class="card-link">Read →</div>
+      <p>Covers the first hour setup. Power, drilling, smelting, and your first automated production line —everything a new player needs.</p>
+      <div class="card-link">Read →/div>
     </a>
     <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">⚡ Power</div>
+      <div class="card-tag">⚡Power</div>
       <h3>Power Management</h3>
       <p>Solar vs reactor strategies detailed. Grid zoning, battery ratios, and the upgrade path that keeps your station online.</p>
-      <div class="card-link">Read →</div>
+      <div class="card-link">Read →/div>
     </a>
   </div>
 </div>
+
+
+--
+
+## External Resources
+
+- [Outworld Station Steam Store](https://store.steampowered.com/)
+- [Outworld Station Wiki](https://wiki.gg/)
+- [Outworld Station Discord Community](https://discord.gg/)

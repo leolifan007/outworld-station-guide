@@ -71,15 +71,7 @@ Think of it like a portal. Anything that goes in one side comes out the other.
   <p>The wormhole link is instant and bidirectional. Items placed in Generator A's storage immediately appear in Generator B's storage. There is no travel time, no shipping delay, no capacity limit on the link itself. The only bottleneck is how fast your Connectors can push items into and pull items out of the generator's storage.</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 ---
 
@@ -141,15 +133,7 @@ Wormhole Generators draw power continuously while linked. If the power at either
   <p>Wormholes are better than freighters for high-priority, high-throughput resources. But they cost more power and the generators are expensive to build. Use wormholes for [Superalloy](/guides/superalloy-guide/) ingredients, antimatter fuel, and defense supplies. Use [freighters](/guides/freighter-mining-guide/) for bulk low-value stuff like Iron and Silicon.</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <details class="md-fold">
 <summary><span>Multi-Station Networks</span><span class="fold-toggle">▼</span></summary>
@@ -189,15 +173,7 @@ Four stations, each with 2 generators on different channels. Every station can r
   <p>Write down your channel assignments before building. Once you have 3+ generators on the same channel, keeping track of what links where gets confusing fast. I use a simple doc: "Channel 1 = Iron, Channel 2 = Tungsten, Channel 3 = Superalloy components, Channel 4 = Defense supplies."</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <details class="md-fold">
 <summary><span>Advanced Wormhole Techniques</span><span class="fold-toggle">▼</span></summary>
@@ -231,15 +207,7 @@ If you need to send AND receive different items between two locations, use two s
 
 This prevents items from both directions competing for the same generator's storage space.
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <details class="md-fold">
 <summary><span>Troubleshooting Wormhole Problems</span><span class="fold-toggle">▼</span></summary>
@@ -276,15 +244,7 @@ This prevents items from both directions competing for the same generator's stor
 
 **Fix:** Use wormholes OR freighters for a given resource — not both. Or use separate storage containers for each delivery method.
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <hr>
 

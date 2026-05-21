@@ -21,9 +21,9 @@ category: production
 .md-fold[open] .fold-toggle { transform: rotate(180deg); color: #00D4AA; }
 </style>
 
-## Superalloy Is the Gate 閳?And You Are Stuck Outside
+## Superalloy Is the Gate — And You Are Stuck Outside
 
-Everything past the midgame needs Superalloy. Ships, turrets, drone bays, advanced buildings 閳?all of it. And the production chain to make Superalloy is long, expensive, and extremely easy to bottleneck.
+Everything past the midgame needs Superalloy. Ships, turrets, drone bays, advanced buildings — all of it. And the production chain to make Superalloy is long, expensive, and extremely easy to bottleneck.
 
 I ran my first Superalloy line for 3 hours before I realized I was producing 2 per second when I needed 15. My ship construction was stalled, my defense was paper-thin, and I couldn't figure out why until I traced the chain backwards. Check our [Beginner Mistakes Guide](/guides/beginner-mistakes/) for similar traps.
 
@@ -37,15 +37,15 @@ This guide covers the full production chain, throughput targets, common bottlene
 ---
 
 <details class="md-fold">
-<summary><span>The Full Superalloy Production Chain</span><span class="fold-toggle">閳?/span></summary>
+<summary><span>The Full Superalloy Production Chain</span><span class="fold-toggle">— /span></summary>
 
 <div class="fold-body">
 
 ### Raw Materials
 
 You need two ores:
-- **Tungsten Ore** 閳?mined from Tungsten asteroids (rare, usually in the Asteroid Belt or outer planets)
-- **Titanium Ore** 閳?mined from Titanium asteroids (common, found in most sectors)
+- **Tungsten Ore** — mined from Tungsten asteroids (rare, usually in the Asteroid Belt or outer planets)
+- **Titanium Ore** — mined from Titanium asteroids (common, found in most sectors)
 
 ### Processing Chain
 
@@ -62,8 +62,8 @@ Simple on paper. The problem is volume.
 A single Superalloy Forge running at full capacity produces **1 Superalloy every 3 seconds**, or about 20 Superalloy per minute.
 
 But "full capacity" means a constant feed of 2 Tungsten Ingot + 1 Titanium Ingot every 3 seconds. That requires:
-- **40 Tungsten Ingot/min** 閳?1 Tungsten Smelter running at full tilt (barely enough)
-- **20 Titanium Ingot/min** 閳?1 Titanium Smelter at moderate capacity
+- **40 Tungsten Ingot/min** — 1 Tungsten Smelter running at full tilt (barely enough)
+- **20 Titanium Ingot/min** — 1 Titanium Smelter at moderate capacity
 
 And each Smelter needs a constant stream of ore. Which means your miners need to be producing enough raw ore to feed the smelters that feed the forge.
 
@@ -82,7 +82,7 @@ And each Smelter needs a constant stream of ore. Which means your miners need to
 
 
 <details class="md-fold">
-<summary><span>Building Your First Superalloy Line</span><span class="fold-toggle">閳?/span></summary>
+<summary><span>Building Your First Superalloy Line</span><span class="fold-toggle">— /span></summary>
 
 <div class="fold-body">
 
@@ -99,7 +99,7 @@ Build a mining outpost (see our [Freighter & Mining Guide](/guides/freighter-min
 
 You probably already have Titanium miners running. If not, set one up. Titanium is common enough that you shouldn't have trouble finding it.
 
-**Minimum Titanium setup:** 2 Miners on Titanium veins 閳?1 Smelter 閳?Storage Buffer.
+**Minimum Titanium setup:** 2 Miners on Titanium veins — 1 Smelter — Storage Buffer.
 
 ### Step 3: Build the Superalloy Forge
 
@@ -126,7 +126,7 @@ Without buffers, any hiccup in the chain (freighter delay, power dip, miner relo
 </details>
 
 <details class="md-fold">
-<summary><span>Scaling to 50 Superalloy/sec</span><span class="fold-toggle">閳?/span></summary>
+<summary><span>Scaling to 50 Superalloy/sec</span><span class="fold-toggle">— /span></summary>
 
 <div class="fold-body">
 
@@ -148,7 +148,7 @@ Each Forge needs its own dedicated input buffers but can share a common output b
 
 ### The Superalloy Belt
 
-At scale, you want a dedicated production zone 閳?not a few Forges stuck in the corner of your main station.
+At scale, you want a dedicated production zone — not a few Forges stuck in the corner of your main station.
 
 1. Clear a large area (at least 20x20 building spaces)
 2. Build Tungsten Smelters on one side, Titanium Smelters on the other
@@ -166,7 +166,7 @@ This is your Superalloy Belt. Feed it with freighters from multiple mining outpo
 </details>
 
 <details class="md-fold">
-<summary><span>What Superalloy Is Used For</span><span class="fold-toggle">閳?/span></summary>
+<summary><span>What Superalloy Is Used For</span><span class="fold-toggle">— /span></summary>
 
 <div class="fold-body">
 
@@ -193,7 +193,7 @@ You can see why a single Forge won't cut it past Station Level 8.
 </details>
 
 <details class="md-fold">
-<summary><span>Troubleshooting Superalloy Problems</span><span class="fold-toggle">閳?/span></summary>
+<summary><span>Troubleshooting Superalloy Problems</span><span class="fold-toggle">— /span></summary>
 
 <div class="fold-body">
 
@@ -227,7 +227,7 @@ You can see why a single Forge won't cut it past Station Level 8.
 <hr>
 
 <details class="md-fold" open>
-<summary><span>Quick Reference 閳?Superalloy Cheat Sheet</span><span class="fold-toggle">閳?/span></summary>
+<summary><span>Quick Reference — Superalloy Cheat Sheet</span><span class="fold-toggle">— /span></summary>
 
 <div class="fold-body">
 
@@ -276,7 +276,7 @@ You can see why a single Forge won't cut it past Station Level 8.
 
 ### Not Enough Buffer Storage
 
-Each Forge cycle consumes a full stack of ingredients instantly. If your input belt is fed by a single Mk2 Connector, the buffer empties before the Forge finishes, and the next cycle starts late 閳?making output run at 2/sec instead of 5/sec.
+Each Forge cycle consumes a full stack of ingredients instantly. If your input belt is fed by a single Mk2 Connector, the buffer empties before the Forge finishes, and the next cycle starts late — making output run at 2/sec instead of 5/sec.
 
 **Fix:** Add at least one Large Buffer per Forge on the input side, fed by a Mk3+ Connector. This smooths supply and keeps the Forge at full speed.
 
@@ -286,7 +286,7 @@ Tungsten asteroids have lower yield per minute than Titanium. Players often buil
 
 **Fix:** Overbuild Tungsten. If Forges idle waiting for Tungsten, add 2 more miners before scaling anything else.
 
-<p><small style="display:block;text-align:center;color:var(--space-text-dim);margin-top:20px;"><em>Production rates verified in version 1.0.0.2. Ratios and costs may change with future updates 閳?always check your in-game crafting menu for current values.</em></small></p>
+<p><small style="display:block;text-align:center;color:var(--space-text-dim);margin-top:20px;"><em>Production rates verified in version 1.0.0.2. Ratios and costs may change with future updates — always check your in-game crafting menu for current values.</em></small></p>
 
 </div>
 </details>

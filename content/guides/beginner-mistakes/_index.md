@@ -2,9 +2,10 @@
 title: "15 Things I Wish I Knew Before Playing Outworld Station — Don't Make These Beginner Mistakes"
 description: "I wasted 20 hours learning these the hard way. From tech order to base layout, here are 15 things I wish someone had told me before my first run."
 date: 2026-05-20
+publishedAt: 2026-05-21T10:37:00+08:00
 breadcrumb: Beginner Tips
 emoji: 💡
-lastmod: 2026-05-16
+lastmod: 2026-05-21
 draft: false
 hidden: false
 category: beginner
@@ -210,3 +211,11 @@ Don't aim for perfect on day one. Aim for functional.
   <h4>Keep Learning</h4>
   <p>If you're still in your first few hours, check the <a href="/beginner/">Beginner Guide</a> for a step-by-step first 60 minutes. Already past that? The <a href="/automation-guide/">Automation Deep Dive</a> explains the inventory pairing system in detail.</p>
 </div>
+
+---
+
+## External Resources
+
+- [Outworld Station Steam Store](https://store.steampowered.com/)
+- [Outworld Station Wiki](https://wiki.gg/)
+- [Outworld Station Discord Community](https://discord.gg/)

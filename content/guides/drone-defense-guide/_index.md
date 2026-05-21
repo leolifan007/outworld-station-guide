@@ -68,15 +68,7 @@ Enemies target the **nearest unprotected building** to their spawn point. They d
   <p>Put a cheap decoy building (like a single Solar Panel) at the edge of each sector where enemies spawn. They will waste time attacking the decoy while your turrets and drones thin them out.</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 ---
 
@@ -120,15 +112,7 @@ One Drone Bay controls up to 4 drones. Their patrol circles can overlap, creatin
   <p>Drones are fast but fragile. Turrets are slow but powerful. Use drones to kite enemies into turret range — the drones draw aggro while the turrets do the real damage.</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <details class="md-fold">
 <summary><span>Turrets — Area Denial and Precision Kills</span><span class="fold-toggle">▼</span></summary>
@@ -176,15 +160,7 @@ The Ion Cannon is your endgame defense. It one-shots most enemies and two-shots 
   <p>Laser Turrets and Ion Cannons run on your power grid. If your grid is already tight, adding turrets can push you into a blackout during a raid — which is the worst possible time to lose power. Always keep 20% power headroom before adding energy-based turrets.</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <details class="md-fold">
 <summary><span>Defense Layouts That Actually Work</span><span class="fold-toggle">▼</span></summary>
@@ -236,15 +212,7 @@ Full perimeter defense with Ion Cannons on elevated central platforms, turrets o
   <p>If you have a Wormhole connection to a hostile sector, place a Missile Turret and Drone Bay right at the wormhole exit on your side. Enemies that come through get greeted immediately.</p>
 </div>
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <details class="md-fold">
 <summary><span>Common Defense Mistakes</span><span class="fold-toggle">▼</span></summary>
@@ -281,15 +249,7 @@ Laser Turrets and Ion Cannons spike your power draw. If your grid was already at
 
 **Fix:** Keep 20% power headroom. Or add a dedicated Small Reactor just for defense systems. Our [Antimatter Power Guide](/guides/antimatter-power-guide/) covers endgame power scaling.
 
-</div>
-
-
-### External Resources
-
-- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
-- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-</details>
+</div></details>
 
 <hr>
 
