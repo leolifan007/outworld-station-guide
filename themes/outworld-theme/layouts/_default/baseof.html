@@ -28,7 +28,7 @@
   <meta name="google-site-verification" content="{{ . }}">
   {{ end }}
 
-  {{/* GA4 gtag �� loads only when ID is not placeholder */}}
+  {{/* GA4 gtag  loads only when ID is not placeholder */}}
   {{ $gaId := .Site.Params.google_analytics_id }}
   {{ if and $gaId (not (in $gaId "G-XXXXXXXXXX")) }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaId }}"></script>
@@ -40,7 +40,7 @@
   </script>
   {{ end }}
 
-  {{/* AdSense auto-ads �� loads only when client ID is not placeholder */}}
+  {{/* AdSense auto-ads  loads only when client ID is not placeholder */}}
   {{ $adClient := .Site.Params.google_adsense_id }}
   {{ if and $adClient (strings.HasPrefix $adClient "ca-pub-") (not (in $adClient "XXXXXXXXXX")) }}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $adClient }}" crossorigin="anonymous"></script>
