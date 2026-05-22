@@ -625,7 +625,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   width: 100%;
   height: auto;
   max-height: none !important;
-  object-fit: none;
+  object-fit: contain;
   display: block;
   border-radius: 12px 12px 0 0;
 }
