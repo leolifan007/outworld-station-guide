@@ -3,7 +3,7 @@ title: "Station Layout Guide: Build Efficient Factories"
 description: "Design compact, efficient station layouts in Outworld Station. Two-level building, throughput optimization, expansion planning, and common mistakes."
 date: 2026-05-19
 publishedAt: 2026-05-19T19:42:00+08:00
-lastmod: 2026-05-19
+lastmod: 2026-05-22
 draft: false
 tested: "Layouts tested up to Station Level 14, 80+ modules in production."
 ---
@@ -125,112 +125,19 @@ Certain station upgrades need clear space. I kept building right where the next 
 
 **Check before building:** Look at your station's expansion direction. Keep those edges clear.
 
-## Tips From Experience
+<details class="md-fold">
+<summary><span>Advanced Tips & Debugging</span><span class="fold-toggle">▼</span></summary>
+<div class="fold-body">
 
-### Tip 1: Build a Test Line First
+### Practical Tips From Experience
 
-Before committing to a big layout, build a small version:
-- Does throughput work?
-- Are buffers in the right places?
-- Can you actually reach everything?
+**Build a test line first.** Before committing to a big layout, build a small version. Does throughput work? Are buffers in the right places? Can you actually reach everything? Scale up once you've proven it works.
 
-Scale up once you've proven it works.
+**Use landmarks.** Pick visual reference points: "Smelting happens in the northeast corner," "Power generation stays on the west wall." These mental anchors keep you from spreading randomly.
 
-### Tip 2: Use Landmarks
+**Screenshot working layouts.** When you build something that works well, screenshot it. You'll want to recreate it at your next station.
 
-Pick visual reference points:
-- "Smelting happens in the northeast corner"
-- "Power generation stays on the west wall"
-- "Storage buffers go near the main dock"
-
-These mental anchors keep you from spreading randomly.
-
-### Tip 3: Color-Code Your Belts
-
-If the game supports it (or you can track it mentally), assign colors to material types:
-- Red belts: Raw ores
-- Yellow belts: Processed materials
-- Blue belts: Finished goods
-
-Makes it way easier to spot when something's routed wrong.
-
-### Tip 4: Screenshot Working Layouts
-
-When you build something that works well, screenshot it. You'll want to recreate it at your next station.
-
-### Tip 5: Plan Power Early
-
-Power buildings are big. They need:
-- Fuel delivery lines
-- Space for expansion
-- Connection to your grid
-
-Don't squeeze them in as an afterthought.
-
-## FAQ
-
-**Q: Should I build everything on one level first?**
-
-A: For your first station, yes. Keep it simple. Once you understand the basics, start using both levels deliberately.
-
-**Q: How much space should I leave between buildings?**
-
-A: At minimum, leave one tile for walking. For production areas, leave 2-3 tiles so you can add splitters/buffers later.
-
-**Q: What's the biggest layout mistake you see?**
-
-A: Building without thinking about where the NEXT thing goes. Every building should have a reason for its position, including "this space is reserved for future expansion."
-
-**Q: Should I tear down and rebuild when I realize my layout is bad?**
-
-A: If it's early game, yes. An hour of rebuilding saves ten hours of fighting a bad layout. Late game, build a new station with your improved design and migrate production.
-
-**Q: How do I handle multiple stations?**
-
-A: Design each for a purpose:
-- Station 1: Basic processing and research
-- Station 2: Advanced materials
-- Station 3: Ship building and freight operations
-
-Use freighters to move materials between them.
-
-**Q: Where do I build a second station?**
-
-Research the Telescope to scan nearby planets. Look for planets with rare minerals (silicon, uranium). That's where you build next.
-
-## Layout Optimization Techniques
-
-Once you've got a working station, you can optimize it further.
-
-### Throughput Analysis
-
-Walk your production lines and identify bottlenecks:
-
-1. **Find the slowest point** — Where do items pile up before, and starve after?
-2. **Measure belt saturation** — Is the belt full or half-empty?
-3. **Check buffer levels** — Are buffers always full (over-supplied) or always empty (under-supplied)?
-
-The bottleneck is usually where items back up. Fix that point, then find the next one.
-
-### Balancing Multiple Outputs
-
-When several machines feed one belt:
-
-![Balancing Multiple Outputs](/images/diagrams/balancing-outputs.svg)
-
-Splitters ensure each machine gets equal input. Mergers combine outputs evenly. Without them, one machine hogs all the resources.
-
-### Compact vs Expandable
-
-**Compact layouts:**
-- Pros: Short belt runs, fast construction, easy to monitor
-- Cons: Hard to expand, can't fix mistakes without tearing down
-
-**Expandable layouts:**
-- Pros: Easy to add capacity, can fix problems incrementally
-- Cons: Longer belts, more spread out, harder to see everything
-
-**My recommendation:** Start expandable. Go compact once you know exactly what you need.
+**Plan power early.** Power buildings are big — they need fuel delivery lines, space for expansion, and grid connection. Don't squeeze them in as an afterthought.
 
 ### Visual Debugging
 
@@ -243,16 +150,24 @@ When something's not working:
 
 Most problems are visible if you just walk the line.
 
-## Layout Patterns for Specific Situations
+### Balancing Multiple Outputs
+
+When several machines feed one belt:
+
+![Balancing Multiple Outputs](/images/diagrams/balancing-outputs.svg)
+
+Splitters ensure each machine gets equal input. Mergers combine outputs evenly. Without them, one machine hogs all the resources.
+
+</div>
+</details>
+
+<details class="md-fold">
+<summary><span>Specific Layouts: Power, Research & Storage</span><span class="fold-toggle">▼</span></summary>
+<div class="fold-body">
 
 ### Power Generation Layout
 
-Power buildings need:
-- Fuel input line
-- Connection to grid
-- Space for expansion
-
-**Pattern:**
+Power buildings need fuel input line, connection to grid, and space for expansion.
 
 ![Power Generation Layout](/images/diagrams/power-gen-layout.svg)
 
@@ -260,12 +175,7 @@ Keep all power in one area. Don't scatter generators around your station.
 
 ### Research Layout
 
-Research labs need:
-- Research items input
-- Power
-- Easy access (you'll check them often)
-
-**Pattern:**
+Research labs need research items input, power, and easy access (you'll check them often).
 
 ![Research Layout](/images/diagrams/research-layout.svg)
 
@@ -273,18 +183,20 @@ Put research near your main working area. You'll be checking progress frequently
 
 ### Storage Hub Layout
 
-Central storage should be:
-- Accessible from all directions
-- Near high-traffic areas
-- Expandable
-
-**Pattern:**
+Central storage should be accessible from all directions, near high-traffic areas, and expandable.
 
 ![Storage Hub Layout](/images/diagrams/storage-hub.svg)
 
 Everyone routes through central storage. Keep it central.
 
-## Planning for Late Game
+</div>
+</details>
+
+<details class="md-fold">
+<summary><span>Late Game Planning & FAQ</span><span class="fold-toggle">▼</span></summary>
+<div class="fold-body">
+
+## Late Game Transition
 
 Your early game layout won't work for late game. Plan for the transition.
 
@@ -297,15 +209,15 @@ Your early game layout won't work for late game. Plan for the transition.
 
 ### Future-Proofing Your Layout
 
-**Leave expansion corridors:**
+**Do leave:**
 - Wide paths that can become belt highways
 - Empty zones marked for future production
 - Power grid that can extend
 
 **Don't lock in:**
-- Avoid permanent structures blocking expansion directions
-- Keep main bus on an edge, not the center
-- Build in modules you can replicate elsewhere
+- Permanent structures blocking expansion directions
+- Main bus in the center (keep it on an edge)
+- Non-modular builds you can't replicate elsewhere
 
 ### When to Rebuild
 
@@ -318,6 +230,29 @@ Your early game layout won't work for late game. Plan for the transition.
 - It's ugly but functional
 - You're just optimizing prematurely
 - The rebuild would take longer than working around it
+
+## FAQ
+
+**Q: Should I build everything on one level first?**
+A: For your first station, yes. Keep it simple. Once you understand the basics, start using both levels deliberately.
+
+**Q: How much space should I leave between buildings?**
+A: At minimum, leave one tile for walking. For production areas, leave 2-3 tiles so you can add splitters/buffers later.
+
+**Q: What's the biggest layout mistake you see?**
+A: Building without thinking about where the NEXT thing goes. Every building should have a reason for its position, including "this space is reserved for future expansion."
+
+**Q: Should I tear down and rebuild when you realize your layout is bad?**
+A: If it's early game, yes. An hour of rebuilding saves ten hours of fighting a bad layout. Late game, build a new station with your improved design and migrate production.
+
+**Q: How do I handle multiple stations?**
+A: Design each for a purpose — Station 1 for basic processing and research, Station 2 for advanced materials, Station 3 for ship building and freight operations. Use freighters to move materials between them.
+
+**Q: Where do I build a second station?**
+A: Research the Telescope to scan nearby planets. Look for planets with rare minerals (silicon, uranium). That's where you build next.
+
+</div>
+</details>
 
 ## Related Guides
 

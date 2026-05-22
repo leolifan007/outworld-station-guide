@@ -616,7 +616,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
 .content-figure {
   margin: 20px 0;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   background: rgba(10,20,50,0.4);
   border: 1px solid rgba(58,123,213,0.12);
 }
@@ -625,7 +625,7 @@ p{font-size:0.95rem;color:var(--space-text);margin-bottom:0.5rem}
   width: 100%;
   height: auto;
   max-height: none !important;
-  object-fit: none;
+  object-fit: contain;
   display: block;
   border-radius: 12px 12px 0 0;
 }
@@ -950,7 +950,7 @@ details {
   background: rgba(58,123,213,0.05);
   border: 1px solid rgba(58,123,213,0.18);
   border-radius: 14px;
-  overflow: hidden;
+  overflow: visible;
   transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
   box-shadow: 0 2px 16px rgba(0,0,0,0.25);
 }
@@ -1025,7 +1025,6 @@ details[open] .ch-title {
   animation: arrowPulse 2.5s ease-in-out infinite;
 }
 details[open] .ch-toggle {
-  transform: rotate(180deg);
   color: #00D4AA;
   text-shadow: 0 0 16px rgba(0,212,170,0.8);
   animation: none;
