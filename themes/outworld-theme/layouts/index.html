@@ -18,7 +18,7 @@
   {{ if and (not .Params.hidden) .Params.publishedAt }}
     {{ $pubTime := time.AsTime .Params.publishedAt }}
     {{ $daysSince := div (sub now.Unix $pubTime.Unix) 86400 }}
-    {{ if le $daysSince 30 }}
+    {{ if le $daysSince 365 }}
       {{ $recentPages = $recentPages | append . }}
     {{ end }}
   {{ end }}
