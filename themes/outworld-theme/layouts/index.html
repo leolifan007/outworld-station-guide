@@ -30,7 +30,7 @@
     <div class="guide-grid">
       {{ range $idx, $page := first 8 $recentPages.ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-        {{ if eq $idx 0 }}<span class="new-badge">NEW</span>{{ end }}
+        {{ $pubTime2 := time.AsTime .Params.publishedAt }}{{ if lt (div (sub now.Unix $pubTime2.Unix) 86400) 14 }}<span class="new-badge">NEW</span>{{ end }}
         {{ with .Params.publishedAt }}<div class="card-tag">{{ (time.AsTime .).Format "Jan 2, 2006" }}</div>{{ end }}
         <h3 style="font-size:0.9rem;margin-bottom:0.3rem;color:inherit;line-height:1.3;">{{ .Title | truncate 55 }}</h3>
         {{ with .Description }}<p style="font-size:0.78rem;color:var(--space-text-dim,rgba(255,255,255,0.5));margin-bottom:0.5rem;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{{ . | truncate 70 }}</p>{{ end }}

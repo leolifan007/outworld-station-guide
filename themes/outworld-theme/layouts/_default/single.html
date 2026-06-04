@@ -5,7 +5,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero-sub">
   <div class="hero-badge-inline">{{ if hasPrefix $stripped "/beginner/" }}🚀{{ else if hasPrefix $stripped "/automation-guide/" }}⚙️{{ else if hasPrefix $stripped "/building-tutorial/" }}🏗️{{ else if hasPrefix $stripped "/resources/" }}🪨{{ else if hasPrefix $stripped "/map/" }}🌌{{ else if hasPrefix $stripped "/contact/" }}📧{{ else if hasPrefix $stripped "/power-management/" }}⚡{{ else if hasPrefix $stripped "/gas-systems/" }}💨{{ else }}📖{{ end }} {{ .Title | truncate 40 }}</div>
-  <h1 class="hero-title-sub">{{ .Title }}</h1>
+  <h1 class="hero-title-sub">{{ .Title }}{{ if .Params.version }} <span class="version-tag">[Version {{ .Params.version }}]</span>{{ end }}</h1>
   {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
   {{ partial "breadcrumb" . }}
 </section>

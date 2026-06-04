@@ -1265,3 +1265,28 @@ details .content-figure svg {
   transform: rotate(180deg);
   color: #00D4AA;
 }
+/* ============================================
+   VERSION TAG & NEW BADGE (SOP 10)
+   ============================================ */
+
+.version-tag {
+  font-size: 0.55em;
+  color: var(--space-text-dim, rgba(255,255,255,0.4));
+  font-weight: normal;
+  margin-left: 0.6em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4444;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.7em;
+  font-weight: bold;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
