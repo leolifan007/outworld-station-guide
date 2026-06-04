@@ -1,7 +1,7 @@
 name: Daily Guide Publishing
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 2 * * *'   # 北京time 10:00 daily
   workflow_dispatch:
 
 permissions:
@@ -12,45 +12,68 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Publish guides
+      - name: Publish 1-2 random guides
         run: |
           set -e
+          cd "${{ github.workspace }}"
+
+          # Collect unpublished guide files
           candidates=()
           for dir in content/guides/*/; do
             file="${dir}_index.md"
             [ -f "$file" ] || continue
+            # Skip already published or hidden
             grep -q "publishedAt:" "$file" && continue
             grep -q "hidden: true" "$file" && continue
             candidates+=("$file")
           done
+
           count=${#candidates[@]}
-          echo "Unpublished: $count"
-          [ "$count" -eq 0 ] && { echo "Done"; exit 0; }
-          [ "$count" -eq 1 ] && pick=1 || pick=$(( RANDOM % 2 + 1 ))
-          selected=($(printf "%s\n" "${candidates[@]}" | shuf -n $pick))
-          today=$(date +%Y-%m-%d)
+          echo "Unpublished guides: $count"
+          [ "$count" -eq 0 ] && { echo "All published!"; exit 0; }
+
+          # Pick 1 or 2 randomly
+          pick=1
+          [ "$count" -ge 2 ] && pick=$(( RANDOM % 2 + 1 ))
+          selected=($(printf '%s\n' "${candidates[@]}" | shuf -n $pick))
+
+          today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
+          echo "Publishing $pick guide(s) on $today"
+
           for file in "${selected[@]}"; do
-            hour=$(( RANDOM % 8 + 15 ))
-            min=$(( RANDOM % 58 + 1 ))
-            day_offset=$(( RANDOM % 2 ))
-            pub_date=$(date -d "+${day_offset} day" +%Y-%m-%d)
-            pt="${pub_date}T$(printf '%02d' $hour):$(printf '%02d' $min):00+08:00"
-            echo "Publish: $(basename $(dirname $file)) at $pt"
-            sed -i "s/^lastmod:.*/lastmod: $today/" "$file"
-            awk -v pt="$pt" '"'"'/^---/{c++;if(c==2){print pt;print}else print;next}1'"'"' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+            # Random time 15:00-23:59 Asia/Shanghai
+            hour=$(( RANDOM % 9 + 15 ))
+            min=$(( RANDOM % 60 ))
+            pt="${today}T$(printf '%02d:%02d:00+08:00' $hour $min)"
+            echo "  $(basename $(dirname $file)) -> $pt"
+
+            # Insert publishedAt before the closing ---
+            # Find line number of closing ---
+            ln=$(awk '/^---/{c++; if(c==2){print NR; exit}}' "$file")
+            sed -i "${ln}i publishedAt: ${pt}" "$file"
+
+            # Append External Resources if missing
             if ! grep -q "### External Resources" "$file"; then
-              cat >> "$file" << 'EOF'
+              cat >> "$file" << 'EOR'
 
 ### External Resources
 
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
-- [Official Dev News](https://store.steampowered.com/news/app/3242950)
-EOF
+EOR
             fi
-            slug=$(basename $(dirname $file))
+
+            slug=$(basename $(dirname "$file"))
             git add "$file"
             git commit -m "Publish guide: $slug"
           done
+
           git push origin main
+        env:
+          GIT_AUTHOR_NAME: OutworldBot
+          GIT_AUTHOR_EMAIL: bot@outworldstationguide.com
+          GIT_COMMITTER_NAME: OutworldBot
+          GIT_COMMITTER_EMAIL: bot@outworldstationguide.com
