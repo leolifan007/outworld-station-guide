@@ -16,6 +16,7 @@ canonifyURLs = false
   google_adsense_id = 'ca-pub-7551387157478980'
   google_analytics_id = 'G-PR2XS8H182'
   google_site_verification = 'WmY0RmVYSThMVFM2d0VJT09PTHN6VUNPcUV3ZkdWVGc'
+  adsterra_enabled = true
 
 [menu]
   [[menu.main]]
