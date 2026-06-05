@@ -2,6 +2,7 @@
 title: "Outworld Station Crashing at Launch? 18 Fixes for FPS Drops & Freezes"
 description: "Real crashes, real fixes. I spent 40 hours troubleshooting Outworld Station — here is every fix that actually worked for me, from black screen on launch to late-game stutter."
 date: 2026-05-15
+publishedAt: 2026-06-05T10:30:00+08:00
 breadcrumb: Performance & Crash Fix
 emoji: 🔧
 lastmod: 2026-05-15
@@ -297,3 +298,9 @@ Launch the game through this instead of Steam directly. It is a workaround, but 
 
 </div>
 </details>
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)

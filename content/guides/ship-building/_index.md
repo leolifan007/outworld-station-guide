@@ -2,6 +2,7 @@
 title: "Outworld Station Ship Building Guide: How to Build Starships & Complete Contracts"
 description: "Ships confused me for hours. Here's everything I figured out about building, launching, and using starships to complete contracts — step by step."
 date: 2026-05-24
+publishedAt: 2026-06-05T18:20:00+08:00
 breadcrumb: Ship Building
 emoji: 🚀
 lastmod: 2026-05-15

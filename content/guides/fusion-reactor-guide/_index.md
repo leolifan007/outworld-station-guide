@@ -2,6 +2,7 @@
 title: "Fusion Reactor Guide — Never Let Your Station Black Out Again"
 description: "Outworld Station fusion reactor fuel management, common failure scenarios, and step-by-step recovery. Real solutions from someone who lost a lv7 station to a fuel crisis."
 date: 2026-05-13
+publishedAt: 2026-06-05T08:15:00+08:00
 breadcrumb: Fusion Reactor
 emoji: ⚡
 lastmod: 2026-05-14
@@ -163,3 +164,9 @@ Not enough cooling. Every reactor needs at least 2 Cooling Towers. Don't place t
 
 </div>
 </details>
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)

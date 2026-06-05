@@ -2,6 +2,7 @@
 title: "Pipe & Connector Bottlenecks — How to Fix Your Factory's Slowest Link"
 description: "Outworld Station pipe bottlenecks, connector throughput limits, and real layouts that keep production flowing. Based on months of testing and community reports."
 date: 2026-05-14
+publishedAt: 2026-06-05T13:00:00+08:00
 breadcrumb: Pipe Bottlenecks
 emoji: 🔧
 lastmod: 2026-05-14
@@ -205,3 +206,9 @@ An emergency bypass that kicks in when your primary Connector faces overload. Es
 
 </div>
 </details>
+
+### External Resources
+
+- [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
+- [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
+- [Official Dev News](https://store.steampowered.com/news/app/3242950)
