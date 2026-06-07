@@ -2,14 +2,12 @@
 title: "Automated Smelter & Refinery Design - From Raw Ore to Ready Ingots"
 description: "Outworld Station ore-to-ingot automation, smelter array scaling, and refinery throughput optimization. Belt-balance at every stage."
 date: 2026-06-05
-publishDate: 2026-06-07T16:48:00+08:00
-hidden: true
-breadcrumb: Smelting
 emoji: 🔥
-lastmod: 2026-06-05
+lastmod: 2026-06-07T19:01:43+08:00
 draft: false
 category: production
 version: 1.0.0.2
+
 ---
 
 ## Your Smelter Line Is the Hidden Bottleneck
