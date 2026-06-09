@@ -2,14 +2,12 @@
 title: "Mid-Game Expansion Strategy - Survive the Resource Gap"
 description: "Outworld Station mid-game resource crunch solutions. How to bridge the gap between starter base and mega-station without restarting."
 date: 2026-06-05
-publishDate: 2026-06-09T09:17:00+08:00
-hidden: true
-breadcrumb: Expansion
 emoji: 🚀
-lastmod: 2026-06-05
+lastmod: 2026-06-09T13:44:46+08:00
 draft: false
 category: strategy
 version: 1.0.0.2
+
 ---
 
 ## The Wall Everyone Hits at Station Level 7
