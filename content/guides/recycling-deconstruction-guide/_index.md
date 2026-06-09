@@ -36,9 +36,9 @@ Not all buildings give back the same percentage. The game uses a tiered system b
 | Advanced      | Assembler, Refinery, Miner | 50%               | 75%                  |
 | Complex       | Manufacturer, Particle Collider | 30%          | 60%                  |
 
-{{< tip >}}
-Conveyors and pipes always return at 100%. If you are reorganizing, rip up belts first and reclaim every piece. Use the reclaimed materials to feed your new layout without touching your resource stockpile.
-{{< /tip >}}
+<div class="callout callout-tip">
+<strong>Pro tip:</strong> Conveyors and pipes always return at 100%. If you are reorganizing, rip up belts first and reclaim every piece. Use the reclaimed materials to feed your new layout without touching your resource stockpile.
+</div>
 
 ## The Reclaim Upgrade
 
@@ -46,9 +46,9 @@ Halfway through your first playthrough you will unlock the **Material Recovery**
 
 Without this upgrade, demolishing a Manufacturer (which costs hundreds of iron plates, circuits, and motors) gives you back barely a third of the components. With the upgrade, you get 60%. That is the difference between needing a fresh mining outpost and just patching the gap from your existing supply line.
 
-{{< verdict >}}
-Invest in the Material Recovery upgrade before doing any major demolition. The research cost is trivial compared to the material savings. This single unlock saves more resources in one cleanup than any other early-game tech.
-{{< /verdict >}}
+<div class="callout callout-verdict">
+<strong>Bottom line:</strong> Invest in the Material Recovery upgrade before doing any major demolition. The research cost is trivial compared to the material savings. This single unlock saves more resources in one cleanup than any other early-game tech.
+</div>
 
 ## How the Recycling Flow Works
 
@@ -77,9 +77,9 @@ Here is a situation I ran into on my first playthrough. I built three rows of sm
 
 If I had just deleted everything without Reclaim, I would have lost about 800 iron plates and had to spend 20 more minutes mining. Small difference for one rebuild. Massive difference over a 50-hour save.
 
-{{< warning >}}
-Do not deconstruct your power grid without building replacement capacity first. A dead base is a frozen base. Always build the new power plant before you tear down the old one. Solar panels are great for this because they need no fuel and can be placed in the cleared area afterward.
-{{< /warning >}}
+<div class="callout callout-warning">
+<strong>Warning:</strong> Do not deconstruct your power grid without building replacement capacity first. A dead base is a frozen base. Always build the new power plant before you tear down the old one. Solar panels are great for this because they need no fuel and can be placed in the cleared area afterward.
+</div>
 
 ## Plan Before You Wreck
 
@@ -91,7 +91,7 @@ Before you hit confirm on any large deconstruction order, do three things:
 
 Your early-game mistakes are not permanent. Outworld Station is designed to let you iterate. Every misplaced refinery and every backwards assembler is just a learning opportunity with a reclaim rate attached to it.
 
-For more on avoiding rebuilds in the first place, see the [Beginner Mistakes guide](/guides/beginner-mistakes/). When you are ready to scale past your starter base, the [Mid-Game Expansion guide](/guides/mid-game-expansion/) covers how to design modular factories that never need full demolition.
+For more on avoiding rebuilds in the first place, see the [Beginner Mistakes guide](/guides/beginner-mistakes/). When you are ready to scale past your starter base, the [Mid-Game Expansion Strategy guide](/guides/mid-game-expansion-strategy/) covers how to design modular factories that never need full demolition.
 
 ## External Resources
 

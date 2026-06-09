@@ -28,7 +28,7 @@ Want the short version? Prioritize temperate worlds for new players, desert plan
 | 5 | Toxic | Thick atmosphere blocks solar completely. Requires sealed habs immediately. |
 | 6 | Lava | Extreme heat disables basic coolers. Solar is nearly useless. End-game only. |
 
-If you are rushing the tech tree, a temperate start into a gas giant moon colony is the smoothest mid-game transition. Read the [mid-game expansion guide]({{< relref "mid-game-expansion" >}}) for timings.
+If you are rushing the tech tree, a temperate start into a gas giant moon colony is the smoothest mid-game transition. Read the [Mid-Game Expansion Strategy guide](/guides/mid-game-expansion-strategy/) for timings.
 
 ## Biome Comparison Table
 
@@ -91,7 +91,7 @@ Biomes dictate what your colonists need to survive, which translates directly to
 
 ## When to Expand
 
-The research tree gates the biome you can settle next. The [gas giant mining guide]({{< relref "gas-giant-mining" >}}) covers the exact tech requirements for moon colonies, but here is the rough roadmap:
+The research tree gates the biome you can settle next. The [Deep-Space Gas Giant Mining guide](/guides/deep-space-gas-giant-mining/) covers the exact tech requirements for moon colonies, but here is the rough roadmap:
 
 - **Early game (first 2 planets):** Temperate only. Do not try desert until you have mk2 solar.
 - **Mid game (3-5 planets):** Desert and gas giant moons. Unlock geothermal before lava.

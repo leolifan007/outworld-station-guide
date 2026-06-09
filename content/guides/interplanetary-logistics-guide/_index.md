@@ -42,7 +42,7 @@ Three changes cut my fuel bill by 70%:
 2. **Use waypoint refueling stations.** Instead of one direct jump, split the route into shorter legs with a refueling depot mid-point. A journey of 50 units costs less as two 25-unit jumps than one 50-unit jump.
 3. **Ship refined, not raw.** One container of copper plates is worth five containers of ore. Ship the dense stuff. Let your outpost smelt locally.
 
-For the full freighter setup walkthrough, see the [Freighter Mining and Cargo Guide]({{< relref "/guides/freighter-mining-guide" >}}).
+For the full freighter setup walkthrough, see the [Freighter Mining Guide](/guides/freighter-mining-guide/).
 
 <div class="callout callout-tip">
 
@@ -61,7 +61,7 @@ Build a wormhole network when:
 - You need real-time supply chains for production (no waiting for ship transit)
 - You have stable power generation at both endpoints
 
-Wormhole gates also double as passenger gates, which saves building separate transport for crew rotation. See the [Wormhole Terminal Construction Guide]({{< relref "/guides/wormhole-terminal-guide" >}}) for gate placement and power requirements.
+Wormhole gates also double as passenger gates, which saves building separate transport for crew rotation. See the [Wormhole Terminal Guide](/guides/wormhole-terminal-guide/) for gate placement and power requirements.
 
 <div class="callout callout-verdict">
 

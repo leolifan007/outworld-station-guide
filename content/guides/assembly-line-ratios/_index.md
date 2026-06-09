@@ -82,7 +82,7 @@ The common mistake is building 6 circuit board assemblers because "more is bette
 
 For a reinforced plate chain off the same iron node, I split 3 of the 6 iron ingot/s into 3 plate assemblers. That gives me 3 reinforced plate/s -- exactly enough for T2 hub upgrades.
 
-See the [Production Calculator](/guides/production-calculator/) for a full interactive version of these numbers.
+For more on building out production, see the [Station Layout Guide](/guides/station-layout-guide/) for clean factory design patterns.
 
 ## Scaling Tips
 
@@ -90,7 +90,7 @@ See the [Production Calculator](/guides/production-calculator/) for a full inter
 - **Overclock miners, not assemblers.** Power per item is lower when you overclock the miner versus overclocking every downstream assembler. Overclocking from 100% to 200% quadruples power draw -- use it sparingly.
 - **Build in multiples of your smelter bank.** If one smelter feeds two assemblers for plates, then three smelters feed six. Design in threes and you will never have fractions.
 
-For more on building your first base, see the [Starter Base Guide](/guides/starter-base/).
+For more on building your first base, see the [Beginner Mistakes Guide](/guides/beginner-mistakes/) -- it will save you a full rebuild.
 
 ## External Resources
 
