@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:21:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-10T02:00:00+08:00
+publishDate: 2026-06-11T02:00:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Interplanetary Logistics
 emoji: 🚚
+
 ---
 
 Ice fills your cargo bay while your main station burns deuterium keeping the furnaces lit. You have the resources. They are just in the wrong solar system.

@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:17:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-10T01:10:00+08:00
+publishDate: 2026-06-11T01:10:00+08:00
 category: exploration
 version: 1.0.0.0
 breadcrumb: Planet Environment
 emoji: "🌍"
+
 ---
 
 Your first planet pick determines whether you thrive or struggle through the first 20 hours.

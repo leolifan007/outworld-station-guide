@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:11:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-09T23:55:00+08:00
+publishDate: 2026-06-11T23:55:00+08:00
 category: beginner
 version: 1.0.0.0
 breadcrumb: Recycling
 emoji: ♻
+
 ---
 
 Your starter base is a rat's nest of conveyor spaghetti, misplaced assemblers, and that one refinery you built backwards because you didn't read the orientation arrows.

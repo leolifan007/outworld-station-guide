@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:07:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-09T23:15:00+08:00
+publishDate: 2026-06-11T23:15:00+08:00
 category: production
 version: 1.0.0.0
 breadcrumb: Conveyor Balancing
 emoji: "⚙"
+
 ---
 
 Your second assembler is starving while the first one overflows with iron plates.

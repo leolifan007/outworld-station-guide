@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:19:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-10T01:35:00+08:00
+publishDate: 2026-06-11T01:35:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Storage Network
 emoji: ":package:"
+
 ---
 
 Your storage is a junk drawer the size of a space station. I know because I built one.

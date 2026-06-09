@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:15:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-10T00:45:00+08:00
+publishDate: 2026-06-11T00:45:00+08:00
 category: economy
 version: 1.0.0.0
 breadcrumb: Passive Income
 emoji: 💰
+
 ---
 
 Stop chasing every credit by hand. Passive income in Outworld Station is real, and you can set up your first automated credit stream in under 15 minutes.

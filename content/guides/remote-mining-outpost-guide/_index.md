@@ -5,11 +5,12 @@ date: 2026-06-09
 lastmod: 2026-06-09T22:05:00+08:00
 draft: false
 hidden: true
-publishDate: 2026-06-09T22:50:00+08:00
+publishDate: 2026-06-11T22:50:00+08:00
 category: production
 version: 1.0.0.0
 breadcrumb: Mining Outpost
 emoji: ⛏
+
 ---
 
 Your starter iron patch is tapped out and the nearest titanium seam is three planets away. Do not panic. You do not need to move your whole station. You need a remote mining outpost.
