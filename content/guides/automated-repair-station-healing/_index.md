@@ -2,8 +2,8 @@
 title: "Automated Repair & Station Self-Healing - Never Fix a Module by Hand Again"
 description: "Outworld Station automated repair systems, repair drone networks, and self-healing module setups. Let your station fix itself while you explore."
 date: 2026-06-05
-publishDate: 2026-06-13T15:14:00+08:00
-hidden: true
+publishDate: 2026-06-09T21:40:00+08:00
+hidden: false
 breadcrumb: Auto Repair
 emoji: 🔧
 lastmod: 2026-06-05
