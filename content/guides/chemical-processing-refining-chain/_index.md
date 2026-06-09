@@ -2,8 +2,8 @@
 title: "Chemical Processing & Refining Chain - Turn Raw Gas Into Advanced Resources"
 description: "Outworld Station chemical processing chains from raw gas extraction to advanced resource synthesis. Complete refinery pipeline for plastic, fuel, and rare chemicals."
 date: 2026-06-05
-publishDate: 2026-06-15T16:22:00+08:00
-hidden: true
+publishDate: 2026-06-09T21:40:00+08:00
+hidden: false
 breadcrumb: Chemical Refining
 emoji: ðŸ§ª
 lastmod: 2026-06-05
@@ -59,11 +59,11 @@ Arrange synthesizers in a line, one per chemical product. Connect each to its de
 ### Step 3: Product Distribution
 
 Use Inventory Pairs to move finished chemicals where they are needed:
-- Plastic â†’ Component storage
-- Fuel Cells â†’ Power plant + drone hub
-- Coolant â†’ Fusion reactor input
-- Carbon Fiber â†’ Superalloy smelter
-- Fusion Pellets â†’ Fusion reactor fuel slot
+- Plastic â†?Component storage
+- Fuel Cells â†?Power plant + drone hub
+- Coolant â†?Fusion reactor input
+- Carbon Fiber â†?Superalloy smelter
+- Fusion Pellets â†?Fusion reactor fuel slot
 
 ### Step 4: Scaling
 

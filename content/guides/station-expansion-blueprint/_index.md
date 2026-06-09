@@ -2,10 +2,10 @@
 title: "Space Station Expansion Blueprint - From Starter Base to Mega-Station"
 description: "Outworld Station phased expansion plan from starting module to fully-automated mega-station. Blueprints, resource budgets, and upgrade triggers for every phase."
 date: 2026-06-05
-publishDate: 2026-06-15T08:39:00+08:00
-hidden: true
+publishDate: 2026-06-09T21:40:00+08:00
+hidden: false
 breadcrumb: Mega Station
-emoji: 🏗️
+emoji: 🏗�?
 lastmod: 2026-06-05
 draft: false
 category: strategy

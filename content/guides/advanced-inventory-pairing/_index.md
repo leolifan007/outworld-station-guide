@@ -2,8 +2,8 @@
 title: "Advanced Inventory Pairing - Master Supply & Demand Automation"
 description: "Outworld Station advanced inventory pairing techniques for complex supply chains. Auto-balance your factory with zero manual intervention."
 date: 2026-06-05
-publishDate: 2026-06-11T17:05:00+08:00
-hidden: true
+publishDate: 2026-06-09T21:40:00+08:00
+hidden: false
 breadcrumb: Auto Logistics
 emoji: 📦
 lastmod: 2026-06-05

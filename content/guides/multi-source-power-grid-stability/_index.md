@@ -2,10 +2,10 @@
 title: "Multi-Source Power Grid Stability - Balance Solar, Fusion & Antimatter"
 description: "Outworld Station power grid balancing across multiple generation sources. Prevent brownouts, cascade failures, and black screens at the worst time."
 date: 2026-06-05
-publishDate: 2026-06-13T09:28:00+08:00
-hidden: true
+publishDate: 2026-06-09T21:40:00+08:00
+hidden: false
 breadcrumb: Power Grid
-emoji: âš¡
+emoji: âš?
 lastmod: 2026-06-05
 draft: false
 category: power

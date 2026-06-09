@@ -2,8 +2,8 @@
 title: "Deep Space Gas Giant Mining - Set Up a Remote Gas Outpost"
 description: "Outworld Station remote gas extraction, outpost automation, and gas transport logistics across star systems."
 date: 2026-06-05
-publishDate: 2026-06-11T08:42:00+08:00
-hidden: true
+publishDate: 2026-06-09T21:40:00+08:00
+hidden: false
 breadcrumb: Gas Mining
 emoji: 🟢
 lastmod: 2026-06-05
