@@ -59,11 +59,11 @@ Arrange synthesizers in a line, one per chemical product. Connect each to its de
 ### Step 3: Product Distribution
 
 Use Inventory Pairs to move finished chemicals where they are needed:
-- Plastic â†?Component storage
-- Fuel Cells â†?Power plant + drone hub
-- Coolant â†?Fusion reactor input
-- Carbon Fiber â†?Superalloy smelter
-- Fusion Pellets â†?Fusion reactor fuel slot
+- Plastic ->Component storage
+- Fuel Cells ->Power plant + drone hub
+- Coolant ->Fusion reactor input
+- Carbon Fiber ->Superalloy smelter
+- Fusion Pellets ->Fusion reactor fuel slot
 
 ### Step 4: Scaling
 

@@ -23,7 +23,7 @@ def find_due_articles():
         if "_index.md" not in files:
             continue
         fpath = os.path.join(root, "_index.md")
-        with open(fpath, "r", encoding="utf-8") as f:
+        with open(fpath, "r", encoding="utf-8", errors="surrogateescape") as f:
             raw = f.read()
 
         parts = raw.split("---", 2)
