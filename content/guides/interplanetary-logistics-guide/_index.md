@@ -2,14 +2,13 @@
 title: "Interplanetary Logistics Guide - Move Resources Between Worlds"
 description: "Your main station is full. Your outpost has everything you need. Now how do you actually move it? Here is every transport method ranked by cost and throughput."
 date: 2026-06-09
-lastmod: 2026-06-09T22:21:00+08:00
-draft: false
-hidden: true
-publishDate: 2026-06-11T02:00:00+08:00
+lastmod: 2026-06-11T21:44:43+08:00
+draft: falsepublishDate: 2026-06-11T02:00:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Interplanetary Logistics
 emoji: 🚚
+
 
 ---
 

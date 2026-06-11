@@ -2,14 +2,13 @@
 title: "Planet Biome & Environment Effects Guide - How Worlds Change Your Play"
 description: "Not all planets are equal. Some boost production. Some drain your power. Here is how each biome type affects your outpost and which to prioritize."
 date: 2026-06-09
-lastmod: 2026-06-09T22:17:00+08:00
-draft: false
-hidden: true
-publishDate: 2026-06-11T01:10:00+08:00
+lastmod: 2026-06-11T21:47:53+08:00
+draft: falsepublishDate: 2026-06-11T01:10:00+08:00
 category: exploration
 version: 1.0.0.0
 breadcrumb: Planet Environment
 emoji: "🌍"
+
 
 ---
 

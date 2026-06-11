@@ -2,14 +2,13 @@
 title: "Passive Income & Trading Guide - Contracts, Auto-Trading & AFK Credits"
 description: "Stop grinding manual trades. Here is how to set up passive income streams through contracts, trading routes, and automated commerce that earns while you build."
 date: 2026-06-09
-lastmod: 2026-06-09T22:15:00+08:00
-draft: false
-hidden: true
-publishDate: 2026-06-11T00:45:00+08:00
+lastmod: 2026-06-11T21:25:15+08:00
+draft: falsepublishDate: 2026-06-11T00:45:00+08:00
 category: economy
 version: 1.0.0.0
 breadcrumb: Passive Income
 emoji: 💰
+
 
 ---
 

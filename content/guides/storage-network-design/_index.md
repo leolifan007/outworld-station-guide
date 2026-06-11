@@ -2,14 +2,13 @@
 title: "Storage Network Design Guide - Smart Sorting & Warehouse Systems"
 description: "Your storage is chaos. Chests full of random ore, no idea what you have. Here is how to build a smart storage network that sorts, organizes, and tells you exactly what you own."
 date: 2026-06-09
-lastmod: 2026-06-09T22:19:00+08:00
-draft: false
-hidden: true
-publishDate: 2026-06-11T01:35:00+08:00
+lastmod: 2026-06-11T21:49:59+08:00
+draft: falsepublishDate: 2026-06-11T01:35:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Storage Network
 emoji: ":package:"
+
 
 ---
 
