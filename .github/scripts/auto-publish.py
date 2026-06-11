@@ -66,8 +66,8 @@ def publish_article(fpath):
 
     fm = parts[1]
 
-    # Remove hidden field
-    fm = re.sub(r"\n\s*hidden\s*:\s*(true|false)\s*", "", fm, flags=re.IGNORECASE)
+    # Remove hidden field (keep trailing newline)
+    fm = re.sub(r"\n[\t ]*hidden\s*:\s*(true|false)([\t ]*)", "", fm, flags=re.IGNORECASE)
     # Remove publishDate line
     fm = re.sub(r"\n\s*publishDate\s*:.*", "", fm)
 
