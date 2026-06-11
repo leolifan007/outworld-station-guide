@@ -7,7 +7,7 @@ draft: falsepublishDate: 2026-06-11T02:00:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Interplanetary Logistics
-emoji: 🚚
+emoji: "🚚"
 
 
 ---

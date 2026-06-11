@@ -4,7 +4,7 @@ description: "I wasted 20 hours learning these the hard way. From tech order to 
 date: 2026-05-20
 publishedAt: 2026-05-21T10:37:00+08:00
 breadcrumb: Beginner Tips
-emoji: 💡
+emoji: "💡"
 lastmod: 2026-05-21
 draft: false
 hidden: false

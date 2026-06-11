@@ -4,7 +4,7 @@ description: "Ships confused me for hours. Here's everything I figured out about
 date: 2026-05-24
 publishedAt: 2026-06-05T18:20:00+08:00
 breadcrumb: Ship Building
-emoji: 🚀
+emoji: "🚀"
 lastmod: 2026-05-15
 draft: false
 hidden: false

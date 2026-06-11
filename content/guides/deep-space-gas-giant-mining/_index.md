@@ -5,7 +5,7 @@ date: 2026-06-05
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Gas Mining
-emoji: 🟢
+emoji: "🟢"
 lastmod: 2026-06-05
 draft: false
 category: resources

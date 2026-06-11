@@ -4,7 +4,7 @@ description: "Outworld Station freighter dock setup, mining station automation, 
 date: 2026-05-17
 publishedAt: 2026-05-18T20:47:00+08:00
 breadcrumb: Freighter Mining
-emoji: 🚀
+emoji: "🚀"
 lastmod: 2026-05-18
 draft: false
 category: logistics

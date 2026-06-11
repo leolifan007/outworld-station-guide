@@ -4,7 +4,7 @@ description: "Outworld Station drone shields, missile turrets, laser defense, an
 date: 2026-05-17
 publishedAt: 2026-05-19T11:22:00+08:00
 breadcrumb: Drone Defense
-emoji: 🛡️
+emoji: "🛡️"
 lastmod: 2026-05-19
 draft: false
 category: defense
