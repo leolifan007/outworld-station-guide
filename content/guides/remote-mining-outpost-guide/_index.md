@@ -2,14 +2,13 @@
 title: "Outworld Station Remote Mining Outpost Guide - Claim & Automate Ore Patches"
 description: "Your starter patch is running dry. Here is the exact process for scouting, claiming, and automating remote mining outposts that feed your station nonstop."
 date: 2026-06-09
-lastmod: 2026-06-09T22:05:00+08:00
+lastmod: 2026-06-12T16:31:40+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-12T15:15:00+08:00
 category: production
 version: 1.0.0.0
 breadcrumb: Mining Outpost
 emoji: ⛏
+
 
 ---
 
