@@ -2,14 +2,13 @@
 title: "Outworld Station Life Support & Oxygen Production Guide - Keep Your Station Breatheable"
 description: "Oxygen running out? Here is how to build a self-sustaining life support system that keeps your station crew alive through every expansion phase."
 date: 2026-06-09
-lastmod: 2026-06-09T22:03:00+08:00
+lastmod: 2026-06-12T12:08:29+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-12T10:01:00+08:00
 category: survival
 version: 1.0.0.0
 breadcrumb: Life Support
 emoji: O2
+
 
 ---
 
