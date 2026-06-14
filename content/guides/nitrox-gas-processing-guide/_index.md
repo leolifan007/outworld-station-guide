@@ -1,15 +1,14 @@
-﻿---
+---
 title: "Nitrox & Advanced Gas Processing -- From Gas Starvation to Infinite Fuel"
 description: "Outworld Station nitratium harvesting, biomass-to-gas conversion, automated nitrox production chains, and the advanced gas processing tree that breaks your mid-game fuel bottleneck."
 date: 2026-06-09
-lastmod: 2026-06-09T22:30:00+08:00
+lastmod: 2026-06-14T23:03:20+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-14T20:02:00+08:00
 category: production
 version: 1.0.0.0
 breadcrumb: Gas Processing
 emoji: Gas
+
 ---
 
 ## Your Fusion Reactor Is Starving and You Do Not Know Why
