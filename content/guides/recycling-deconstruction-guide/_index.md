@@ -2,14 +2,13 @@
 title: "Recycling & Deconstruction Guide - Reclaim Materials Without Starting Over"
 description: "Your first factory is a mess and you want to rebuild. Here is how to deconstruct efficiently, reclaim up to 90% of materials, and avoid the scrap heap."
 date: 2026-06-09
-lastmod: 2026-06-09T22:11:00+08:00
+lastmod: 2026-06-14T09:52:22+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-14T09:37:00+08:00
 category: beginner
 version: 1.0.0.0
 breadcrumb: Recycling
 emoji: ♻
+
 
 ---
 
