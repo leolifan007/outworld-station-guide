@@ -1,15 +1,14 @@
-﻿---
+---
 title: "Endgame Guide & Final Stretch -- Arkship, Void, and the 1.0 Endgame"
 description: "Outworld Station endgame walkthrough from Station Level 10 to 1.0 completion: Arkship construction, The Void Event Horizon, Space Elevator logistics, and the final resource push."
 date: 2026-06-09
-lastmod: 2026-06-09T22:30:00+08:00
+lastmod: 2026-06-16T10:43:52+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-16T07:35:00+08:00
 category: exploration
 version: 1.0.0.0
 breadcrumb: Endgame
 emoji: Ship
+
 ---
 
 ## The Mid-Game Is Over. Now What?
