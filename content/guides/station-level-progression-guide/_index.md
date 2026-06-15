@@ -1,15 +1,14 @@
-﻿---
+---
 title: "Station Level-Up & Progression -- What Each Level Unlocks (1-12+)" 
 description: "Outworld Station level-by-level unlock guide. Every station level's new buildings, planet access, research tiers, and upgrade priority from Level 1 to Level 12+ in Early Access."
 date: 2026-06-09
-lastmod: 2026-06-09T22:30:00+08:00
+lastmod: 2026-06-15T17:23:12+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-15T13:14:00+08:00
 category: survival
 version: 1.0.0.0
 breadcrumb: Level Guide
 emoji: Star
+
 ---
 
 ## You Hit Level 5 and Suddenly Everything Costs Superalloy
