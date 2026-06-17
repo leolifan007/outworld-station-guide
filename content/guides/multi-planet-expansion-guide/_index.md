@@ -1,15 +1,14 @@
-﻿---
+---
 title: "Multi-Planet Expansion & Cross-Zone Logistics -- Build Your Second Station Right"
 description: "Outworld Station multi-planet expansion strategy: when to build a second station, cross-zone resource planning, wormhole networks, and the zone-pairing system that keeps your empire connected."
 date: 2026-06-09
-lastmod: 2026-06-09T22:30:00+08:00
+lastmod: 2026-06-17T19:55:08+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-17T13:45:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Multi-Planet
 emoji: Globe
+
 ---
 
 ## Your First Station Is Cramped. Do Not Build a Second One Yet.

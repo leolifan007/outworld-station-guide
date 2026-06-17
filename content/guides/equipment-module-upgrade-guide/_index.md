@@ -1,15 +1,14 @@
-﻿---
+---
 title: "Equipment & Module Upgrade Guide -- Tech Upgrade Priority That Actually Works"
 description: "Outworld Station equipment system, tech upgrade rework, module priority optimization for drones, and the upgrade order that doubles your production without wasting Tech Points."
 date: 2026-06-09
-lastmod: 2026-06-09T22:30:00+08:00
+lastmod: 2026-06-17T19:09:59+08:00
 draft: false
-hidden: true
-publishDate: 2026-06-16T23:38:00+08:00
 category: economy
 version: 1.0.0.0
 breadcrumb: Equipment
 emoji: Gear
+
 ---
 
 ## You Have Tech Points. You Have No Idea What to Spend Them On.
