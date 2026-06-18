@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+  <rect width="600" height="350" fill="#1A2533" rx="8"/>
+  <!-- Title -->
+  <text x="300" y="35" fill="#00D4AA" font-family="Arial,sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Weapon Range Comparison</text>
+  <!-- Laser range -->
+  <circle cx="150" cy="200" r="100" fill="none" stroke="#00D4AA" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <text x="150" y="210" fill="#00D4AA" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Laser (Medium)</text>
+  <!-- Missile range -->
+  <circle cx="150" cy="200" r="150" fill="none" stroke="#FF6B35" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <text x="150" y="110" fill="#FF6B35" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Missile (Long)</text>
+  <!-- Machine gun range -->
+  <circle cx="150" cy="200" r="55" fill="none" stroke="#4ECDC4" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <text x="150" y="270" fill="#4ECDC4" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Machine Gun (Short)</text>
+  <!-- Plasma range -->
+  <circle cx="150" cy="200" r="80" fill="none" stroke="#FFD93D" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <text x="77" y="150" fill="#FFD93D" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Plasma</text>
+  <!-- Center ship -->
+  <rect x="140" y="190" width="20" height="20" fill="#6A8AAA" rx="3" opacity="0.8"/>
+  <text x="150" y="205" fill="#fff" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">S</text>
+  <!-- Legend -->
+  <g transform="translate(330, 60)">
+    <text x="0" y="0" fill="#8899AA" font-family="Arial,sans-serif" font-size="13" font-weight="bold">Legend</text>
+    <rect x="0" y="15" width="16" height="6" fill="#FF6B35" rx="2"/>
+    <text x="24" y="21" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="11">Missile - Long range, slow tracking</text>
+    <rect x="0" y="33" width="16" height="6" fill="#00D4AA" rx="2"/>
+    <text x="24" y="39" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="11">Laser - Medium range, high tracking</text>
+    <rect x="0" y="51" width="16" height="6" fill="#FFD93D" rx="2"/>
+    <text x="24" y="57" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="11">Plasma - Medium range, balanced</text>
+    <rect x="0" y="69" width="16" height="6" fill="#4ECDC4" rx="2"/>
+    <text x="24" y="75" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="11">Machine Gun - Short range, fast tracking</text>
+  </g>
+</svg>
