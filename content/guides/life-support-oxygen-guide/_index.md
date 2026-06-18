@@ -1,7 +1,8 @@
----
+﻿---
 title: "Outworld Station Life Support & Oxygen Production Guide - Keep Your Station Breatheable"
 description: "Oxygen running out? Here is how to build a self-sustaining life support system that keeps your station crew alive through every expansion phase."
 date: 2026-06-09
+publishedAt: 2026-06-18T10:00:00+08:00
 lastmod: 2026-06-12T12:08:29+08:00
 draft: false
 category: survival
@@ -106,3 +107,4 @@ I keep a dedicated battery bank just for oxygen and scrubbers, isolated from my 
 - [Outworld Station Subreddit](https://www.reddit.com/r/outworldstation/)
 - [Outworld Station Wiki](https://wiki.gg/outworld-station/)
 - [Official Outworld Station Discord](https://discord.gg/outworldstation)
+

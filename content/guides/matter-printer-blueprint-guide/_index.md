@@ -1,7 +1,8 @@
----
+﻿---
 title: "Matter Printer & Blueprint System -- Copy, Paste, Scale Your Factory"
 description: "Outworld Station matter printer usage, blueprint template creation and replication, multi-hotbar management, and the copy-paste workflow that turns a 2-hour build into a 10-minute job."
 date: 2026-06-09
+publishedAt: 2026-06-18T11:30:00+08:00
 lastmod: 2026-06-15T17:08:31+08:00
 draft: false
 category: production
@@ -131,4 +132,5 @@ See our [Station Layout Guide](/guides/station-layout-guide/) for optimal templa
 
 - [Steam Guides](https://steamcommunity.com/app/3242950/guides/) _(opens in new tab)_
 - [Outworld Station on Reddit](https://www.reddit.com/r/IndieGaming/comments/1ijv6yx/check_out_my_new_space_factory_game_outworld/) _(opens in new tab)_
+
 

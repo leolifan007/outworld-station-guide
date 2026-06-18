@@ -1,7 +1,8 @@
----
+﻿---
 title: "Equipment & Module Upgrade Guide -- Tech Upgrade Priority That Actually Works"
 description: "Outworld Station equipment system, tech upgrade rework, module priority optimization for drones, and the upgrade order that doubles your production without wasting Tech Points."
 date: 2026-06-09
+publishedAt: 2026-06-18T12:15:00+08:00
 lastmod: 2026-06-17T19:09:59+08:00
 draft: false
 category: economy
@@ -124,4 +125,5 @@ For production stacking strategies, see our [Assembly Line Ratios Guide](/guides
 
 - [Steam Guides](https://steamcommunity.com/app/3242950/guides/) _(opens in new tab)_
 - [Outworld Station on Reddit](https://www.reddit.com/r/IndieGaming/comments/1ijv6yx/check_out_my_new_space_factory_game_outworld/) _(opens in new tab)_
+
 

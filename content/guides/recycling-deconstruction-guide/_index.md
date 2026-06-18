@@ -1,13 +1,14 @@
----
+﻿---
 title: "Recycling & Deconstruction Guide - Reclaim Materials Without Starting Over"
 description: "Your first factory is a mess and you want to rebuild. Here is how to deconstruct efficiently, reclaim up to 90% of materials, and avoid the scrap heap."
 date: 2026-06-09
+publishedAt: 2026-06-18T11:00:00+08:00
 lastmod: 2026-06-14T09:52:22+08:00
 draft: false
 category: beginner
 version: 1.0.0.0
 breadcrumb: Recycling
-emoji: ♻
+emoji: 鈾?
 
 
 ---
@@ -98,3 +99,4 @@ For more on avoiding rebuilds in the first place, see the [Beginner Mistakes gui
 - [Official Outworld Station Wiki - Logistics](https://outworldstation.wiki/logistics)
 - [Outworld Station Subreddit - Building Tips](https://reddit.com/r/outworldstation)
 - [Factorio Deconstruction Guide (similar mechanics)](https://wiki.factorio.com/Deconstruction)
+

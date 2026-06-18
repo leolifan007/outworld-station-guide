@@ -1,13 +1,14 @@
----
+﻿---
 title: "Outworld Station Remote Mining Outpost Guide - Claim & Automate Ore Patches"
 description: "Your starter patch is running dry. Here is the exact process for scouting, claiming, and automating remote mining outposts that feed your station nonstop."
 date: 2026-06-09
+publishedAt: 2026-06-18T10:15:00+08:00
 lastmod: 2026-06-12T16:31:40+08:00
 draft: false
 category: production
 version: 1.0.0.0
 breadcrumb: Mining Outpost
-emoji: ⛏
+emoji: 鉀?
 
 
 ---
@@ -82,3 +83,4 @@ Once you have three outposts running, your income stabilizes enough to never han
 - [Official Outworld Station Wiki - Mining](https://outworldstation.wiki/mining)
 - [Outworld Station Steam Community Mining Guides](https://steamcommunity.com/app/3242950/guides/)
 - [Factorio Remote Outpost Design (concept reference)](https://wiki.factorio.com/Tutorial:Logistic_robot_network)
+

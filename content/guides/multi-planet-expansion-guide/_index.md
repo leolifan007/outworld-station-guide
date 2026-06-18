@@ -1,7 +1,8 @@
----
+﻿---
 title: "Multi-Planet Expansion & Cross-Zone Logistics -- Build Your Second Station Right"
 description: "Outworld Station multi-planet expansion strategy: when to build a second station, cross-zone resource planning, wormhole networks, and the zone-pairing system that keeps your empire connected."
 date: 2026-06-09
+publishedAt: 2026-06-18T12:30:00+08:00
 lastmod: 2026-06-17T19:55:08+08:00
 draft: false
 category: logistics
@@ -131,4 +132,5 @@ For detailed wormhole configuration, see the [Wormhole Terminal Guide](/guides/w
 
 - [Steam Guides](https://steamcommunity.com/app/3242950/guides/) _(opens in new tab)_
 - [Outworld Station on Reddit](https://www.reddit.com/r/IndieGaming/comments/1ijv6yx/check_out_my_new_space_factory_game_outworld/) _(opens in new tab)_
+
 

@@ -1,7 +1,8 @@
----
+﻿---
 title: "Station Level-Up & Progression -- What Each Level Unlocks (1-12+)" 
 description: "Outworld Station level-by-level unlock guide. Every station level's new buildings, planet access, research tiers, and upgrade priority from Level 1 to Level 12+ in Early Access."
 date: 2026-06-09
+publishedAt: 2026-06-18T11:45:00+08:00
 lastmod: 2026-06-15T17:23:12+08:00
 draft: false
 category: survival
@@ -118,4 +119,5 @@ See our [Research Order Guide](/guides/research-order/) for the correct tech tre
 
 - [Steam Guides](https://steamcommunity.com/app/3242950/guides/) _(opens in new tab)_
 - [Outworld Station on Reddit](https://www.reddit.com/r/IndieGaming/comments/1ijv6yx/check_out_my_new_space_factory_game_outworld/) _(opens in new tab)_
+
 

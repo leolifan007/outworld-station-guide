@@ -1,7 +1,8 @@
----
+﻿---
 title: "Nitrox & Advanced Gas Processing -- From Gas Starvation to Infinite Fuel"
 description: "Outworld Station nitratium harvesting, biomass-to-gas conversion, automated nitrox production chains, and the advanced gas processing tree that breaks your mid-game fuel bottleneck."
 date: 2026-06-09
+publishedAt: 2026-06-18T11:15:00+08:00
 lastmod: 2026-06-14T23:03:20+08:00
 draft: false
 category: production
@@ -141,4 +142,5 @@ See our [Fusion Reactor Guide](/guides/fusion-reactor-guide/) for exact fuel con
 
 - [Steam Guides](https://steamcommunity.com/app/3242950/guides/) _(opens in new tab)_
 - [Outworld Station on Reddit](https://www.reddit.com/r/IndieGaming/comments/1ijv6yx/check_out_my_new_space_factory_game_outworld/) _(opens in new tab)_
+
 

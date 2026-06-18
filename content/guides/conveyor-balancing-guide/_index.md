@@ -1,13 +1,14 @@
----
+﻿---
 title: "Conveyor Belt Balancing & Throughput Guide - Never Starve an Assembler Again"
 description: "One assembler is full while another starves. Here is how belt balancers, splitters, and throughput math fix your factory layout for good."
 date: 2026-06-09
+publishedAt: 2026-06-18T10:30:00+08:00
 lastmod: 2026-06-13T20:46:43+08:00
 draft: false
 category: production
 version: 1.0.0.0
 breadcrumb: Conveyor Balancing
-emoji: "⚙"
+emoji: "鈿?
 
 
 ---
