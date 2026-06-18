@@ -54,20 +54,44 @@
 <button class="sidebar-toggle" id="sidebarToggle">?</button>
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-{{/* ── Conditional grid shape ── */}}
-{{- $gridClass := "page-wrap-home" -}}
-{{- if .Params.category }}{{ $gridClass = "page-wrap-article" }}{{ end -}}
+{{ if or (not .Params.category) (eq .Params.category "") }}
+{{/* ═══════════════════════════════════════════════════
+     HOMEPAGE LAYOUT — identical to production / main branch
+     ═══════════════════════════════════════════════════ */}}
+<div class="page-wrap">
 
-<div class="page-wrap {{ $gridClass }}">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🌐</div>
+      <div>
+        <div class="logo-text">Outworld Station</div>
+        <div class="logo-sub">Guide</div>
+      </div>
+    </div>
+    <nav class="sidebar-nav" id="sidebarNav">
+      {{ partial "sidebar-nav" . }}
+    </nav>
+    <div class="sidebar-steam">
+      <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 Steam Page</a>
+    </div>
+  </aside>
 
-  {{/* ── Article hero (top row, full width in grid) ── */}}
-  {{ if .Params.category }}
-  <div class="hero-wrap">
-    {{ block "hero" . }}{{ end }}
+  <div class="main-area">
+    {{ partial "lang-bar" . }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer" . }}
   </div>
-  {{ end }}
 
-  <!-- L1 — sticky sidebar, category nav -->
+</div>
+
+{{ else }}
+{{/* ═══════════════════════════════════════════════════
+     ARTICLE PAGE LAYOUT — fixed L1 sidebar, hero, content-row (L2 + ad + main)
+     ═══════════════════════════════════════════════════ */}}
+<div class="page-wrap page-wrap-article">
+
   <aside class="sidebar sidebar-l1">
     <div class="sidebar-logo">
       <div class="logo-icon">🌐</div>
@@ -84,48 +108,52 @@
     </div>
   </aside>
 
-  <!-- L2 — sticky sidebar, article list in current category -->
-  {{ if .Params.category }}
-  <aside class="sidebar sidebar-l2">
-    {{ partial "sidebar-l2" . }}
-  </aside>
-  {{ end }}
+  <div class="hero-wrap">
+    {{ block "hero" . }}{{ end }}
+  </div>
 
-  <!-- AD (right column, article pages only) -->
-  {{ if .Params.category }}
-  <aside class="ad-col-right">
-    <div class="ad-sticky-wrap">
-      <script>
-      atOptions = {
-        'key' : '5b8f02a7812d2083deec73a49432e709',
-        'format' : 'iframe',
-        'height' : 600,
-        'width' : 160,
-        'params' : {}
-      };
-      </script>
-      <script src="https://www.highperformanceformat.com/5b8f02a7812d2083deec73a49432e709/invoke.js"></script>
+  <div class="content-row">
+
+    <aside class="sidebar sidebar-l2">
+      {{ partial "sidebar-l2" . }}
+    </aside>
+
+    <aside class="ad-col-right">
+      <div class="ad-sticky-wrap">
+        <script>
+        atOptions = {
+          'key' : '5b8f02a7812d2083deec73a49432e709',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+        </script>
+        <script src="https://www.highperformanceformat.com/5b8f02a7812d2083deec73a49432e709/invoke.js"></script>
+      </div>
+    </aside>
+
+    <div class="main-area">
+      <div class="content-body-fixed">
+        {{ partial "lang-bar" . }}
+        <main>
+          {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer" . }}
+      </div>
     </div>
-  </aside>
-  {{ end }}
 
-  <!-- MAIN CONTENT -->
-  <div class="main-area">
-    {{ partial "lang-bar" . }}
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    {{ partial "footer" . }}
   </div>
 
 </div>
+{{ end }}
 
 {{ partial "cookie-banner" . }}
 
 <script>
 (function(){
   var btn=document.getElementById('sidebarToggle');
-  var sidebar=document.querySelector('.sidebar-l1');
+  var sidebar=document.querySelector('.sidebar');
   var overlay=document.getElementById('sidebarOverlay');
   var nav=document.getElementById('sidebarNav');
   function open(){sidebar.classList.add('open');overlay.classList.add('open')}
@@ -133,6 +161,9 @@
   if(btn){btn.onclick=function(e){e.stopPropagation();sidebar.classList.contains('open')?close():open()}}
   if(overlay){overlay.onclick=close}
   if(nav){nav.onclick=function(){if(window.innerWidth<=768)close()}}
+  document.querySelectorAll('.sidebar-nav a').forEach(function(link){
+    if(link.getAttribute('href')===window.location.pathname)link.classList.add('active');
+  });
 })();
 </script>
 </body>
