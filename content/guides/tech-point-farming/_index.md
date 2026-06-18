@@ -2,9 +2,8 @@
 title: "Outworld Station Tech Point Farming - Fastest Ways to Unlock New Research"
 description: "Outworld Station tech point generation methods ranked by efficiency. How to avoid the mid-game tech stall and keep research rolling from Station Level 4 to 20."
 date: 2026-06-18
-publishedAt: 2026-06-19T16:08:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-18T22:30:00+08:00
-hidden: true
 breadcrumb: Tech Points
 lastmod: 2026-06-18
 draft: false
@@ -28,7 +27,7 @@ Tech Points are the gate that controls your entire progression. If you run out, 
 <hr>
 
 <details class="md-fold">
-<summary><span>How Tech Points Are Generated (The Recipe System)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>How Tech Points Are Generated (The Recipe System)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -57,7 +56,7 @@ The most common reason a lab stops: you ran out of the specific component it was
 <hr>
 
 <details class="md-fold">
-<summary><span>Five Tech Point Farming Methods Ranked</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Five Tech Point Farming Methods Ranked</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

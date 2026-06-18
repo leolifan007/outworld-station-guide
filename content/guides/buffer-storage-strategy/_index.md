@@ -2,9 +2,8 @@
 title: "Outworld Station Buffer Storage Placement - Where to Put Buffers to Stop Production Stalls"
 description: "Outworld Station buffer chest placement strategy to absorb production spikes, prevent assembler starvation, and smooth out supply-demand mismatches across your factory."
 date: 2026-06-18
-publishedAt: 2026-06-20T11:04:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-18T23:30:00+08:00
-hidden: true
 breadcrumb: Buffer Storage
 lastmod: 2026-06-18
 draft: false
@@ -28,7 +27,7 @@ Buffers are not just "extra storage." They are the shock absorbers of your produ
 <hr>
 
 <details class="md-fold">
-<summary><span>Three Buffer Patterns (And When to Use Each)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Three Buffer Patterns (And When to Use Each)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -74,7 +73,7 @@ Smelter Zone -> [Buffer 300] -> Connector (long) -> [Buffer 300] -> Assembler Zo
 <hr>
 
 <details class="md-fold">
-<summary><span>Buffer Sizing by Material Type</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Buffer Sizing by Material Type</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

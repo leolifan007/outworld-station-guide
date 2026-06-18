@@ -2,9 +2,8 @@
 title: "Outworld Station Remote Outpost Defense - Protect Your Planetary Mining Bases with Turrets and Walls"
 description: "Outworld Station remote mining outpost defense layout for planetary bases. Turret placement, wall design, and automated repair systems to stop asteroid strikes and pirate raids."
 date: 2026-06-18
-publishedAt: 2026-06-19T16:33:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-19T03:00:00+08:00
-hidden: true
 breadcrumb: Outpost Defense
 lastmod: 2026-06-18
 draft: false
@@ -26,7 +25,7 @@ Asteroid strikes and pirate raids do not discriminate between your main station 
 <hr>
 
 <details class="md-fold">
-<summary><span>What Your Remote Outpost Is Up Against</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>What Your Remote Outpost Is Up Against</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -50,7 +49,7 @@ Your main station has built-in armor, shield generators, and repair nanobots. Pl
 <hr>
 
 <details class="md-fold">
-<summary><span>Building the Three-Layer Defense System</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Building the Three-Layer Defense System</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

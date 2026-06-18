@@ -2,9 +2,8 @@
 title: "Outworld Station Shipyard Automation - Build Ships Automatically Without Manual Crafting"
 description: "Outworld Station automated ship production from component crafting to launch assembly. Set-and-forget shipyard that builds freighters, combat ships, and tugs without your input."
 date: 2026-06-18
-publishedAt: 2026-06-20T13:45:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-19T00:00:00+08:00
-hidden: true
 breadcrumb: Shipyard Automation
 lastmod: 2026-06-18
 draft: false
@@ -26,7 +25,7 @@ The game supports full automated ship production. You feed materials into a Ship
 <hr>
 
 <details class="md-fold">
-<summary><span>How Automated Ship Production Works</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>How Automated Ship Production Works</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -59,7 +58,7 @@ A Shipyard has four material input slots that accept connector links:
 <hr>
 
 <details class="md-fold">
-<summary><span>Setting Up the Auto Shipyard (Step by Step)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Setting Up the Auto Shipyard (Step by Step)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

@@ -2,9 +2,8 @@
 title: "Outworld Station Save Backup and Recovery - Protect Your Progress from Corruption"
 description: "Outworld Station save file backup strategy for early access stability. Where saves are stored, how to recover corrupted saves, and the auto-save backup routine you need."
 date: 2026-06-18
-publishedAt: 2026-06-20T17:55:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-19T01:30:00+08:00
-hidden: true
 breadcrumb: Save Backup
 lastmod: 2026-06-18
 draft: false
@@ -28,7 +27,7 @@ The fix: backups. A 30-second habit that saves you from replaying weeks of progr
 <hr>
 
 <details class="md-fold">
-<summary><span>Where Saves Are Stored and How They Work</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Where Saves Are Stored and How They Work</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -63,7 +62,7 @@ The game maintains 5 rotating auto-saves: auto_save_0 through auto_save_4. When 
 <hr>
 
 <details class="md-fold">
-<summary><span>Backup Routine (30 Seconds Per Session)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Backup Routine (30 Seconds Per Session)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

@@ -2,9 +2,8 @@
 title: "Outworld Station Hydrogen Fuel Production - Keep Your Cloud Miners and Reactors Running"
 description: "Outworld Station hydrogen fuel chain from cloud miner gas extraction to reactor feed. Production ratios, pipe throughput, and the fuel starvation spiral you need to avoid."
 date: 2026-06-18
-publishedAt: 2026-06-19T11:15:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-18T22:00:00+08:00
-hidden: true
 breadcrumb: Hydrogen Fuel
 lastmod: 2026-06-18
 draft: false
@@ -26,7 +25,7 @@ The problem: you did not account for pipe throughput, storage buffers, and the d
 <hr>
 
 <details class="md-fold">
-<summary><span>The Hydrogen Chain from Cloud to Power</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>The Hydrogen Chain from Cloud to Power</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -61,7 +60,7 @@ Cloud Miner (46 H2/min)
 <hr>
 
 <details class="md-fold">
-<summary><span>Reactor Ratios That Work</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Reactor Ratios That Work</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -95,7 +94,7 @@ Cloud Miner (46 H2/min)
 <hr>
 
 <details class="md-fold">
-<summary><span>The Fuel Starvation Spiral (And How to Prevent It)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>The Fuel Starvation Spiral (And How to Prevent It)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

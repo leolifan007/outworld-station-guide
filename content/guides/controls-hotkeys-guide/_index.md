@@ -2,9 +2,8 @@
 title: "Outworld Station Controls and Hotkeys - Complete Keyboard Shortcut Guide"
 description: "Outworld Station key bindings, camera controls, building shortcuts, and UI navigation hotkeys. Full keyboard reference for faster factory management and drone routing."
 date: 2026-06-18
-publishedAt: 2026-06-21T09:11:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-19T02:00:00+08:00
-hidden: true
 breadcrumb: Controls Guide
 lastmod: 2026-06-18
 draft: false
@@ -26,7 +25,7 @@ Knowing the hotkeys does not just save seconds. It changes how you build. When y
 <hr>
 
 <details class="md-fold">
-<summary><span>Building and Placement Shortcuts</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Building and Placement Shortcuts</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -52,7 +51,7 @@ Place one Smelter. Hold Shift, click 5 more times. Five Smelters placed in 5 sec
 <hr>
 
 <details class="md-fold">
-<summary><span>Camera and Navigation</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Camera and Navigation</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -77,7 +76,7 @@ Place one Smelter. Hold Shift, click 5 more times. Five Smelters placed in 5 sec
 <hr>
 
 <details class="md-fold">
-<summary><span>Connector and Inventory Shortcuts</span><span class="fold-fold">â–¼</span></summary>
+<summary><span>Connector and Inventory Shortcuts</span><span class="fold-fold">â–?/span></summary>
 
 <div class="fold-body">
 

@@ -2,9 +2,8 @@
 title: "Outworld Station Connector Relay and Range Limit - How to Extend Link Distance Across Large Stations"
 description: "Outworld Station connector max range, relay placement to extend links, and signal boosting for cross-station and inter-building transport across large factory layouts."
 date: 2026-06-18
-publishedAt: 2026-06-20T12:44:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-19T04:00:00+08:00
-hidden: true
 breadcrumb: Connector Range
 lastmod: 2026-06-18
 draft: false
@@ -16,17 +15,17 @@ tested: "Relay chains tested across 50+ tile distances covering inter-station tr
 
 You placed a Connector between your smelter room and the storage area. It works perfectly for the first 15 tiles. Then you extend the line to reach the far end of storage and suddenly the items stop moving. The Connector is still powered. The lights are on. But nothing is flowing.
 
-Every Connector in Outworld Station has a maximum link range. Exceed it and the connection breaks silently â€” no error message, no warning light. Your assemblers starve while the Connector sits there looking functional but not actually moving anything.
+Every Connector in Outworld Station has a maximum link range. Exceed it and the connection breaks silently â€?no error message, no warning light. Your assemblers starve while the Connector sits there looking functional but not actually moving anything.
 
 <div class="callout callout-verdict">
   <h4>The Short Version</h4>
-  <p>Connectors have a 15-tile max range. Place a Relay building every 12-14 tiles to chain the link further. The Relay counts as a signal booster â€” it receives from one Connector and transmits to the next. Items hop from relay to relay, so a 50-tile run needs 3-4 relays spaced evenly. Drone links do not have this range limit, only Connectors do.</p>
+  <p>Connectors have a 15-tile max range. Place a Relay building every 12-14 tiles to chain the link further. The Relay counts as a signal booster â€?it receives from one Connector and transmits to the next. Items hop from relay to relay, so a 50-tile run needs 3-4 relays spaced evenly. Drone links do not have this range limit, only Connectors do.</p>
 </div>
 
 <hr>
 
 <details class="md-fold">
-<summary><span>Connector Range Limits (Complete Reference)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Connector Range Limits (Complete Reference)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -48,7 +47,7 @@ Tile distance:  1-10    11-12   13   14   15
 Throughput:    100%    90%     85%  80%  75%
 ```
 
-The fix is not to push connectors to their limit. Place a relay before the dropoff starts â€” around tile 10 to 12 â€” to reset the signal and restore full throughput.
+The fix is not to push connectors to their limit. Place a relay before the dropoff starts â€?around tile 10 to 12 â€?to reset the signal and restore full throughput.
 
 {{< diagram src="connector-range-relay.svg" caption="Connector range and relay placement: Basic Connector range is 15 tiles. Relay placed at tile 13 extends the chain with full throughput renewed at each relay hop." >}}
 
@@ -57,7 +56,7 @@ The fix is not to push connectors to their limit. Place a relay before the dropo
 <hr>
 
 <details class="md-fold">
-<summary><span>Relay Chain Design for Long Distances</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Relay Chain Design for Long Distances</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 

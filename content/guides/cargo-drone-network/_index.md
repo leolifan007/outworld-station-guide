@@ -2,9 +2,8 @@
 title: "Outworld Station Cargo Drone Setup - How to Automate Material Transport Between Buildings"
 description: "Outworld Station cargo drone network setup from scratch. Drone station placement, routing config, battery management, and throughput optimization for hands-off logistics."
 date: 2026-06-18
-publishedAt: 2026-06-19T09:47:00+08:00
+publishedAt: 2026-06-18T17:50:00+08:00
 publishDate: 2026-06-18T21:30:00+08:00
-hidden: true
 breadcrumb: Cargo Drones
 lastmod: 2026-06-18
 draft: false
@@ -26,7 +25,7 @@ Cargo Drones fix this. They fly over everything, ignore range limits, and delive
 <hr>
 
 <details class="md-fold">
-<summary><span>How Cargo Drones Work (The Mechanic)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>How Cargo Drones Work (The Mechanic)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -65,7 +64,7 @@ Drones have a battery that depletes with each flight. If a drone runs out of bat
 <hr>
 
 <details class="md-fold">
-<summary><span>Step-by-Step Setup (First Drone Network)</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Step-by-Step Setup (First Drone Network)</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
@@ -112,7 +111,7 @@ Check the Drone Station interface. You should see:
 <hr>
 
 <details class="md-fold">
-<summary><span>Advanced: Multiple Drone Stations and Sector Coverage</span><span class="fold-toggle">â–¼</span></summary>
+<summary><span>Advanced: Multiple Drone Stations and Sector Coverage</span><span class="fold-toggle">â–?/span></summary>
 
 <div class="fold-body">
 
