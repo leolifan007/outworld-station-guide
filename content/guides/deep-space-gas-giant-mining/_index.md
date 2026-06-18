@@ -1,11 +1,12 @@
----
+﻿---
 title: "Deep Space Gas Giant Mining - Set Up a Remote Gas Outpost"
 description: "Outworld Station remote gas extraction, outpost automation, and gas transport logistics across star systems."
 date: 2026-06-05
+publishedAt: 2026-06-18T14:15:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Gas Mining
-emoji: "🟢"
+emoji: "馃煝"
 lastmod: 2026-06-05
 draft: false
 category: resources
@@ -97,3 +98,4 @@ Yes. Place 2 missile turrets and 1 shield generator at each outpost. Link them t
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Gas Systems Guide](/guides/gas-systems/) - Gas basics and synthesis
 - [Freighter Guide](/guides/freighter-mining-guide/) - Transport logistics
+

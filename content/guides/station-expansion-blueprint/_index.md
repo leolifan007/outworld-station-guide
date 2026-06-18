@@ -1,11 +1,12 @@
----
+﻿---
 title: "Space Station Expansion Blueprint - From Starter Base to Mega-Station"
 description: "Outworld Station phased expansion plan from starting module to fully-automated mega-station. Blueprints, resource budgets, and upgrade triggers for every phase."
 date: 2026-06-05
+publishedAt: 2026-06-18T16:00:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Mega Station
-emoji: "🏗️"
+emoji: "馃彈锔?
 lastmod: 2026-06-05
 draft: false
 category: strategy
@@ -109,3 +110,4 @@ Leave 3-4 empty module slots in each ring for future expansion. Tech unlocks add
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Station Layout Guide](/guides/station-layout-guide/) - Detailed room planning
 - [Mid-Game Expansion Guide](/guides/mid-game-expansion-strategy/) - Survive the transition
+

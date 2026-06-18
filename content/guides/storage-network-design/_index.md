@@ -1,7 +1,8 @@
----
+﻿---
 title: "Storage Network Design Guide - Smart Sorting & Warehouse Systems"
 description: "Your storage is chaos. Chests full of random ore, no idea what you have. Here is how to build a smart storage network that sorts, organizes, and tells you exactly what you own."
 date: 2026-06-09
+publishedAt: 2026-06-18T16:15:00+08:00
 lastmod: 2026-06-11T21:49:59+08:00
 draft: false
 publishDate: 2026-06-11T01:35:00+08:00
@@ -87,3 +88,4 @@ This takes about 20 minutes to build and will handle all your storage needs thro
 
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
 - [r/OutworldStation on Reddit](https://www.reddit.com/r/OutworldStation/)
+

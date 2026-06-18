@@ -1,14 +1,15 @@
----
+﻿---
 title: "Passive Income & Trading Guide - Contracts, Auto-Trading & AFK Credits"
 description: "Stop grinding manual trades. Here is how to set up passive income streams through contracts, trading routes, and automated commerce that earns while you build."
 date: 2026-06-09
+publishedAt: 2026-06-18T15:30:00+08:00
 lastmod: 2026-06-11T21:25:15+08:00
 draft: false
 publishDate: 2026-06-11T00:45:00+08:00
 category: economy
 version: 1.0.0.0
 breadcrumb: Passive Income
-emoji: "💰"
+emoji: "馃挵"
 
 
 ---
@@ -86,3 +87,4 @@ The ceiling on passive income is your infrastructure. Each new ship adds 300-800
 
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
 - [r/OutworldStation - Trading & Economy Discussion](https://reddit.com/r/OutworldStation)
+

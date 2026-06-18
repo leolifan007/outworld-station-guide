@@ -1,11 +1,12 @@
----
+﻿---
 title: "Multi-Source Power Grid Stability - Balance Solar, Fusion & Antimatter"
 description: "Outworld Station power grid balancing across multiple generation sources. Prevent brownouts, cascade failures, and black screens at the worst time."
 date: 2026-06-05
+publishedAt: 2026-06-18T15:15:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Power Grid
-emoji: ⚡
+emoji: 鈿?
 lastmod: 2026-06-05
 draft: false
 category: power
@@ -89,3 +90,4 @@ Yes. Use power switches to isolate non-critical modules during emergencies. Set 
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Power Management Guide](/guides/power-management/) - Power source basics
 - [Fusion Reactor Guide](/guides/fusion-reactor-guide/) - Fusion deep dive
+

@@ -1,11 +1,12 @@
----
+﻿---
 title: "Advanced Inventory Pairing - Master Supply & Demand Automation"
 description: "Outworld Station advanced inventory pairing techniques for complex supply chains. Auto-balance your factory with zero manual intervention."
 date: 2026-06-05
+publishedAt: 2026-06-18T13:00:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Auto Logistics
-emoji: "📦"
+emoji: "馃摝"
 lastmod: 2026-06-05
 draft: false
 category: logistics
@@ -90,3 +91,4 @@ Yes, but only through a wormhole or freighter route. Use a local hub on each pla
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Cargo Drone Guide](/guides/cargo-drone-network-optimization/) - Drone routing for your pairs
 - [Wormhole Guide](/guides/wormhole-terminal-guide/) - Cross-planet pairing
+

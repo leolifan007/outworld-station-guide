@@ -1,11 +1,12 @@
----
+﻿---
 title: "Automated Repair & Station Self-Healing - Never Fix a Module by Hand Again"
 description: "Outworld Station automated repair systems, repair drone networks, and self-healing module setups. Let your station fix itself while you explore."
 date: 2026-06-05
+publishedAt: 2026-06-18T13:15:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Auto Repair
-emoji: "🔧"
+emoji: "馃敡"
 lastmod: 2026-06-05
 draft: false
 category: defense
@@ -90,3 +91,4 @@ Yes. Repair drones prioritize modules under active attack. A drone repairing a m
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Drone Defense Guide](/guides/drone-defense-guide/) - Stop attacks before they happen
 - [Ship Building Guide](/guides/ship-building/) - Build repair ships for deep space
+

@@ -1,11 +1,12 @@
----
+﻿---
 title: "Chemical Processing & Refining Chain - Turn Raw Gas Into Advanced Resources"
 description: "Outworld Station chemical processing chains from raw gas extraction to advanced resource synthesis. Complete refinery pipeline for plastic, fuel, and rare chemicals."
 date: 2026-06-05
+publishedAt: 2026-06-18T14:00:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Chemical Refining
-emoji: "🧪"
+emoji: "馃И"
 lastmod: 2026-06-05
 draft: false
 category: resources
@@ -102,3 +103,4 @@ Yes. Each synthesizer draws 15 kW. A full 12-synthesizer line needs 180 kW conti
 - [Gas Systems Guide](/guides/gas-systems/) - Gas extraction basics
 - [Gas Mining Guide](/guides/deep-space-gas-giant-mining/) - Remote gas outposts
 - [Power Grid Guide](/guides/multi-source-power-grid-stability/) - Power for chemical plants
+

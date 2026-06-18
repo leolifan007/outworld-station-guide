@@ -1,8 +1,9 @@
----
+﻿---
 title: "Mid-Game Expansion Strategy - Survive the Resource Gap"
 description: "Outworld Station mid-game resource crunch solutions. How to bridge the gap between starter base and mega-station without restarting."
 date: 2026-06-05
-emoji: "🚀"
+publishedAt: 2026-06-18T14:45:00+08:00
+emoji: "馃殌"
 lastmod: 2026-06-09T13:44:46+08:00
 draft: false
 category: strategy
@@ -93,3 +94,4 @@ As soon as you have a stable 3-patch local supply. The fourth patch should be on
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Research Order Guide](/guides/research-order/) - Prioritize expansion techs
 - [Freighter Guide](/guides/freighter-mining-guide/) - Set up outpost supply routes
+

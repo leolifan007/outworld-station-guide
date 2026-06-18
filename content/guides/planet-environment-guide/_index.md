@@ -1,14 +1,15 @@
----
+﻿---
 title: "Planet Biome & Environment Effects Guide - How Worlds Change Your Play"
 description: "Not all planets are equal. Some boost production. Some drain your power. Here is how each biome type affects your outpost and which to prioritize."
 date: 2026-06-09
+publishedAt: 2026-06-18T15:45:00+08:00
 lastmod: 2026-06-11T21:47:53+08:00
 draft: false
 publishDate: 2026-06-11T01:10:00+08:00
 category: exploration
 version: 1.0.0.0
 breadcrumb: Planet Environment
-emoji: "🌍"
+emoji: "馃實"
 
 
 ---
@@ -107,3 +108,4 @@ The research tree gates the biome you can settle next. The [Deep-Space Gas Giant
 - [Official Outworld Station Discord](https://discord.gg/outworldstation) -- biome strategy channel is very active
 - [Biome Data Spreadsheet](https://docs.google.com/spreadsheets/d/EXAMPLE) -- community-maintained stats for every known planet type
 - [Factory Planner Tool](https://outworld-planner.example.com) -- pre-plan your production lines per biome
+

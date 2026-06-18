@@ -1,14 +1,15 @@
----
+﻿---
 title: "Interplanetary Logistics Guide - Move Resources Between Worlds"
 description: "Your main station is full. Your outpost has everything you need. Now how do you actually move it? Here is every transport method ranked by cost and throughput."
 date: 2026-06-09
+publishedAt: 2026-06-18T14:30:00+08:00
 lastmod: 2026-06-11T21:44:43+08:00
 draft: false
 publishDate: 2026-06-11T02:00:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Interplanetary Logistics
-emoji: "🚚"
+emoji: "馃殮"
 
 
 ---
@@ -94,3 +95,4 @@ Automated logistics need drone networks at both endpoints for drone-based routes
 - [Subreddit Fleet Optimization Thread](https://reddit.com/r/outworldstation) -- Community fuel calculators and mass tables
 - [Steam Workshop Transport Blueprints](https://steamcommunity.com/app/3242950/workshop/) -- Pre-built launcher arrays and freighter loadouts
 - [Wiki: Transport Method Math](https://wiki.outworldstation.com/transport) -- Full throughput formulas and upgrade trees
+

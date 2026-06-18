@@ -1,8 +1,9 @@
----
+﻿---
 title: "Automated Smelter & Refinery Design - From Raw Ore to Ready Ingots"
 description: "Outworld Station ore-to-ingot automation, smelter array scaling, and refinery throughput optimization. Belt-balance at every stage."
 date: 2026-06-05
-emoji: "🔥"
+publishedAt: 2026-06-18T13:30:00+08:00
+emoji: "馃敟"
 lastmod: 2026-06-07T19:01:43+08:00
 draft: false
 category: production
@@ -78,3 +79,4 @@ Yes. Speed modules in refineries stack multiplicatively with belt upgrades. One 
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Resource Guide](/guides/resources/) - Ore locations and quality tiers
+

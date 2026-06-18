@@ -1,8 +1,9 @@
----
+﻿---
 title: "Module Component Manufacturing - Build Station Modules Faster"
 description: "Outworld Station component production chain from raw materials to finished modules. Automate module assembly and stop waiting for slow fabricators."
 date: 2026-06-05
-emoji: ⚙️
+publishedAt: 2026-06-18T15:00:00+08:00
+emoji: 鈿欙笍
 lastmod: 2026-06-11T21:04:27+08:00
 draft: false
 category: production
@@ -92,3 +93,4 @@ Yes. Build a component warehouse with buffer chests. Store 50-100 of each compon
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Smelter Guide](/guides/automated-smelter-refinery-design/) - Feed your component line
 - [Station Layout Guide](/guides/station-layout-guide/) - Plan your production floor
+

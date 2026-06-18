@@ -1,8 +1,9 @@
----
+﻿---
 title: "Cargo Drone Network Optimization - Speed Up Cross-Station Deliveries"
 description: "Outworld Station cargo drone pathing, congestion fixes, and network topology design. Real throughput numbers for 10 to 50 drone networks."
 date: 2026-06-05
-emoji: "🚁"
+publishedAt: 2026-06-18T13:45:00+08:00
+emoji: "馃殎"
 lastmod: 2026-06-07T19:15:31+08:00
 draft: false
 category: logistics
@@ -89,3 +90,4 @@ Yes. Build one hub per station level or per wing. Connect hubs with a single hig
 - [Outworld Station on Steam](https://store.steampowered.com/app/3242950/Outworld_Station/)
 - [r/OutworldStationGame on Reddit](https://reddit.com/r/OutworldStationGame/)
 - [Inventory Pairing Guide](/guides/advanced-inventory-pairing/) - Pair your hubs for maximum efficiency
+
