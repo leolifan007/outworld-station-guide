@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#1A2533" rx="8"/>
+  <text x="300" y="28" fill="#00D4AA" font-family="Arial,sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Three-Layer Outpost Defense System</text>
+
+  <!-- Layer 1: Walls (Outer) -->
+  <g transform="translate(50, 50)">
+    <rect x="-10" y="-10" width="280" height="200" fill="none" stroke="#FF6B35" stroke-width="3" stroke-dasharray="8,4" rx="4"/>
+    <text x="130" y="-16" fill="#FF6B35" font-family="Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Layer 1: Perimeter Walls</text>
+
+    <!-- Turrets -->
+    <rect x="15" y="15" width="40" height="28" fill="#2A3F55" rx="4" stroke="#00D4AA" stroke-width="1.5"/>
+    <text x="35" y="33" fill="#00D4AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Laser</text>
+    <rect x="205" y="15" width="40" height="28" fill="#2A3F55" rx="4" stroke="#00D4AA" stroke-width="1.5"/>
+    <text x="225" y="33" fill="#00D4AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Missile</text>
+    <rect x="15" y="150" width="40" height="28" fill="#2A3F55" rx="4" stroke="#00D4AA" stroke-width="1.5"/>
+    <text x="35" y="168" fill="#00D4AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Flak</text>
+    <rect x="205" y="150" width="40" height="28" fill="#2A3F55" rx="4" stroke="#00D4AA" stroke-width="1.5"/>
+    <text x="225" y="168" fill="#00D4AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Flak</text>
+
+    <!-- Gate -->
+    <rect x="210" y="85" width="30" height="30" fill="#1E3045" rx="2" stroke="#8899AA" stroke-width="2"/>
+    <text x="225" y="104" fill="#8899AA" font-family="Arial,sans-serif" font-size="7" text-anchor="middle">Gate</text>
+
+    <!-- Layer 2: Turret Range Overlay -->
+    <circle cx="35" cy="29" r="35" fill="none" stroke="#00D4AA" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+    <circle cx="225" cy="29" r="35" fill="none" stroke="#00D4AA" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+    <circle cx="35" cy="164" r="35" fill="none" stroke="#00D4AA" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+    <circle cx="225" cy="164" r="35" fill="none" stroke="#00D4AA" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Layer 2+3: Inside details -->
+  <g transform="translate(85, 80)">
+    <text x="50" y="-5" fill="#4ECDC4" font-family="Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Layer 2+3: Interior Layout</text>
+
+    <!-- Power core -->
+    <rect x="40" y="5" width="50" height="30" fill="#2A3F55" rx="4" stroke="#FFD93D" stroke-width="1.5"/>
+    <text x="65" y="23" fill="#FFD93D" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Reactor</text>
+
+    <!-- Repair station -->
+    <rect x="40" y="40" width="50" height="28" fill="#2A3F55" rx="4" stroke="#FF6B35" stroke-width="1.5"/>
+    <text x="65" y="57" fill="#FF6B35" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Repair</text>
+
+    <!-- Storage -->
+    <rect x="5" y="75" width="55" height="28" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="33" y="93" fill="#8899AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Storage</text>
+
+    <!-- Drills -->
+    <rect x="70" y="75" width="60" height="28" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="100" y="93" fill="#8899AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Drills</text>
+
+    <!-- Smelters -->
+    <rect x="5" y="110" width="55" height="28" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="33" y="128" fill="#8899AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Smelters</text>
+
+    <!-- Power lines -->
+    <line x1="65" y1="35" x2="65" y2="40" stroke="#FFD93D" stroke-width="1.5"/>
+    <line x1="65" y1="68" x2="65" y2="75" stroke="#FF6B35" stroke-width="1.5"/>
+  </g>
+
+  <!-- Key -->
+  <g transform="translate(50, 265)">
+    <rect x="0" y="0" width="12" height="10" fill="#FF6B35" opacity="0.7"/>
+    <text x="16" y="9" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Walls</text>
+    <rect x="80" y="0" width="12" height="10" fill="#00D4AA" opacity="0.7"/>
+    <text x="96" y="9" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Turrets</text>
+    <rect x="170" y="0" width="12" height="10" fill="#FFD93D" opacity="0.7"/>
+    <text x="186" y="9" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Power</text>
+    <rect x="250" y="0" width="12" height="10" fill="#4ECDC4" opacity="0.7"/>
+    <text x="266" y="9" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Repair</text>
+  </g>
+</svg>
