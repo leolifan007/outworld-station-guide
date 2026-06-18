@@ -1,10 +1,10 @@
----
+﻿---
 title: "Outworld Station Crashing at Launch? 18 Fixes for FPS Drops & Freezes"
-description: "Real crashes, real fixes. I spent 40 hours troubleshooting Outworld Station — here is every fix that actually worked for me, from black screen on launch to late-game stutter."
+description: "Real crashes, real fixes. I spent 40 hours troubleshooting Outworld Station 鈥?here is every fix that actually worked for me, from black screen on launch to late-game stutter."
 date: 2026-05-15
 publishedAt: 2026-06-05T10:30:00+08:00
 breadcrumb: Performance & Crash Fix
-emoji: "🔧"
+emoji: "馃敡"
 lastmod: 2026-05-15
 draft: false
 category: troubleshooting
@@ -12,9 +12,11 @@ tested: "Fixes verified against factory sizes of 150+ buildings."
 ---
 ## That First Launch Almost Made Me Refund
 
-I bought Outworld Station the day it hit Early Access last year. Clicked Play, Steam says "Launching," screen goes black for five seconds, and then — crash to desktop. No error message. No log. Just gone.
+I bought Outworld Station the day it hit Early Access last year. Clicked Play, Steam says "Launching," screen goes black for five seconds, and then 鈥?crash to desktop. No error message. No log. Just gone.
 
-I almost refunded it right there. Ten bucks is not a lot, but a game that does not even open is ten bucks wasted. I am glad I did not. Once I got it running, I put in over 200 hours. But getting there took me a full evening of trial and error.
+I almost refunded it right there.
+
+{{< diagram "crash-troubleshoot-flow.svg" >}} Ten bucks is not a lot, but a game that does not even open is ten bucks wasted. I am glad I did not. Once I got it running, I put in over 200 hours. But getting there took me a full evening of trial and error.
 
 This is the guide I wish I had that night. Every fix listed here is something I tested on my own rig (Ryzen 7 5800X, RTX 3070, 32 GB RAM, Windows 11) and on a secondary laptop (i5-1135G7, Intel Iris Xe, 16 GB). Your mileage may vary, but if something here helps, it saves you the four hours I burned.
 
@@ -26,31 +28,31 @@ This is the guide I wish I had that night. Every fix listed here is something I 
 <hr>
 
 <details class="md-fold">
-<summary><span>⛔ Fix #1–5: Your Game Will Not Launch</span><span class="fold-toggle">▼</span></summary>
+<summary><span>鉀?Fix #1鈥?: Your Game Will Not Launch</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
 ### Fix #1: Windows 8 Compatibility Mode (The One That Worked)
 
-This is the single fix that got me through the door. Right-click `OutworldStation.exe` in your Steam install folder, go to Properties → Compatibility → "Run this program in compatibility mode for" → choose **Windows 8**. Check "Run as administrator" too. Apply, restart Steam, try launching again.
+This is the single fix that got me through the door. Right-click `OutworldStation.exe` in your Steam install folder, go to Properties 鈫?Compatibility 鈫?"Run this program in compatibility mode for" 鈫?choose **Windows 8**. Check "Run as administrator" too. Apply, restart Steam, try launching again.
 
 Why this works: Outworld Station runs on Unity 2022. Some Windows 11 builds (especially 24H2 and insider previews) have a conflict with Unity's IL2CPP code generation step during the initial shader compilation. Compatibility mode bypasses this. I had the black-screen crash on both my desktop (Windows 11 23H2 at the time) and my laptop (24H2), and Windows 8 mode fixed both.
 
 <div class="pro-tip">
-  <p><strong>Only 10+ hour players know this:</strong> After the first successful launch, you can turn off compatibility mode. The problem only triggers on the initial shader compile. Turn it on for the first boot, then disable it — I noticed roughly 8% higher frame rates without compatibility mode active.</p>
+  <p><strong>Only 10+ hour players know this:</strong> After the first successful launch, you can turn off compatibility mode. The problem only triggers on the initial shader compile. Turn it on for the first boot, then disable it 鈥?I noticed roughly 8% higher frame rates without compatibility mode active.</p>
 </div>
 
 ### Fix #2: Disable Fullscreen Optimizations
 
-Still on the Compatibility tab — check "Disable fullscreen optimizations." This stops Windows from overlaying its Game Bar rendering pipeline on top of Unity's. Outworld Station does its own fullscreen handling, and the two layers can fight each other.
+Still on the Compatibility tab 鈥?check "Disable fullscreen optimizations." This stops Windows from overlaying its Game Bar rendering pipeline on top of Unity's. Outworld Station does its own fullscreen handling, and the two layers can fight each other.
 
 I tested this specifically: with optimizations on, my alt-tab took 6-8 seconds and sometimes crashed the game. With them off, alt-tab is instant.
 
 ### Fix #3: Force Dedicated GPU on Laptops
 
-If you are on a laptop, the game sometimes picks the integrated Intel GPU instead of your NVIDIA or AMD card. Open Windows Settings → System → Display → Graphics → Add an app → browse to `OutworldStation.exe` → set to "High Performance."
+If you are on a laptop, the game sometimes picks the integrated Intel GPU instead of your NVIDIA or AMD card. Open Windows Settings 鈫?System 鈫?Display 鈫?Graphics 鈫?Add an app 鈫?browse to `OutworldStation.exe` 鈫?set to "High Performance."
 
-I caught this because my laptop fans were silent during the crash — the game was running on the Iris Xe, which cannot handle the shader compilation load. Forcing the NVIDIA GPU solved it immediately.
+I caught this because my laptop fans were silent during the crash 鈥?the game was running on the Iris Xe, which cannot handle the shader compilation load. Forcing the NVIDIA GPU solved it immediately.
 
 ### Fix #4: Delete the Global Illumination Cache
 
@@ -66,7 +68,7 @@ Do this after every crash-to-desktop. It takes two seconds and has saved me more
 
 ### Fix #5: Verify Game Files (But Do It Twice)
 
-Right-click Outworld Station in Steam → Properties → Installed Files → Verify integrity of game files. Let it finish.
+Right-click Outworld Station in Steam 鈫?Properties 鈫?Installed Files 鈫?Verify integrity of game files. Let it finish.
 
 Now do it again.
 
@@ -76,7 +78,7 @@ I am not joking. The first verify always reports "1 file failed to validate" and
 </details>
 
 <details class="md-fold">
-<summary><span>🎮 Fix #6–10: FPS Drops and Stuttering</span><span class="fold-toggle">▼</span></summary>
+<summary><span>馃幃 Fix #6鈥?0: FPS Drops and Stuttering</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -95,13 +97,13 @@ vsync=true
 targetFPS=60
 ```
 
-Or use your GPU driver control panel to cap at 60. The game's physics — and more importantly the drone logistics system — runs on a fixed tick rate tied to 60 FPS. Running at 120+ FPS makes the game look smoother, sure, but the simulation ticks are still at 60. The extra frames are wasted GPU cycles that generate heat and fan noise for no gameplay benefit. Meanwhile, the frame time variance at uncapped FPS introduces micro-stutter that you feel when panning across your base.
+Or use your GPU driver control panel to cap at 60. The game's physics 鈥?and more importantly the drone logistics system 鈥?runs on a fixed tick rate tied to 60 FPS. Running at 120+ FPS makes the game look smoother, sure, but the simulation ticks are still at 60. The extra frames are wasted GPU cycles that generate heat and fan noise for no gameplay benefit. Meanwhile, the frame time variance at uncapped FPS introduces micro-stutter that you feel when panning across your base.
 
 ### Fix #8: Reduce Buffer Size on Connector-Heavy Lines
 
 Late-game Outworld Station slows down because each Connector maintains an internal buffer of items in transit. If you have a main bus with 30+ connectors in sequence, that is a lot of buffer state to update every physics tick.
 
-My tested fix: split long connector lines into segments of 8-10 connectors max, each separated by a storage container. The container acts as a "checkpoint" — the previous segment empties into storage, and the next segment pulls from storage. This reduces the chain length per physics update by roughly 65% in my Station Level 12 save.
+My tested fix: split long connector lines into segments of 8-10 connectors max, each separated by a storage container. The container acts as a "checkpoint" 鈥?the previous segment empties into storage, and the next segment pulls from storage. This reduces the chain length per physics update by roughly 65% in my Station Level 12 save.
 
 <table>
   <tr><th>Station Level</th><th>FPS Before</th><th>FPS After (connector segmentation)</th><th>Gain</th></tr>
@@ -124,7 +126,7 @@ I kept Ambient Occlusion on because it helps distinguish stacked machines at a g
 
 ### Fix #10: Close Steam Overlay (Yes, Really)
 
-Shift+Tab in-game → Settings → "Enable the Steam Overlay while in-game" → uncheck. Restart the game.
+Shift+Tab in-game 鈫?Settings 鈫?"Enable the Steam Overlay while in-game" 鈫?uncheck. Restart the game.
 
 I lost a Station Level 9 to this. An autosave triggered while the Steam overlay was open, and the overlay's GPU compositing pass desynced with the save process, corrupting my autosave file. Two hours of progress gone.
 
@@ -134,7 +136,7 @@ Beyond that, the overlay costs 3-5 FPS on mid-range hardware. Not a lot, but whe
 </details>
 
 <details class="md-fold">
-<summary><span>💾 Fix #11–14: Freezes, Save Corruption, and Memory Issues</span><span class="fold-toggle">▼</span></summary>
+<summary><span>馃捑 Fix #11鈥?4: Freezes, Save Corruption, and Memory Issues</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -144,7 +146,7 @@ Outworld Station is memory-hungry in late game. At Station Level 10+, I regularl
 
 Set your page file to **1.5x your RAM** on the same drive as your game install:
 
-Settings → System → About → Advanced system settings → Performance → Advanced → Virtual memory → Custom size. Initial = 24000 MB (for 16 GB RAM), Maximum = 48000 MB.
+Settings 鈫?System 鈫?About 鈫?Advanced system settings 鈫?Performance 鈫?Advanced 鈫?Virtual memory 鈫?Custom size. Initial = 24000 MB (for 16 GB RAM), Maximum = 48000 MB.
 
 I had a hard freeze every 20 minutes before I did this. After, zero freezes in 40+ hours of play.
 
@@ -168,13 +170,13 @@ In `settings.ini`, find:
 autosaveCompression=true
 ```
 
-Change it to `false`. Compression reduces save file size but multiplies the CPU time needed to write each autosave by 4-5x. My Station Level 12 save is 84 MB uncompressed. Compressed it is 23 MB — but saving takes 18 seconds instead of 4.
+Change it to `false`. Compression reduces save file size but multiplies the CPU time needed to write each autosave by 4-5x. My Station Level 12 save is 84 MB uncompressed. Compressed it is 23 MB 鈥?but saving takes 18 seconds instead of 4.
 
 The tradeoff: 4 second save vs 18 second save. I will take the extra disk space.
 
 ### Fix #14: Run a Memory Diagnostic
 
-If you are getting random crashes that do not match any pattern above — no specific action triggers it, no specific location — run Windows Memory Diagnostic (search "Windows Memory Diagnostic" in Start, click "Restart now and check for problems").
+If you are getting random crashes that do not match any pattern above 鈥?no specific action triggers it, no specific location 鈥?run Windows Memory Diagnostic (search "Windows Memory Diagnostic" in Start, click "Restart now and check for problems").
 
 I spent two weeks chasing a phantom crash that turned out to be a single bad RAM stick. The game ran fine for 30-60 minutes, then crashed when it tried to access the bad memory sector. No other game showed symptoms because Outworld Station is particularly aggressive with memory allocation for its chunk streaming system.
 
@@ -182,7 +184,7 @@ I spent two weeks chasing a phantom crash that turned out to be a single bad RAM
 </details>
 
 <details class="md-fold">
-<summary><span>🌐 Fix #15–18: Multiplayer Issues and Persistent Stability</span><span class="fold-toggle">▼</span></summary>
+<summary><span>馃寪 Fix #15鈥?8: Multiplayer Issues and Persistent Stability</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -212,9 +214,9 @@ I noticed this after the 1.0 release patch (May 5). First 10 minutes of gameplay
 
 ### Fix #18: Set High CPU Priority
 
-Open Task Manager while Outworld Station is running → Details tab → right-click `OutworldStation.exe` → Set priority → High.
+Open Task Manager while Outworld Station is running 鈫?Details tab 鈫?right-click `OutworldStation.exe` 鈫?Set priority 鈫?High.
 
-The game benefits from elevated CPU priority because its factory simulation tick — calculating resource inputs, outputs, and logistics routes — runs on a single main thread. If Windows schedules other background processes (antivirus scans, Windows Update, browser tabs) on the same core during a tick calculation, the entire factory simulation stutters.
+The game benefits from elevated CPU priority because its factory simulation tick 鈥?calculating resource inputs, outputs, and logistics routes 鈥?runs on a single main thread. If Windows schedules other background processes (antivirus scans, Windows Update, browser tabs) on the same core during a tick calculation, the entire factory simulation stutters.
 
 I set this permanently by creating a batch file:
 
@@ -231,7 +233,7 @@ Launch the game through this instead of Steam directly. It is a workaround, but 
 <hr>
 
 <details class="md-fold" open>
-<summary><span>📋 Quick Reference — Diagnosis Flowchart</span><span class="fold-toggle">▼</span></summary>
+<summary><span>馃搵 Quick Reference 鈥?Diagnosis Flowchart</span><span class="fold-toggle">鈻?/span></summary>
 
 <div class="fold-body">
 
@@ -280,16 +282,16 @@ Launch the game through this instead of Steam directly. It is a workaround, but 
 </div>
 
 <div class="meta-badge">
-  <span class="meta-rating rating-a">✅ Proven Fix</span>
-  <span>Fix #1, #6, #8, #11 — These consistently worked across multiple rigs</span>
+  <span class="meta-rating rating-a">鉁?Proven Fix</span>
+  <span>Fix #1, #6, #8, #11 鈥?These consistently worked across multiple rigs</span>
 </div>
 <div class="meta-badge">
-  <span class="meta-rating rating-b">⚠️ Conditional</span>
-  <span>Fix #3, #14, #15 — Only applies if you have the specific hardware/network setup</span>
+  <span class="meta-rating rating-b">鈿狅笍 Conditional</span>
+  <span>Fix #3, #14, #15 鈥?Only applies if you have the specific hardware/network setup</span>
 </div>
 <div class="meta-badge">
-  <span class="meta-rating rating-c">❌ Myth Busted</span>
-  <span>"Reinstall the game" — Never necessary unless Steam corrupted the download. The fixes above work without a reinstall.</span>
+  <span class="meta-rating rating-c">鉂?Myth Busted</span>
+  <span>"Reinstall the game" 鈥?Never necessary unless Steam corrupted the download. The fixes above work without a reinstall.</span>
 </div>
 
 <hr>

@@ -1,9 +1,9 @@
----
+﻿---
 title: "Outworld Station Tier List [S to D]: Best Ships, Station Modules & Buildings Ranked"
 description: "Not everything is worth building. I ranked every ship, module, and building from S (must-have) to D (trap) based on 100+ hours of testing."
 date: 2026-05-27
 breadcrumb: Tier List
-emoji: "📊"
+emoji: "馃搳"
 publishedAt: 2026-05-21T15:52:00+08:00
 lastmod: 2026-05-21
 draft: false
@@ -298,7 +298,7 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 |----------|--------|--------|--------|----------|
 | Ships | Scout, Freighter | Mining, Construction | Combat | Luxury |
 | Modules | Solar, Battery, Oxygen | Reactor, Wormhole, Storage | Large Storage, Drone, Repair | Decorations |
-| Production | Drill, Smelter, Assembler | Electronics, Chemical | Alloy, Composite | —|
+| Production | Drill, Smelter, Assembler | Electronics, Chemical | Alloy, Composite | 鈥攟
 
 ---
 
@@ -330,25 +330,25 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 ---
 
 <div class="guides-section" style="margin-top:2rem">
-  <h2 class="guides-section-title">📖 Related Guides</h2>
+  <h2 class="guides-section-title">馃摉 Related Guides</h2>
   <div class="guide-grid">
     <a href="/guides/research-order/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">🔬 Tech</div>
+      <div class="card-tag">馃敩 Tech</div>
       <h3>Research Order Guide</h3>
-      <p>Explains when to unlock each building. Tested tech paths from hour 0 to fusion power —avoid the research traps I fell into.</p>
-      <div class="card-link">Read →/div>
+      <p>Explains when to unlock each building. Tested tech paths from hour 0 to fusion power 鈥攁void the research traps I fell into.</p>
+      <div class="card-link">Read 鈫?div>
     </a>
     <a href="/beginner/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">🚀 Beginner</div>
+      <div class="card-tag">馃殌 Beginner</div>
       <h3>Beginner Guide</h3>
-      <p>Covers the first hour setup. Power, drilling, smelting, and your first automated production line —everything a new player needs.</p>
-      <div class="card-link">Read →/div>
+      <p>Covers the first hour setup. Power, drilling, smelting, and your first automated production line 鈥攅verything a new player needs.</p>
+      <div class="card-link">Read 鈫?div>
     </a>
     <a href="/power-management/" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">⚡Power</div>
+      <div class="card-tag">鈿ower</div>
       <h3>Power Management</h3>
       <p>Solar vs reactor strategies detailed. Grid zoning, battery ratios, and the upgrade path that keeps your station online.</p>
-      <div class="card-link">Read →/div>
+      <div class="card-link">Read 鈫?div>
     </a>
   </div>
 </div>

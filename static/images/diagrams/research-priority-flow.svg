@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A5A3A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1E4A2E;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#00D4AA" font-size="18" font-weight="bold">研究优先级路线图</text>
+
+  <!-- Phase 1 -->
+  <rect x="30" y="55" width="740" height="85" rx="8" fill="url(#boxGrad)" stroke="#FF6B6B" stroke-width="2"/>
+  <text x="50" y="78" fill="#FF6B6B" font-size="14" font-weight="bold">Phase 1 · 小时 0-2 (生存模式)</text>
+
+  <rect x="30" y="90" width="170" height="40" rx="6" fill="url(#sGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="115" y="110" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">1.太阳能效率</text>
+  <text x="115" y="124" text-anchor="middle" fill="#8AACCD" font-size="9">等级A: 立即解锁</text>
+
+  <rect x="220" y="90" width="170" height="40" rx="6" fill="url(#sGrad)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="305" y="110" text-anchor="middle" fill="#FFD700" font-size="11" font-weight="bold">2.小电池</text>
+  <text x="305" y="124" text-anchor="middle" fill="#8AACCD" font-size="9">等级S: 不可跳过</text>
+
+  <rect x="410" y="90" width="170" height="40" rx="6" fill="url(#sGrad)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="495" y="110" text-anchor="middle" fill="#FFD700" font-size="11" font-weight="bold">3.冶炼+合金</text>
+  <text x="495" y="124" text-anchor="middle" fill="#8AACCD" font-size="9">等级S: 不可跳过</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="140" x2="400" y2="165" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 2 -->
+  <rect x="30" y="170" width="740" height="85" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="50" y="193" fill="#FFB347" font-size="14" font-weight="bold">Phase 2 · 小时 2-4 (系统建设)</text>
+
+  <rect x="30" y="205" width="170" height="40" rx="6" fill="url(#sGrad)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="115" y="225" text-anchor="middle" fill="#FFD700" font-size="11" font-weight="bold">4.氧气发生器</text>
+  <text x="115" y="239" text-anchor="middle" fill="#8AACCD" font-size="9">硬性截止日期</text>
+
+  <rect x="220" y="205" width="170" height="40" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="305" y="225" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">5.中型仓储</text>
+  <text x="305" y="239" text-anchor="middle" fill="#8AACCD" font-size="9">生产缓冲区</text>
+
+  <rect x="410" y="205" width="170" height="40" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="495" y="225" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">6.高级钻头</text>
+  <text x="495" y="239" text-anchor="middle" fill="#8AACCD" font-size="9">移除矿石瓶颈</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="255" x2="400" y2="280" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 3 -->
+  <rect x="30" y="285" width="740" height="85" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="50" y="308" fill="#4A9EFF" font-size="14" font-weight="bold">Phase 3 · 小时 4-8 (规模扩张)</text>
+
+  <rect x="30" y="320" width="170" height="40" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="115" y="340" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">7.小型反应堆</text>
+  <text x="115" y="354" text-anchor="middle" fill="#8AACCD" font-size="9">要同时研究冷却</text>
+
+  <rect x="220" y="320" width="170" height="40" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="305" y="340" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">8.虫洞科技</text>
+  <text x="305" y="354" text-anchor="middle" fill="#8AACCD" font-size="9">远程资源访问</text>
+
+  <rect x="410" y="320" width="170" height="40" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1.5"/>
+  <text x="495" y="340" text-anchor="middle" fill="#6A8AAA" font-size="11" font-weight="bold">9.无人机港</text>
+  <text x="495" y="354" text-anchor="middle" fill="#8AACCD" font-size="9">等虫洞后再点</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="370" x2="400" y2="395" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 4 -->
+  <rect x="30" y="400" width="740" height="75" rx="8" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="2"/>
+  <text x="50" y="423" fill="#C8D6E8" font-size="14" font-weight="bold">Phase 4 · 小时 8+ (终局准备)</text>
+
+  <rect x="30" y="435" width="220" height="30" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1"/>
+  <text x="140" y="454" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">10.聚变反应堆+Nitrox</text>
+
+  <rect x="270" y="435" width="220" height="30" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="380" y="454" text-anchor="middle" fill="#6A8AAA" font-size="11" font-weight="bold">11.方舟飞船</text>
+
+  <rect x="510" y="435" width="240" height="30" rx="6" fill="#3A1A3A" stroke="#4A2A4A" stroke-width="1"/>
+  <text x="630" y="454" text-anchor="middle" fill="#8A6A8A" font-size="10">✕ 跳过: 大型仓储/装饰/杂项气体</text>
+
+  <text x="400" y="476" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide — 研究优先级 v1.0 · 全程测试: 7小时到聚变动力</text>
+</svg>

@@ -1,10 +1,10 @@
----
-title: "15 Things I Wish I Knew Before Playing Outworld Station — Don't Make These Beginner Mistakes"
+﻿---
+title: "15 Things I Wish I Knew Before Playing Outworld Station 鈥?Don't Make These Beginner Mistakes"
 description: "I wasted 20 hours learning these the hard way. From tech order to base layout, here are 15 things I wish someone had told me before my first run."
 date: 2026-05-20
 publishedAt: 2026-05-21T10:37:00+08:00
 breadcrumb: Beginner Tips
-emoji: "💡"
+emoji: "馃挕"
 lastmod: 2026-05-21
 draft: false
 hidden: false
@@ -20,12 +20,12 @@ After 80+ hours and three restarts, here are the 15 things I wish I'd known from
 
 ## 1. There Are No Conveyor Belts
 
-This one hit me hard coming from Factorio. Outworld Station doesn't do conveyor belts. Everything moves through **Inventory Pairing** — buildings automatically pull from and push to connected inventories.
+This one hit me hard coming from Factorio. Outworld Station doesn't do conveyor belts. Everything moves through **Inventory Pairing** 鈥?buildings automatically pull from and push to connected inventories.
 
 What this means:
 - You don't lay out belts
 - You DO need to think about which buildings connect to what
-- Range matters — connectors have limits
+- Range matters 鈥?connectors have limits
 
 <div class="callout callout-tip">
   <h4>The mental shift</h4>
@@ -38,7 +38,7 @@ What this means:
 
 Seems obvious, but I spent 10 minutes wandering before I realized the starting asteroid is right there. Your first drill should be placed within range of it.
 
-Don't overthink placement early on — you'll rebuild everything anyway.
+Don't overthink placement early on 鈥?you'll rebuild everything anyway.
 
 ---
 
@@ -72,7 +72,7 @@ You'll thank yourself when it's time to add fusion reactors.
 
 ## 5. Research Unlocks Aren't Always Better
 
-I rushed the Medium Reactor thinking it would solve my power problems. It did — but I didn't have the cooling infrastructure to support it. Cue overheating and emergency shutdowns.
+I rushed the Medium Reactor thinking it would solve my power problems. It did 鈥?but I didn't have the cooling infrastructure to support it. Cue overheating and emergency shutdowns.
 
 **Lesson:** Read the full requirements before researching. Some unlocks need supporting infrastructure you haven't built yet.
 
@@ -98,9 +98,9 @@ Not all research branches are equal early game. I wasted resources on advanced c
 <div class="callout callout-danger">
   <h4>Early research traps</h4>
   <ul>
-    <li><strong>Advanced Alloys</strong> — useless without steady ore supply</li>
-    <li><strong>Large Storage</strong> — you don't need it yet</li>
-    <li><strong>Drone Ports</strong> — require power and coordination you don't have</li>
+    <li><strong>Advanced Alloys</strong> 鈥?useless without steady ore supply</li>
+    <li><strong>Large Storage</strong> 鈥?you don't need it yet</li>
+    <li><strong>Drone Ports</strong> 鈥?require power and coordination you don't have</li>
   </ul>
 </div>
 
@@ -149,7 +149,7 @@ Open it early. Plan your next move.
 
 I tried to minimize storage to "stay efficient." Then my production lines backed up because nowhere to put output.
 
-**Rule of thumb:** If a building produces something, give it somewhere to put it. Overflow storage isn't waste — it's buffer.
+**Rule of thumb:** If a building produces something, give it somewhere to put it. Overflow storage isn't waste 鈥?it's buffer.
 
 ---
 
@@ -197,12 +197,12 @@ Don't aim for perfect on day one. Aim for functional.
 
 | Topic | Key Takeaway |
 |-------|-------------|
-| Logistics | No belts — inventory pairs move items |
+| Logistics | No belts 鈥?inventory pairs move items |
 | Power | Build solar + battery BEFORE production |
 | Oxygen | Set up by hour 1 or face crisis |
 | Tech Tree | Read requirements before researching |
 | Base Layout | Build in clusters, leave gaps |
-| Storage | More is better — it's buffer, not waste |
+| Storage | More is better 鈥?it's buffer, not waste |
 | Night | Batteries keep essentials running |
 | Multiplayer | Coordinate roles BEFORE building |
 
@@ -220,3 +220,4 @@ Don't aim for perfect on day one. Aim for functional.
 - [Outworld Station Steam Store](https://store.steampowered.com/)
 - [Outworld Station Wiki](https://wiki.gg/)
 - [Outworld Station Discord Community](https://discord.gg/)
+
