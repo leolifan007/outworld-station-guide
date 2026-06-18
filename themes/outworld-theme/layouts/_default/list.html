@@ -1,49 +1,35 @@
-{{ define "main" }}
-<section class="page-hero-sub">
-  <h1 class="hero-title-sub">{{ .Title }}</h1>
-  {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
-  {{ partial "breadcrumb" . }}
+{{ define "hero" }}
+
+{{- /* Category → hero background mapping */ -}}
+{{- $heroBg := "/images/sub-hero-bg.webp" -}}
+{{- $bgMap := dict
+  "beginner"    "/images/beginner-hero.webp"
+  "power"       "/images/power-evolution.webp"
+  "production"  "/images/smelter-line.webp"
+  "logistics"   "/images/logistics-overview.webp"
+  "defense"     "/images/shield-gen.webp"
+  "economy"     "/images/circuit-board.webp"
+  "strategy"    "/images/inventory-pair.webp"
+  "exploration" "/images/wormhole-gen.webp"
+  "reference"   "/images/processing-chain.webp"
+-}}
+{{- with .Params.category }}{{ with index $bgMap . }}{{ $heroBg = . }}{{ end }}{{ end -}}
+
+{{/* ─── HERO (no emoji per SOP 07) ─── */}}
+<section class="hero-sub-page" style="--sub-hero-bg: url('{{ $heroBg | absURL }}');">
+  <div class="hero-sub-content">
+    <h1 class="hero-title-sub">{{ .Title }}{{ if .Params.version }}<span class="version-tag"> [Version {{ .Params.version }}]</span>{{ end }}</h1>
+    {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
+  </div>
 </section>
 
-{{ with .Params.banner }}
-<div class="page-banner">
-  <img src="{{ . }}" alt="" class="page-banner-img" loading="lazy">
-</div>
 {{ end }}
 
-<article class="content-body">
+{{ define "main" }}
+
+{{/* ─── CONTENT ─── */}}
+<article class="content-body content-body-fixed">
   {{ .Content }}
-
-  {{/* ── In-Depth Guides section: moved to bottom, above CTA ── */}}
-  {{ $children := where .Site.Pages "Section" "guides" }}
-  {{ $children = where $children "RelPermalink" "ne" .RelPermalink }}
-  {{ if gt (len $children) 0 }}
-  <div class="guides-section">
-    <h2 class="guides-section-title">In-Depth Guides</h2>
-    <div class="guide-grid">
-      {{ range $children.ByDate.Reverse }}
-      <a href="{{ .RelPermalink }}" class="guide-card guide-index-card">
-        <div class="guide-card-body">
-          <h3>{{ .Title | truncate 40 }}</h3>
-          {{ with .Description }}<p>{{ . | truncate 70 }}</p>{{ end }}
-        </div>
-        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
-      </a>
-      {{ end }}
-    </div>
-  </div>
-  {{ end }}
 </article>
-
-<!-- CTA — temporarily disabled
-<div class="cta-block">
-  <div class="cta-inner">
-    <h2>📖 Didn't find what you need?</h2>
-    <p>Head back to the homepage for all guides, or reach out directly.</p>
-    <a href="/" class="btn btn-ignite">🏠 Back to Home</a>
-    <a href="/contact/" class="btn btn-outline">📧 Contact</a>
-  </div>
-</div>
--->
 
 {{ end }}

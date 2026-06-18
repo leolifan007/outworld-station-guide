@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 160" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <!-- Uranium Ore -->
+  <rect x="10" y="30" width="100" height="40" rx="6" fill="url(#boxGrad)" stroke="#FF6BB5" stroke-width="1.5"/>
+  <text x="60" y="48" text-anchor="middle" fill="#FF6BB5" font-size="10" font-weight="bold">☢️ Uranium Ore</text>
+  <text x="60" y="62" text-anchor="middle" fill="#6A8AAA" font-size="8">From outpost</text>
+
+  <line x1="110" y1="50" x2="145" y2="50" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Refinery -->
+  <rect x="150" y="30" width="100" height="40" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="200" y="48" text-anchor="middle" fill="#4A9EFF" font-size="10" font-weight="bold">🏭 Refinery</text>
+  <text x="200" y="62" text-anchor="middle" fill="#6A8AAA" font-size="8">Processes ore</text>
+
+  <line x1="250" y1="50" x2="285" y2="50" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Fuel Rod -->
+  <rect x="290" y="30" width="110" height="40" rx="6" fill="url(#boxGrad)" stroke="#FF6BB5" stroke-width="1.5"/>
+  <text x="345" y="48" text-anchor="middle" fill="#FF6BB5" font-size="9" font-weight="bold">Uranium Fuel Rod</text>
+  <text x="345" y="62" text-anchor="middle" fill="#6A8AAA" font-size="8">Requires Superalloy</text>
+
+  <!-- Fork: one path to Neutron Initiator, other to Radiation -->
+  <line x1="400" y1="50" x2="440" y2="50" stroke="#00D4AA" stroke-width="1.5"/>
+  <line x1="440" y1="50" x2="440" y2="30" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="440" y1="50" x2="440" y2="100" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Neutron Initiator -->
+  <rect x="455" y="12" width="120" height="40" rx="6" fill="url(#boxGrad)" stroke="#D4A0FF" stroke-width="1.5"/>
+  <text x="515" y="30" text-anchor="middle" fill="#D4A0FF" font-size="9" font-weight="bold">🔬 Neutron Initiator</text>
+  <text x="515" y="44" text-anchor="middle" fill="#6A8AAA" font-size="8">Fuel for reactor</text>
+
+  <!-- Radiation Shielding -->
+  <rect x="455" y="85" width="120" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="515" y="103" text-anchor="middle" fill="#FFB347" font-size="9" font-weight="bold">🛡 Radiation Shield</text>
+  <text x="515" y="116" text-anchor="middle" fill="#6A8AAA" font-size="8">Required before start</text>
+
+  <!-- Merge to reactor -->
+  <line x1="575" y1="32" x2="610" y2="50" stroke="#00D4AA" stroke-width="1.5"/>
+  <line x1="575" y1="102" x2="610" y2="50" stroke="#00D4AA" stroke-width="1.5"/>
+  <line x1="610" y1="50" x2="630" y2="50" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Antimatter Reactor -->
+  <rect x="635" y="30" width="105" height="40" rx="6" fill="url(#boxGrad)" stroke="#D4A0FF" stroke-width="2"/>
+  <text x="687" y="48" text-anchor="middle" fill="#D4A0FF" font-size="10" font-weight="bold">⚛️ Reactor</text>
+  <text x="687" y="62" text-anchor="middle" fill="#6A8AAA" font-size="8">500+ power/sec</text>
+
+  <text x="370" y="145" text-anchor="middle" fill="#4A6070" font-size="9">Antimatter Production Chain — Outworld Station Guide</text>
+</svg>

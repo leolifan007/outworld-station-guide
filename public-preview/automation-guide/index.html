@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation Deep Dive — Invisible Logistics &amp; Wormhole Supply Chains — </title>
+<meta name="description" content="Outworld Station automation guide. No conveyor belts? No problem. Master Inventory Pairing, bottleneck hunting, and cross-planet supply chains with real gameplay examples.">
+  <meta name="keywords" content="Outworld Station guide, Outworld Station tips, space factory automation, space station building, building game guide">
+  <link rel="canonical" href="https://outworldstationguide.com/automation-guide/">
+  
+  <meta property="og:title" content="Automation Deep Dive — Invisible Logistics &amp; Wormhole Supply Chains">
+  <meta property="og:description" content="Outworld Station automation guide. No conveyor belts? No problem. Master Inventory Pairing, bottleneck hunting, and cross-planet supply chains with real gameplay examples.">
+  <meta property="og:url" content="https://outworldstationguide.com/automation-guide/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Outworld Station Guide">
+  <meta property="og:image" content="https://outworldstationguide.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Automation Deep Dive — Invisible Logistics &amp; Wormhole Supply Chains">
+  <meta name="twitter:description" content="Outworld Station automation guide. No conveyor belts? No problem. Master Inventory Pairing, bottleneck hunting, and cross-planet supply chains with real gameplay examples.">
+  <meta name="twitter:image" content="https://outworldstationguide.com/og-image.png">
+  <link rel="stylesheet" href="https://outworldstationguide.com/css/style-20260516v2.css">
+  <link rel="stylesheet" href="https://outworldstationguide.com/css/preview-nav.css">
+
+  
+  
+  <meta name="google-site-verification" content="WmY0RmVYSThMVFM2d0VJT09PTHN6VUNPcUV3ZkdWVGc">
+  
+
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PR2XS8H182"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PR2XS8H182');
+  </script>
+  
+
+  
+  
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7551387157478980" crossorigin="anonymous"></script>
+  
+  
+</head>
+<body>
+
+
+<div class="bg-canvas">
+  <div class="bg-layer"></div>
+  <div class="nebula"></div>
+  <div class="stars"><div class="twinkle-2"></div></div>
+</div>
+
+
+<button class="sidebar-toggle" id="sidebarToggle">?</button>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-wrap">
+
+  
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🌐</div>
+      <div>
+        <div class="logo-text">Outworld Station</div>
+        <div class="logo-sub">Guide</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebarNav">
+      
+
+<nav class="sidebar-nav" id="sidebarNav">
+  <div class="section-label">Guides</div>
+  <a href="/" class=""><span class="nav-icon">🏠</span> Home</a>
+
+  
+  
+    
+    
+    <a href="/beginner/" class=""><span class="nav-icon">🚀</span> Beginner Guide</a>
+  
+    
+    
+    <a href="/power-management/" class=""><span class="nav-icon">⚡</span> Power</a>
+  
+    
+    
+    <a href="/gas-systems/" class=""><span class="nav-icon">💨</span> Gas Systems</a>
+  
+    
+    
+    <a href="/automation-guide/" class="active"><span class="nav-icon">⚙️</span> Automation</a>
+  
+    
+    
+    <a href="/building-tutorial/" class=""><span class="nav-icon">🏗️</span> Buildings</a>
+  
+    
+    
+    <a href="/resources/" class=""><span class="nav-icon">🪨</span> Resources</a>
+  
+    
+    
+    <a href="/guides/" class=""><span class="nav-icon">📚</span> All Guides</a>
+  
+
+  <div class="section-label">Interactive</div>
+  <a href="/map/"><span class="nav-icon">🌌</span> Star Map</a>
+
+  <div class="section-label">More</div>
+  <a href="/about/"><span class="nav-icon">ℹ️</span> About</a>
+  <a href="/contact/"><span class="nav-icon">📧</span> Contact</a>
+  <a href="/privacy/"><span class="nav-icon">🔒</span> Privacy</a>
+</nav>
+    </nav>
+
+    <div class="sidebar-steam">
+      <a href="https://store.steampowered.com/app/3242950/Outworld_Station/" target="_blank" rel="noopener">🎮 Steam Page</a>
+    </div>
+
+
+  </aside>
+
+  
+  <div class="main-area">
+    
+
+    <main>
+      
+<section class="page-hero-sub">
+  <h1 class="hero-title-sub">Automation Deep Dive — Invisible Logistics &amp; Wormhole Supply Chains</h1>
+  <p class="hero-desc-sub">Outworld Station automation guide. No conveyor belts? No problem. Master Inventory Pairing, bottleneck hunting, and cross-planet supply chains with real gameplay examples.</p>
+  
+
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="bc-row">
+    <a href="/" class="bc-link">Home</a>
+    
+      <span class="bc-sep" aria-hidden="true">›</span>
+      
+      
+        <span class="bc-current">Automation</span>
+      
+    
+  </div>
+</nav>
+
+</section>
+
+
+
+<article class="content-body">
+  <h2 id="no-conveyor-belts--then-how-do-things-move">No Conveyor Belts — Then How Do Things Move?</h2>
+<figure class="content-figure">
+  <img src="/images/no-conveyor.webp" alt="Outworld Station invisible logistics system" loading="lazy">
+  <figcaption>No conveyor belts in this game. Feels like losing an arm at first. Turns out it's a better system.</figcaption>
+</figure>
+<p>Outworld Station&rsquo;s biggest feature (and biggest learning curve) is this: <strong>there are no conveyor belts.</strong></p>
+<p>If you&rsquo;ve played Factorio, you know the pain of spending hours routing belts. This game cuts that entirely. Instead, it uses &ldquo;invisible logistics pipes.&rdquo; I spent my first 20 minutes looking for the conveyor belt button before I realized: there isn&rsquo;t one. By design.</p>
+<div class="callout callout-verdict">
+  <h4>The One-Sentence Explanation</h4>
+  <p>Invisible logistics = automatic inventory matching between producers and consumers. You don't lay pipes. You just tell the system "ore goes from here to there" and it handles the transport.</p>
+</div>
+<hr>
+<h2 id="chapter-1-how-invisible-logistics-works">Chapter 1: How Invisible Logistics Works</h2>
+<h3 id="what-is-an-invisible-logistics-pipe">What Is an Invisible Logistics Pipe?</h3>
+<p>Traditional factory games use conveyor belts, pipes, or drones. Outworld Station uses <strong>direct inventory links</strong>:</p>
+<p>When you link Building A&rsquo;s Output to Building B&rsquo;s Input, the game creates an invisible logistics channel between them. No space taken. No maintenance needed.</p>
+<p><strong>Why this is great:</strong></p>
+<ul>
+<li>Saves space — no belt corridors needed</li>
+<li>Easy to reconfigure — just re-pair, no deconstructing</li>
+<li>Self-regulating — downstream stops, upstream just buffers</li>
+</ul>
+<p><strong>The downside (what you&rsquo;ll struggle with):</strong></p>
+<ul>
+<li>You can&rsquo;t see the flow — debugging is harder</li>
+<li>Distance limit — you&rsquo;ll need relays for long hauls</li>
+<li>Easy to forget pairing and wonder &ldquo;why isn&rsquo;t my factory doing anything&rdquo;</li>
+</ul>
+<h3 id="the-pairing-operation-what-you-actually-need-to-remember">The Pairing Operation (What You Actually Need to Remember)</h3>
+<figure class="content-figure">
+  <img src="/images/pair-button.webp" alt="Pair button location in Inventory panel" loading="lazy">
+  <figcaption>Click Pair → select target building → done. Simple once you know where it is. Took me five minutes to find it the first time.</figcaption>
+</figure>
+<ol>
+<li>Left-click a <strong>production building</strong> (say, a Smelter)</li>
+<li>In the popup, click the <strong>Inventory</strong> tab</li>
+<li>Scroll down — there&rsquo;s a <strong>Pair</strong> button under Output. Click it.</li>
+<li>Mouse over the target storage container or consumer building. Left-click to confirm.</li>
+<li>Pairing done — you won&rsquo;t see a pipe, but materials are flowing.</li>
+</ol>
+<div class="pro-tip">
+  <p><strong>Pro shortcut:</strong> Hold <strong>Shift</strong> while clicking Pair to auto-pair to the <strong>nearest compatible building</strong>. In dense factory areas this is 10x faster than manual targeting. Found this at hour 3. Wish I'd known sooner.</p>
+</div>
+<h3 id="pairing-limits">Pairing Limits</h3>
+<table>
+  <thead>
+      <tr>
+          <th>What</th>
+          <th>Limit</th>
+          <th>Workaround</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Max output links per building</td>
+          <td>4</td>
+          <td>Add relay buildings if you need more branches</td>
+      </tr>
+      <tr>
+          <td>Max input links per building</td>
+          <td>6</td>
+          <td>Can be upgraded on higher-tier buildings</td>
+      </tr>
+      <tr>
+          <td>Max link distance</td>
+          <td>200 units</td>
+          <td>Build a Logistics Relay beyond that</td>
+      </tr>
+      <tr>
+          <td>Single link throughput</td>
+          <td>15 units/sec</td>
+          <td>Research Logistics tech to increase</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="chapter-2-storage-management-the-overlooked-critical-skill">Chapter 2: Storage Management (The Overlooked Critical Skill)</h2>
+<h3 id="three-storage-modes">Three Storage Modes</h3>
+<figure class="content-figure">
+  <img src="/images/storage-modes.webp" alt="Storage container mode switching interface" loading="lazy">
+  <figcaption>Buffer / Priority Output / Reserve Stock — three modes that determine your inventory strategy. Buffer is your safe default.</figcaption>
+</figure>
+<p>Every Storage Container has three modes (click container → Mode tab):</p>
+<ul>
+<li><strong>Buffer Mode</strong> — Default. Balanced in/out. Works for most situations.</li>
+<li><strong>Priority Output</strong> — Ships everything out ASAP. Good for transit depots.</li>
+<li><strong>Reserve Stock</strong> — Hoards materials, won&rsquo;t export. Perfect for emergency supplies.</li>
+</ul>
+<h3 id="my-storage-layout">My Storage Layout</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Production Stage</th>
+          <th>Containers</th>
+          <th>Mode</th>
+          <th>Why</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Raw material intake</td>
+          <td>2</td>
+          <td>Buffer</td>
+          <td>Balances drill output with smelter demand</td>
+      </tr>
+      <tr>
+          <td>Intermediate processing</td>
+          <td>1</td>
+          <td>Buffer</td>
+          <td>Buffer between processing steps</td>
+      </tr>
+      <tr>
+          <td>Final products</td>
+          <td>1</td>
+          <td>Priority Output</td>
+          <td>Feeds advanced production lines first</td>
+      </tr>
+      <tr>
+          <td>Critical materials (uranium, alloys)</td>
+          <td>1</td>
+          <td>Reserve Stock</td>
+          <td>Insurance against supply chain breaks</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="chapter-3-cross-planet-logistics--using-wormholes">Chapter 3: Cross-Planet Logistics — Using Wormholes</h2>
+<h3 id="wormholes-are-your-supply-chain-not-just-teleporters">Wormholes Are Your Supply Chain, Not Just Teleporters</h3>
+<figure class="content-figure">
+  <img src="/images/wormhole-link.webp" alt="Wormhole generators connecting two planets" loading="lazy">
+  <figcaption>Two Wormhole Generators with the same ID = their inventories sync automatically. This is your interplanetary highway.</figcaption>
+</figure>
+<p>Once you have a second station (or an outpost on another planet), you need wormholes to link inventories across planets.</p>
+<p><strong>How to set it up:</strong></p>
+<ol>
+<li>Build a <strong>Wormhole Generator</strong> at each location</li>
+<li>Set both generators to the same channel number (say, channel 1)</li>
+<li>They auto-connect — inventories merge across both locations</li>
+<li>Now do Inventory Pairing across the wormhole link — the system handles interplanetary transport</li>
+</ol>
+<h3 id="three-wormhole-layouts">Three Wormhole Layouts</h3>
+<p><strong>Setup 1: Resource Planet → Processing Planet (early game)</strong>
+Put drills and ore storage on the resource planet with Priority Output mode. Ore automatically flows back to your main station. Simplest and most reliable.</p>
+<p><strong>Setup 2: Specialized Planet Cluster (mid game)</strong>
+Planet A makes circuits → Planet B makes armor → Planet C does final assembly. Great for long-term operation, but don&rsquo;t try this early — you&rsquo;ll overwhelm yourself managing three planets at once.</p>
+<p><strong>Setup 3: Armed Outpost (defense)</strong>
+Set up a fortified outpost on hostile territory. Your main station sends supply shipments through the wormhole. Useful once enemies start hitting harder.</p>
+<div class="callout callout-synergy">
+  <h4>Wormhole Upgrade Cadence</h4>
+  <p><strong>0-2 hours:</strong> Planet-internal logistics only. Don't touch wormholes yet.</p>
+  <p><strong>2-8 hours:</strong> Build 1-2 Lv1 wormholes to the nearest resource-rich planet.</p>
+  <p><strong>8+ hours:</strong> Upgrade to Lv3 wormholes, build a 3-4 planet logistics network.</p>
+  <p>Opening wormholes early = opening a can of worms. Get your home planet stable first.</p>
+</div>
+<hr>
+<h2 id="chapter-4-efficiency-optimization--dont-chase-perfection">Chapter 4: Efficiency Optimization — Don&rsquo;t Chase Perfection</h2>
+<h3 id="how-to-find-bottlenecks">How to Find Bottlenecks</h3>
+<pre tabindex="0"><code>Actual output = slowest node × number of nodes
+</code></pre><p>Example: 3 Mining Drills (5/sec each) → 2 Smelters (7/sec each)</p>
+<ul>
+<li>3 drills theoretically produce 15/sec</li>
+<li>But 2 smelters can only process 14/sec</li>
+<li>Actual output = 14/sec — bottleneck is the smelters</li>
+</ul>
+<p><strong>Fix:</strong> Add 1 more smelter or upgrade to Advanced Smelter.</p>
+<h3 id="my-production-philosophy">My Production Philosophy</h3>
+<div class="pro-tip">
+  <p><strong>100 hours of experience talking:</strong> Don't chase perfect ratios. Build <strong>slight overcapacity</strong> into every stage. Surplus stock builds up naturally, and when you expand downstream, you don't need to rebuild upstream. Overcapacity = flexibility. The secret isn't perfect ratios — it's redundancy.</p>
+</div>
+<div class="split-col">
+<div class="col">
+  <h4>Boost Production</h4>
+  <ul>
+    <li>More drills</li>
+    <li>Smelter → Advanced Smelter upgrades</li>
+    <li>Logistics II research</li>
+  </ul>
+</div>
+<div class="col">
+  <h4>Reduce Consumption</h4>
+  <ul>
+    <li>Research Efficiency module tech</li>
+    <li>Higher-quality ore = less waste</li>
+    <li>Proper buffering = fewer stoppages</li>
+  </ul>
+</div>
+</div>
+<hr>
+<h2 id="common-automation-questions-pulled-from-steam-discussions">Common Automation Questions (Pulled from Steam Discussions)</h2>
+<h3 id="q-inventory-pair-didnt-do-anything">Q: Inventory Pair didn&rsquo;t do anything?</h3>
+<p>Check distance. Beyond 200 units you need a Logistics Relay. Also check power — unpair buildings show greyed-out Pair buttons.</p>
+<h3 id="q-my-production-line-keeps-stuttering">Q: My production line keeps stuttering?</h3>
+<p>Almost certainly upstream starvation. Check raw material storage. If the ore bin is empty, either you don&rsquo;t have enough drills or the current mine is depleted. Drill spots deplete over time — you need to move them.</p>
+<h3 id="q-pairing-multiple-outputs--everything-goes-to-one-place">Q: Pairing multiple outputs — everything goes to one place?</h3>
+<p>Default pairing distributes randomly. To control flow, set the receiving container to Priority Output mode — it&rsquo;ll grab whatever it can.</p>
+<h3 id="q-wormhole-power-consumption-too-high">Q: Wormhole power consumption too high?</h3>
+<p>Wormholes themselves use modest power (5-15 power/sec). The real drain is cross-planet logistics pipes. Tip: wormhole-connect storage containers only, not production buildings directly. Let the containers handle local pairing.</p>
+<h3 id="q-how-many-logistics-relays-do-i-need">Q: How many Logistics Relays do I need?</h3>
+<p>As few as possible. Plan your production layout to keep things within 200 units. Adding relays eats space and makes later reconfiguration painful. I once had to tear down 15 relays and it took half an hour.</p>
+<h3 id="q-how-does-multiplayer-handle-logistics">Q: How does multiplayer handle logistics?</h3>
+<p>Each player has independent inventory but shares pairings. Meaning your teammate&rsquo;s buildings are pair-able. The downside is two people can fight over the same output line. Best to divide and conquer — one person per production line.</p>
+<hr>
+<h2 id="one-sentence-to-remember">One Sentence to Remember</h2>
+<p><strong>Always build slight overcapacity. Always keep a buffer.</strong>
+As long as materials are flowing and nothing is jammed, your bottlenecks aren&rsquo;t emergencies — they&rsquo;re future optimization projects. Keep the factory running first, optimize later.</p>
+<hr>
+<div class="ad-slot" style="margin: 24px 0;">
+  <div class="ad-label">— Ad —</div>
+  <div class="ad-placeholder">Ad unit (replace with AdSense code before launch)</div>
+</div>
+
+
+  
+  
+  
+  
+  <div class="guides-section">
+    <h2 class="guides-section-title">In-Depth Guides</h2>
+    <div class="guide-grid">
+      
+      <a href="/guides/storage-network-design/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Storage Network Design Guide - Smart …</h3>
+          <p>Your storage is chaos. Chests full of random ore, no idea what you …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/station-level-progression-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Station Level-Up &amp; Progression -- What …</h3>
+          <p>Outworld Station level-by-level unlock guide. Every station level&#39;s …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/recycling-deconstruction-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Recycling &amp; Deconstruction Guide - …</h3>
+          <p>Your first factory is a mess and you want to rebuild. Here is how to …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/planet-environment-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Planet Biome &amp; Environment Effects Guide …</h3>
+          <p>Not all planets are equal. Some boost production. Some drain your …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/passive-income-trading/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Passive Income &amp; Trading Guide - …</h3>
+          <p>Stop grinding manual trades. Here is how to set up passive income …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/remote-mining-outpost-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Remote Mining Outpost …</h3>
+          <p>Your starter patch is running dry. Here is the exact process for …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/life-support-oxygen-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Life Support &amp; Oxygen …</h3>
+          <p>Oxygen running out? Here is how to build a self-sustaining life …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/nitrox-gas-processing-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Nitrox &amp; Advanced Gas Processing -- From …</h3>
+          <p>Outworld Station nitratium harvesting, biomass-to-gas conversion, …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/multi-planet-expansion-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Multi-Planet Expansion &amp; Cross-Zone …</h3>
+          <p>Outworld Station multi-planet expansion strategy: when to build a …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/matter-printer-blueprint-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Matter Printer &amp; Blueprint System -- …</h3>
+          <p>Outworld Station matter printer usage, blueprint template creation and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/interplanetary-logistics-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Interplanetary Logistics Guide - Move …</h3>
+          <p>Your main station is full. Your outpost has everything you need. Now …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/equipment-module-upgrade-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Equipment &amp; Module Upgrade Guide -- Tech …</h3>
+          <p>Outworld Station equipment system, tech upgrade rework, module …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/endgame-final-stretch-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Endgame Guide &amp; Final Stretch -- …</h3>
+          <p>Outworld Station endgame walkthrough from Station Level 10 to 1.0 …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/conveyor-balancing-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Conveyor Belt Balancing &amp; Throughput …</h3>
+          <p>One assembler is full while another starves. Here is how belt …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/asteroid-belt-mining-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Asteroid Belt Mining Guide - Find Ore …</h3>
+          <p>Your starting asteroid belt runs dry faster than you expect. Here is …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/assembly-line-ratios/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Assembly Line Ratios - Perfect …</h3>
+          <p>Overbuilding assemblers wastes space. Underbuilding starves your …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/station-expansion-blueprint/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Space Station Expansion Blueprint - From …</h3>
+          <p>Outworld Station phased expansion plan from starting module to …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/multi-source-power-grid-stability/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Multi-Source Power Grid Stability - …</h3>
+          <p>Outworld Station power grid balancing across multiple generation …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/module-component-manufacturing/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Module Component Manufacturing - Build …</h3>
+          <p>Outworld Station component production chain from raw materials to …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/mid-game-expansion-strategy/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Mid-Game Expansion Strategy - Survive …</h3>
+          <p>Outworld Station mid-game resource crunch solutions. How to bridge the …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/deep-space-gas-giant-mining/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Deep Space Gas Giant Mining - Set Up a …</h3>
+          <p>Outworld Station remote gas extraction, outpost automation, and gas …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/chemical-processing-refining-chain/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Chemical Processing &amp; Refining Chain - …</h3>
+          <p>Outworld Station chemical processing chains from raw gas extraction to …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/cargo-drone-network-optimization/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Cargo Drone Network Optimization - Speed …</h3>
+          <p>Outworld Station cargo drone pathing, congestion fixes, and network …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/automated-smelter-refinery-design/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Automated Smelter &amp; Refinery Design - …</h3>
+          <p>Outworld Station ore-to-ingot automation, smelter array scaling, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/automated-repair-station-healing/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Automated Repair &amp; Station Self-Healing …</h3>
+          <p>Outworld Station automated repair systems, repair drone networks, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/advanced-inventory-pairing/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Advanced Inventory Pairing - Master …</h3>
+          <p>Outworld Station advanced inventory pairing techniques for complex …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/tier-list/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Tier List [S to D]: …</h3>
+          <p>Not everything is worth building. I ranked every ship, module, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/ship-building/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Ship Building Guide: …</h3>
+          <p>Ships confused me for hours. Here&#39;s everything I figured out about …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/research-order/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Best Research Order — …</h3>
+          <p>I tested three different tech paths from scratch. Here&#39;s the research …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/beginner-mistakes/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>15 Things I Wish I Knew Before Playing …</h3>
+          <p>I wasted 20 hours learning these the hard way. From tech order to base …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/station-layout-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Station Layout Guide: Build Efficient …</h3>
+          <p>Design compact, efficient station layouts in Outworld Station. …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/coop-multiplayer-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Co-op Multiplayer Guide: Play Outworld …</h3>
+          <p>Everything you need to know about 4-player co-op in Outworld Station. …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/wormhole-terminal-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Wormhole Terminal Guide: Interplanetary …</h3>
+          <p>Outworld Station wormhole terminal setup, channel configuration, …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/superalloy-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Superalloy Production Guide: Scale Your …</h3>
+          <p>Outworld Station superalloy production chain, material requirements, …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/freighter-mining-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Freighter &amp; Mining Station Guide: …</h3>
+          <p>Outworld Station freighter dock setup, mining station automation, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/drone-defense-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Drone Defense &amp; Shield Guide: Protect …</h3>
+          <p>Outworld Station drone shields, missile turrets, laser defense, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/antimatter-power-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Antimatter Power Guide: Endgame Energy …</h3>
+          <p>Outworld Station antimatter power setup, neutron initiator production, …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/performance-crash-fix/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Outworld Station Crashing at Launch? 18 …</h3>
+          <p>Real crashes, real fixes. I spent 40 hours troubleshooting Outworld …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/pipe-bottleneck-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Pipe &amp; Connector Bottlenecks — How to …</h3>
+          <p>Outworld Station pipe bottlenecks, connector throughput limits, and …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/fusion-reactor-guide/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>Fusion Reactor Guide — Never Let Your …</h3>
+          <p>Outworld Station fusion reactor fuel management, common failure …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+      <a href="/guides/" class="guide-card guide-index-card">
+        <div class="guide-card-body">
+          <h3>All Guides — Deep Dives &amp; Community …</h3>
+          <p>Browse all Outworld Station guides sorted by topic and recency. Fusion …</p>
+        </div>
+        <div class="card-link" style="margin-top:auto;font-size:0.75rem;">Read →</div>
+      </a>
+      
+    </div>
+  </div>
+  
+</article>
+
+
+
+
+    </main>
+    <footer class="site-footer" style="text-align:center;padding:2rem 0;margin-top:3rem;border-top:1px solid rgba(58,123,213,0.1);">
+  
+
+<div class="adsterra-ads" style="margin: 2rem 0; text-align: center; min-height: 90px;">
+
+  
+  <script>
+    atOptions = {
+      'key' : '6001423a5dd6f3bf081da5230bb2a615',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highperformanceformat.com/6001423a5dd6f3bf081da5230bb2a615/invoke.js"></script>
+
+  
+  <script async="async" data-cfasync="false" src="https://pl29637226.effectivecpmnetwork.com/42682bfc0b1359991ace27c53ecba6a2/invoke.js"></script>
+  <div id="container-42682bfc0b1359991ace27c53ecba6a2"></div>
+  <script src="https://pl29637227.effectivecpmnetwork.com/1e/f6/66/1ef666579b26cdf591d09e8600762d78.js"></script>
+
+</div>
+
+
+  <p style="color:var(--space-text-dim, #7A8EA8);font-size:0.85rem;margin:0;">&copy; 2026 Outworld Station Guide (unofficial). Player community. Not affiliated with Trickjump Games Ltd.</p>
+</footer>
+
+  </div>
+
+</div>
+
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-modal="true">
+  <div class="cookie-banner-inner">
+    <div class="cookie-banner-text">
+      <p id="cookie-title">
+        🍪 We use cookies to deliver personalised advertisements and analyse site traffic.
+        <a href="https://outworldstationguide.com/privacy/" class="cookie-policy-link">Privacy Policy</a>
+      </p>
+    </div>
+    <div class="cookie-banner-actions">
+      <button id="cookie-accept-all" class="cookie-btn cookie-btn-accept">Accept All</button>
+      <button id="cookie-reject" class="cookie-btn cookie-btn-reject">Reject Non‑Essential</button>
+      <button id="cookie-customize" class="cookie-btn cookie-btn-customize">Customise</button>
+    </div>
+  </div>
+
+  
+  <div id="cookie-customise-panel" class="cookie-customise-panel" style="display:none;">
+    <div class="cookie-category-row">
+      <div class="cookie-category-info">
+        <strong>Necessary</strong>
+        <p>Essential for the site to function. Cannot be disabled.</p>
+      </div>
+      <div class="cookie-toggle-wrap">
+        <input type="checkbox" id="cookie-necessary" checked disabled class="cookie-toggle">
+        <label for="cookie-necessary"></label>
+      </div>
+    </div>
+    <div class="cookie-category-row">
+      <div class="cookie-category-info">
+        <strong>Analytics</strong>
+        <p>Help us understand how visitors interact with our content.</p>
+      </div>
+      <div class="cookie-toggle-wrap">
+        <input type="checkbox" id="cookie-analytics" class="cookie-toggle">
+        <label for="cookie-analytics"></label>
+      </div>
+    </div>
+    <div class="cookie-category-row">
+      <div class="cookie-category-info">
+        <strong>Advertising</strong>
+        <p>Used by Google AdSense to personalise advertisements.</p>
+      </div>
+      <div class="cookie-toggle-wrap">
+        <input type="checkbox" id="cookie-advertising" class="cookie-toggle">
+        <label for="cookie-advertising"></label>
+      </div>
+    </div>
+    <div class="cookie-customise-footer">
+      <button id="cookie-save-prefs" class="cookie-btn cookie-btn-accept">Save Preferences</button>
+      <button id="cookie-cancel-prefs" class="cookie-btn cookie-btn-reject">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var BANNER_ID = 'cookie-banner';
+  var PREFS_KEY = 'outworld_station_cookie_prefs';
+
+  function getPrefs() {
+    try { return JSON.parse(localStorage.getItem(PREFS_KEY)); } catch(e) { return null; }
+  }
+  function setPrefs(prefs) {
+    localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
+  }
+
+  function showBanner() {
+    document.getElementById(BANNER_ID).style.display = 'block';
+  }
+  function hideBanner() {
+    document.getElementById(BANNER_ID).style.display = 'none';
+  }
+  function showCustomise() {
+    document.getElementById('cookie-customise-panel').style.display = 'block';
+  }
+  function hideCustomise() {
+    document.getElementById('cookie-customise-panel').style.display = 'none';
+  }
+
+  var prefs = getPrefs();
+  if (!prefs) {
+    showBanner();
+  }
+
+  document.getElementById('cookie-accept-all').addEventListener('click', function() {
+    setPrefs({ necessary: true, analytics: true, advertising: true, all: true });
+    hideBanner();
+  });
+
+  document.getElementById('cookie-reject').addEventListener('click', function() {
+    setPrefs({ necessary: true, analytics: false, advertising: false, all: false });
+    hideBanner();
+  });
+
+  document.getElementById('cookie-customize').addEventListener('click', function() {
+    showCustomise();
+  });
+
+  document.getElementById('cookie-cancel-prefs').addEventListener('click', function() {
+    hideCustomise();
+  });
+
+  document.getElementById('cookie-save-prefs').addEventListener('click', function() {
+    var analytics = document.getElementById('cookie-analytics').checked;
+    var advertising = document.getElementById('cookie-advertising').checked;
+    setPrefs({ necessary: true, analytics: analytics, advertising: advertising, all: false });
+    hideCustomise();
+    hideBanner();
+  });
+})();
+</script>
+
+
+<script>
+(function(){
+  
+  var btn=document.getElementById('sidebarToggle');
+  var sidebar=document.querySelector('.sidebar');
+  var overlay=document.getElementById('sidebarOverlay');
+  var nav=document.getElementById('sidebarNav');
+  function open(){sidebar.classList.add('open');overlay.classList.add('open')}
+  function close(){sidebar.classList.remove('open');overlay.classList.remove('open')}
+  if(btn){btn.onclick=function(e){e.stopPropagation();sidebar.classList.contains('open')?close():open()}}
+  if(overlay){overlay.onclick=close}
+  if(nav){nav.onclick=function(){if(window.innerWidth<=768)close()}}
+  
+  document.querySelectorAll('.sidebar-nav a').forEach(function(link){
+    if(link.getAttribute('href')===window.location.pathname)link.classList.add('active');
+  });
+})();
+</script>
+</body>
+</html>

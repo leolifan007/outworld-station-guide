@@ -1,0 +1,82 @@
+{{ $current := .RelPermalink }}
+{{ $category := .Params.category }}
+{{ if not $category }}{{ return }}{{ end }}
+
+{{- /* Short labels for L2 nav (slug → abbreviation, no emoji per SOP 07) */ -}}
+{{- $shortTitles := dict
+  "antimatter-power-guide"          "Antimatter"
+  "drone-defense-guide"             "Drone Defense"
+  "wormhole-terminal-guide"         "Wormhole"
+  "station-economy-guide"           "Economy"
+  "early-game-guide"                "Early Game"
+  "performance-crash-fix"           "Performance"
+  "world-generation-guide"          "World Gen"
+  "sector-map-navigation-guide"     "Sector Map"
+  "gas-giant-platform"              "Gas Giant"
+  "asteroid-mining-guide"           "Asteroids"
+  "resources-detailed"              "Resources"
+  "enemy-and-combat-guide"          "Enemies"
+  "weapon-and-turret-guide"         "Weapons"
+  "survival-strategy-guide"         "Survival"
+  "automation-and-build-order"      "Auto Build"
+  "coop-multiplayer-guide"          "Co-op"
+  "mods-and-customization"          "Mods"
+  "troubleshooting"                  "Troubleshoot"
+  "advanced-mechanics"              "Advanced"
+  "advanced-inventory-pairing"      "Inventory"
+  "assembly-line-ratios"            "Ratios"
+  "asteroid-belt-mining-guide"      "Belt Mining"
+  "automated-repair-station-healing" "Repair"
+  "automated-smelter-refinery-design" "Smelter"
+  "beginner-mistakes"               "Mistakes"
+  "cargo-drone-network-optimization" "Drone Opt"
+  "chemical-processing-refining-chain" "Chemicals"
+  "conveyor-balancing-guide"         "Conveyor"
+  "combat-ship-design-guide"         "Combat Ships"
+  "deep-space-gas-giant-mining"      "Deep Gas"
+  "endgame-final-stretch-guide"      "Endgame"
+  "equipment-module-upgrade-guide"   "Upgrades"
+  "freighter-mining-guide"           "Freight"
+  "interplanetary-logistics-guide"   "Interplan"
+  "life-support-oxygen-guide"        "Oxygen"
+  "matter-printer-blueprint-guide"   "Blueprint"
+  "mid-game-expansion-strategy"      "Mid-Game"
+  "module-component-manufacturing"   "Modules"
+  "multi-planet-expansion-guide"     "Multi Planet"
+  "multi-source-power-grid-stability" "Grid Stab"
+  "nitrox-gas-processing-guide"      "Nitrox"
+  "passive-income-trading"           "Passive Inc"
+  "pipe-bottleneck-guide"            "Pipes"
+  "planet-environment-guide"         "Biomes"
+  "recycling-deconstruction-guide"   "Recycling"
+  "remote-mining-outpost-guide"      "Outposts"
+  "research-order"                  "Research"
+  "ship-building"                   "Ship Build"
+  "station-expansion-blueprint"      "Expansion"
+  "station-layout-guide"            "Layout"
+  "station-level-progression-guide"  "Progression"
+  "storage-network-design"          "Storage"
+  "superalloy-guide"                "Superalloy"
+  "tier-list"                       "Tier List"
+  "cargo-drone-network"              "Cargo Drones"
+  "freighter-mining-setup"           "Freighter"
+-}}
+
+{{- /* Get pages in this category, sorted by publishedAt */ -}}
+{{- $pages := where $.Site.Pages "Params.category" "==" $category -}}
+{{- $pages = where $pages "RelPermalink" "ne" (printf "/%s/" $category) -}}
+{{- $pages = sort $pages "Params.publishedAt" "desc" -}}
+
+<div class="sidebar-l2-inner">
+  <div class="l2-section-label">{{ partial "category-name" $category }}</div>
+  <nav>
+    {{- range $pages -}}
+      {{- $slug := .RelPermalink | strings.TrimPrefix "/" | strings.TrimSuffix "/" | strings.TrimPrefix "guides/" -}}
+      {{- $short := index $shortTitles $slug -}}
+      {{- if not $short -}}{{- $short = .Title | truncate 22 -}}{{- end -}}
+      <a href="{{ .RelPermalink }}" class="l2-link{{ if eq $current .RelPermalink }} active{{ end }}">
+        <span class="l2-title">{{ $short }}</span>
+      </a>
+    {{- end -}}
+  </nav>
+</div>

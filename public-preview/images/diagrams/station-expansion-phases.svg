@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="background:#1A2533;font-family:Arial,sans-serif">
+  <defs><marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#00D4AA"/></marker></defs>
+  <text x="400" y="28" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">Station Expansion Blueprint - Five Phases</text>
+  <rect x="40" y="45" width="130" height="45" rx="4" fill="#2A3A4A" stroke="#FF6B35" stroke-width="1.5"/>
+  <text x="105" y="63" text-anchor="middle" fill="#FF6B35" font-size="11" font-weight="bold">Phase 1: Core</text>
+  <text x="105" y="80" text-anchor="middle" fill="#8899AA" font-size="10">0-2 hrs Hub+Smelter</text>
+  <line x1="170" y1="67" x2="210" y2="67" stroke="#FF6B35" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="215" y="45" width="130" height="45" rx="4" fill="#2A3A4A" stroke="#FF6B35" stroke-width="1.5"/>
+  <text x="280" y="63" text-anchor="middle" fill="#FF6B35" font-size="11" font-weight="bold">Phase 2: Linear</text>
+  <text x="280" y="80" text-anchor="middle" fill="#8899AA" font-size="10">2-6 hrs Spine</text>
+  <line x1="345" y1="67" x2="385" y2="67" stroke="#FF6B35" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="390" y="45" width="130" height="45" rx="4" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="455" y="63" text-anchor="middle" fill="#4A9EFF" font-size="11" font-weight="bold">Phase 3: Ring</text>
+  <text x="455" y="80" text-anchor="middle" fill="#8899AA" font-size="10">6-15 hrs Rings</text>
+  <line x1="520" y1="67" x2="560" y2="67" stroke="#4A9EFF" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="565" y="45" width="130" height="45" rx="4" fill="#2A3A4A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="630" y="63" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">Phase 4: Multi-Lvl</text>
+  <text x="630" y="80" text-anchor="middle" fill="#8899AA" font-size="10">15-40 hrs Elevators</text>
+  <line x1="695" y1="67" x2="735" y2="67" stroke="#00D4AA" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="740" y="45" width="55" height="45" rx="4" fill="#2A3A4A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="767" y="63" text-anchor="middle" fill="#00D4AA" font-size="10" font-weight="bold">P5</text>
+  <text x="767" y="80" text-anchor="middle" fill="#8899AA" font-size="9">40+ hrs</text>
+  <rect x="290" y="105" width="220" height="2" fill="#667788"/>
+  <text x="400" y="123" text-anchor="middle" fill="#4A9EFF" font-size="12" font-weight="bold">Ring Layout (Phase 3) - Top View</text>
+  <circle cx="400" cy="210" r="40" fill="none" stroke="#00D4AA" stroke-width="2"/>
+  <text x="400" y="208" text-anchor="middle" fill="#00D4AA" font-size="10" font-weight="bold">Core</text>
+  <text x="400" y="220" text-anchor="middle" fill="#8899AA" font-size="9">Hub</text>
+  <circle cx="400" cy="210" r="75" fill="none" stroke="#4A9EFF" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="140" text-anchor="middle" fill="#4A9EFF" font-size="10">Inner Ring: Production</text>
+  <circle cx="400" cy="210" r="110" fill="none" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="325" text-anchor="middle" fill="#FF6B35" font-size="10">Middle Ring: Storage + Components</text>
+  <circle cx="400" cy="210" r="145" fill="none" stroke="#8899AA" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="370" text-anchor="middle" fill="#8899AA" font-size="10">Outer Ring: Defense + Gas Extraction</text>
+</svg>

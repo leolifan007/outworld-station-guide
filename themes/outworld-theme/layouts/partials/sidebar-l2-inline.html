@@ -1,0 +1,51 @@
+{{ $current := .RelPermalink }}
+{{ $category := .Params.category }}
+{{ if not $category }}{{ return }}{{ end }}
+
+{{- /* Short labels for article nav titles (no emoji per SOP 07) */ -}}
+{{- $shortTitles := dict
+  "fusion-reactor-guide" "Fusion Reactor"
+  "freighter-mining-setup" "Freighter & Mining"
+  "superalloy-production-chain" "Superalloy Chain"
+  "pipe-systems-bottleneck-solutions" "Pipe Systems"
+  "research-order-guide" "Research Order"
+  "ship-building-guide" "Ship Building"
+  "drone-defense-guide" "Drone Defense"
+  "antimatter-power-guide" "Antimatter Power"
+  "wormhole-terminal-guide" "Wormhole Terminal"
+  "station-economy-guide" "Station Economy"
+  "early-game-guide" "Early Game"
+  "performance-crash-fix" "Performance Fix"
+  "world-generation-guide" "World Gen"
+  "sector-map-navigation-guide" "Sector Map"
+  "gas-giant-platform" "Gas Giant Platform"
+  "asteroid-mining-guide" "Asteroid Mining"
+  "resources-detailed" "Resources Guide"
+  "enemy-and-combat-guide" "Enemy & Combat"
+  "weapon-and-turret-guide" "Weapon & Turret"
+  "survival-strategy-guide" "Survival Strategy"
+  "automation-and-build-order" "Automation Build"
+  "multiplayer-coop" "Multiplayer Coop"
+  "mods-and-customization" "Mods"
+  "troubleshooting" "Troubleshooting"
+  "advanced-mechanics" "Advanced Mechanics"
+-}}
+
+{{- /* Get pages in this category, sorted by publishedAt */ -}}
+{{- $pages := where $.Site.Pages "Params.category" "==" $category -}}
+{{- $pages = where $pages "RelPermalink" "ne" (printf "/%s/" $category) -}}
+{{- $pages = sort $pages "Params.publishedAt" "desc" -}}
+
+<div class="l2-inline-wrap">
+  <span class="l2-inline-label">{{ partial "category-name" .Params.category }}</span>
+  <nav class="l2-inline-nav">
+    {{- range $pages -}}
+      {{- $slug := strings.TrimSuffix "/" (strings.TrimPrefix "/" .RelPermalink) -}}
+      {{- $short := index $shortTitles $slug -}}
+      {{- if not $short -}}{{- $short = .Title -}}{{- end -}}
+      <a href="{{ .RelPermalink }}" class="l2-inline-pill{{ if eq $current .RelPermalink }} active{{ end }}">
+        {{ $short }}
+      </a>
+    {{- end -}}
+  </nav>
+</div>

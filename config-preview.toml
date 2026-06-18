@@ -1,0 +1,15 @@
+baseURL = 'http://localhost:1314/'
+theme = 'outworld-theme'
+publishDir = 'public-preview'
+enableRobotsTXT = false
+canonifyURLs = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = 'Outworld Station Guide - Preview'
+  steam_url = 'https://store.steampowered.com/app/3242950/Outworld_Station/'
+  adsterra_enabled = true

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" fill="#C8D6E8" font-size="14" font-weight="bold">Specialist Roles Strategy (4 Players)</text>
+
+  <!-- Player 1 -->
+  <rect x="30" y="45" width="170" height="80" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="115" y="65" text-anchor="middle" fill="#4A9EFF" font-size="11" font-weight="bold">Player 1</text>
+  <text x="115" y="80" text-anchor="middle" fill="#C8D6E8" font-size="9">Builder/Architect</text>
+  <text x="45" y="100" fill="#6A8AAA" font-size="8">• Plans layout</text>
+  <text x="45" y="115" fill="#6A8AAA" font-size="8">• Places buildings</text>
+
+  <!-- Player 2 -->
+  <rect x="220" y="45" width="170" height="80" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="305" y="65" text-anchor="middle" fill="#FFB347" font-size="11" font-weight="bold">Player 2</text>
+  <text x="305" y="80" text-anchor="middle" fill="#C8D6E8" font-size="9">Miner/Explorer</text>
+  <text x="235" y="100" fill="#6A8AAA" font-size="8">• Finds asteroids</text>
+  <text x="235" y="115" fill="#6A8AAA" font-size="8">• Explores zones</text>
+
+  <!-- Player 3 -->
+  <rect x="410" y="45" width="170" height="80" rx="8" fill="url(#boxGrad)" stroke="#FF6B6B" stroke-width="2"/>
+  <text x="495" y="65" text-anchor="middle" fill="#FF6B6B" font-size="11" font-weight="bold">Player 3</text>
+  <text x="495" y="80" text-anchor="middle" fill="#C8D6E8" font-size="9">Combat/Defense</text>
+  <text x="425" y="100" fill="#6A8AAA" font-size="8">• Handles threats</text>
+  <text x="425" y="115" fill="#6A8AAA" font-size="8">• Builds turrets</text>
+
+  <!-- Player 4 -->
+  <rect x="600" y="45" width="170" height="80" rx="8" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="2"/>
+  <text x="685" y="65" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">Player 4</text>
+  <text x="685" y="80" text-anchor="middle" fill="#C8D6E8" font-size="9">Logistics/Power</text>
+  <text x="615" y="100" fill="#6A8AAA" font-size="8">• Manages power</text>
+  <text x="615" y="115" fill="#6A8AAA" font-size="8">• Freighters</text>
+
+  <!-- Bottom note -->
+  <rect x="150" y="140" width="500" height="60" rx="6" fill="#162D4A" stroke="#2A3A4C" stroke-width="1"/>
+  <text x="400" y="165" text-anchor="middle" fill="#C8D6E8" font-size="10" font-weight="bold">💡 Each player focuses without stepping on each other's work</text>
+  <text x="400" y="185" text-anchor="middle" fill="#6A8AAA" font-size="9">Result: Faster progress, less confusion, better coordination</text>
+</svg>

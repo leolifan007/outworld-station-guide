@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 170" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00D4AA"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <text x="400" y="20" text-anchor="middle" fill="#C8D6E8" font-size="13" font-weight="bold">Wormhole Pairing Flow — Remote Side → Main Station</text>
+
+  <!-- REMOTE SIDE -->
+  <rect x="10" y="35" width="160" height="22" rx="4" fill="#162D4A" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="90" y="50" text-anchor="middle" fill="#6A8AAA" font-size="9">REMOTE STATION</text>
+
+  <!-- Miner -->
+  <rect x="10" y="65" width="70" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="45" y="82" text-anchor="middle" fill="#FFB347" font-size="9" font-weight="bold">⛏ Miner</text>
+  <text x="45" y="94" text-anchor="middle" fill="#6A8AAA" font-size="8">Extracts ore</text>
+
+  <line x1="80" y1="82" x2="110" y2="82" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Storage -->
+  <rect x="115" y="65" width="70" height="35" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="150" y="82" text-anchor="middle" fill="#4A9EFF" font-size="9" font-weight="bold">📦 Storage</text>
+  <text x="150" y="94" text-anchor="middle" fill="#6A8AAA" font-size="8">Local buffer</text>
+
+  <line x1="185" y1="82" x2="215" y2="82" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Inventory Pairing -->
+  <rect x="220" y="55" width="90" height="55" rx="8" fill="url(#boxGrad)" stroke="#FF6BB5" stroke-width="2"/>
+  <text x="265" y="75" text-anchor="middle" fill="#FF6BB5" font-size="9" font-weight="bold">🔗 Inventory</text>
+  <text x="265" y="88" text-anchor="middle" fill="#FF6BB5" font-size="9" font-weight="bold">Pairing</text>
+  <text x="265" y="103" text-anchor="middle" fill="#6A8AAA" font-size="8">Links containers</text>
+
+  <line x1="310" y1="82" x2="340" y2="82" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Wormhole Gen A -->
+  <rect x="345" y="65" width="85" height="35" rx="6" fill="url(#boxGrad)" stroke="#D4A0FF" stroke-width="1.5"/>
+  <text x="387" y="82" text-anchor="middle" fill="#D4A0FF" font-size="9" font-weight="bold">🌀 Wormhole A</text>
+  <text x="387" y="94" text-anchor="middle" fill="#6A8AAA" font-size="8">Sender side</text>
+
+  <!-- Wormhole tunnel -->
+  <rect x="435" y="72" width="80" height="22" rx="10" fill="url(#boxGrad)" stroke="#D4A0FF" stroke-width="1" filter="url(#glow)"/>
+  <text x="475" y="87" text-anchor="middle" fill="#D4A0FF" font-size="9">🌀 Channel</text>
+
+  <!-- Wormhole Gen B -->
+  <rect x="520" y="65" width="85" height="35" rx="6" fill="url(#boxGrad)" stroke="#D4A0FF" stroke-width="1.5"/>
+  <text x="562" y="82" text-anchor="middle" fill="#D4A0FF" font-size="9" font-weight="bold">🌀 Wormhole B</text>
+  <text x="562" y="94" text-anchor="middle" fill="#6A8AAA" font-size="8">Receiver side</text>
+
+  <line x1="605" y1="82" x2="635" y2="82" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Pairing -->
+  <rect x="640" y="55" width="90" height="55" rx="8" fill="url(#boxGrad)" stroke="#FF6BB5" stroke-width="2"/>
+  <text x="685" y="75" text-anchor="middle" fill="#FF6BB5" font-size="9" font-weight="bold">🔗 Inventory</text>
+  <text x="685" y="88" text-anchor="middle" fill="#FF6BB5" font-size="9" font-weight="bold">Pairing</text>
+  <text x="685" y="103" text-anchor="middle" fill="#6A8AAA" font-size="8">Links to buffer</text>
+
+  <text x="90" y="145" text-anchor="middle" fill="#6A8AAA" font-size="9">Mining Outpost</text>
+  <text x="265" y="135" text-anchor="middle" fill="#6A8AAA" font-size="9">Pair Storage</text>
+  <text x="562" y="135" text-anchor="middle" fill="#6A8AAA" font-size="9">Main Station</text>
+  <text x="685" y="135" text-anchor="middle" fill="#6A8AAA" font-size="9">Pair Smelter Buffer</text>
+
+  <path d="M 45 100 L 45 120 L 150 120 L 150 100" fill="none" stroke="#6A8AAA" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 562 100 L 562 120 L 685 120 L 685 110" fill="none" stroke="#6A8AAA" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="400" y="162" text-anchor="middle" fill="#4A6070" font-size="9">Wormhole Pairing Flow — Outworld Station Guide</text>
+</svg>

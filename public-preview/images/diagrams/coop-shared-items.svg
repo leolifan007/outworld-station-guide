@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" fill="#C8D6E8" font-size="14" font-weight="bold">What's Shared in Co-op Mode</text>
+
+  <!-- Shared Column -->
+  <rect x="50" y="45" width="320" height="140" rx="8" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="2"/>
+  <text x="210" y="65" text-anchor="middle" fill="#00D4AA" font-size="12" font-weight="bold">✓ Shared (Everyone)</text>
+
+  <text x="70" y="90" fill="#C8D6E8" font-size="10">• Station buildings</text>
+  <text x="70" y="110" fill="#C8D6E8" font-size="10">• Resources in storage</text>
+  <text x="70" y="130" fill="#C8D6E8" font-size="10">• Power grid</text>
+  <text x="70" y="150" fill="#C8D6E8" font-size="10">• Enemies/threats</text>
+  <text x="70" y="170" fill="#C8D6E8" font-size="10">• Station level</text>
+
+  <!-- Not Shared Column -->
+  <rect x="430" y="45" width="320" height="140" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="590" y="65" text-anchor="middle" fill="#FFB347" font-size="12" font-weight="bold">✗ Not Shared (Individual)</text>
+
+  <text x="450" y="90" fill="#C8D6E8" font-size="10">• Personal inventory (mostly)</text>
+  <text x="450" y="110" fill="#C8D6E8" font-size="10">• Research progress (host only)</text>
+  <text x="450" y="130" fill="#C8D6E8" font-size="10">• Ship controls (whoever's in it)</text>
+  <text x="450" y="150" fill="#C8D6E8" font-size="10">• Personal equipment loadout</text>
+  <text x="450" y="170" fill="#C8D6E8" font-size="10">• XP/achievements (individual)</text>
+</svg>

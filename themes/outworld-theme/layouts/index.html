@@ -12,7 +12,7 @@
   </div>
 </section>
 
-{{/* ─── HOT GUIDES (last 14 days) ─── */}}
+{{/* ─── NEW GUIDES — image-less, accent-bar cards ─── */}}
 {{ $hotPages := slice }}
 {{ range where .Site.Pages "Params.publishedAt" "!=" nil }}
   {{ $pubTime := time.AsTime .Params.publishedAt }}
@@ -28,31 +28,21 @@
     <h2 class="hp-section-title"><span class="hp-section-icon">🔥</span> New Guides</h2>
     <span class="hp-section-count">{{ len $hotPages }} articles</span>
   </div>
-  <div class="hp-card-row">
-    {{ range first 4 $hotPages.ByDate.Reverse }}
-    <a href="{{ .RelPermalink }}" class="hp-card hp-card-hot">
-      {{ $thumb := "" }}
-      {{ $catName := .Params.category | default "guide" }}
-      {{ if .Params.thumbnail }}
-        {{ $thumb = .Params.thumbnail | absURL }}
-      {{ else }}
-        {{ $thumb = "" }}
-      {{ end }}
-      <div class="hp-card-img"{{ if $thumb }} style="background-image: url('{{ $thumb }}')"{{ end }}>
-        {{ if not $thumb }}
-        <div class="hp-card-img-placeholder">📖</div>
-        {{ end }}
-        {{ if lt (div (sub now.Unix (time.AsTime .Params.publishedAt).Unix) 86400) 14 }}
-          <span class="hp-card-badge-new">NEW</span>
-        {{ end }}
-        {{ if $catName }}
-        <span class="hp-card-cat-tag">{{ $catName }}</span>
-        {{ end }}
-      </div>
-      <div class="hp-card-body">
-        <h3>{{ .Title }}</h3>
-        <p>{{ .Description | safeHTML | truncate 100 }}</p>
-        <div class="hp-card-footer">
+  <div class="hp-card-grid">
+    {{ range first 6 $hotPages.ByDate.Reverse }}
+    {{ $catName := .Params.category | default "guide" }}
+    <a href="{{ .RelPermalink }}" class="hp-card">
+      <div class="hp-card-bar"></div>
+      <div class="hp-card-inner">
+        <div class="hp-card-meta-line">
+          <span class="hp-card-cat">{{ $catName }}</span>
+          {{ if lt (div (sub now.Unix (time.AsTime .Params.publishedAt).Unix) 86400) 14 }}
+          <span class="hp-card-new">new</span>
+          {{ end }}
+        </div>
+        <h3 class="hp-card-title">{{ .Title }}</h3>
+        <p class="hp-card-desc">{{ .Description | safeHTML | truncate 100 }}</p>
+        <div class="hp-card-foot">
           <span class="hp-card-date">{{ (time.AsTime .Params.publishedAt).Format "Jan 2, 2006" }}</span>
           <span class="hp-card-read">Read →</span>
         </div>
@@ -61,7 +51,6 @@
     {{ end }}
   </div>
 </section>
-
 {{ end }}
 
 {{/* ─── CATEGORY BLOCKS — ONE card per category ─── */}}
@@ -95,13 +84,14 @@
 
       <a href="{{ $targetUrl }}" class="hp-cat-card">
         <div class="hp-cat-img" style="background-image: url('{{ .img | absURL }}')"></div>
-        <div class="hp-cat-overlay">
+        <div class="hp-cat-frost"></div>
+        <div class="hp-cat-body">
           <div class="hp-cat-top">
             <span class="hp-cat-icon">{{ .icon }}</span>
             <h3 class="hp-cat-name">{{ .name }}</h3>
           </div>
           <p class="hp-cat-desc">{{ .desc }}</p>
-          <div class="hp-cat-footer">
+          <div class="hp-cat-foot">
             <span class="hp-cat-count">{{ $catCount }} guides</span>
             <span class="hp-cat-arrow">Explore →</span>
           </div>

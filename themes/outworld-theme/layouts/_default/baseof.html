@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <link rel="canonical" href="{{ .Permalink }}">
-  {{/* OG / Twitter Card */}}
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -24,12 +22,10 @@
   <link rel="stylesheet" href="{{ "css/style-20260516v2.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/preview-nav.css" | absURL }}">
 
-  {{/* GSC Verification */}}
   {{ with .Site.Params.google_site_verification }}
   <meta name="google-site-verification" content="{{ . }}">
   {{ end }}
 
-  {{/* GA4 gtag  loads only when ID is not placeholder */}}
   {{ $gaId := .Site.Params.google_analytics_id }}
   {{ if and $gaId (not (in $gaId "G-XXXXXXXXXX")) }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaId }}"></script>
@@ -41,7 +37,6 @@
   </script>
   {{ end }}
 
-  {{/* AdSense auto-ads  loads only when client ID is not placeholder */}}
   {{ $adClient := .Site.Params.google_adsense_id }}
   {{ if and $adClient (strings.HasPrefix $adClient "ca-pub-") (not (in $adClient "XXXXXXXXXX")) }}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $adClient }}" crossorigin="anonymous"></script>
@@ -50,21 +45,30 @@
 </head>
 <body>
 
-<!-- Background stars canvas -->
 <div class="bg-canvas">
   <div class="bg-layer"></div>
   <div class="nebula"></div>
   <div class="stars"><div class="twinkle-2"></div></div>
 </div>
 
-<!-- Mobile sidebar toggle -->
 <button class="sidebar-toggle" id="sidebarToggle">?</button>
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-<div class="page-wrap">
+{{/* ── Conditional grid shape ── */}}
+{{- $gridClass := "page-wrap-home" -}}
+{{- if .Params.category }}{{ $gridClass = "page-wrap-article" }}{{ end -}}
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
+<div class="page-wrap {{ $gridClass }}">
+
+  {{/* ── Article hero (top row, full width in grid) ── */}}
+  {{ if .Params.category }}
+  <div class="hero-wrap">
+    {{ block "hero" . }}{{ end }}
+  </div>
+  {{ end }}
+
+  <!-- L1 — sticky sidebar, category nav -->
+  <aside class="sidebar sidebar-l1">
     <div class="sidebar-logo">
       <div class="logo-icon">🌐</div>
       <div>
@@ -72,19 +76,40 @@
         <div class="logo-sub">Guide</div>
       </div>
     </div>
-
     <nav class="sidebar-nav" id="sidebarNav">
       {{ partial "sidebar-nav" . }}
     </nav>
-
     <div class="sidebar-steam">
       <a href="{{ .Site.Params.steam_url }}" target="_blank" rel="noopener">🎮 Steam Page</a>
     </div>
-
-
   </aside>
 
-  <!-- MAIN -->
+  <!-- L2 — sticky sidebar, article list in current category -->
+  {{ if .Params.category }}
+  <aside class="sidebar sidebar-l2">
+    {{ partial "sidebar-l2" . }}
+  </aside>
+  {{ end }}
+
+  <!-- AD (right column, article pages only) -->
+  {{ if .Params.category }}
+  <aside class="ad-col-right">
+    <div class="ad-sticky-wrap">
+      <script>
+      atOptions = {
+        'key' : '5b8f02a7812d2083deec73a49432e709',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+      };
+      </script>
+      <script src="https://www.highperformanceformat.com/5b8f02a7812d2083deec73a49432e709/invoke.js"></script>
+    </div>
+  </aside>
+  {{ end }}
+
+  <!-- MAIN CONTENT -->
   <div class="main-area">
     {{ partial "lang-bar" . }}
     <main>
@@ -99,9 +124,8 @@
 
 <script>
 (function(){
-  // Sidebar toggle
   var btn=document.getElementById('sidebarToggle');
-  var sidebar=document.querySelector('.sidebar');
+  var sidebar=document.querySelector('.sidebar-l1');
   var overlay=document.getElementById('sidebarOverlay');
   var nav=document.getElementById('sidebarNav');
   function open(){sidebar.classList.add('open');overlay.classList.add('open')}
@@ -109,10 +133,6 @@
   if(btn){btn.onclick=function(e){e.stopPropagation();sidebar.classList.contains('open')?close():open()}}
   if(overlay){overlay.onclick=close}
   if(nav){nav.onclick=function(){if(window.innerWidth<=768)close()}}
-  // Active sidebar link
-  document.querySelectorAll('.sidebar-nav a').forEach(function(link){
-    if(link.getAttribute('href')===window.location.pathname)link.classList.add('active');
-  });
 })();
 </script>
 </body>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="20" text-anchor="middle" fill="#C8D6E8" font-size="11" font-weight="bold">Hub-and-Spoke Pattern</text>
+
+  <!-- Input A (top) -->
+  <rect x="340" y="35" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="400" y="55" text-anchor="middle" fill="#FFB347" font-size="9">Input A</text>
+  <line x1="400" y1="65" x2="400" y2="85" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Input B (left) -->
+  <rect x="80" y="85" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="140" y="105" text-anchor="middle" fill="#FFB347" font-size="9">Input B</text>
+  <line x1="200" y1="100" x2="270" y2="100" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Central Processing -->
+  <rect x="275" y="75" width="250" height="50" rx="8" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="2"/>
+  <text x="400" y="105" text-anchor="middle" fill="#00D4AA" font-size="10" font-weight="bold">Central Processing</text>
+
+  <!-- Output (right) -->
+  <line x1="525" y1="100" x2="560" y2="100" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="565" y="85" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="625" y="105" text-anchor="middle" fill="#00D4AA" font-size="9">Output</text>
+
+  <!-- Input C (bottom) -->
+  <rect x="340" y="140" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="400" y="160" text-anchor="middle" fill="#FFB347" font-size="9">Input C</text>
+  <line x1="400" y1="140" x2="400" y2="125" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+</svg>

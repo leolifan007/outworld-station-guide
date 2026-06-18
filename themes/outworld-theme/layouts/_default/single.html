@@ -1,39 +1,35 @@
-{{ define "main" }}
+{{ define "hero" }}
 
-{{ $stripped := .RelPermalink }}
+{{- /* Category → hero background mapping */ -}}
+{{- $heroBg := "/images/sub-hero-bg.webp" -}}
+{{- $bgMap := dict
+  "beginner"    "/images/beginner-hero.webp"
+  "power"       "/images/power-evolution.webp"
+  "production"  "/images/smelter-line.webp"
+  "logistics"   "/images/logistics-overview.webp"
+  "defense"     "/images/shield-gen.webp"
+  "economy"     "/images/circuit-board.webp"
+  "strategy"    "/images/inventory-pair.webp"
+  "exploration" "/images/wormhole-gen.webp"
+  "reference"   "/images/processing-chain.webp"
+-}}
+{{- with .Params.category }}{{ with index $bgMap . }}{{ $heroBg = . }}{{ end }}{{ end -}}
 
-<!-- PAGE HERO -->
-<section class="page-hero-sub">
-  <div class="hero-badge-inline">{{ if hasPrefix $stripped "/beginner/" }}🚀{{ else if hasPrefix $stripped "/automation-guide/" }}⚙️{{ else if hasPrefix $stripped "/building-tutorial/" }}🏗️{{ else if hasPrefix $stripped "/resources/" }}🪨{{ else if hasPrefix $stripped "/map/" }}🌌{{ else if hasPrefix $stripped "/contact/" }}📧{{ else if hasPrefix $stripped "/power-management/" }}⚡{{ else if hasPrefix $stripped "/gas-systems/" }}💨{{ else }}📖{{ end }} {{ .Title | truncate 40 }}</div>
-  <h1 class="hero-title-sub">{{ .Title }}{{ if .Params.version }} <span class="version-tag">[Version {{ .Params.version }}]</span>{{ end }}</h1>
-  {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
-  {{ partial "breadcrumb" . }}
+{{/* ─── HERO (no emoji per SOP 07) ─── */}}
+<section class="hero-sub-page" style="--sub-hero-bg: url('{{ $heroBg | absURL }}');">
+  <div class="hero-sub-content">
+    <h1 class="hero-title-sub">{{ .Title }}{{ if .Params.version }}<span class="version-tag"> [Version {{ .Params.version }}]</span>{{ end }}</h1>
+    {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
+  </div>
 </section>
 
-<!-- BANNER (injected per-page, optional) -->
-{{ with .Params.banner }}
-<div class="page-banner">
-  <img src="{{ . }}" alt="" class="page-banner-img" loading="lazy">
-</div>
 {{ end }}
 
-<!-- CONTENT -->
-<article class="content-body">
+{{ define "main" }}
+
+{{/* ─── CONTENT ─── */}}
+<article class="content-body content-body-fixed">
   {{ .Content }}
 </article>
-
-<!-- Adsterra Ad after article content -->
-{{ partial "ads.html" . }}
-
-<!-- CTA — temporarily disabled
-<div class="cta-block">
-  <div class="cta-inner">
-    <h2>📖 Didn't find what you need?</h2>
-    <p>Head back to the homepage for all guides, or reach out directly.</p>
-    <a href="/" class="btn btn-ignite">🏠 Back to Home</a>
-    <a href="/contact/" class="btn btn-outline">📧 Contact</a>
-  </div>
-</div>
--->
 
 {{ end }}

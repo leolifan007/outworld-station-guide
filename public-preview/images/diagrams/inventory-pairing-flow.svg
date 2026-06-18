@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="background:#1A2533;font-family:Arial,sans-serif">
+  <defs><marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#00D4AA"/></marker></defs>
+  <text x="400" y="28" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">Advanced Inventory Pairing - Demand-First Flow</text>
+  <rect x="50" y="50" width="200" height="50" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="150" y="68" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Supply Source</text>
+  <text x="150" y="86" text-anchor="middle" fill="#8899AA" font-size="11">Smelter - Iron Plates</text>
+  <line x1="250" y1="75" x2="320" y2="75" stroke="#667788" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="325" y="50" width="150" height="50" rx="6" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="400" y="68" text-anchor="middle" fill="#00D4AA" font-size="13" font-weight="bold">Buffer Chest</text>
+  <text x="400" y="86" text-anchor="middle" fill="#8899AA" font-size="11">500 Iron Plates</text>
+  <line x1="475" y1="75" x2="545" y2="75" stroke="#667788" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="550" y="50" width="200" height="50" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="650" y="68" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Demand Consumers</text>
+  <text x="650" y="86" text-anchor="middle" fill="#8899AA" font-size="11">8 Assemblers pulling from buffer</text>
+  <rect x="25" y="130" width="750" height="2" fill="#667788"/>
+  <text x="400" y="155" text-anchor="middle" fill="#4A9EFF" font-size="14" font-weight="bold">Priority Chaining Example</text>
+  <rect x="30" y="170" width="140" height="35" rx="4" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="100" y="192" text-anchor="middle" fill="#00D4AA" font-size="11">P1: Research Lab</text>
+  <line x1="170" y1="187" x2="200" y2="187" stroke="#667788" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="205" y="170" width="140" height="35" rx="4" fill="#1A2A3A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="275" y="192" text-anchor="middle" fill="#4A9EFF" font-size="11">P2: Assemblers</text>
+  <line x1="345" y1="187" x2="375" y2="187" stroke="#667788" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="380" y="170" width="140" height="35" rx="4" fill="#1A2A3A" stroke="#FF6B35" stroke-width="1.5"/>
+  <text x="450" y="192" text-anchor="middle" fill="#FF6B35" font-size="11">P3: Storage</text>
+  <rect x="30" y="225" width="740" height="55" rx="4" fill="#1A2A3A" stroke="#667788" stroke-width="1"/>
+  <text x="400" y="245" text-anchor="middle" fill="#E0E0E0" font-size="11">Overflow Routing: P1 saturated -> Overflows to P2 -> P2 saturated -> Overflows to P3</text>
+  <rect x="150" y="300" width="500" height="40" rx="6" fill="#0A2A1A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="318" text-anchor="middle" fill="#00D4AA" font-size="11">Key: Always pair from demand side, not supply side</text>
+  <text x="400" y="335" text-anchor="middle" fill="#8899AA" font-size="10">Demand-driven pairs auto-balance. Supply-driven pairs flood nearest consumer.</text>
+  <rect x="150" y="360" width="500" height="30" rx="4" fill="#2A1A1A" stroke="#FF6B35" stroke-width="1"/>
+  <text x="400" y="380" text-anchor="middle" fill="#FF6B35" font-size="11">Result: 8 assemblers pull from 1 buffer = 95% uptime (was 55%)</text>
+</svg>

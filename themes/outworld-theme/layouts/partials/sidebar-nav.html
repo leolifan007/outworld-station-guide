@@ -1,29 +1,48 @@
 {{ $current := .RelPermalink }}
+{{ $currentCategory := .Params.category }}
 
 <nav class="sidebar-nav" id="sidebarNav">
   <div class="section-label">Guides</div>
-  <a href="/" class="{{ if .IsHome }}active{{ end }}"><span class="nav-icon">🏠</span> Home</a>
+  <a href="/" class="{{ if .IsHome }}active{{ end }}"> Home</a>
 
-  {{ $links := slice
-    (dict "path" "beginner/" "icon" "🚀" "name" "Beginner Guide")
-    (dict "path" "power-management/" "icon" "⚡" "name" "Power")
-    (dict "path" "gas-systems/" "icon" "💨" "name" "Gas Systems")
-    (dict "path" "automation-guide/" "icon" "⚙️" "name" "Automation")
-    (dict "path" "building-tutorial/" "icon" "🏗️" "name" "Buildings")
-    (dict "path" "resources/" "icon" "🪨" "name" "Resources")
-    (dict "path" "guides/" "icon" "📚" "name" "All Guides")
-  }}
-  {{ range $links }}
-    {{ $href := printf "/%s" .path }}
-    {{ $active := "" }}{{ if eq $current $href }}{{ $active = "active" }}{{ end }}
-    <a href="{{ $href }}" class="{{ $active }}"><span class="nav-icon">{{ .icon }}</span> {{ .name }}</a>
-  {{ end }}
+  {{- $categories := slice
+    (dict "id" "beginner" "name" "Beginner")
+    (dict "id" "power" "name" "Power & Energy")
+    (dict "id" "production" "name" "Production")
+    (dict "id" "logistics" "name" "Logistics")
+    (dict "id" "defense" "name" "Defense")
+    (dict "id" "economy" "name" "Economy")
+    (dict "id" "strategy" "name" "Strategy")
+    (dict "id" "exploration" "name" "Exploration")
+    (dict "id" "reference" "name" "Reference")
+  -}}
 
-  <div class="section-label">Interactive</div>
-  <a href="/map/"><span class="nav-icon">🌌</span> Star Map</a>
+  {{- /* Count pages per category (exclude portal page itself) */ -}}
+  {{- $catCounts := dict -}}
+  {{- range $c := $categories -}}
+    {{- $pages := where $.Site.Pages "Params.category" "==" $c.id -}}
+    {{- $pages = where $pages "RelPermalink" "ne" (printf "/%s/" $c.id) -}}
+    {{- $catCounts = merge $catCounts (dict $c.id (len $pages)) -}}
+  {{- end -}}
+
+  {{- range $i, $c := $categories -}}
+    {{- $catLink := printf "/%s/" $c.id -}}
+    {{- $isActive := or (eq $currentCategory $c.id) (eq $current $catLink) -}}
+    {{- /* Find first article in this category (by publishedAt) */ -}}
+    {{- $catPages := where $.Site.Pages "Params.category" "==" $c.id -}}
+    {{- $catPages = where $catPages "RelPermalink" "ne" $catLink -}}
+    {{- $sorted := sort $catPages "Params.publishedAt" "desc" -}}
+    {{- $firstPage := index $sorted 0 -}}
+    {{- $targetUrl := $catLink -}}
+    {{- if $firstPage }}{{ $targetUrl = $firstPage.RelPermalink }}{{ end -}}
+    <a href="{{ $targetUrl }}" class="l1-link{{ if $isActive }} active{{ end }}" data-category="{{ $c.id }}">
+      <span class="l1-name">{{ $c.name }}</span>
+      <span class="l1-count">{{ index $catCounts $c.id }}</span>
+    </a>
+  {{- end -}}
 
   <div class="section-label">More</div>
-  <a href="/about/"><span class="nav-icon">ℹ️</span> About</a>
-  <a href="/contact/"><span class="nav-icon">📧</span> Contact</a>
-  <a href="/privacy/"><span class="nav-icon">🔒</span> Privacy</a>
+  <a href="/about/"> About</a>
+  <a href="/contact/"> Contact</a>
+  <a href="/privacy/"> Privacy</a>
 </nav>

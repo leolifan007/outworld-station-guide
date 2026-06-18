@@ -1,0 +1,16 @@
+{{- /* Maps category ID to display name */ -}}
+{{- $cat := . -}}
+{{- if not $cat -}}{{ "Guide" }}{{- else -}}
+{{- $names := dict
+  "beginner" "Beginner"
+  "power" "Power & Energy"
+  "production" "Production"
+  "logistics" "Logistics"
+  "defense" "Defense"
+  "economy" "Economy"
+  "strategy" "Strategy"
+  "exploration" "Exploration"
+  "reference" "Reference"
+-}}
+{{- index $names $cat | default "Guide" -}}
+{{- end -}}

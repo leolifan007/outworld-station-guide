@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" style="background:#1A2533;font-family:Arial,sans-serif">
+  <defs><marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#00D4AA"/></marker></defs>
+  <text x="400" y="28" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">Module Component Manufacturing Chain</text>
+  <rect x="20" y="50" width="120" height="40" rx="4" fill="#3A2A1A" stroke="#FF6B35" stroke-width="1.5"/>
+  <text x="80" y="75" text-anchor="middle" fill="#FF6B35" font-size="11">Raw Materials</text>
+  <line x1="140" y1="70" x2="180" y2="70" stroke="#667788" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="185" y="50" width="120" height="40" rx="4" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="245" y="65" text-anchor="middle" fill="#4A9EFF" font-size="11">Smelters</text>
+  <text x="245" y="80" text-anchor="middle" fill="#8899AA" font-size="10">Ore to Ingot</text>
+  <line x1="305" y1="70" x2="345" y2="70" stroke="#667788" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="350" y="45" width="130" height="50" rx="4" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="415" y="63" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">Component Lines</text>
+  <text x="415" y="80" text-anchor="middle" fill="#8899AA" font-size="10">Circuits, Frames, etc</text>
+  <line x1="480" y1="70" x2="520" y2="70" stroke="#667788" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="525" y="50" width="120" height="40" rx="4" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="585" y="65" text-anchor="middle" fill="#4A9EFF" font-size="11">Component</text>
+  <text x="585" y="80" text-anchor="middle" fill="#8899AA" font-size="10">Warehouse</text>
+  <line x1="645" y1="70" x2="685" y2="70" stroke="#667788" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="690" y="50" width="90" height="40" rx="4" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="735" y="75" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">Station</text>
+  <rect x="10" y="120" width="780" height="60" rx="4" fill="#1A2A3A" stroke="#667788" stroke-width="1"/>
+  <text x="400" y="140" text-anchor="middle" fill="#4A9EFF" font-size="12" font-weight="bold">Component Throughput (per Assembler)</text>
+  <text x="130" y="160" text-anchor="middle" fill="#E0E0E0" font-size="11">Circuit Array: 40/hr</text>
+  <text x="330" y="160" text-anchor="middle" fill="#E0E0E0" font-size="11">Structural Frame: 30/hr</text>
+  <text x="530" y="160" text-anchor="middle" fill="#E0E0E0" font-size="11">Power Cell: 60/hr</text>
+  <text x="700" y="160" text-anchor="middle" fill="#E0E0E0" font-size="11">Processor: 20/hr</text>
+  <rect x="50" y="200" width="160" height="55" rx="4" fill="#1A2A3A" stroke="#FF6B35" stroke-width="1"/>
+  <text x="130" y="218" text-anchor="middle" fill="#FF6B35" font-size="11">Build Priority:</text>
+  <text x="130" y="233" text-anchor="middle" fill="#E0E0E0" font-size="10">1. Circuit Array (most used)</text>
+  <text x="130" y="248" text-anchor="middle" fill="#E0E0E0" font-size="10">2. Structural Frame</text>
+  <rect x="290" y="200" width="160" height="55" rx="4" fill="#1A2A3A" stroke="#FF6B35" stroke-width="1"/>
+  <text x="370" y="218" text-anchor="middle" fill="#FF6B35" font-size="11">Scale Rule:</text>
+  <text x="370" y="233" text-anchor="middle" fill="#E0E0E0" font-size="10">1 line per component</text>
+  <text x="370" y="248" text-anchor="middle" fill="#E0E0E0" font-size="10">Duplicate if wait &gt; 30 min</text>
+  <rect x="530" y="200" width="200" height="55" rx="4" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="630" y="218" text-anchor="middle" fill="#00D4AA" font-size="11">Inventory Pair Setup:</text>
+  <text x="630" y="233" text-anchor="middle" fill="#E0E0E0" font-size="10">Input: Pull from smelter bus</text>
+  <text x="630" y="248" text-anchor="middle" fill="#E0E0E0" font-size="10">Output: Push to warehouse</text>
+  <rect x="200" y="280" width="400" height="30" rx="4" fill="#0A2A1A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="300" text-anchor="middle" fill="#00D4AA" font-size="11">With 2 lines per component: never wait for upgrades again</text>
+</svg>

@@ -1,0 +1,402 @@
+/* ═══════════════════════════════════════════
+   HOMEPAGE — "Astro-Industrial Terminal" style
+   ═══════════════════════════════════════════ */
+
+/* ─── Section container ─── */
+.hp-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.hp-section + .hp-section {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(58,123,213,0.06);
+  margin-top: 2.5rem;
+}
+
+/* ─── Section heading ─── */
+.hp-section-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.hp-section-head::after {
+  content: '';
+  flex: 1;
+  min-width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(58,123,213,0.25), transparent);
+}
+.hp-section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.01em;
+}
+.hp-section-icon { font-size: 1.1rem; line-height: 1; }
+.hp-section-count {
+  font-size: 0.68rem;
+  color: rgba(200,214,232,0.3);
+  background: rgba(58,123,213,0.06);
+  padding: 2px 9px;
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(58,123,213,0.06);
+}
+
+/* ═══════════════════════════════════════════
+   NEW GUIDES — image-less accent-bar cards
+   ═══════════════════════════════════════════ */
+
+.hp-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .hp-card-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+@media (max-width: 420px) {
+  .hp-card-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Card (no images) ── */
+.hp-card {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(12,20,36,0.55);
+  border: 1px solid rgba(58,123,213,0.06);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+/* Left accent bar */
+.hp-card-bar {
+  width: 3px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #00D4AA 0%, rgba(0,212,170,0.3) 100%);
+  opacity: 0.5;
+  transition: opacity 0.3s, width 0.3s;
+}
+
+/* Card content area */
+.hp-card-inner {
+  flex: 1;
+  padding: 12px 14px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Meta line: category + NEW badge */
+.hp-card-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hp-card-cat {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: rgba(0,212,170,0.7);
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  padding: 1px 7px;
+  background: rgba(0,212,170,0.04);
+  border: 1px solid rgba(0,212,170,0.07);
+  border-radius: 4px;
+}
+
+.hp-card-new {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #E8983E;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(232,152,62,0.1);
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid rgba(232,152,62,0.15);
+}
+
+/* Title */
+.hp-card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #E8F0FA;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Description */
+.hp-card-desc {
+  font-size: 0.7rem;
+  color: rgba(200,214,232,0.4);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* Footer: date + read link */
+.hp-card-foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  margin-top: auto;
+}
+
+.hp-card-date {
+  font-size: 0.6rem;
+  color: rgba(200,214,232,0.25);
+  letter-spacing: 0.02em;
+}
+
+.hp-card-read {
+  margin-left: auto;
+  font-size: 0.65rem;
+  color: #00D4AA;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.25s, transform 0.25s;
+  letter-spacing: 0.02em;
+}
+
+/* ── Hover states ── */
+.hp-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0,212,170,0.12);
+  background: rgba(12,20,36,0.75);
+  box-shadow:
+    0 8px 28px rgba(0,0,0,0.35),
+    0 0 0 1px rgba(0,212,170,0.04),
+    inset 0 1px 0 rgba(0,212,170,0.03);
+}
+.hp-card:hover .hp-card-bar {
+  opacity: 1;
+  width: 4px;
+}
+.hp-card:hover .hp-card-title {
+  color: #fff;
+}
+.hp-card:hover .hp-card-read {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* ═══════════════════════════════════════════
+   CATEGORY — image-backed cards with solid text panel
+   ═══════════════════════════════════════════ */
+
+.hp-section-categories {
+  padding: 0 1.5rem;
+}
+
+.hp-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+@media (max-width: 640px) {
+  .hp-cat-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+@media (max-width: 420px) {
+  .hp-cat-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Card ── */
+.hp-cat-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 220px;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  border: 1px solid rgba(58,123,213,0.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+/* Background image */
+.hp-cat-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 30%;
+  background-color: #0C1424;
+  transition: transform 0.45s ease;
+}
+
+/* Frost/gradient overlay over image */
+.hp-cat-frost {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(8,12,22,0.30) 0%,
+    rgba(8,12,22,0.50) 35%,
+    rgba(8,12,22,0.75) 55%,
+    rgba(8,12,22,0.92) 100%
+  );
+}
+
+/* Bottom solid text panel */
+.hp-cat-body {
+  position: relative;
+  z-index: 3;
+  margin-top: auto;
+  padding: 1rem 1.25rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(10,18,32,0.7) 0%,
+    rgba(10,18,32,0.92) 100%
+  );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-top: 1px solid rgba(58,123,213,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hp-cat-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hp-cat-icon {
+  font-size: 1rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.04);
+  flex-shrink: 0;
+}
+
+.hp-cat-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.hp-cat-desc {
+  font-size: 0.75rem;
+  color: rgba(200,214,232,0.55);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.hp-cat-foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+.hp-cat-count {
+  font-size: 0.62rem;
+  color: rgba(200,214,232,0.35);
+  background: rgba(0,0,0,0.25);
+  padding: 2px 9px;
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+}
+
+.hp-cat-arrow {
+  margin-left: auto;
+  font-size: 0.68rem;
+  color: #00D4AA;
+  font-weight: 600;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+  letter-spacing: 0.02em;
+}
+
+/* ── Hover ── */
+.hp-cat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0,212,170,0.15);
+  box-shadow:
+    0 10px 35px rgba(0,0,0,0.35),
+    0 0 0 1px rgba(0,212,170,0.04);
+}
+.hp-cat-card:hover .hp-cat-img {
+  transform: scale(1.06);
+}
+.hp-cat-card:hover .hp-cat-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* ═══════════════════════════════════════════
+   LINK ROW
+   ═══════════════════════════════════════════ */
+
+.hp-link-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.hp-link-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7rem 1rem;
+  background: rgba(12,20,36,0.4);
+  border: 1px solid rgba(58,123,213,0.06);
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgba(200,214,232,0.45);
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  min-width: 140px;
+}
+.hp-link-card:hover {
+  border-color: rgba(58,123,213,0.15);
+  color: #E8F0FA;
+  background: rgba(12,20,36,0.65);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.hp-link-icon {
+  font-size: 1rem;
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}

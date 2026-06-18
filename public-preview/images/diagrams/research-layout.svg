@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="20" text-anchor="middle" fill="#C8D6E8" font-size="11" font-weight="bold">Research Layout</text>
+
+  <!-- Research Items Storage -->
+  <rect x="300" y="35" width="200" height="30" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="400" y="55" text-anchor="middle" fill="#FFB347" font-size="9">Research Items Storage</text>
+
+  <line x1="400" y1="65" x2="400" y2="75" stroke="#00D4AA" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Labs -->
+  <rect x="100" y="80" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="160" y="100" text-anchor="middle" fill="#4A9EFF" font-size="9">Lab 1</text>
+
+  <rect x="240" y="80" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="300" y="100" text-anchor="middle" fill="#4A9EFF" font-size="9">Lab 2</text>
+
+  <rect x="380" y="80" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="440" y="100" text-anchor="middle" fill="#4A9EFF" font-size="9">Lab 3</text>
+
+  <rect x="520" y="80" width="120" height="30" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="580" y="100" text-anchor="middle" fill="#4A9EFF" font-size="9">Lab 4</text>
+</svg>

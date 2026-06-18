@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%" height="auto">
+<defs>
+  <filter id="g"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/></filter>
+  <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#3A7BD5" opacity="0.6"/></marker>
+  <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#080C16"/><stop offset="100%" stop-color="#0B1422"/></linearGradient>
+  <linearGradient id="box-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#111D35"/><stop offset="100%" stop-color="#0B1422"/></linearGradient>
+  <style>
+    .bg{fill:url(#bg-grad)}.box{fill:url(#box-grad);stroke:#1A2E50;stroke-width:1}
+    .box-hl{fill:url(#box-grad);stroke:#3A7BD5;stroke-width:1.5}
+    .box-red{fill:#1C0A14;stroke:#D86060;stroke-width:1.5}
+    .l{font:13px 'Segoe UI',sans-serif;fill:#C8D6E8;text-anchor:middle}
+    .ls{font:11px 'Segoe UI',sans-serif;fill:#7A8EA8;text-anchor:middle}
+    .m{font:10px 'JetBrains Mono',monospace;fill:#00D4AA;text-anchor:middle}
+    .d{font:12px 'Segoe UI',sans-serif;fill:#D86060;text-anchor:middle;font-weight:600}
+    .g{font:12px 'Segoe UI',sans-serif;fill:#F0C95A;text-anchor:middle;font-weight:600}
+    .title{font:15px 'Segoe UI',sans-serif;fill:#E8F0FA;text-anchor:middle;font-weight:700}
+    .conn{stroke:#3A7BD5;stroke-width:2;fill:none;opacity:0.6}
+    .sep{stroke:#1A2E50;stroke-width:1;opacity:0.2}
+  </style>
+</defs>
+<rect class="bg" width="900" height="340" rx="8" filter="url(#g)"/>
+<text x="450" y="28" class="title">Nitrox Fuel Supply Chain</text>
+
+<!-- Node 1 -->
+<rect x="25" y="80" width="100" height="55" rx="6" class="box"/>
+<text x="75" y="100" class="l">Asteroid</text>
+<text x="75" y="120" class="m">Mining Drone</text>
+
+<line x1="125" y1="107" x2="155" y2="107" class="conn" marker-end="url(#arrow)"/>
+
+<!-- Node 2 -->
+<rect x="160" y="80" width="100" height="55" rx="6" class="box"/>
+<text x="210" y="100" class="l">Smelter</text>
+<text x="210" y="120" class="m">Raw Ore → Processed</text>
+
+<line x1="260" y1="107" x2="290" y2="107" class="conn" marker-end="url(#arrow)"/>
+
+<!-- Node 3 -->
+<rect x="295" y="70" width="120" height="75" rx="6" class="box-hl"/>
+<text x="355" y="92" class="l" fill="#3A7BD5">Refinery</text>
+<text x="355" y="112" class="m" fill="#3A7BD5">O2 + H2</text>
+<text x="355" y="130" class="ls">⛔ keep powered</text>
+
+<line x1="415" y1="95" x2="445" y2="85" class="conn" marker-end="url(#arrow)"/>
+<line x1="415" y1="120" x2="445" y2="140" class="conn" marker-end="url(#arrow)"/>
+
+<!-- Node 4 -->
+<rect x="450" y="65" width="100" height="45" rx="6" class="box"/>
+<text x="500" y="82" class="l">O2 + H2 Tanks</text>
+<text x="500" y="100" class="ls">buffer storage</text>
+
+<!-- Node 5 -->
+<rect x="450" y="120" width="100" height="45" rx="6" class="box"/>
+<text x="500" y="137" class="l" fill="#00D4AA">Nitrox Synth</text>
+<text x="500" y="155" class="ls">reactor fuel</text>
+
+<line x1="550" y1="87" x2="580" y2="142" class="sep"/>
+<line x1="550" y1="142" x2="590" y2="142" class="conn" marker-end="url(#arrow)"/>
+
+<!-- Node 6 -->
+<rect x="595" y="65" width="120" height="120" rx="6" class="box-red"/>
+<text x="655" y="88" class="d">Fusion Reactor</text>
+<line x1="610" y1="98" x2="700" y2="98" stroke="#D86060" stroke-width="0.5" opacity="0.3"/>
+<text x="655" y="115" class="ls">Consumes 12-30/min</text>
+<text x="655" y="135" class="d">Fuel: 5-8 min</text>
+<text x="655" y="158" class="d">⛔ Out = Dead Station</text>
+
+<!-- Warning banner -->
+<rect x="200" y="190" width="500" height="35" rx="6" fill="#D86060" fill-opacity="0.08" stroke="#D86060" stroke-width="1" stroke-dasharray="4,2"/>
+<text x="450" y="213" class="d">If any link breaks, reactor runs dry in minutes — dedicated fuel line is mandatory</text>
+
+<!-- Bottom -->
+<text x="450" y="270" class="g">★ Golden Rule: Dedicated Nitrox production on its own power grid</text>
+<text x="450" y="295" class="ls">Shared logistics is the #1 cause of unexpected blackouts</text>
+
+<rect x="170" y="310" width="560" height="20" rx="4" fill="#3A7BD5" fill-opacity="0.05" stroke="#3A7BD5" stroke-width="0.5" opacity="0.4"/>
+<text x="450" y="324" class="ls" fill="#3A7BD5" opacity="0.6">Asteroid → Mine → Smelter → Refinery (O2+H2) → Nitrox Synth → Fusion Reactor</text>
+</svg>
