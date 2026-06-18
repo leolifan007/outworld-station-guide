@@ -4,7 +4,7 @@
 <section class="hero">
   <div class="hero-bg" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')"></div>
   <div class="hero-content">
-    <div class="hero-badge">🛸 Updated May 2026 · Player-Tested Guide</div>
+    <div class="hero-badge">🛸 Updated June 2026 · Player-Tested Guide</div>
     <h1>Outworld Station <span class="nobreak highlight">Guide</span></h1>
     <p class="hero-sub">
       Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.
@@ -12,113 +12,124 @@
   </div>
 </section>
 
-<!-- HOT GUIDES (only articles published in last 30 days) -->
-{{ $recentPages := slice }}
-{{ range where .Site.Pages "Section" "guides" }}
-  {{ if and (not .Params.hidden) .Params.publishedAt }}
-    {{ $pubTime := time.AsTime .Params.publishedAt }}
-    {{ $daysSince := div (sub now.Unix $pubTime.Unix) 86400 }}
-    {{ if le $daysSince 365 }}
-      {{ $recentPages = $recentPages | append . }}
-    {{ end }}
+{{/* ─── HOT GUIDES (last 14 days) ─── */}}
+{{ $hotPages := slice }}
+{{ range where .Site.Pages "Params.publishedAt" "!=" nil }}
+  {{ $pubTime := time.AsTime .Params.publishedAt }}
+  {{ $daysSince := div (sub now.Unix $pubTime.Unix) 86400 }}
+  {{ if and (le $daysSince 365) (not .Params.hidden) }}
+    {{ $hotPages = $hotPages | append . }}
   {{ end }}
 {{ end }}
-{{ if gt (len $recentPages) 0 }}
-<section class="intro-section" style="padding-top:1.5rem;padding-bottom:0.5rem;">
-  <div class="hot-guides-section">
-    <div class="section-heading">🔥 Hot Guides</div>
-    <div class="guide-grid">
-      {{ range $idx, $page := first 8 $recentPages.ByDate.Reverse }}
-      <a href="{{ .RelPermalink }}" class="guide-card hot" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-        {{ $pubTime2 := time.AsTime .Params.publishedAt }}{{ if lt (div (sub now.Unix $pubTime2.Unix) 86400) 14 }}<span class="new-badge">NEW</span>{{ end }}
-        {{ with .Params.publishedAt }}<div class="card-tag">{{ (time.AsTime .).Format "Jan 2, 2006" }}</div>{{ end }}
-        <h3 style="font-size:0.9rem;margin-bottom:0.3rem;color:inherit;line-height:1.3;">{{ .Title | truncate 55 }}</h3>
-        {{ with .Description }}<p style="font-size:0.78rem;color:var(--space-text-dim,rgba(255,255,255,0.5));margin-bottom:0.5rem;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{{ . | truncate 70 }}</p>{{ end }}
-        <div class="card-link" style="margin-top:auto;">Read More →</div>
-      </a>
+
+{{ if gt (len $hotPages) 0 }}
+<section class="hp-section">
+  <div class="hp-section-head">
+    <h2 class="hp-section-title"><span class="hp-section-icon">🔥</span> New Guides</h2>
+    <span class="hp-section-count">{{ len $hotPages }} articles</span>
+  </div>
+  <div class="hp-card-row">
+    {{ range first 4 $hotPages.ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" class="hp-card hp-card-hot">
+      {{ $thumb := "" }}
+      {{ $catName := .Params.category | default "guide" }}
+      {{ if .Params.thumbnail }}
+        {{ $thumb = .Params.thumbnail | absURL }}
+      {{ else }}
+        {{ $thumb = "" }}
       {{ end }}
-    </div>
-    <div style="text-align:center;margin-top:0.75rem;">
-      <a href="/guides/" class="btn btn-outline">📚 View All Guides →</a>
-    </div>
+      <div class="hp-card-img"{{ if $thumb }} style="background-image: url('{{ $thumb }}')"{{ end }}>
+        {{ if not $thumb }}
+        <div class="hp-card-img-placeholder">📖</div>
+        {{ end }}
+        {{ if lt (div (sub now.Unix (time.AsTime .Params.publishedAt).Unix) 86400) 14 }}
+          <span class="hp-card-badge-new">NEW</span>
+        {{ end }}
+        {{ if $catName }}
+        <span class="hp-card-cat-tag">{{ $catName }}</span>
+        {{ end }}
+      </div>
+      <div class="hp-card-body">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Description | safeHTML | truncate 100 }}</p>
+        <div class="hp-card-footer">
+          <span class="hp-card-date">{{ (time.AsTime .Params.publishedAt).Format "Jan 2, 2006" }}</span>
+          <span class="hp-card-read">Read →</span>
+        </div>
+      </div>
+    </a>
+    {{ end }}
   </div>
 </section>
+
 {{ end }}
 
-<!-- MUST-READ GUIDES -->
-<section class="intro-section" style="padding-top:1.5rem;">
-  <h2>📖 Must-Read Guides</h2>
-  <p>Start here if you are new. These cover everything you need to get your station running.</p>
+{{/* ─── CATEGORY BLOCKS — ONE card per category ─── */}}
+{{ $categories := slice
+  (dict "id" "beginner"    "icon" "🚀" "name" "Beginner"       "desc" "Start here. 60 minutes to your first automation." "img" "/images/beginner-hero.webp")
+  (dict "id" "power"       "icon" "⚡" "name" "Power & Energy" "desc" "Solar, reactors, fusion. Never black out."     "img" "/images/power-evolution.webp")
+  (dict "id" "production"  "icon" "🔧" "name" "Production"    "desc" "Smelters, alloys, and processing chains."    "img" "/images/smelter-line.webp")
+  (dict "id" "logistics"   "icon" "🚚" "name" "Logistics"      "desc" "Freighters, pipes, wormholes, storage."      "img" "/images/logistics-overview.webp")
+  (dict "id" "defense"     "icon" "🛡️" "name" "Defense"        "desc" "Shields, turrets, and station protection."   "img" "/images/shield-gen.webp")
+  (dict "id" "economy"     "icon" "💰" "name" "Economy"        "desc" "Trading, contracts, passive income."         "img" "/images/circuit-board.webp")
+  (dict "id" "strategy"    "icon" "📈" "name" "Strategy"       "desc" "Research, expansion, layouts."               "img" "/images/inventory-pair.webp")
+  (dict "id" "exploration" "icon" "🌍" "name" "Exploration"   "desc" "Planets, gas giants, deep space."            "img" "/images/wormhole-gen.webp")
+  (dict "id" "reference"   "icon" "📊" "name" "Reference"      "desc" "Tier lists, fixes, quick numbers."           "img" "/images/processing-chain.webp")
+}}
 
-  <div class="guide-grid">
-    <a href="{{ "beginner/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">🚀 Beginner</div>
-      <h3>Beginner Guide</h3>
-      <p>Zero to automated production in 60 minutes. Station setup, first drill, smelter, assembly line. No prior knowledge needed.</p>
-      <div class="card-link">Read →</div>
-    </a>
-    <a href="{{ "power-management/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">⚡ Power</div>
-      <h3>Power Management</h3>
-      <p>Solar panels to fusion reactors. Grid zoning, battery ratios, and how to never black out again. Real tested build order.</p>
-      <div class="card-link">Read →</div>
-    </a>
-    <a href="{{ "gas-systems/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">💨 Gas</div>
-      <h3>Gas Systems</h3>
-      <p>Oxygen keeps you alive. Nitrox fuels your reactor. Build the gas setup right the first time instead of scrambling.</p>
-      <div class="card-link">Read →</div>
-    </a>
-    <a href="{{ "automation-guide/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">⚙️ Automation</div>
-      <h3>Automation Deep Dive</h3>
-      <p>Inventory Pairing, wormhole supply chains, bottleneck hunting. The invisible logistics system — once it clicks, it is genius.</p>
-      <div class="card-link">Read →</div>
-    </a>
+<section class="hp-section hp-section-categories">
+  <div class="hp-section-head">
+    <h2 class="hp-section-title"><span class="hp-section-icon">📂</span> Browse by Topic</h2>
+    <span class="hp-section-count">9 categories</span>
   </div>
+  <div class="hp-cat-grid">
+    {{ range $categories }}
+      {{ $catId := .id }}
+      {{ $catPages := where $.Site.Pages "Params.category" "==" $catId }}
+      {{ $catPages = where $catPages "RelPermalink" "ne" (printf "/%s/" $catId) }}
+      {{ $catPages = sort $catPages "Params.publishedAt" "desc" }}
+      {{ $firstPage := index $catPages 0 }}
+      {{ $catCount := len $catPages }}
+      {{ $targetUrl := printf "/%s/" $catId }}
+      {{ if $firstPage }}{{ $targetUrl = $firstPage.RelPermalink }}{{ end }}
 
-  <!-- REFERENCE GUIDES -->
-  <h2 style="margin-top:2rem;">🧰 Reference Guides</h2>
-  <p>Deep dives on station logistics, blueprints, and interactive tools.</p>
-  <div class="guide-grid">
-    <a href="{{ "building-tutorial/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">🏗️ Buildings</div>
-      <h3>Building Tutorial</h3>
-      <p>Every station module explained — miners, smelters, assemblers, connectors, and storage. Blueprint layouts that just work.</p>
-      <div class="card-link">Read →</div>
-    </a>
-    <a href="{{ "resources/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">🪨 Resources</div>
-      <h3>Resources Reference</h3>
-      <p>Full material list, processing chains, and what you need for each station level. From iron to endgame alloys.</p>
-      <div class="card-link">Read →</div>
-    </a>
-    <a href="{{ "map/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">🌌 Star Map</div>
-      <h3>Interactive Star Map</h3>
-      <p>Visual guide to all station modules, resource nodes, and production chains. Click to explore.</p>
-      <div class="card-link">Explore →</div>
-    </a>
-    <a href="{{ "guides/" | relURL }}" class="guide-card must-read" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">
-      <div class="card-tag">📚 All Guides</div>
-      <h3>Browse All Guides</h3>
-      <p>Fusion reactors, pipe bottlenecks, beginner mistakes, ship building, tier lists — every guide in one place.</p>
-      <div class="card-link">Browse →</div>
-    </a>
+      <a href="{{ $targetUrl }}" class="hp-cat-card">
+        <div class="hp-cat-img" style="background-image: url('{{ .img | absURL }}')"></div>
+        <div class="hp-cat-overlay">
+          <div class="hp-cat-top">
+            <span class="hp-cat-icon">{{ .icon }}</span>
+            <h3 class="hp-cat-name">{{ .name }}</h3>
+          </div>
+          <p class="hp-cat-desc">{{ .desc }}</p>
+          <div class="hp-cat-footer">
+            <span class="hp-cat-count">{{ $catCount }} guides</span>
+            <span class="hp-cat-arrow">Explore →</span>
+          </div>
+        </div>
+      </a>
+    {{ end }}
   </div>
-
-  <h2 style="margin-top:2rem;">🤔 Missing something?</h2>
-  <p>This guide is still growing. Need something specific? <a href="{{ "contact/" | relURL }}">Let me know</a>.</p>
 </section>
 
-<!-- CTA — temporarily disabled
-<div class="cta-block">
-  <div class="cta-inner">
-    <h2>🚀 Ready to build?</h2>
-    <p>One hour to your first production line.</p>
-    <a href="{{ "beginner/" | relURL }}" class="btn btn-ignite">🔥 Start Here →</a>
+<section class="hp-section hp-section-links">
+  <div class="hp-card-row hp-link-row">
+    <a href="/map/" class="hp-link-card">
+      <span class="hp-link-icon">🌌</span>
+      <span class="hp-link-text">Interactive Star Map</span>
+    </a>
+    <a href="/about/" class="hp-link-card">
+      <span class="hp-link-icon">ℹ️</span>
+      <span class="hp-link-text">About This Guide</span>
+    </a>
+    <a href="/contact/" class="hp-link-card">
+      <span class="hp-link-icon">📧</span>
+      <span class="hp-link-text">Contact / Feedback</span>
+    </a>
+    <a href="{{ .Site.Params.steam_url }}" class="hp-link-card" target="_blank" rel="noopener">
+      <span class="hp-link-icon">🎮</span>
+      <span class="hp-link-text">Steam Page</span>
+    </a>
   </div>
-</div>
--->
+</section>
 
 {{ end }}
