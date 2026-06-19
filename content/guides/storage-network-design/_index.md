@@ -47,7 +47,7 @@ Basic chests are your first-week friend and your first-month bottleneck. Upgrade
 
 <div class="callout callout-tip">
 
-**Pro tip: overflow management.** Every buffer chest in Zone 1 should have its last slot reserved (right-click the slot) for overflow detection. When that slot fills, send a signal to your alert system or dump excess into an overflow warehouse. Otherwise a single backed-up iron plate line will stall your entire sorting loop.
+**Pro tip: overflow management.** Every buffer chest in Zone 1 should have its last slot reserved (right-click the slot) for overflow detection. When that slot fills, send a signal to your alert system or dump excess into an overflow warehouse. Otherwise a single backed-up iron plate line will stall your entire sorting loop. Combined buffer strategies are covered in our [Buffer Storage Strategy Guide](/guides/buffer-storage-strategy/).
 
 </div>
 
@@ -69,7 +69,7 @@ This is also where [inventory pairing](/guides/advanced-inventory-pairing/) beco
 
 ## Cargo Drone Integration
 
-Once you unlock cargo drones, your storage network connects to the whole station. Zone 1 buffer chests with drone port access can both accept and distribute items. Set your Zone 2 sorting loop to pull from drone drop-off pads using priority splitters. Zone 3 warehouses become drone supply depots -- configure each warehouse as a "provide" node so drones auto-restock production lines.
+Once you unlock [cargo drones](/guides/cargo-drone-network-optimization/), your storage network connects to the whole station. Zone 1 buffer chests with drone port access can both accept and distribute items. Set your Zone 2 sorting loop to pull from drone drop-off pads using priority splitters. Zone 3 warehouses become drone supply depots -- configure each warehouse as a "provide" node so drones auto-restock production lines.
 
 One trap: drones can bypass your sorting logic if you give them direct access to Zone 3. Always funnel drone deliveries through Zone 1 first. Let your sorted output from Zone 2 feed Zone 3, not the other way around.
 
@@ -80,7 +80,7 @@ One trap: drones can bypass your sorting logic if you give them direct access to
 3. Set each inserter to grab exactly one item type
 4. Ring the loop with warehouses in Zone 3 with filter inserters pulling off the belt
 5. Resume the loop -- unclaimed items circle back
-6. Place one overflow chest at the loop exit to catch anything that does not match
+6. Place one overflow chest at the loop exit to catch anything that does not match. For a deeper approach to handling excess items, our [Overflow Sink Management Guide](/guides/overflow-sink-management-guide/) covers priority routing and sink-burner configurations.
 
 This takes about 20 minutes to build and will handle all your storage needs through mid-game. When it backs up, build a second loop.
 

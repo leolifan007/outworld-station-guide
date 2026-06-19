@@ -51,7 +51,7 @@ One central Cargo Hub per station level. All modules connect to it. Drones only 
 
 Modules connect in a circular chain. Drones pass items clockwise or counter-clockwise.
 
-**Best for:** Compact stations where modules are already in a ring layout.
+**Best for:** Compact stations where modules are already in a ring layout, as described in our [Station Layout Guide](/guides/station-layout-guide/).
 
 ### 3. Full Mesh
 
@@ -75,7 +75,7 @@ I had 22 drones delivering iron, copper, and superalloy across 12 modules. Items
 
 **Q: How many drones per hub?**
 
-Start with 10. Add 5 more per additional 8 modules. If drones are waiting at the hub, add more. If they queue at a module, check its output buffer.
+Start with 10. Add 5 more per additional 8 modules. If drones are waiting at the hub, add more. If they queue at a module, check its output buffer. Pairing hubs with [buffer storage](/guides/buffer-storage-strategy/) at each port prevents delivery backlogs from stalling your network.
 
 **Q: Do drone speed upgrades help?**
 

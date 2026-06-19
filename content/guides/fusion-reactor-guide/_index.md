@@ -14,7 +14,7 @@ tested: "Fusion reactor chain built and stress-tested over 10 hours of gameplay.
 
 You are level 7. Production is humming. You finally upgraded from solar to fusion. Life is good.
 
-Then your fusion reactors run out of fuel. Within three minutes, every single building on your station shuts down. Drills stop. Smelters stop. Refineries are dead. Even your emergency solar panels cannot get the chain restarted because the refineries needed to make reactor fuel are powered by... the reactors that just died.
+Then your fusion reactors run out of fuel. Within three minutes, every single building on your station shuts down. Running multiple power sources in parallel can prevent this — see our [Multi-Source Power Grid Stability Guide](/guides/multi-source-power-grid-stability/) for hybrid grid designs. Drills stop. Smelters stop. Refineries are dead. Even your emergency solar panels cannot get the chain restarted because the refineries needed to make reactor fuel are powered by... the reactors that just died.
 
 Welcome to the dead station spiral. I spent two full days researching this, combing through forums, testing every recovery path in my own save, and stress-testing different station layouts under a level 5, level 7, and level 10 scenario. The conclusions I reached might save you the same painful learning curve.
 
@@ -34,9 +34,9 @@ Welcome to the dead station spiral. I spent two full days researching this, comb
 
 The game does a terrible job explaining this: **fusion reactors consume Nitrox gas** as fuel. Not electricity, not magic — Nitrox. And Nitrox is produced by a chain that goes:
 
-Asteroid → Drone Mining → Refinery (separates Oxygen + Hydrogen) → further processing → **Nitrox**
+Asteroid → Drone Mining → Refinery (separates [Oxygen + Hydrogen](/guides/hydrogen-fuel-guide/)) → further processing → **Nitrox**
 
-If any link in that chain breaks — power outage, full storage, wrong prioritization on your supply lines — your Nitrox production stops. Your reactors keep burning through whatever is stored. Once the buffer is empty, everything dies.
+If any link in that chain breaks — power outage, full storage, wrong prioritization on your supply lines — your Nitrox production stops. Your reactors keep burning through whatever is stored. Once the buffer is empty, everything dies. The complete Nitrox production chain is covered in our [Nitrox Gas Processing Guide](/guides/nitrox-gas-processing-guide/).
 
 ### The Fuel Consumption Numbers Nobody Tells You
 

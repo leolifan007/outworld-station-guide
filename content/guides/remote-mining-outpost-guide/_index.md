@@ -13,7 +13,7 @@ emoji: 鉀?
 
 ---
 
-Your starter iron patch is tapped out and the nearest titanium seam is three planets away. Do not panic. You do not need to move your whole station. You need a remote mining outpost.
+Your starter iron patch is tapped out and the nearest titanium seam is three planets away. Do not panic. You do not need to move your whole station. You need a remote mining outpost. Before scouting locations, our [Planet Environment Guide](/guides/planet-environment-guide/) helps you evaluate which planet types offer the best mineral yields.
 
 Here is the fast path. Open the Navigation Console and scan the three nearest planets and two asteroid belts. Any body with a "Claimable" badge next to at least one resource node is a candidate. Click the planet, select the ore patch you want, and hit "Establish Outpost." The game costs you 500 Alloy Plates and 200 Circuit Boards upfront. That gets you a landing pad, a shelter, and a basic power relay. Within thirty seconds an automated hauler arrives to pick up whatever you mine.
 
@@ -76,7 +76,7 @@ When one outpost is running smoothly, clone the setup. Each planet can host up t
 
 For managing multiple outposts, see the [Freighter Mining Guide]({{< ref "/guides/freighter-mining-guide" >}}) for automated ship-based hauling and the [Station Expansion Blueprint]({{< ref "/guides/station-expansion-blueprint" >}}) for organizing your new resource flows into storage grids.
 
-Once you have three outposts running, your income stabilizes enough to never hand-mine again. That is the milestone. Your station becomes a factory that builds factories, and your only job is deciding which patch to claim next.
+Once you have three outposts running, your income stabilizes enough to never hand-mine again. That is the milestone. Your station becomes a factory that builds factories, and your only job is deciding which patch to claim next. For defending these outposts from raids, our [Remote Outpost Defense Guide](/guides/remote-outpost-defense-guide/) covers turret placement and patrol drone coverage.
 
 ## External Resources
 

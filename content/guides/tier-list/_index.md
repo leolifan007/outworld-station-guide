@@ -37,7 +37,7 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 - Handles quick contracts efficiently
 - First ship I build in every run
 
-**Why S:** Speed matters more than cargo for early contracts. Scouts pay for themselves in 2-3 runs.
+**Why S:** Speed matters more than cargo for early contracts. Scouts pay for themselves in 2-3 runs. The [Ship Building Guide](/guides/ship-building/) covers how to construct and launch your first scout.
 
 ---
 
@@ -46,7 +46,7 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 - Essential for bulk resource contracts
 - Single freighter can supply a small station via contracts
 
-**Why S:** The backbone of contract income. Build one early, keep it running constantly.
+**Why S:** The backbone of contract income. Build one early, keep it running constantly. See the [Freighter and Mining Guide](/guides/freighter-mining-guide/) for dock setup and route automation.
 
 ---
 
@@ -81,7 +81,7 @@ Tier lists are subjective. This one's based on my 100+ hours across multiple pla
 - Higher cost, lower general utility
 - Only valuable if you're pursuing combat contracts
 
-**Why B:** Niche. If combat contracts are your strategy, this is A-tier. Otherwise, skip.
+**Why B:** Niche. If combat contracts are your strategy, this is A-tier. Otherwise, skip. Our [Combat Ship Design Guide](/guides/combat-ship-design-guide/) breaks down weapon loadouts and armor configurations.
 
 ---
 

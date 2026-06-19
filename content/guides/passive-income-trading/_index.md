@@ -20,7 +20,7 @@ Stop chasing every credit by hand. Passive income in Outworld Station is real, a
 
 Here is the fastest path from zero to passive credits.
 
-Build a small cargo hauler with at least 400 cargo capacity and a Class-2 nav computer (your starting frame can handle this). Dock it at the nearest station with a contract board. Accept a single Bulk Supply contract -- those pay around 120-180 credits for a 10-minute round trip to a nearby outpost. Set the ship to auto-repeat, and walk away.
+Build a small cargo hauler with at least 400 cargo capacity and a Class-2 nav computer (your starting frame can handle this). Our [Ship Building Guide](/guides/ship-building/) walks through the exact ship types and construction steps. Dock it at the nearest station with a contract board. Accept a single Bulk Supply contract -- those pay around 120-180 credits for a 10-minute round trip to a nearby outpost. Set the ship to auto-repeat, and walk away.
 
 Next, place a Trading Depot at your home station. Connect it to your main cargo storage. Set sell orders for common refined materials like Aluminum Plates or Circuit Boards -- items you are already producing through normal factory operation. The depot auto-sells surplus. No extra work.
 
@@ -55,7 +55,7 @@ Resources that make good trade goods:
 
 My first trading route used two cargo ships shuttling Fuel Cells between Orbital Refinery and Lagrange Outpost. Each ship earned roughly 600 credits per round trip. With auto-departure enabled, they ran continuously. I added a third ship and hit 2,000 credits per hour without touching the keyboard.
 
-The catch is that trade routes need fuel. Factor in Fuel Cell cost (ironically) on your consumption side, and refueling stops. A ship stranded in deep space earns nothing.
+The catch is that trade routes need fuel. Factor in Fuel Cell cost (ironically) on your consumption side, and refueling stops. A ship stranded in deep space earns nothing. Once you hit the mid-game income ceiling, our [Mid-Game Expansion Strategy guide](/guides/mid-game-expansion-strategy/) shows how passive income funds your next station phase.
 
 {{< diagram "trading-passive-income.svg" >}}
 

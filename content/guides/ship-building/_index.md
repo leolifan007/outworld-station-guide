@@ -14,7 +14,7 @@ tested: "Shipyard II tested across 20+ contracts. All ship types verified."
 
 The first time I built a ship, I expected a toy. Something to fly around and look cool. What I got was a passive income machine that changed how I play the game.
 
-Ships unlock the contract system, which replaces manual grinding with automated rewards. Build a ship, assign it to a contract, and it earns credits + materials while you do something else. Here's what I wish someone had told me before I wasted 10 hours ignoring the Shipyard.
+Ships unlock the [contract system](/guides/passive-income-trading/), which replaces manual grinding with automated rewards. Build a ship, assign it to a contract, and it earns credits + materials while you do something else. Here's what I wish someone had told me before I wasted 10 hours ignoring the Shipyard.
 
 ---
 
@@ -91,9 +91,9 @@ Different ships have different capabilities:
 | Ship Type | Cargo | Speed | Contract Types | Cost |
 |-----------|-------|-------|----------------|------|
 | Scout | Low | Fast | Exploration, Quick Delivery | Low |
-| Freighter | High | Slow | Bulk Transport, Supply Runs | Medium |
+| [Freighter](/guides/freighter-mining-guide/) | High | Slow | Bulk Transport, Supply Runs | Medium |
 | Mining | Medium | Medium | Resource Extraction | Medium |
-| Combat | Low | Fast | Escort, Patrol | High |
+| [Combat](/guides/combat-ship-design-guide/) | Low | Fast | Escort, Patrol | High |
 
 <div class="pro-tip">
   <p><strong>First ship recommendation:</strong> Scout or Freighter. Scout for fast contract turnover, Freighter for better payout per run. Mining ships are great but require specific contract availability.</p>
@@ -200,7 +200,7 @@ Ships degrade over time and need repairs.
 
 ## Part 6: Advanced Ship Strategies
 
-### Wormhole Contracts
+### [Wormhole Contracts](/guides/wormhole-terminal-guide/)
 
 Some contracts require wormhole access. These pay better.
 

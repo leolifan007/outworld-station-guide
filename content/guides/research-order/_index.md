@@ -72,7 +72,7 @@ Your starting oxygen runs out around the 2-hour mark if you haven't addressed it
 **Why:** This is a hard deadline. Miss it and you're scrambling. Hit it early and you never think about oxygen again.
 
 <div class="pro-tip">
-  <p><strong>Build order:</strong> Oxygen Generator 鈫?Gas Pipe 鈫?Vent. One generator supports a small station indefinitely. Don't overbuild.</p>
+  <p><strong>Build order:</strong> Oxygen Generator 鈫?Gas Pipe 鈫?Vent. One generator supports a small station indefinitely. Don't overbuild. For the full gas loop including scrubbers and pressure management, see our <a href="/guides/life-support-oxygen-guide/">Life Support and Oxygen Guide</a>.</p>
 </div>
 
 ### Priority 5: Medium Storage
@@ -109,12 +109,12 @@ Solar is fine for small stations. Reactors are better for everything after that.
 
 <div class="callout callout-danger">
   <h4>Don't skip cooling</h4>
-  <p>A reactor without cooling will shut itself down during high demand. Research cooling AND build the infrastructure before relying on reactor power.</p>
+  <p>A reactor without cooling will shut itself down during high demand. Research cooling AND build the infrastructure before relying on reactor power. Once you're ready to upgrade from small reactors, our <a href="/guides/fusion-reactor-guide/">Fusion Reactor Guide</a> covers the transition and fuel management.</p>
 </div>
 
 ### Priority 8: Wormhole Tech
 
-Wormholes let you pull resources from other stations. This is the mid-game power move.
+[Wormholes](/guides/wormhole-terminal-guide/) let you pull resources from other stations. This is the mid-game power move.
 
 **Research:** Wormhole Generator after your reactor is stable.
 
@@ -145,7 +145,7 @@ The big power source. Everything after this is luxury.
 **Why:** Fusion power is consistent and scales better than small reactors. It requires Nitrox fuel 鈥?make sure you have that production chain set up first.
 
 <div class="pro-tip">
-  <p><strong>Fusion checklist:</strong> Nitrox production 鈫?Storage 鈫?Reactor. Skip any step and you're building a very expensive paperweight.</p>
+  <p><strong>Fusion checklist:</strong> Nitrox production 鈫?Storage 鈫?Reactor. Skip any step and you're building a very expensive paperweight. Our <a href="/guides/nitrox-gas-processing-guide/">Nitrox Gas Processing Guide</a> walks through the full fuel chain from raw gas to reactor-ready Nitrox.</p>
 </div>
 
 ### Priority 11: Ark Ship Tech

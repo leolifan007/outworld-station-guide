@@ -15,7 +15,7 @@ emoji: "鈿?
 
 Your second assembler is starving while the first one overflows with iron plates.
 
-**The quick fix:** a single splitter feeding two belts does NOT split evenly if one belt is backed up. Splitters only split the items that arrive. If your main belt delivers 15 items/sec and you split to two belts, each gets 7.5/sec -- but only when both output belts can carry that load. The moment one output backs up, the splitter diverts everything to the open belt. That is why your assembler line has one full stack and one empty one.
+**The quick fix:** a single splitter feeding two belts does NOT split evenly if one belt is backed up. Splitters only split the items that arrive. This is closely related to the pipe bottleneck problem — see our [Pipe Bottleneck Guide](/guides/pipe-bottleneck-guide/) for a deeper look at connector throughput limits. If your main belt delivers 15 items/sec and you split to two belts, each gets 7.5/sec -- but only when both output belts can carry that load. The moment one output backs up, the splitter diverts everything to the open belt. That is why your assembler line has one full stack and one empty one.
 
 The fix is a **load balancer**: a network of splitters that forces even distribution regardless of backpressure. A 1-to-2 balancer is just one splitter. A 1-to-3 requires a specific arrangement. For any n-to-m balancer, the principle is the same: merge belts, then split them evenly, using extra splitters and belt loops to handle excess items.
 
@@ -66,7 +66,7 @@ Balancers are critical in these situations:
 
 ### Going Further
 
-Balancers pair naturally with other throughput techniques. If your bottleneck is belt speed rather than distribution, check the [Belt Hierarchy & Throughput Math guide]() to see which belt tier your production line actually needs. For station layouts that feed into your balancers, the [Train Station Design Guide]() covers multi-platform unloading.
+Balancers pair naturally with other throughput techniques. If your bottleneck is belt speed rather than distribution, our [Assembly Line Ratios Guide](/guides/assembly-line-ratios/) covers exact throughput targets for each production stage. For station layouts that feed into your balancers, the [Station Layout Guide](/guides/station-layout-guide/) covers multi-platform design and efficient space planning.
 
 ### External Resources
 

@@ -58,7 +58,7 @@ Multiple smelter layers stacked vertically using elevators. Each layer is a comp
 
 My circuit assemblers kept stalling. Copper plate production showed 160/min but assemblers needed 210/min. One belt fed 6 smelters but only 4 were getting ore.
 
-**The fix:** Split the ore input into two belts before the smelter line. Each belt feeds 3 smelters evenly. Copper plate output jumped to 240/min. Circuit production went from 60% to 100% in under 5 minutes.
+**The fix:** Split the ore input into two belts before the smelter line. Each belt feeds 3 smelters evenly. Copper plate output jumped to 240/min. Circuit production went from 60% to 100% in under 5 minutes. This splitter approach is covered in depth by our [Conveyor Balancing Guide](/guides/conveyor-balancing-guide/), which explains 1-to-N and N-to-M splitter patterns.
 
 ## FAQ
 

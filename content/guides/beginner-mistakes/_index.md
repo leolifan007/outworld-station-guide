@@ -87,7 +87,7 @@ You can ignore gas systems for the first hour. Then your starting oxygen runs ou
 - Minute 30-45: Set up oxygen generation
 - Minute 45+: Expand production
 
-Don't wait until the warning icon appears.
+Don't wait until the warning icon appears. Having a stable oxygen loop early is critical, and our [Life Support and Oxygen Guide](/guides/life-support-oxygen-guide/) covers the full setup from electrolyzer to scrubber.
 
 ---
 
@@ -102,6 +102,7 @@ Not all research branches are equal early game. I wasted resources on advanced c
     <li><strong>Large Storage</strong> 鈥?you don't need it yet</li>
     <li><strong>Drone Ports</strong> 鈥?require power and coordination you don't have</li>
   </ul>
+  <p>If you want to avoid these traps entirely, the <a href="/guides/research-order/">Research Order Guide</a> maps out the optimal unlock sequence hour by hour.</p>
 </div>
 
 ---
@@ -120,7 +121,7 @@ Solar panels don't work at night. Obvious, but I built like they did.
 
 **Early game fix:** 1 battery per 2 solar panels keeps essential systems running through darkness. Non-essentials can shut down temporarily.
 
-**Late game fix:** Reactors don't care about day/night. That's when you stop worrying.
+**Late game fix:** [Fusion reactors](/guides/fusion-reactor-guide/) don't care about day/night. That's when you stop worrying.
 
 ---
 
@@ -130,7 +131,7 @@ Once you unlock wormholes, you can pull resources from other stations. This is p
 
 **My mistake:** I connected everything to everything and created a logistical nightmare where resources disappeared into wormholes I forgot about.
 
-**Better way:** One wormhole pair, one purpose. Label them if you can.
+**Better way:** One wormhole pair, one purpose. Label them if you can. Our [Wormhole Terminal Guide](/guides/wormhole-terminal-guide/) explains pairing strategies that keep your logistics clean.
 
 ---
 

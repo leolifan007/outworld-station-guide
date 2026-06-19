@@ -16,9 +16,9 @@ I bought Outworld Station the day it hit Early Access last year. Clicked Play, S
 
 I almost refunded it right there.
 
-{{< diagram "crash-troubleshoot-flow.svg" >}} Ten bucks is not a lot, but a game that does not even open is ten bucks wasted. I am glad I did not. Once I got it running, I put in over 200 hours. But getting there took me a full evening of trial and error.
+{{< diagram "crash-troubleshoot-flow.svg" >}} Ten bucks is not a lot, but a game that does not even open is ten bucks wasted. I am glad I did not. Once I got it running, I put in over 200 hours. But getting there took me a full evening of trial and error. After sorting out your crashes, check our [Save and Backup Guide](/guides/save-backup-guide/) to protect your progress from corruption.
 
-This is the guide I wish I had that night. Every fix listed here is something I tested on my own rig (Ryzen 7 5800X, RTX 3070, 32 GB RAM, Windows 11) and on a secondary laptop (i5-1135G7, Intel Iris Xe, 16 GB). Your mileage may vary, but if something here helps, it saves you the four hours I burned.
+This is the guide I wish I had that night. Every fix listed here is something I tested on my own rig (Ryzen 7 5800X, RTX 3070, 32 GB RAM, Windows 11) and on a secondary laptop (i5-1135G7, Intel Iris Xe, 16 GB). Your mileage may vary, but if something here helps, it saves you the four hours I burned. Once you're in-game, our [Controls and Hotkeys Guide](/guides/controls-hotkeys-guide/) helps you get oriented with the interface quickly.
 
 <div class="callout callout-verdict">
   <h4>The Short Version</h4>

@@ -14,7 +14,7 @@ tested: "All bottleneck scenarios tested on v1.0.0.2 with live production."
 
 You have built a beautiful production chain. Miners are extracting ore. Smelters are turning it into bars. Assemblers are cranking out advanced components. And yet your final output is a trickle.
 
-The problem is not your production. The problem is your pipes.
+The problem is not your production. The problem is your pipes. Many of these issues can be solved with smart [buffer placement](/guides/buffer-storage-strategy/) positioned between production stages.
 
 Pipe bottlenecks are the single most common failure point in mid-to-late-game Outworld Station factories. The community confirms it: Reddit's "Getting Started Tips" thread has over 400 comments, half of them about throttling. Steam discussions regularly ask "How do you avoid the bottleneck?" and "Fully upgraded Connectors woefully slow." Even the official roadmap lists "Cleaner and more optimized Pipe System" as a priority.
 
@@ -78,7 +78,7 @@ Assembly Connector Buffer Connector Next Stage and Recycling
 
 **Problem**: A loop that constantly cycles items back to recycling because the main Connector empties the buffer before recycling kicks in. The Recycling Connector never has anything to grab.
 
-**Fix**: Priority-based routing with separate buffer zones.
+**Fix**: Priority-based routing with separate buffer zones. Our [Overflow Sink Management Guide](/guides/overflow-sink-management-guide/) covers this exact pattern with priority splitters and dedicated sink lanes.
 
 </div>
 </details>
@@ -138,7 +138,7 @@ Input -> Mk3 C -> Buffer (200+) -> Mk3 C -> Production
                                  -> Mk2 C -> Overflow Storage
 ```
 
-Place a dedicated buffer between Connector segments. When the main line is saturated, overflow naturally diverts to secondary storage.
+Place a dedicated buffer between Connector segments. When the main line is saturated, overflow naturally diverts to secondary storage. For a complete guide to organizing buffers alongside your main grid, see our [Storage Network Design Guide](/guides/storage-network-design/).
 
 ### The Starvation Bypass
 
