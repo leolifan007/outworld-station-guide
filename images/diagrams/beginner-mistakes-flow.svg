@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00D4AA"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6B6B"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#00D4AA" font-size="18" font-weight="bold">新手头一小时：正确决策流程</text>
+
+  <!-- Start -->
+  <rect x="300" y="55" width="200" height="40" rx="20" fill="#2A5A3A" stroke="#3A8A5A" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">🚀 游戏开始</text>
+
+  <!-- Arrow to Phase 1 -->
+  <line x1="400" y1="95" x2="400" y2="120" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 1: Power -->
+  <rect x="225" y="125" width="350" height="50" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="400" y="147" text-anchor="middle" fill="#FFB347" font-size="13" font-weight="bold">Phase 1 (分钟0-30): 电力先行</text>
+  <text x="400" y="164" text-anchor="middle" fill="#8AACCD" font-size="11">3×太阳能板 → 1×小电池 → 再考虑生产</text>
+
+  <!-- Arrow to wrong path -->
+  <line x1="225" y1="150" x2="140" y2="150" stroke="#FF6B6B" stroke-width="1.5" marker-end="url(#arrowRed)" stroke-dasharray="5,3"/>
+  <text x="110" y="128" text-anchor="end" fill="#FF6B6B" font-size="10">❌ 先搞生产</text>
+  <text x="110" y="143" text-anchor="end" fill="#6A8AAA" font-size="9">→ 跳电停机</text>
+
+  <!-- Arrow Phase 1 -> Phase 2 -->
+  <line x1="400" y1="175" x2="400" y2="200" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 2: Mining -->
+  <rect x="225" y="205" width="350" height="50" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="400" y="227" text-anchor="middle" fill="#FFB347" font-size="13" font-weight="bold">Phase 2 (分钟30-45): 钻头+氧气</text>
+  <text x="400" y="244" text-anchor="middle" fill="#8AACCD" font-size="11">把小行星旁边放钻头 → 设置氧气发生器</text>
+
+  <!-- Wrong path 2 -->
+  <line x1="575" y1="230" x2="660" y2="230" stroke="#FF6B6B" stroke-width="1.5" marker-end="url(#arrowRed)" stroke-dasharray="5,3"/>
+  <text x="690" y="226" text-anchor="start" fill="#FF6B6B" font-size="10">❌ 忽略氧气</text>
+  <text x="690" y="241" text-anchor="start" fill="#6A8AAA" font-size="9">→ 窒息危机</text>
+
+  <!-- Arrow Phase 2 -> Phase 3 -->
+  <line x1="400" y1="255" x2="400" y2="280" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 3: Production -->
+  <rect x="225" y="285" width="350" height="50" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="400" y="307" text-anchor="middle" fill="#FFB347" font-size="13" font-weight="bold">Phase 3 (分钟45+): 集群化布局</text>
+  <text x="400" y="324" text-anchor="middle" fill="#8AACCD" font-size="11">电力集群 | 冶炼集群 | 生产集群 · 留空隙</text>
+
+  <!-- Wrong path 3 -->
+  <line x1="225" y1="310" x2="110" y2="310" stroke="#FF6B6B" stroke-width="1.5" marker-end="url(#arrowRed)" stroke-dasharray="5,3"/>
+  <text x="90" y="306" text-anchor="end" fill="#FF6B6B" font-size="10">❌ 挤在一起</text>
+  <text x="90" y="321" text-anchor="end" fill="#6A8AAA" font-size="9">→ 没法扩建</text>
+
+  <!-- Arrow Phase 3 -> Phase 4 -->
+  <line x1="400" y1="335" x2="400" y2="360" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Phase 4: Research + Storage -->
+  <rect x="225" y="365" width="350" height="50" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="400" y="387" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">进阶: 正确研究顺序 + 缓冲区规划</text>
+  <text x="400" y="404" text-anchor="middle" fill="#8AACCD" font-size="11">看需求再点科技 · 缓冲区 = 保险, 不是浪费</text>
+
+  <!-- Success end -->
+  <rect x="300" y="445" width="200" height="40" rx="20" fill="#2A5A3A" stroke="#00D4AA" stroke-width="2"/>
+  <text x="400" y="470" text-anchor="middle" fill="#00D4AA" font-size="13" font-weight="bold">✅ 平稳发展</text>
+
+  <line x1="400" y1="415" x2="400" y2="440" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Footer -->
+  <text x="400" y="510" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide — 新手避坑决策流程 v1.0</text>
+</svg>

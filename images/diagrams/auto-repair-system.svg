@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" style="background:#1A2533;font-family:Arial,sans-serif">
+  <defs><marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#00D4AA"/></marker></defs>
+  <text x="400" y="28" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">Automated Repair System - Station Self-Healing</text>
+  <rect x="20" y="50" width="200" height="45" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="120" y="68" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Repair Hub</text>
+  <text x="120" y="85" text-anchor="middle" fill="#8899AA" font-size="11">Station center - 30 tile range</text>
+  <line x1="140" y1="95" x2="140" y2="120" stroke="#667788" stroke-width="1.5"/>
+  <line x1="200" y1="105" x2="280" y2="130" stroke="#667788" stroke-width="1.5"/>
+  <line x1="80" y1="105" x2="50" y2="130" stroke="#667788" stroke-width="1.5"/>
+  <rect x="10" y="185" width="100" height="35" rx="4" fill="#2A3A4A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="60" y="208" text-anchor="middle" fill="#00D4AA" font-size="11">Module A (60%)</text>
+  <rect x="10" y="230" width="100" height="35" rx="4" fill="#2A3A4A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="60" y="253" text-anchor="middle" fill="#00D4AA" font-size="11">Module B (85%)</text>
+  <rect x="10" y="275" width="100" height="35" rx="4" fill="#2A3A4A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="60" y="298" text-anchor="middle" fill="#00D4AA" font-size="11">Module C (30%)</text>
+  <line x1="200" y1="115" x2="310" y2="115" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#a)"/>
+  <text x="255" y="110" text-anchor="middle" fill="#00D4AA" font-size="10">Drone path</text>
+  <line x1="200" y1="125" x2="350" y2="155" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#a)"/>
+  <rect x="310" y="100" width="120" height="35" rx="15" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="370" y="122" text-anchor="middle" fill="#00D4AA" font-size="11">Repair Drone Mk1</text>
+  <line x1="370" y1="135" x2="370" y2="165" stroke="#667788" stroke-width="1.5"/>
+  <rect x="260" y="200" width="220" height="35" rx="4" fill="#1A2A3A" stroke="#FF6B35" stroke-width="1"/>
+  <text x="370" y="218" text-anchor="middle" fill="#FF6B35" font-size="11">Drone Patrol Zone (4-5 modules)</text>
+  <text x="370" y="232" text-anchor="middle" fill="#8899AA" font-size="10">Auto-detects damage, rates by priority</text>
+  <rect x="550" y="50" width="200" height="45" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="650" y="68" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Parts Chest</text>
+  <text x="650" y="85" text-anchor="middle" fill="#8899AA" font-size="11">Restocks automatically</text>
+  <line x1="550" y1="72" x2="480" y2="72" stroke="#667788" stroke-width="1.5"/>
+  <text x="515" y="68" text-anchor="middle" fill="#E0E0E0" font-size="10">Parts flow</text>
+  <rect x="550" y="115" width="200" height="80" rx="4" fill="#1A2A3A" stroke="#667788" stroke-width="1"/>
+  <text x="650" y="135" text-anchor="middle" fill="#E0E0E0" font-size="11">Parts Chest Contents:</text>
+  <text x="650" y="152" text-anchor="middle" fill="#8899AA" font-size="10">50 Iron Plates</text>
+  <text x="650" y="168" text-anchor="middle" fill="#8899AA" font-size="10">20 Circuit Arrays</text>
+  <text x="650" y="184" text-anchor="middle" fill="#8899AA" font-size="10">10 Repair Kits</text>
+  <rect x="100" y="335" width="600" height="30" rx="4" fill="#0A2A1A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="355" text-anchor="middle" fill="#00D4AA" font-size="11">Result: Fully-auto repairs in 45 sec per module. Your station fixes itself.</text>
+</svg>

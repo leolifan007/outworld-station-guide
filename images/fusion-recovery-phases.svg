@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="auto">
+<defs>
+  <filter id="g"><feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/></filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#080C16"/><stop offset="100%" stop-color="#0B1422"/></linearGradient>
+  <linearGradient id="p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2A1528"/><stop offset="100%" stop-color="#1C0A14"/></linearGradient>
+  <linearGradient id="p2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#142630"/><stop offset="100%" stop-color="#0B1A28"/></linearGradient>
+  <linearGradient id="p3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#142E1A"/><stop offset="100%" stop-color="#0B1A10"/></linearGradient>
+  <style>
+    .bg{fill:url(#bg)}.ph1{fill:url(#p1);stroke:#D86060;stroke-width:1.5}.ph2{fill:url(#p2);stroke:#3A7BD5;stroke-width:1.5}.ph3{fill:url(#p3);stroke:#00D4AA;stroke-width:1.5}
+    .t{font:15px 'Segoe UI',sans-serif;fill:#E8F0FA;text-anchor:middle;font-weight:700}
+    .st{font:12px 'Segoe UI',sans-serif;fill:#7A8EA8;text-anchor:middle}
+    .tag{font:11px 'JetBrains Mono',monospace;text-anchor:middle}
+    .i{font:13px 'Segoe UI',sans-serif;fill:#C8D6E8;text-anchor:middle}
+    .is{font:11px 'Segoe UI',sans-serif;fill:#7A8EA8;text-anchor:middle}
+    .num{font:10px 'JetBrains Mono',monospace;text-anchor:middle}
+    .goal{fill:none;stroke-width:1.5;stroke-dasharray:4,3;opacity:0.5}
+    .sep{stroke:#1A2E50;stroke-width:1;opacity:0.15}
+  </style>
+</defs>
+<rect class="bg" width="900" height="320" rx="8" filter="url(#g)"/>
+<text x="450" y="28" class="t">Three-Phase Recovery Plan</text>
+
+<!-- P1 -->
+<rect x="20" y="55" width="275" height="235" rx="8" class="ph1"/>
+<text x="157" y="78" class="tag" fill="#D86060" font-weight="700">PHASE 1 — Emergency</text>
+<line x1="30" y1="90" x2="285" y2="90" class="sep"/>
+<circle cx="35" cy="112" r="7" fill="#D86060" opacity="0.2"/><text x="35" y="112" class="num" fill="#D86060">1</text><text x="155" y="112" class="i">Disconnect non-critical</text>
+<circle cx="35" cy="137" r="7" fill="#D86060" opacity="0.2"/><text x="35" y="137" class="num" fill="#D86060">2</text><text x="155" y="137" class="i">Build 10-15 solar panels</text>
+<circle cx="35" cy="162" r="7" fill="#D86060" opacity="0.2"/><text x="35" y="162" class="num" fill="#D86060">3</text><text x="155" y="162" class="i">Drain batteries</text>
+<circle cx="35" cy="187" r="7" fill="#D86060" opacity="0.2"/><text x="35" y="187" class="num" fill="#D86060">4</text><text x="155" y="187" class="i">Priority mining drones</text>
+<circle cx="35" cy="212" r="7" fill="#D86060" opacity="0.2"/><text x="35" y="212" class="num" fill="#D86060">5</text><text x="155" y="212" class="i">Manual O2+H2 mix ⭐</text>
+<rect x="30" y="235" width="255" height="40" rx="6" class="goal" stroke="#D86060"/>
+<text x="157" y="250" class="is" fill="#D86060">▶ Goal: power 1 refinery</text>
+<text x="157" y="267" class="is" fill="#D86060">Build isolated solar sub-grid</text>
+
+<!-- Arrow -->
+<path d="M295,172 L305,172" stroke="#3A7BD5" stroke-width="2.5" fill="none"/>
+<text x="305" y="168" class="num" fill="#3A7BD5">▼</text>
+
+<!-- P2 -->
+<rect x="315" y="55" width="275" height="235" rx="8" class="ph2"/>
+<text x="452" y="78" class="tag" fill="#3A7BD5" font-weight="700">PHASE 2 — Restart Nitrox</text>
+<line x1="325" y1="90" x2="580" y2="90" class="sep"/>
+<circle cx="330" cy="112" r="7" fill="#3A7BD5" opacity="0.2"/><text x="330" y="112" class="num" fill="#3A7BD5">1</text><text x="450" y="112" class="i">Dedicated mining drill</text>
+<circle cx="330" cy="137" r="7" fill="#3A7BD5" opacity="0.2"/><text x="330" y="137" class="num" fill="#3A7BD5">2</text><text x="450" y="137" class="i">Isolated refinery grid</text>
+<circle cx="330" cy="162" r="7" fill="#3A7BD5" opacity="0.2"/><text x="330" y="162" class="num" fill="#3A7BD5">3</text><text x="450" y="162" class="i">Dedicated Nitrox storage</text>
+<circle cx="330" cy="187" r="7" fill="#3A7BD5" opacity="0.2"/><text x="330" y="187" class="num" fill="#3A7BD5">4</text><text x="450" y="187" class="i">Direct route to reactor</text>
+<circle cx="330" cy="212" r="7" fill="#3A7BD5" opacity="0.2"/><text x="330" y="212" class="num" fill="#3A7BD5">5</text><text x="450" y="212" class="i">Build 200+ Nitrox buffer</text>
+<rect x="325" y="235" width="255" height="40" rx="6" class="goal" stroke="#3A7BD5"/>
+<text x="452" y="250" class="is" fill="#3A7BD5">▶ Goal: 10 min buffer</text>
+<text x="452" y="267" class="is" fill="#3A7BD5">Then restart the reactor</text>
+
+<!-- Arrow -->
+<path d="M590,172 L600,172" stroke="#00D4AA" stroke-width="2.5" fill="none"/>
+<text x="600" y="168" class="num" fill="#00D4AA">▼</text>
+
+<!-- P3 -->
+<rect x="610" y="55" width="270" height="235" rx="8" class="ph3"/>
+<text x="745" y="78" class="tag" fill="#00D4AA" font-weight="700">PHASE 3 — Stabilize</text>
+<line x1="620" y1="90" x2="870" y2="90" class="sep"/>
+<circle cx="625" cy="112" r="7" fill="#00D4AA" opacity="0.2"/><text x="625" y="112" class="num" fill="#00D4AA">1</text><text x="745" y="112" class="i">Reconnect critical first</text>
+<circle cx="625" cy="137" r="7" fill="#00D4AA" opacity="0.2"/><text x="625" y="137" class="num" fill="#00D4AA">2</text><text x="745" y="137" class="i">Monitor 15 min consumption</text>
+<circle cx="625" cy="162" r="7" fill="#00D4AA" opacity="0.2"/><text x="625" y="162" class="num" fill="#00D4AA">3</text><text x="745" y="162" class="i">Spread generators apart</text>
+<circle cx="625" cy="187" r="7" fill="#00D4AA" opacity="0.2"/><text x="625" y="187" class="num" fill="#00D4AA">4</text><text x="745" y="187" class="i">Keep 30% headroom</text>
+<circle cx="625" cy="212" r="7" fill="#00D4AA" opacity="0.2"/><text x="625" y="212" class="num" fill="#00D4AA">5</text><text x="745" y="212" class="i">Auto-pause at 15% fuel</text>
+<rect x="620" y="235" width="245" height="40" rx="6" class="goal" stroke="#00D4AA"/>
+<text x="745" y="250" class="is" fill="#00D4AA">▶ Goal: Never black out</text>
+<text x="745" y="267" class="is" fill="#00D4AA">Redundant fuel lines ready</text>
+
+<!-- Bottom -->
+<text x="450" y="308" class="st" fill="#00D4AA" opacity="0.7">Full recovery — station operational with fail-safe fuel redundancy</text>
+</svg>

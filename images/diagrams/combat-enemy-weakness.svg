@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+  <rect width="600" height="350" fill="#1A2533" rx="8"/>
+  <text x="300" y="35" fill="#00D4AA" font-family="Arial,sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Enemy Weakness Triangle</text>
+  <!-- Enemy boxes -->
+  <g transform="translate(40, 60)">
+    <rect x="0" y="0" width="130" height="50" fill="#2A3F55" rx="6" stroke="#4ECDC4" stroke-width="2"/>
+    <text x="65" y="22" fill="#4ECDC4" font-family="Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Scout Drone</text>
+    <text x="65" y="40" fill="#8899AA" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">No shield | Very Fast</text>
+    <text x="65" y="62" fill="#4ECDC4" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Weakness: Machine Gun</text>
+  </g>
+  <g transform="translate(235, 60)">
+    <rect x="0" y="0" width="130" height="50" fill="#2A3F55" rx="6" stroke="#00D4AA" stroke-width="2"/>
+    <text x="65" y="22" fill="#00D4AA" font-family="Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Fighter Drone</text>
+    <text x="65" y="40" fill="#8899AA" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">Light shield | Fast</text>
+    <text x="65" y="62" fill="#00D4AA" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Weakness: Laser Cannon</text>
+  </g>
+  <g transform="translate(40, 140)">
+    <rect x="0" y="0" width="130" height="50" fill="#2A3F55" rx="6" stroke="#FF6B35" stroke-width="2"/>
+    <text x="65" y="22" fill="#FF6B35" font-family="Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Heavy Drone</text>
+    <text x="65" y="40" fill="#8899AA" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">Heavy shield | Slow</text>
+    <text x="65" y="62" fill="#FF6B35" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Weakness: Missile</text>
+  </g>
+  <g transform="translate(235, 140)">
+    <rect x="0" y="0" width="130" height="50" fill="#2A3F55" rx="6" stroke="#FFD93D" stroke-width="2"/>
+    <text x="65" y="22" fill="#FFD93D" font-family="Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Shielded Bomber</text>
+    <text x="65" y="40" fill="#8899AA" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">Heavy shield | Medium</text>
+    <text x="65" y="62" fill="#FFD93D" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Weakness: Plasma+Missile</text>
+  </g>
+  <!-- Arrow Flow: Laser beats shields -->
+  <line x1="170" y1="85" x2="235" y2="85" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <!-- Arrow Flow: Missile beats heavy -->
+  <line x1="170" y1="165" x2="235" y2="165" stroke="#FF6B35" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <defs>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#00D4AA"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#FF6B35"/>
+    </marker>
+  </defs>
+  <!-- Triangle recommendation -->
+  <g transform="translate(420, 70)">
+    <text x="0" y="0" fill="#8899AA" font-family="Arial,sans-serif" font-size="13" font-weight="bold">Recommended Loadout</text>
+    <text x="0" y="20" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="11">All-rounder:</text>
+    <text x="5" y="38" fill="#00D4AA" font-family="Arial,sans-serif" font-size="11">1x Laser Cannon (primary)</text>
+    <text x="5" y="55" fill="#FF6B35" font-family="Arial,sans-serif" font-size="11">1x Missile Launcher (burst)</text>
+    <text x="5" y="72" fill="#4ECDC4" font-family="Arial,sans-serif" font-size="11">1x Machine Gun (fast backup)</text>
+    <text x="0" y="100" fill="#8899AA" font-family="Arial,sans-serif" font-size="11">Covers all enemy types.</text>
+  </g>
+</svg>

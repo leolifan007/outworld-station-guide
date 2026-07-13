@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#00D4AA" font-size="18" font-weight="bold">三种最常见管道瓶颈模式</text>
+
+  <!-- Pattern 1 -->
+  <text x="200" y="70" text-anchor="middle" fill="#FF6B6B" font-size="14" font-weight="bold">Pattern 1: 菊花链</text>
+
+  <rect x="30" y="85" width="100" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="80" y="106" text-anchor="middle" fill="#FFB347" font-size="11">矿机 A</text>
+
+  <line x1="130" y1="100" x2="155" y2="100" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="160" y="85" width="100" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="210" y="106" text-anchor="middle" fill="#FFB347" font-size="11">矿机 B</text>
+
+  <line x1="260" y1="100" x2="285" y2="100" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="290" y="85" width="100" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="340" y="106" text-anchor="middle" fill="#FFB347" font-size="11">矿机 C</text>
+
+  <line x1="390" y1="100" x2="415" y2="100" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="420" y="85" width="100" height="35" rx="6" fill="url(#boxGrad)" stroke="#FF6B6B" stroke-width="2"/>
+  <text x="470" y="106" text-anchor="middle" fill="#FF6B6B" font-size="11">1个连接器</text>
+
+  <line x1="520" y1="100" x2="545" y2="100" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="550" y="85" width="100" height="35" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="600" y="106" text-anchor="middle" fill="#4A9EFF" font-size="11">缓存</text>
+
+  <text x="400" y="138" text-anchor="middle" fill="#FF6B6B" font-size="10">问题: 3个矿机挤1个连接器 → 缓存2秒满, 矿机C先堵→B堵→A堵</text>
+  <text x="400" y="152" text-anchor="middle" fill="#8AACCD" font-size="10">修复: 分路器+缓存放在连接器前, 或使用多个并联连接器</text>
+
+  <!-- Pattern 2 -->
+  <text x="200" y="185" text-anchor="middle" fill="#FFB347" font-size="14" font-weight="bold">Pattern 2: 生产饥饿</text>
+
+  <rect x="30" y="200" width="115" height="35" rx="6" fill="url(#boxGrad)" stroke="#FF6B6B" stroke-width="2"/>
+  <text x="87" y="221" text-anchor="middle" fill="#FF6B6B" font-size="11">1个连接器</text>
+
+  <line x1="145" y1="215" x2="175" y2="205" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+  <line x1="145" y1="220" x2="175" y2="220" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+  <line x1="145" y1="225" x2="175" y2="235" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="180" y="195" width="95" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1"/>
+  <text x="227" y="216" text-anchor="middle" fill="#FFB347" font-size="11">熔炉 1</text>
+
+  <rect x="180" y="210" width="95" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1"/>
+  <text x="227" y="231" text-anchor="middle" fill="#FFB347" font-size="11">熔炉 2</text>
+
+  <rect x="180" y="225" width="95" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1"/>
+  <text x="227" y="246" text-anchor="middle" fill="#FFB347" font-size="11">熔炉 3</text>
+
+  <text x="400" y="218" text-anchor="middle" fill="#FFB347" font-size="10">问题: 1个连接器喂3个熔炉, 每6tick只给4矿石, 熔炉等4tick饿着</text>
+  <text x="400" y="232" text-anchor="middle" fill="#8AACCD" font-size="10">修复: 每条专用供料线最多2个熔炉配1个连接器</text>
+
+  <!-- Pattern 3 -->
+  <text x="200" y="280" text-anchor="middle" fill="#4A9EFF" font-size="14" font-weight="bold">Pattern 3: 回流死锁</text>
+
+  <rect x="80" y="295" width="110" height="35" rx="6" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="135" y="316" text-anchor="middle" fill="#FFB347" font-size="11">组装机</text>
+
+  <line x1="190" y1="310" x2="215" y2="310" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="220" y="295" width="110" height="35" rx="6" fill="url(#boxGrad)" stroke="#FF6B6B" stroke-width="2"/>
+  <text x="275" y="316" text-anchor="middle" fill="#FF6B6B" font-size="11">连接器</text>
+
+  <line x1="330" y1="310" x2="355" y2="310" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <rect x="360" y="295" width="110" height="35" rx="6" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="415" y="316" text-anchor="middle" fill="#4A9EFF" font-size="11">缓存</text>
+
+  <line x1="415" y1="295" x2="415" y2="260" stroke="#6A8AAA" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+  <line x1="415" y1="260" x2="135" y2="260" stroke="#FF6B6B" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="135" y1="260" x2="135" y2="295" stroke="#FF6B6B" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <text x="85" y="255" fill="#FF6B6B" font-size="9">回料循环</text>
+
+  <text x="400" y="350" text-anchor="middle" fill="#4A9EFF" font-size="10">问题: 循环不断回流, 主连接器在回收启动前就清空了缓存</text>
+  <text x="400" y="364" text-anchor="middle" fill="#8AACCD" font-size="10">修复: 基于优先级的独立缓存区分配</text>
+
+  <!-- Fix recommendation -->
+  <rect x="150" y="390" width="500" height="55" rx="8" fill="#2A5A3A" stroke="#00D4AA" stroke-width="2"/>
+  <text x="400" y="411" text-anchor="middle" fill="#00D4AA" font-size="13" font-weight="bold">推荐方案: 并联主总线布局</text>
+  <text x="400" y="430" text-anchor="middle" fill="#8AACCD" font-size="11">Mk4连接器 → 4条Mk2子线并联 · 每线1-2台机器 · 无菊花链 · 无共享连接器</text>
+
+  <text x="400" y="468" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide — 管道瓶颈排查 v1.0</text>
+</svg>

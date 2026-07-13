@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#C8D6E8" font-size="18" font-weight="bold">Superalloy Production Chain</text>
+
+  <!-- Tungsten Mining -->
+  <rect x="60" y="70" width="160" height="65" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="140" y="95" text-anchor="middle" fill="#FFB347" font-size="13" font-weight="bold">⛏ Tungsten Mining</text>
+  <text x="140" y="113" text-anchor="middle" fill="#8AACCD" font-size="11">2 miners per forge</text>
+  <text x="140" y="128" text-anchor="middle" fill="#FF6B6B" font-size="10">⚠️ This is the bottleneck!</text>
+
+  <!-- Titanium Mining -->
+  <rect x="580" y="70" width="160" height="65" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="660" y="95" text-anchor="middle" fill="#FFB347" font-size="13" font-weight="bold">⛏ Titanium Mining</text>
+  <text x="660" y="113" text-anchor="middle" fill="#8AACCD" font-size="11">1 miner per forge</text>
+  <text x="660" y="128" text-anchor="middle" fill="#6A8AAA" font-size="10">Usually abundant</text>
+
+  <!-- Arrow Tungsten -> Buffer -->
+  <line x1="220" y1="100" x2="280" y2="100" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Arrow Titanium -> Buffer -->
+  <line x1="580" y1="100" x2="520" y2="100" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Large Buffer -->
+  <rect x="285" y="70" width="230" height="65" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="400" y="93" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">📦 Large Input Buffer</text>
+  <text x="400" y="111" text-anchor="middle" fill="#8AACCD" font-size="11">1 buffer per forge</text>
+  <text x="400" y="126" text-anchor="middle" fill="#6A8AAA" font-size="10">Fed by Mk3+ Connector</text>
+
+  <!-- Buffer -> Forge -->
+  <line x1="400" y1="135" x2="400" y2="175" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <text x="412" y="158" fill="#6A8AAA" font-size="10">Mk3+</text>
+
+  <!-- Superalloy Forge -->
+  <rect x="250" y="180" width="300" height="65" rx="8" fill="url(#boxGrad)" stroke="#00D4AA" stroke-width="2"/>
+  <text x="400" y="203" text-anchor="middle" fill="#00D4AA" font-size="14" font-weight="bold">⚙️ Superalloy Forge</text>
+  <text x="400" y="221" text-anchor="middle" fill="#8AACCD" font-size="11">Consumes: Tungsten Ore + Titanium Ore</text>
+  <text x="400" y="238" text-anchor="middle" fill="#8AACCD" font-size="11">Output: Superalloy Ingots</text>
+
+  <!-- Forge -> Output Buffer -->
+  <line x1="400" y1="245" x2="400" y2="280" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Output Buffer -->
+  <rect x="285" y="285" width="230" height="55" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="400" y="308" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">📦 Shared Output Buffer</text>
+  <text x="400" y="328" text-anchor="middle" fill="#8AACCD" font-size="11">All forges share one output buffer</text>
+
+  <!-- Multi-forge array label -->
+  <rect x="50" y="195" width="160" height="35" rx="6" fill="#1E3A5F" stroke="#6A8AAA" stroke-width="1" opacity="0.7"/>
+  <text x="130" y="212" text-anchor="middle" fill="#8AACCD" font-size="10">Parallel Forge 1-4</text>
+  <text x="130" y="225" text-anchor="middle" fill="#6A8AAA" font-size="9">(scale horizontally)</text>
+
+  <rect x="590" y="195" width="160" height="35" rx="6" fill="#1E3A5F" stroke="#6A8AAA" stroke-width="1" opacity="0.7"/>
+  <text x="670" y="212" text-anchor="middle" fill="#8AACCD" font-size="10">2 Tungsten : 1 Titanium</text>
+  <text x="670" y="225" text-anchor="middle" fill="#6A8AAA" font-size="9">ratio enforcement</text>
+
+  <!-- Scaling targets -->
+  <rect x="150" y="365" width="500" height="50" rx="8" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="400" y="385" text-anchor="middle" fill="#C8D6E8" font-size="12" font-weight="bold">Scaling targets:</text>
+  <text x="400" y="403" text-anchor="middle" fill="#8AACCD" font-size="11">10/sec = 2 Forges · 4 Tungsten · 2 Titanium · ~100 power</text>
+
+  <!-- Footer -->
+  <text x="400" y="438" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide — Superalloy Production v1.0</text>
+</svg>

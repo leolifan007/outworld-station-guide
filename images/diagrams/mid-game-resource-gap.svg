@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" style="background:#1A2533;font-family:Arial,sans-serif">
+  <defs><marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#FF6B35"/></marker></defs>
+  <text x="400" y="28" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">Mid-Game Resource Gap - Expansion Roadmap</text>
+  <rect x="50" y="50" width="180" height="50" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="140" y="70" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Phase 1: Emergency</text>
+  <text x="140" y="88" text-anchor="middle" fill="#8899AA" font-size="11">0-90 min - Stop bleeding</text>
+  <line x1="230" y1="75" x2="290" y2="75" stroke="#FF6B35" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="295" y="50" width="180" height="50" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="385" y="70" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Phase 2: Outpost</text>
+  <text x="385" y="88" text-anchor="middle" fill="#8899AA" font-size="11">90m-4h - Secure supply</text>
+  <line x1="475" y1="75" x2="535" y2="75" stroke="#FF6B35" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="540" y="50" width="180" height="50" rx="6" fill="#2A3A4A" stroke="#4A9EFF" stroke-width="1.5"/>
+  <text x="630" y="70" text-anchor="middle" fill="#4A9EFF" font-size="13" font-weight="bold">Phase 3: Rebuild</text>
+  <text x="630" y="88" text-anchor="middle" fill="#8899AA" font-size="11">4-8h - Scale production</text>
+  <line x1="140" y1="100" x2="140" y2="140" stroke="#667788" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="385" y1="100" x2="385" y2="140" stroke="#667788" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="630" y1="100" x2="630" y2="140" stroke="#667788" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="30" y="145" width="220" height="80" rx="4" fill="#1A2A3A" stroke="#FF6B35" stroke-width="1"/>
+  <text x="140" y="165" text-anchor="middle" fill="#FF6B35" font-size="11" font-weight="bold">Emergency Actions:</text>
+  <text x="140" y="182" text-anchor="middle" fill="#E0E0E0" font-size="10">- Claim 2 new ore patches near station</text>
+  <text x="140" y="196" text-anchor="middle" fill="#E0E0E0" font-size="10">- Drop 4 miners + 2 smelters each</text>
+  <text x="140" y="210" text-anchor="middle" fill="#E0E0E0" font-size="10">- Add solar arrays or small reactor</text>
+  <rect x="300" y="145" width="190" height="80" rx="4" fill="#1A2A3A" stroke="#4A9EFF" stroke-width="1"/>
+  <text x="395" y="165" text-anchor="middle" fill="#4A9EFF" font-size="11" font-weight="bold">Outpost Network:</text>
+  <text x="395" y="182" text-anchor="middle" fill="#E0E0E0" font-size="10">- Mining outposts at each patch</text>
+  <text x="395" y="196" text-anchor="middle" fill="#E0E0E0" font-size="10">- On-site smelting before shipping</text>
+  <text x="395" y="210" text-anchor="middle" fill="#E0E0E0" font-size="10">- 30% output to main line</text>
+  <rect x="540" y="145" width="220" height="80" rx="4" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="650" y="165" text-anchor="middle" fill="#00D4AA" font-size="11" font-weight="bold">Station Rebuild:</text>
+  <text x="650" y="182" text-anchor="middle" fill="#E0E0E0" font-size="10">- Demolish starter ore processing</text>
+  <text x="650" y="196" text-anchor="middle" fill="#E0E0E0" font-size="10">- Modular smelter array</text>
+  <text x="650" y="210" text-anchor="middle" fill="#E0E0E0" font-size="10">- Central hub logistics</text>
+  <rect x="250" y="250" width="300" height="40" rx="6" fill="#1A2A3A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="270" text-anchor="middle" fill="#00D4AA" font-size="12">Critical Path: Phase 1 must complete within 90 minutes</text>
+  <text x="400" y="285" text-anchor="middle" fill="#8899AA" font-size="11">After 90 min: iron reserves depleted, power threshold critical</text>
+  <rect x="250" y="305" width="300" height="30" rx="4" fill="#2A1A1A" stroke="#FF6B35" stroke-width="1"/>
+  <text x="400" y="325" text-anchor="middle" fill="#FF6B35" font-size="11">Survival deadline: 90 min from first resource warning</text>
+</svg>

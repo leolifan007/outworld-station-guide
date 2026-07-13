@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240">
+  <rect width="600" height="240" fill="#1A2533" rx="8"/>
+  <text x="300" y="28" fill="#00D4AA" font-family="Arial,sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Connector Range and Relay Chain</text>
+
+  <!-- Top: Direct connector (15 tile limit) -->
+  <g transform="translate(20, 55)">
+    <text x="0" y="0" fill="#FF6B35" font-family="Arial,sans-serif" font-size="11" font-weight="bold">Direct Connector (Max 15 tiles)</text>
+
+    <rect x="0" y="10" width="50" height="25" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="25" y="27" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">Source</text>
+
+    <!-- Connector rail -->
+    <rect x="50" y="16" width="150" height="14" fill="#1E3045" rx="7" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="125" y="27" fill="#8899AA" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Connector (15 tiles)</text>
+
+    <rect x="200" y="10" width="50" height="25" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="225" y="27" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">Dest</text>
+
+    <!-- Signal dropoff indicator -->
+    <text x="110" y="52" fill="#FF6B35" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Signal drops after tile 10</text>
+  </g>
+
+  <!-- Bottom: Relay chain (extended range) -->
+  <g transform="translate(20, 110)">
+    <text x="0" y="0" fill="#00D4AA" font-family="Arial,sans-serif" font-size="11" font-weight="bold">Relay Chain (Extends to 60+ tiles)</text>
+
+    <rect x="0" y="10" width="40" height="25" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="20" y="27" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">Src</text>
+
+    <!-- First segment -->
+    <rect x="40" y="15" width="70" height="11" fill="#1E3045" rx="5" stroke="#8899AA" stroke-width="1"/>
+    <text x="75" y="24" fill="#8899AA" font-family="Arial,sans-serif" font-size="7" text-anchor="middle">12 tiles</text>
+
+    <!-- Relay 1 -->
+    <rect x="110" y="6" width="40" height="30" fill="#1E3045" rx="4" stroke="#FFD93D" stroke-width="2"/>
+    <text x="130" y="25" fill="#FFD93D" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Relay</text>
+
+    <!-- Second segment -->
+    <rect x="150" y="15" width="70" height="11" fill="#1E3045" rx="5" stroke="#8899AA" stroke-width="1"/>
+    <text x="185" y="24" fill="#8899AA" font-family="Arial,sans-serif" font-size="7" text-anchor="middle">12 tiles</text>
+
+    <!-- Relay 2 -->
+    <rect x="220" y="6" width="40" height="30" fill="#1E3045" rx="4" stroke="#FFD93D" stroke-width="2"/>
+    <text x="240" y="25" fill="#FFD93D" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">Relay</text>
+
+    <!-- Third segment -->
+    <rect x="260" y="15" width="70" height="11" fill="#1E3045" rx="5" stroke="#8899AA" stroke-width="1"/>
+    <text x="295" y="24" fill="#8899AA" font-family="Arial,sans-serif" font-size="7" text-anchor="middle">12 tiles</text>
+
+    <!-- Destination -->
+    <rect x="330" y="10" width="40" height="25" fill="#2A3F55" rx="4" stroke="#8899AA" stroke-width="1.5"/>
+    <text x="350" y="27" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">Dest</text>
+  </g>
+
+  <!-- Range comparison table -->
+  <g transform="translate(30, 175)">
+    <text x="0" y="0" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Connector Type Range Comparison</text>
+
+    <!-- Header -->
+    <rect x="0" y="8" width="170" height="20" fill="#2A3F55" rx="2"/>
+    <text x="85" y="22" fill="#00D4AA" font-family="Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Type</text>
+    <rect x="170" y="8" width="80" height="20" fill="#2A3F55" rx="2"/>
+    <text x="210" y="22" fill="#00D4AA" font-family="Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Max Tiles</text>
+    <rect x="250" y="8" width="100" height="20" fill="#2A3F55" rx="2"/>
+    <text x="300" y="22" fill="#00D4AA" font-family="Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Throughput</text>
+
+    <!-- Basic -->
+    <rect x="0" y="29" width="170" height="18" fill="#1E3045" rx="2"/>
+    <text x="10" y="42" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Basic Connector</text>
+    <rect x="170" y="29" width="80" height="18" fill="#1E3045" rx="2"/>
+    <text x="210" y="42" fill="#8899AA" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">15</text>
+    <rect x="250" y="29" width="100" height="18" fill="#1E3045" rx="2"/>
+    <text x="300" y="42" fill="#8899AA" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">12/min</text>
+
+    <!-- Heavy -->
+    <rect x="0" y="48" width="170" height="18" fill="#1E3045" rx="2"/>
+    <text x="10" y="61" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Heavy Connector</text>
+    <rect x="170" y="48" width="80" height="18" fill="#1E3045" rx="2"/>
+    <text x="210" y="61" fill="#8899AA" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">20</text>
+    <rect x="250" y="48" width="100" height="18" fill="#1E3045" rx="2"/>
+    <text x="300" y="61" fill="#8899AA" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">30/min</text>
+
+    <!-- Reinforced -->
+    <rect x="0" y="67" width="170" height="18" fill="#1E3045" rx="2"/>
+    <text x="10" y="80" fill="#B0C4D8" font-family="Arial,sans-serif" font-size="9">Reinforced Connector</text>
+    <rect x="170" y="67" width="80" height="18" fill="#1E3045" rx="2"/>
+    <text x="210" y="80" fill="#8899AA" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">25</text>
+    <rect x="250" y="67" width="100" height="18" fill="#1E3045" rx="2"/>
+    <text x="300" y="80" fill="#8899AA" font-family="Arial,sans-serif" font-size="9" text-anchor="middle">45/min</text>
+  </g>
+</svg>

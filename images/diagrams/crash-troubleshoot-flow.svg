@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00D4AA"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#00D4AA" font-size="18" font-weight="bold">崩溃/卡顿 故障排查流程图</text>
+
+  <!-- Start -->
+  <rect x="320" y="55" width="160" height="40" rx="20" fill="#2A5A3A" stroke="#3A8A5A" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">游戏出问题</text>
+
+  <line x1="400" y1="95" x2="400" y2="120" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Decision -->
+  <polygon points="400,125 445,155 400,185 355,155" fill="#2A3F55" stroke="#FFB347" stroke-width="2"/>
+  <text x="400" y="152" text-anchor="middle" fill="#FFB347" font-size="11">黑屏/</text>
+  <text x="400" y="166" text-anchor="middle" fill="#FFB347" font-size="11">闪退?</text>
+
+  <!-- Left Branch: Black Screen -->
+  <line x1="355" y1="155" x2="195" y2="155" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <text x="275" y="148" fill="#FF6B6B" font-size="10">是 →</text>
+
+  <rect x="40" y="130" width="155" height="50" rx="8" fill="url(#boxGrad)" stroke="#FF6B6B" stroke-width="2"/>
+  <text x="117" y="150" text-anchor="middle" fill="#FF6B6B" font-size="12" font-weight="bold">Fix #1: Win8兼容模式</text>
+  <text x="117" y="168" text-anchor="middle" fill="#8AACCD" font-size="10">最有效的启动修复</text>
+
+  <line x1="117" y1="180" x2="117" y2="205" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="40" y="210" width="155" height="45" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="117" y="228" text-anchor="middle" fill="#C8D6E8" font-size="11">Fix #2: 禁用全屏优化</text>
+  <text x="117" y="244" text-anchor="middle" fill="#6A8AAA" font-size="10">加速Alt-Tab</text>
+
+  <line x1="117" y1="255" x2="117" y2="275" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="40" y="280" width="155" height="45" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="117" y="298" text-anchor="middle" fill="#C8D6E8" font-size="11">Fix #4: 删除GI缓存</text>
+  <text x="117" y="314" text-anchor="middle" fill="#6A8AAA" font-size="10">AppData/LocalLow</text>
+
+  <line x1="117" y1="325" x2="117" y2="345" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="40" y="350" width="155" height="45" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="117" y="368" text-anchor="middle" fill="#C8D6E8" font-size="11">Fix #5: 校验游戏文件×2</text>
+  <text x="117" y="384" text-anchor="middle" fill="#6A8AAA" font-size="10">Steam验证两次</text>
+
+  <!-- Right Branch: Low FPS -->
+  <line x1="445" y1="155" x2="605" y2="155" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <text x="525" y="148" fill="#4A9EFF" font-size="10">否 →</text>
+
+  <rect x="605" y="130" width="160" height="50" rx="8" fill="url(#boxGrad)" stroke="#FFB347" stroke-width="2"/>
+  <text x="685" y="148" text-anchor="middle" fill="#FFB347" font-size="12" font-weight="bold">卡顿/低帧数?</text>
+  <text x="685" y="166" text-anchor="middle" fill="#8AACCD" font-size="10">排查FPS问题</text>
+
+  <line x1="685" y1="180" x2="685" y2="205" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="605" y="210" width="160" height="45" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="685" y="228" text-anchor="middle" fill="#C8D6E8" font-size="11">Fix #6: 独占全屏</text>
+  <text x="685" y="244" text-anchor="middle" fill="#6A8AAA" font-size="10">+22 FPS实测</text>
+
+  <line x1="685" y1="255" x2="685" y2="275" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="605" y="280" width="160" height="45" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="685" y="298" text-anchor="middle" fill="#C8D6E8" font-size="11">Fix #7: 锁60帧</text>
+  <text x="685" y="314" text-anchor="middle" fill="#6A8AAA" font-size="10">vsync + targetFPS=60</text>
+
+  <line x1="685" y1="325" x2="685" y2="345" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="605" y="350" width="160" height="45" rx="6" fill="url(#boxGrad)" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="685" y="368" text-anchor="middle" fill="#C8D6E8" font-size="11">Fix #8: 分段连接器</text>
+  <text x="685" y="384" text-anchor="middle" fill="#6A8AAA" font-size="10">8-10连接器/段</text>
+
+  <!-- Bottom section -->
+  <line x1="400" y1="185" x2="400" y2="420" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="200" y="425" width="400" height="45" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="400" y="445" text-anchor="middle" fill="#4A9EFF" font-size="12" font-weight="bold">Fix #11: 增大虚拟内存到1.5×物理内存</text>
+  <text x="400" y="462" text-anchor="middle" fill="#8AACCD" font-size="10">解决冻结、存档超时</text>
+
+  <line x1="400" y1="470" x2="400" y2="490" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="200" y="495" width="400" height="45" rx="8" fill="url(#boxGrad)" stroke="#4A9EFF" stroke-width="2"/>
+  <text x="400" y="515" text-anchor="middle" fill="#4A9EFF" font-size="12" font-weight="bold">Fix #17: 大版本更新后清着色器缓存</text>
+  <text x="400" y="532" text-anchor="middle" fill="#8AACCD" font-size="10">避免微卡顿</text>
+
+  <line x1="400" y1="540" x2="400" y2="560" stroke="#00D4AA" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <rect x="300" y="565" width="200" height="30" rx="15" fill="#2A5A3A" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="585" text-anchor="middle" fill="#00D4AA" font-size="12" font-weight="bold">✅ 游戏稳定运行</text>
+
+  <text x="400" y="598" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide — Performance & Crash Fix v1.0</text>
+</svg>
