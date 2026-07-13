@@ -7,12 +7,14 @@ draft: false
 hidden: true
 publishDate: 2026-07-15T14:09:00+08:00
 version: "1.1"
-emoji: "♟"
+game_version: "v1.1.0"
 category: production
 breadcrumb: v1.1 Recipe Changes Guide
 tested: "Every ratio spot-checked in-game on v1.1.1.0 against the original v1.0 values."
 ---
 
+
+{{< diagram src="v11-recipe-change-old-new.svg" caption="Old vs new recipe comparison for Diamond, Nitronic Acid, Oxygen, and Superalloy showing input-output changes between v1.0 and v1.1" >}}
 ## Your v1.0 Factory Ratios Are Wrong Now
 
 If you set up your factory before June 24 and left it running, some lines are out of balance. v1.1 changed Diamond, Nitronic Acid, and Oxygen recipes, added an alternative Superalloy recipe, boosted Hub throughput, halved Molecular Recombination output, and made Recycler Points station-wide instead of per-recycler.
@@ -21,11 +23,35 @@ I ran through every changed recipe on a fresh v1.1.1.0 save and compared the num
 
 If your factory was already optimized for v1.0, start with our [Assembly Line Ratios Guide](/guides/assembly-line-ratios/) to see the new target ratios.
 
-<div class="callout callout-verdict">
-  <h4>The Short Version</h4>
-  <p>Six recipe changes affect your factory: Diamond (now requires Carbon + Nitrox), Nitronic Acid (now uses Nitrox instead of Sulfur), Oxygen (+67% yield), Superalloy (alternative recipe using Steel+Nitrox), Hub throughput (+50%), and Molecular Recombination (-50% output). Rebuild your Diamond and Nitronic lines first, then check your Superalloy feed. Hub and Recycler changes are pure buffs -- no rebuild needed.</p>
-</div>
+{{< callout type="verdict" title="The Short Version" >}}
+Six recipe changes affect your factory: Diamond (now requires Carbon + Nitrox), Nitronic Acid (now uses Nitrox instead of Sulfur), Oxygen (+67% yield), Superalloy (alternative recipe using Steel+Nitrox), Hub throughput (+50%), and Molecular Recombination (-50% output). Rebuild your Diamond and Nitronic lines first, then check your Superalloy feed. Hub and Recycler changes are pure buffs -- no rebuild needed.
+{{< /callout >}}
 
+
+## v1.1 Change Summary at a Glance
+
+
+{{< resourcegrid ingredient="Recipe" input="Old Input" output="New Output" ratio="Change" >}}
+  {{< row item="Diamond" input="Carbon" output="Carbon + Nitrox" ratio="+33%" >}}
+  {{< row item="Nitronic Acid" input="H + Sulfur" output="H + Nitrox" ratio="+20%" >}}
+  {{< row item="Oxygen" input="2 H → 3 O" output="2 H → 5 O" ratio="+67%" >}}
+  {{< row item="Superalloy" input="W + Ti" output="+ Steel + Nitrox alt" ratio="~60% less Ti" >}}
+  {{< row item="Hub" input="60/min" output="90/min" ratio="+50%" >}}
+  {{< row item="Recombination" input="5/min" output="~2/min" ratio="-50%" >}}
+{{< /resourcegrid >}}
+| Change | Category | Impact |
+|--------|----------|--------|
+| Diamond: Carbon+Nitrox instead of Carbon-only | Recipe Change | Rebuild needed |
+| Nitronic Acid: Uses Nitrox instead of Sulfur | Recipe Change | Supply chain simplified |
+| Oxygen: 2 Hydrogen 閳?5 Oxygen (was 3) | Recipe Buff | +67% yield, pure upgrade |
+| Superalloy: Alternative Steel+Nitrox recipe | New Option | Less Titanium dependency |
+| Hub throughput: 60 閳?90 items/min per channel | Balance Buff | +50% channel capacity |
+| Molecular Recombination: 5/min 閳?~2/min | Balance Nerf | Output halved |
+| Recycler Points: Now station-wide pool | System Change | ~3x faster accumulation |
+| Servitor Station: Unlocked at Level 8 (was 10) | Progression | 2 levels earlier |
+| Blueprint area: 20鑴?0 閳?30鑴?0, 120閳?00 objects | Quality of Life | Larger builds |
+
+<hr>
 <hr>
 
 ## Diamond Recipe -- Now Needs Nitrox
@@ -81,11 +107,12 @@ Recycler Points now share a single station-wide pool instead of separate per-rec
 
 Two levels earlier. A single Servitor at Level 8 reduced my repair downtime by roughly 70% compared to manual repair. For Servitor management, see our [Drone Defense Guide](/guides/drone-defense-guide/).
 
+
+{{< diagram src="v11-rebalance-impact-chart.svg" caption="Impact chart showing how each v1.1 balance change affects factory throughput -- Hub, Oxygen, Recombination, Recycler, and Servitor" >}}
 ## Blueprint Area and Object Limits Increased
 
 **Before:** 20x20 tiles, 120 objects. **After:** 30x30 tiles, 200 objects. I compressed my entire Superalloy production line into a single blueprint that would have overflowed the old limit.
 
-<div class="callout callout-info">
-  <h4>Community Verification</h4>
-  <p>All recipe ratios verified on v1.1.1.0 with no active modules. Official patch notes: <a href="https://steamcommunity.com/games/3242950/announcements/detail/712278712419096025" target="_blank" rel="noopener noreferrer">Steam News: Version 1.1 Now Available</a></p>
-</div>
+{{< callout type="info" title="Community Verification" >}}
+All recipe ratios verified on v1.1.1.0 with no active modules. Official patch notes: [Steam News: Version 1.1 Now Available](https://steamcommunity.com/games/3242950/announcements/detail/712278712419096025)
+{{< /callout >}}

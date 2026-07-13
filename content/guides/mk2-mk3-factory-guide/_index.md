@@ -7,7 +7,7 @@ draft: false
 hidden: true
 publishDate: 2026-07-15T11:23:00+08:00
 version: "1.1"
-emoji: "?"
+game_version: "v1.1.0"
 category: production
 breadcrumb: Mk 2 & Mk 3 Factory Guide
 tested: "Production rates measured in-game on v1.1.1.0 with Mk 1 baseline vs Mk 2 and Mk 3 upgrades."
@@ -21,10 +21,36 @@ I built every single one and measured the real-world throughput. This guide tell
 
 If you are still setting up your basic production chains, start with our [Assembly Line Ratios Guide](/guides/assembly-line-ratios/) to get your Mk 1 lines running at full efficiency first.
 
-<div class="callout callout-verdict">
-  <h4>The Short Version</h4>
-  <p>Build Mk 2 Smelter and Mk 2 Plasma Forge first -- they have the fastest payback at roughly 45 minutes each. Skip Mk 3 until you have stable resource income from multiple outposts. Mk 2 Fusion Reactor is a trap: it costs too much for only 2x output when two Mk 1 reactors with proper cooling are cheaper. Mk 3 Bio-extractor is the sleeper hit -- 5x output with the same footprint.</p>
-</div>
+{{< callout type="verdict" title="The Short Version" >}}
+Build Mk 2 Smelter and Mk 2 Plasma Forge first -- they have the fastest payback at roughly 45 minutes each. Skip Mk 3 until you have stable resource income from multiple outposts. Mk 2 Fusion Reactor is a trap: it costs too much for only 2x output when two Mk 1 reactors with proper cooling are cheaper. Mk 3 Bio-extractor is the sleeper hit -- 5x output with the same footprint.
+{{< /callout >}}
+
+{{< diagram src="mk2-mk3-upgrade-comparison.svg" caption="Side-by-side comparison of Mk 1, Mk 2, and Mk 3 factory buildings showing output gains, cost increases, and space savings" >}}
+
+
+{{< resourcegrid ingredient="Building" input="Mk 1 /min" output="Mk 2 /min" ratio="Mk 3 /min" >}}
+  {{< row item="Smelter" input="15" output="30" ratio="60" >}}
+  {{< row item="Plasma Forge" input="10" output="20" ratio="40" >}}
+  {{< row item="Atomizer" input="8" output="16" ratio="32" >}}
+  {{< row item="Fabricator" input="6" output="12" ratio="24" >}}
+  {{< row item="Bio-extractor" input="10" output="20" ratio="50 (5x!)" >}}
+  {{< row item="Fusion Reactor" input="500MW" output="1000MW" ratio="SKIP" >}}
+{{< /resourcegrid >}}
+## v1.1 Upgrade Summary Table
+
+| Building | Mk 1 Output | Mk 2 Output | Mk 3 Output | Best Buy |
+|----------|------------|------------|------------|----------|
+| Smelter | 15/min | 30/min | 60/min | ✅ Mk 2 (fastest payback) |
+| Plasma Forge | 10/min | 20/min | 40/min | ✅ Mk 2 |
+| Atomizer | 8/min | 16/min | 32/min | Mk 2 |
+| Fabricator | 6/min | 12/min | 24/min | Mk 2 |
+| Matter Printer | 4/min | 8/min | 16/min | Mk 2/Mk 3 if high volume |
+| Refinery | 12/min | 24/min | 48/min | Mk 2 |
+| Bio-extractor | 10/min | 20/min | 50/min | ✅ Mk 3 (5x output, sleeper) |
+| Fusion Reactor | 500MW | 1000MW | 2000MW | ❌ Skip Mk 2, use 2× Mk 1 |
+| Energy Storage | 100MJ | 200MJ | 400MJ | Only if space-tight |
+
+{{< diagram src="factory-payback-timeline.svg" caption="Payback timeline for each Mk 2 and Mk 3 upgrade showing hours until investment recouped vs building additional Mk 1 units" >}}
 
 <hr>
 

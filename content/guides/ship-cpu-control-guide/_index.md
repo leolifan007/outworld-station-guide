@@ -1,4 +1,5 @@
 ---
+game_version: "v1.1.0"
 title: "Ship CPU Control Guide - Assign, Automate, and Command Your Fleet"
 description: "The Ship CPU system in v1.1 lets you control completed ships directly. Here is how to unlock CPU slots, assign tasks, and build a fully automated trade and combat fleet without touching a single ship manually."
 date: 2026-07-13
@@ -7,11 +8,12 @@ draft: false
 hidden: true
 publishDate: 2026-07-14T11:35:00+08:00
 version: "1.1"
-emoji: "?"
 category: logistics
 breadcrumb: Ship CPU Control Guide
 tested: "Verified against v1.1.1.0 ship CPU slot limits and task assignments."
 ---
+
+{{< diagram src="ship-cpu-task-flow.svg" caption="Ship CPU control flow from unlocking at Station Level 9 through CPU assignment, task selection, and autonomous operation" >}}
 
 ## Your Ships Are Wasting Time. Here is How CPU Control Fixes It
 
@@ -19,10 +21,9 @@ Before v1.1, your completed ships just sat there until you manually clicked them
 
 If you are still building your first ships, start with our [Ship Building Guide](/guides/ship-building/) to understand the basics of hulls, thrusters, and cargo modules. The CPU system only works on completed ships, so you need something worth controlling first.
 
-<div class="callout callout-verdict">
-  <h4>The Short Version</h4>
-  <p>Unlock CPU Control at Station Level 9 through the Command Tree. Each CPU point controls one small ship or one slot on a larger ship. Assign tasks like Trading, Resource Hauling, Escort, or Patrol from the Fleet Management panel. Start with 2-3 CPU points and assign your fastest haulers to trade routes for the best early return.</p>
-</div>
+{{< callout type="verdict" title="The Short Version" >}}
+Unlock CPU Control at Station Level 9 through the Command Tree. Each CPU point controls one small ship or one slot on a larger ship. Assign tasks like Trading, Resource Hauling, Escort, or Patrol from the Fleet Management panel. Start with 2-3 CPU points and assign your fastest haulers to trade routes for the best early return.
+{{< /callout >}}
 
 <hr>
 
@@ -57,6 +58,8 @@ You start with 2 CPU points. Additional points come from:
 
 A fully upgraded station at Level 16+ can control roughly 22 CPU points worth of ships.
 
+{{< diagram src="cpu-point-allocation.svg" caption="CPU point allocation guide showing how many ships each tier of CPU capacity can control at different station levels" >}}
+
 ## Available Task Assignments
 
 Once a ship is assigned to the CPU, you can give it one of these task profiles:
@@ -74,6 +77,7 @@ I tested Auto-Trade first. I set up a Pelican freighter running a route between 
 
 If you want to optimize trade routes further, our [Passive Income and Trading Guide](/guides/passive-income-trading/) covers the best buy-low/sell-high loops and how to find them.
 
+{{< section >}}
 ## CPU Tasks That Actually Make Money
 
 Not all CPU tasks are equally useful. Here is what I found after running 40+ hours with a full CPU fleet:
@@ -84,6 +88,9 @@ Not all CPU tasks are equally useful. Here is what I found after running 40+ hou
 
 **Best late game (Levels 15+): ExoPlanet Ops.** Unlocked in v1.1.0.4, ExoPlanet Ops missions send your ships to extract rare surface resources. These resources cannot be obtained any other way. One ExoPlanet run with a Frigate brings back 15-25 units of Exotic Matter worth about 50K credits on the market.
 
+{{< /section >}}
+
+{{< section >}}
 ## Servitor Escort -- New in v1.1
 
 In v1.1.0.1, Servitors gained the ability to escort ships. If you assign a ship to a CPU task and a Servitor is available, the Servitor will follow the ship and provide repair support and light defense.
@@ -92,6 +99,9 @@ I tested this: a Pelican freighter on Auto-Trade with a Servitor escort survived
 
 Servitors unlock at Station Level 8 (moved up from Level 10 in v1.1). If you have not built them yet, our [Drone Defense Guide](/guides/drone-defense-guide/) covers the basics of Servitor and combat drone systems.
 
+{{< /section >}}
+
+{{< section >}}
 ## Common Mistakes with Ship CPU
 
 **Mistake 1: Over-assigning CPU to combat ships.** New players often put all points into patrol ships because combat feels important. But those patrol ships are costing you trade income. Start with 2 trade ships, add patrol only after you have 4+ CPU points.
@@ -100,14 +110,19 @@ Servitors unlock at Station Level 8 (moved up from Level 10 in v1.1). If you hav
 
 **Mistake 3: Not upgrading ship speed before CPU assignment.** A slow freighter on CPU control is still slow. Before assigning a ship to CPU, upgrade its thrusters and install the best engine modules you can afford. Our [Equipment Module Upgrade Guide](/guides/equipment-module-upgrade-guide/) shows which modules give the best speed-per-credit.
 
+{{< /section >}}
+
+{{< section >}}
 ## v1.1.0.1 to v1.1.1.0 -- Bug Fixes That Matter
 
 - **v1.1.0.1**: Ships now drop inventory when sold or destroyed (previously inventory was lost). If you sell a CPU-controlled ship, remember to unload its cargo first.
 - **v1.1.0.1**: Fixed Recycler Points not saving with CPU assignments. Your CPU ship layouts now persist through game restarts.
 - **v1.1.0.4**: Fixed ExoPlanet Ops Centre crashing when too many ships were assigned. Now stable with up to 6 ships.
 
-<div class="callout callout-info">
-  <h4>Community Verification</h4>
-  <p>CPU mechanics verified against Steam patch notes for v1.1 through v1.1.1.0. Ship-specific CPU costs tested with all ship classes available at Station Level 14 on patch v1.1.1.0.</p>
-  <p>For the official patch notes, visit the <a href="https://steamcommunity.com/app/3242950/discussions/0/598526260522580034/" target="_blank" rel="noopener noreferrer">Steam Community announcement</a>.</p>
-</div>
+{{< /section >}}
+
+{{< callout type="info" title="Community Verification" >}}
+CPU mechanics verified against Steam patch notes for v1.1 through v1.1.1.0. Ship-specific CPU costs tested with all ship classes available at Station Level 14 on patch v1.1.1.0.
+
+For the official patch notes, visit the [Steam Community announcement](https://steamcommunity.com/app/3242950/discussions/0/598526260522580034/).
+{{< /callout >}}
