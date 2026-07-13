@@ -4,7 +4,9 @@ description: "Outworld Station mid-game survival guide for the resource crunch a
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Mid-Game Crunch
-lastmod: 2026-07-13
+version: "1.1"
+game_version: "v1.1.0"
+lastmod: 2026-07-14
 draft: false
 category: strategy
 tested: "Crunch survival strategies tested across 4 playthroughs at Station Level 5-9."
@@ -20,6 +22,32 @@ This is the mid-game resource crunch. It hits every player around Station Level 
   <h4>The Short Version</h4>
   <p>The crunch is caused by three things: Titanium shortage, Circuit bottleneck, and Superalloy setup cost. Fix Titanium first (prospect actively, tow an asteroid), then build a dedicated Circuit production line, then tackle Superalloy. Do NOT try to do all three simultaneously.</p>
 </div>
+
+{{< callout "info" >}}**v1.1:** The mid-game math has shifted. Hub send rate is up (faster distribution eases bottlenecks), Molecular Recombiner output is roughly halved (replan your recycler math), Superalloy has a new alternative recipe, and Mk2/Mk3 factories raise production throughput. Read the "v1.1 mid-game shifts" section before committing your build order.{{< /callout >}}
+
+<hr>
+
+## v1.1 Mid-Game Shifts
+
+Outworld Station v1.1 rebalances several systems that hit hardest during the Station Level 6-9 crunch. If you are following the priority sequence above, account for these four changes:
+
+### 1. Hub Send Rate Increased
+
+The Hub now distributes resources to stations faster. Bottlenecks that used to form because materials sat in the Hub queue now clear sooner. **Implication:** You can lean on Hub-fed supply lines earlier, and shared-resource stalls between stations are less punishing. Let the Hub carry more of the distribution load instead of hand-towing.
+
+### 2. Molecular Recombiner Output Halved
+
+The Molecular Recombiner now produces roughly half as much per cycle (~50% less). **Implication:** Any recycler-based supply math in your plan is wrong by a factor of about two. Replan how much you feed the recombiner and how many you build — you need roughly twice the recombiner throughput (or recycled input) to hit the same output you expected.
+
+### 3. Superalloy Alternative Recipe
+
+Superalloy now has an **alternative recipe** (a new production path). If the classic Titanium + Tungsten forge route is starving you (the Bottleneck 3 problem above), the alternative path may let you reach Superalloy throughput with a different input mix. **Implication:** You are no longer hard-gated on Titanium+Tungsten alone. Evaluate both recipes against what you actually have stockpiled. See [Superalloy Guide](/guides/superalloy-guide/) for the recipe options.
+
+### 4. Mk2/Mk3 Factories Change Throughput
+
+Mk2/Mk3 factory tiers roughly double (and then exceed) per-building throughput. **Implication:** A single Mk2/Mk3 Superalloy Forge, Smelter, or Fabricator replaces several Mk1 buildings, shrinking the footprint and buffer math of your mid-game chains. Upgrade tier before adding more parallel lines.
+
+**Full recipe breakdown:** See [v1.1 Recipe Changes Guide](/guides/v1-1-recipe-changes-guide/) for every changed recipe and ratio.
 
 <hr>
 

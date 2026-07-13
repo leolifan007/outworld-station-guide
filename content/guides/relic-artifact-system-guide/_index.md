@@ -3,8 +3,10 @@ title: "Outworld Station Relic and Artifact System - Find, Use, and Upgrade Alie
 description: "Outworld Station alien relic and artifact system complete guide. How to find relic nodes, extract artifacts, install artifact upgrades, and the best relic loadouts for every playstyle."
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
+version: "1.1"
+game_version: "v1.1.0"
 breadcrumb: Relic & Artifacts
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
 category: exploration
 tested: "Artifact system tested with 12 installed upgrades across Station Level 6-14."
@@ -123,4 +125,6 @@ If you find an Artifact you do not need, recycle it at the Hub for 2 Components.
 ### Related Guides
 - [Ore Scanning and Prospecting Guide](/guides/ore-scanning-prospecting-guide/)
 - [Exploration and Planets Guide](/guides/planet-environment-guide/)
-- [Endgame Guide and Final Stretch](/guides/endgame-final-stretch-guide/)
+### v1.1: Relic and Artifact Systems Unchanged
+
+**Verified for v1.1** — the relic and artifact system mechanics are unchanged. Finding, extracting, and installing artifacts works the same as described in this guide. Strategy and loadout recommendations still apply.

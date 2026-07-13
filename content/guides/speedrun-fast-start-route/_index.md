@@ -4,7 +4,9 @@ description: "Outworld Station speedrun route from fresh save to Station Level 5
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Speedrun Route
-lastmod: 2026-07-13
+version: "1.1"
+game_version: "v1.1.0"
+lastmod: 2026-07-14
 draft: false
 category: strategy
 tested: "Route tested across 5 fresh starts, fastest time: 1h47m to Station Level 5."
@@ -20,6 +22,39 @@ This route skips every optional step. No exploring. No decorating. No building t
   <h4>The Target</h4>
   <p>Station Level 5 in under 2 hours. Build order: 1 Solar -> 1 Drill -> 1 Smelter -> 1 Assembler -> 1 Research Lab. Research: Solar Efficiency -> Battery -> Smelter Upgrade -> Medium Storage -> Oxygen -> Fabricator. Skip everything else until Level 5.</p>
 </div>
+
+{{< callout "info" >}}**v1.1:** The optimal speedrun route changed. The Servitor Station now unlocks at Station Level 8 (earlier than before), and Mk2/Mk3 factories are available sooner. Rush Servitor at L8 and use Mk2 factories to compress your build order — see "v1.1 route changes" below.{{< /callout >}}
+
+<hr>
+
+## v1.1 Route Changes
+
+v1.1 shifts two things that matter for a speedrun: an earlier Servitor Station unlock and earlier access to Mk2/Mk3 factory tiers.
+
+### Servitor Station at Level 8
+
+The Servitor Station now unlocks at **Station Level 8**, earlier than in previous versions. In a speedrun this is a new mid-game power spike you can plan around:
+- You no longer wait as long for automated Servitor assistance — rush to Level 8 once your Level 5 foundation is stable.
+- Fold the Servitor Station into your build order right after you lock in Superalloy production, so it accelerates the Level 8-10 grind.
+
+### Mk2/Mk3 Factories Available Earlier
+
+Mk2/Mk3 factory tiers are reachable earlier in v1.1. Use them to compress the route:
+- Upgrade your core Smelter / Fabricator / Assembler to Mk2 as soon as you can afford it — roughly double throughput per building means fewer parallel lines and less connector iron spent.
+- A single Mk2 Superalloy Forge shortens the "forge pays itself back" wait that the mid-game crunch relies on.
+
+### Adjusted Unlock / Build Order
+
+| Station Level | What Changed in v1.1 | Speedrun Action |
+|:-----------:|----------------------|-----------------|
+| 5 | (unchanged) Superalloy Forge, Shipyard II | Lock foundation, start Superalloy |
+| 6-7 | Mk2/Mk3 factories reachable earlier | Upgrade core buildings to Mk2 |
+| 8 | **Servitor Station unlocks here (earlier)** | Rush Servitor Station for automation |
+| 9-10 | (standard) endgame prep | Scale with Mk2/Mk3 throughput |
+
+**Net effect:** The route is faster end-to-end. Earlier Mk2 throughput plus a Level 8 Servitor Station means you reach a self-sustaining mid-game in less time than the Level 5-in-2-hours baseline assumed.
+
+**Plan your levels:** See [Station Level Progression Guide](/guides/station-level-progression-guide/) for the full unlock ladder, and [Mk2/Mk3 Factory Guide](/guides/mk2-mk3-factory-guide/) for tier costs and throughput.
 
 <hr>
 

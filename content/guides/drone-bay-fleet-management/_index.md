@@ -4,8 +4,10 @@ description: "Outworld Station drone bay building, drone types, fleet routing, b
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Drone Management
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
+version: "1.1"
+game_version: "v1.1.0"
 category: logistics
 tested: "Drone fleet with 24 active drones across 3 bays, Station Level 12."
 ---
@@ -133,6 +135,21 @@ tested: "Drone fleet with 24 active drones across 3 bays, Station Level 12."
     2. **Drone Cargo Capacity** (Second) - More items per trip = fewer trips = less battery waste
     3. **Bay Charging Speed** (Third) - Gets drones back in the air faster
     4. **Drone Speed** (Last) - Speed matters less than battery and cargo for most setups
+
+    <hr>
+
+    ## v1.1: Coordinating Ship CPU Control With Your Drone Fleet
+
+    The v1.1 Ship CPU Control system adds a new autonomous layer alongside your drones. Every completed ship has a CPU budget (CPU points) you allocate to roles in the Ship menu. Once allocated, a ship performs map tasks on its own -- auto-haul, escort, patrol -- without a pilot.
+
+    {{< callout "info" >}}**v1.1:** A CPU-controlled ship complements your paired vs free-range drones. Drones are best for short-range, high-frequency paired delivery; a CPU ship is better for long-haul or guard duties. Assign CPU roles so ships and drones cover different routes.{{< /callout >}}
+
+    **Suggested division of labor:**
+    - **CPU ship (auto-haul):** runs long-haul bulk transport between distant outposts or resource rocks. Give it the auto-haul role and let it ferry large loads while drones stay on the station core.
+    - **Drones (paired delivery):** handle short-range, continuous routes between production buildings (Smelter -> Assembler, etc.).
+    - **CPU ship (escort/patrol):** protects a towing or salvage run, freeing your drones from defensive detours.
+
+    Keep one rule: never have a CPU ship and a drone run the same route. That just doubles battery and power draw for the same cargo. Split the map -- ships take the long, sparse lanes; drones take the dense, short lanes. Full role allocation is in the [Ship CPU Control Guide](/guides/ship-cpu-control-guide/).
 
     <hr>
 

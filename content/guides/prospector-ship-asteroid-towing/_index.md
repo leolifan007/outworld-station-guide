@@ -4,8 +4,10 @@ description: "Outworld Station prospector ship setup, asteroid towing mechanics,
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Asteroid Towing
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
+version: "1.1"
+game_version: "v1.1.0"
 category: production
 tested: "Asteroid towing tested with 20+ towed rocks across Station Level 6-12."
 ---
@@ -128,6 +130,25 @@ You can either remove the drills and tow another asteroid, or use the depleted r
 4. Fly out, lock beam, tow back
 5. Park, drill, connect
 6. Repeat until your station is surrounded by resource rocks
+
+<hr>
+
+## v1.1: Automating Towing With Ship CPU Control
+
+v1.1's Ship CPU Control system can take the pilot seat out of towing. Allocate CPU points to a Prospector's auto-tow role in the Ship menu and the ship will fly out, lock on, and tow asteroids back to your station on its own -- no manual flying.
+
+**Manual towing vs. CPU auto-tow:**
+
+| | Manual Towing | CPU Auto-Tow |
+|---|---|---|
+| Control | You fly the ship | Ship runs autonomously |
+| Best for | Selecting exact rocks, scouting new sectors, one-off pulls | Repeatable hauls of known asteroid fields |
+| Attention | Ties up you (or a pilot) | Hands-off, runs while you build |
+| Setup cost | None beyond the tractor beam | Requires CPU points allocated to auto-tow |
+
+{{< callout "info" >}}**v1.1:** Use manual towing when you are prospecting an unknown sector or want a specific asteroid parked in a precise spot. Use CPU auto-tow for the routine grind of pulling known Titanium/Tungsten rocks from a mapped belt -- let the ship loop the route while you focus on station production.{{< /callout >}}
+
+The auto-tow role respects the same weight limits (under 500 tons) and drift behavior described above, so the towing-speed table still applies. Full role allocation and CPU budget details are in the [Ship CPU Control Guide](/guides/ship-cpu-control-guide/).
 
 <hr>
 

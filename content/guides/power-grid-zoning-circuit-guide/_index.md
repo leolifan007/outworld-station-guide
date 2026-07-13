@@ -4,8 +4,10 @@ description: "Outworld Station power grid zoning strategy, circuit breaker place
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Power Zoning
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
+version: "1.1"
+game_version: "v1.1.0"
 category: power
 tested: "Zoned power grid tested through 3 station rebuilds at Station Level 6-14."
 ---
@@ -128,6 +130,16 @@ Circuit Breakers are special connectors that split your power grid into isolated
 3. Set the priority levels (Critical=100%, Production=70%, Expansion=40%)
 4. Move oxygen, life support, and reactor pumps to the Critical zone
 5. Test: temporarily disconnect your main power plant and watch the zones throttle correctly
+
+<hr>
+
+## v1.1: Higher-Density Power With Mk2 Reactor and Storage
+
+v1.1 adds the Mk2 tier for the Fusion Reactor and Energy Storage buildings. If you are rebuilding your Power Zone (Zone A) or scaling Production (Zone B), prefer the **Mk2 Fusion Reactor + Mk2 Energy Storage** combo: it delivers meaningfully higher output and storage density per footprint than the Mk1 parts, so you can satisfy the same power budget in less space (at higher build cost).
+
+{{< callout "info" >}}**v1.1 bug fix:** The Fusion Reactor fuel storage and efficiency readout has been corrected -- old numbers in pre-v1.1 guides were wrong. Trust the in-game readout now; re-check any reactor math you copied from older sources.{{< /callout >}}
+
+When zoning, keep the same priority split (Critical 100% / Production 70% / Expansion 40%) -- the Mk2 tiers just let you meet each zone's budget with fewer, denser tiles. See [Mk2/Mk3 Factory Guide](/guides/mk2-mk3-factory-guide/) for tier throughput, and [Fusion Reactor Guide](/guides/fusion-reactor-guide/) for the corrected reactor stats.
 
 <hr>
 

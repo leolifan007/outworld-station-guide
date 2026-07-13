@@ -4,8 +4,10 @@ description: "Outworld Station turret placement strategy, weapon types ranked by
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Weapons & Turrets
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
+version: "1.1"
+game_version: "v1.1.0"
 category: defense
 tested: "Defense grid tested against Level 12 raids with 12 turrets across 3 kill zones."
 ---
@@ -117,7 +119,18 @@ Place turrets at the three corners of an equilateral triangle centered on your s
 
 <hr>
 
+## v1.1: Defense Considerations
+
+Two v1.1 changes affect how you run your defense grid:
+
+{{< callout "info" >}}**v1.1 (a) Wreck salvage from combat:** Destroyed ships -- including your own downed ships -- now drop recoverable items. If a raider or one of your ships goes down near the station, salvage it instead of leaving it as debris. Factor this into turret placement: keep at least one firing lane clear so a Salvage ship or drone can reach a fresh wreck without eating fire. See [Salvage and Wreck Harvesting Guide](/guides/salvage-wreck-harvesting-guide/) for the new ship-drop loot source.{{< /callout >}}
+
+{{< callout "info" >}}**v1.1 (b) CPU-controlled ships:** With v1.1 you can assign CPU-controlled ships to escort/patrol roles. These autonomous ships move on their own, so turret targeting and fire-zone assignments must account for friendly ships in the kill zone. Route CPU escorts outside your turret overlap arcs to avoid friendly-fire locks, and reserve one approach vector for the escort's patrol lane.{{< /callout >}}
+
+<hr>
+
 ### Related Guides
 - [Drone Defense and Shield Guide](/guides/drone-defense-guide/)
 - [Automated Repair and Station Self-Healing](/guides/automated-repair-station-healing/)
 - [Combat Ship Loadout Guide](/guides/combat-ship-design-guide/)
+- [Salvage and Wreck Harvesting Guide](/guides/salvage-wreck-harvesting-guide/)

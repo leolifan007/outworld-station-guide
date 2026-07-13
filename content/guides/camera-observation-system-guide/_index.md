@@ -3,8 +3,10 @@ title: "Outworld Station Camera and Observation System - Monitor Every Part of Y
 description: "Outworld Station camera system, remote observation rooms, alarm triggers, and the centralized monitoring console that lets you check any production line without leaving your command center."
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
+version: "1.1"
+game_version: "v1.1.0"
 breadcrumb: Camera System
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
 category: misc
 tested: "Full monitoring setup with 12 cameras across 6 production zones at Station Level 7."
@@ -114,4 +116,6 @@ For advanced setups, assign a Camera Drone to a patrol route:
 ### Related Guides
 - [Drone Bay Setup and Fleet Management](/guides/drone-bay-fleet-management/)
 - [Automated Repair and Station Self-Healing](/guides/automated-repair-station-healing/)
-- [Station Layout Guide](/guides/station-layout-guide/)
+### v1.1: Camera and Observation Systems Unchanged
+
+**Verified for v1.1** — the camera and observation system mechanics are unchanged. Camera placement, alarm triggers, and Observation Room setup work the same as described in this guide. Strategy and monitoring layout recommendations still apply.

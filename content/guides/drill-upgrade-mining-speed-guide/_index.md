@@ -4,7 +4,9 @@ description: "Outworld Station drill types, mining speed upgrades, overclocking,
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Drill Upgrades
-lastmod: 2026-07-13
+version: "1.1"
+game_version: "v1.1.0"
+lastmod: 2026-07-14
 draft: false
 category: production
 tested: "All drill tiers tested at Station Level 3-14 across multiple asteroid types."
@@ -20,6 +22,45 @@ Outworld Station's mining system has two hidden mechanics: node depletion rate a
   <h4>The Short Version</h4>
   <p>Space drills 4 tiles apart minimum. Each drill has a 4-tile radius depletion zone. Overlap reduces total output. Upgrade drill tier before adding more drills. A single Tier 2 drill outputs as much as 3 Tier 1 drills in the same space. Overclocking increases speed by 50% at 2x power cost.</p>
 </div>
+
+{{< callout "info" >}}**v1.1:** Two new technologies change drill and mining strategy: **Enhanced Containment** (better handling of volatile/hazardous resource outputs) and **Exo-Planet Lifters** (extends mining and lifting reach to more distant or exotic planetary bodies). Together they open bodies you previously could not mine and make volatile outputs safer to process.{{< /callout >}}
+
+<hr>
+
+## v1.1 New Mining Technologies
+
+v1.1 adds two research technologies that reshape how and where you mine. Both are reached through the research tree — plan them into your [Research Order](/guides/research-order/).
+
+### Enhanced Containment
+
+Some resources are volatile or hazardous. Before v1.1, extracting and routing them was risky and limited. The Enhanced Containment tech improves containment of these volatile/hazardous outputs, so drills and refineries handle them with fewer losses and safety penalties.
+
+**When it matters:**
+- Mining volatile resource nodes (hazardous gases, reactive ores)
+- Running remote outposts where containment failures are costly
+- Pairing with the Bio-extractor / chemical chain on exotic bodies
+
+**Strategy impact:** With Enhanced Containment, you can lean into volatile-rich deposits you would previously have avoided. Treat it as a prerequisite before committing drills to hazardous nodes.
+
+### Exo-Planet Lifters
+
+Exo-Planet Lifters extend your mining and lifting reach to more distant or exotic planetary bodies. Bodies that were previously out of range — far-orbit moons, exotic-surface planets — become mineable once this tech is researched.
+
+**When it matters:**
+- You have depleted nearby asteroids and need new sources
+- Exotic bodies hold rare materials not found locally
+- You want to offload remote mining to automated lifting rather than hand-towing
+
+**Strategy impact:** This breaks the mid/late-game "local patch is empty" wall. Research Exo-Planet Lifters when your home-system asteroids are past 50% depletion, then expand the drill grid to the newly reachable bodies. Remote mining scales especially well with Mk2/Mk3 drills (see [Mk2/Mk3 Factory Guide](/guides/mk2-mk3-factory-guide/)).
+
+### Updated Tech/Tier Discussion
+
+The drill upgrade path still runs T1 -> T2 -> T3 -> Deep Core, but v1.1's two techs are now part of the same decision. A typical ordering:
+
+1. Drill tiers (T2 at Level 3, T3 at Level 6) for raw throughput
+2. **Enhanced Containment** when you first touch volatile nodes
+3. **Exo-Planet Lifters** when local asteroids deplete, to open new bodies
+4. Deep Core Drill on your best remaining/exotic body for endgame
 
 <hr>
 

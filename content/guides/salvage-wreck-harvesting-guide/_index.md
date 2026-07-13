@@ -4,8 +4,10 @@ description: "Outworld Station salvage guide for derelict ships and wrecks. How 
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Salvage
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
+version: "1.1"
+game_version: "v1.1.0"
 category: exploration
 tested: "Salvage operations on 12+ wrecks at Station Level 5-9."
 ---
@@ -123,7 +125,19 @@ Do not fly past. Wrecks in Outworld Station are loot pinatas. Every wreck contai
 
 <hr>
 
+## v1.1: Ship-Drop Salvage -- A New Loot Source
+
+Before v1.1, salvage came only from static derelict wrecks. v1.1 adds a second source: ships and wrecks now drop recoverable loot when destroyed. That includes enemy raiders you shoot down **and your own downed ships** -- so every combat loss is also a recovery opportunity.
+
+Treat fresh combat wrecks like the static ones above: break them with the Salvage Laser, collect chunks, and feed the Salvage Processor. Expect similar chunk types (Hull Fragments, Engine Components, Core Fragments, etc.) from ship drops.
+
+{{< callout "info" >}}**v1.1:** Automate the grind with a CPU-controlled salvage ship. Allocate CPU points to a ship's auto-salvage role (see the [Ship CPU Control Guide](/guides/ship-cpu-control-guide/)) and it will loop known wreck fields or patrol recent combat zones on its own. Keep its patrol lane out of your turret fire zones -- see the v1.1 defense notes in the [Weapons and Turret Placement Guide](/guides/weapons-turret-placement-guide/).{{< /callout >}}
+
+<hr>
+
 ### Related Guides
 - [Recycling and Deconstruction Guide](/guides/recycling-deconstruction-guide/)
 - [Freighter and Mining Station Guide](/guides/freighter-mining-guide/)
 - [Module Component Manufacturing Guide](/guides/module-component-manufacturing/)
+- [Ship CPU Control Guide](/guides/ship-cpu-control-guide/)
+- [Weapons and Turret Placement Guide](/guides/weapons-turret-placement-guide/)

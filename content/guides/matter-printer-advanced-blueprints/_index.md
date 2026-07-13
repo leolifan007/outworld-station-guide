@@ -4,7 +4,9 @@ description: "Outworld Station matter printer advanced usage including multi-blu
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Advanced Blueprints
-lastmod: 2026-07-13
+version: "1.1"
+game_version: "v1.1.0"
+lastmod: 2026-07-14
 draft: false
 category: production
 tested: "Blueprint library of 40+ templates across 4 hotbars at Station Level 10."
@@ -20,6 +22,31 @@ tested: "Blueprint library of 40+ templates across 4 hotbars at Station Level 10
       <h4>The Short Version</h4>
       <p>Use a consistent naming scheme: [Type]-[Input]-[Output]-[Size]. Example: "SML-ORE-IN60" for a Smelter taking 60 ore/min. Assign hotbars by category: Hotbar 1=Production, 2=Power, 3=Logistics, 4=Defense. Parameterized blueprints let you change input/output quantities without rebuilding.</p>
     </div>
+
+    {{< callout "info" >}}**v1.1:** The Matter Printer now upgrades to Mk2 and Mk3. Higher tiers print larger and more complex blueprints, and v1.1 also raises the Blueprint area limit and object cap station-wide — so blueprints that were too big to save before are now valid.{{< /callout >}}
+
+    <hr>
+
+    ## v1.1 Mk2/Mk3 Matter Printer and Bigger Blueprints
+
+    v1.1 turns the Matter Printer into a tiered building. Mk2 and Mk3 raise both the size of blueprint you can author and the speed at which it prints, while v1.1 also increases the global Blueprint area limit and object cap.
+
+    ### Blueprint Capability by Printer Tier
+
+    | Printer Tier | Max Blueprint Area | Object Cap | Print Speed | Notes |
+    |:-----------:|:------------------:|:----------:|:-----------:|-------|
+    | Mk1 | Baseline | Baseline | Baseline | Starting tier |
+    | Mk2 | Larger | Higher | Faster | Bigger blueprints, quicker prints |
+    | Mk3 | Largest | Highest | Fastest | Most complex/large builds |
+
+    **What this unlocks:**
+    - Multi-stage chain blueprints (e.g. the full Superalloy line) in a single template instead of several chained steps.
+    - Larger building footprints — room for buffers, redundancy, and routing you had to leave out before.
+    - Faster reprinting when iterating on a design, so version control (the [V2] naming tip above) costs less time.
+
+    **Combine with the area/cap increase:** Even at Mk1, the v1.1 Blueprint area limit and object cap increase lets you save bigger designs than before. Upgrading the printer compounds that with faster, larger-capability printing.
+
+    **See also:** [Mk2/Mk3 Factory Guide](/guides/mk2-mk3-factory-guide/) for the full tier list and build-cost tradeoffs across all nine upgradeable buildings.
 
     <hr>
 

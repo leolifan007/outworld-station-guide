@@ -3,8 +3,10 @@ title: "Outworld Station Liquid and Gas Pipe Network Design - Route Fluids Witho
 description: "Outworld Station pipe network design for oxygen, hydrogen, nitrox, and liquid chemicals. Pipe throughput, pressure management, loop routing, and the one-way valve trick."
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
+version: "1.1"
+game_version: "v1.1.0"
 breadcrumb: Pipe Networks
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
 category: logistics
 tested: "Pipe networks tested with 20+ generators and 6 gas types across Station Level 4-14."
@@ -128,6 +130,10 @@ If a consumer is starving despite adequate production:
 3. Verify one-way valve direction (arrows must point toward consumer)
 4. Check if the buffer tank has gas (if empty, the problem is upstream)
 5. Add a Reinforced Pipe segment at the bottleneck
+
+### v1.1: Plan Pipe Capacity for Mk2/Mk3 Factories
+
+With v1.1 introducing **Mk2 and Mk3 factory tiers** that roughly double (Mk2) and further increase (Mk3) per-building throughput compared to Mk1, pipe networks feeding upgraded production buildings need to handle significantly higher flow rates. When upgrading Atomizers, Smelters, or other pipe-fed buildings to Mk2/Mk3, revisit your upstream pipe routing — you may need to upgrade Basic Pipe to Reinforced, add additional buffer tanks, or re-balance your one-way valve placement to prevent backflow under the higher load.
 
 <hr>
 

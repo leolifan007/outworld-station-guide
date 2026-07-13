@@ -3,8 +3,10 @@ title: "Outworld Station Hull and Structural Planning - Build a Station That Doe
 description: "Outworld Station hull integrity, module connection rules, structural limits, and expansion planning. How to avoid the 'cannot build here' error and plan a station that scales."
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
+version: "1.1"
+game_version: "v1.1.0"
 breadcrumb: Station Structure
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
 category: strategy
 tested: "Structural layouts tested up to Station Level 14 with 80+ modules."
@@ -131,6 +133,10 @@ Full grid with cross-connections. Maximum redundancy but highest support cost. R
 - **Long corridors:** Every 3-tile corridor costs 3 SP and provides zero production. Keep corridors to 1-2 tiles unless necessary.
 - **Heavy modules at the end of a chain:** Put heavy modules (Fusion Reactor, Drone Bay) near the Core, not at the far end of a chain.
 - **Ignoring the support warning:** The game gives a yellow warning at 80% capacity. Treat this as a deadline, not a suggestion.
+
+### v1.1: Connector Shape Changed
+
+**v1.1 introduced a new Connector shape and connection geometry.** Station layouts built before v1.1 may have connectors that no longer snap or attach as they did in v1.0.x. If you are rebuilding or expanding an existing station, re-check all connector placement — remove and re-place connectors that appear to be misaligned or refusing to connect. This is a deliberate geometry change, not a bug; updated connector positions will hold correctly once re-placed.
 
 <hr>
 

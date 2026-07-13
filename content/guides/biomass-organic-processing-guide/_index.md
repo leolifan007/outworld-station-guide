@@ -4,7 +4,9 @@ description: "Outworld Station biomass processing chain from organic harvester t
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
 breadcrumb: Biomass Processing
-lastmod: 2026-07-13
+version: "1.1"
+game_version: "v1.1.0"
+lastmod: 2026-07-14
 draft: false
 category: resources
 tested: "Biomass loop tested at Station Level 5-8 on a forested planet."
@@ -20,6 +22,26 @@ Most players ignore biomass because it is slower than mining. They are wrong. A 
   <h4>The Short Version</h4>
   <p>Build an Organic Harvester on a vegetated planet surface. Feed biomass into a Bioreactor -> Biofuel Refinery -> Plastic Press chain. Output: Biofuel (burns in generators), Plastic (used in Electronics), Carbon Composite (advanced building material). One harvester supports 2 generators indefinitely.</p>
 </div>
+
+{{< callout "info" >}}**v1.1:** The Bio-extractor can now be upgraded to Mk2 and Mk3. Each tier raises organic throughput significantly (Mk2 roughly doubles output versus the Mk1 baseline; Mk3 pushes it higher again). Your entire biomass production chain — Bioreactor, Biofuel Refinery, Plastic Press — scales with the Bio-extractor's output, so upgrading the extractor is the single highest-leverage upgrade in the loop.{{< /callout >}}
+
+<hr>
+
+## v1.1 Bio-Extractor Tiers
+
+Outworld Station v1.1 adds Mk2 and Mk3 tiers to the Bio-extractor (one of the nine production buildings now upgradeable). If you run a Bio-extractor instead of (or alongside) an Organic Harvester, the tier you build directly sets the ceiling for your whole organic chain.
+
+### Bio-Extractor Throughput by Tier
+
+| Tier | Organic Throughput (direction) | vs Mk1 | Notes |
+|:----:|:-----------------------------:|:------:|-------|
+| Mk1 | Baseline | 1x | Starting tier |
+| Mk2 | ~2x baseline | 2x | Roughly doubles organic intake |
+| Mk3 | Higher again | >2x | Best-in-class; scales the chain further |
+
+Because the Bioreactor, Biofuel Refinery, and Plastic Press all consume whatever the extractor feeds them, upgrading to Mk2/Mk3 lifts the entire output of Biofuel, Plastic, and Carbon Composite proportionally. If you are hitting a ceiling on renewable fuel or Plastic, upgrade the Bio-extractor before adding more downstream machines.
+
+**Where this fits:** The Bio-extractor is part of the broader Mk2/Mk3 Factory system. See [Mk2/Mk3 Factory Guide](/guides/mk2-mk3-factory-guide/) for the full tier list and cost tradeoffs.
 
 <hr>
 

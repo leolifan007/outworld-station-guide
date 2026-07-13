@@ -3,8 +3,10 @@ title: "Outworld Station Ore Scanning and Prospecting - Find Every Resource Node
 description: "Outworld Station ore scanning guide from starter prospector to deep-space probes. How to find titanium, tungsten, rare minerals, and the resource scanner unlock order."
 date: 2026-07-13
 publishedAt: 2026-07-13T10:00:00+08:00
+version: "1.1"
+game_version: "v1.1.0"
 breadcrumb: Ore Scanning
-lastmod: 2026-07-13
+lastmod: 2026-07-14
 draft: false
 category: production
 tested: "Prospecting methods tested across 20+ hours of exploration, Station Level 4-10."
@@ -121,6 +123,10 @@ The Orbital Probe is a mid-game research unlock (requires Station Level 6, Elect
 **Hour 8+:** Deep Scan probe on sectors near gas giants and relic zones.
 
 <hr>
+
+### v1.1: Extended Prospecting Reach
+
+The v1.1 **Exo-Planet Lifters** technology extends your mining and lifting reach to more distant or exotic planetary bodies. If you found certain resource-rich bodies out of range in previous versions, v1.1 may now make them accessible. Revisit sectors you skipped — ore that was previously out-of-bounds for automated lifting may now be within reach. Pair this with an upgraded Orbital Probe for maximum sector coverage.
 
 ### Related Guides
 - [Asteroid Belt Mining Guide - Automate Your First Belt](/guides/asteroid-belt-mining-guide/)
