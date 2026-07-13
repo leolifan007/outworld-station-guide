@@ -1,0 +1,4 @@
+﻿<div class="callout callout-{{ .Get "type" | default "info" }}" style="margin:16px 0;padding:12px 16px;border-radius:8px;{{ if eq (.Get "type") "verdict" }}background:#1E3A2E;border-left:4px solid #00D4AA;{{ else if eq (.Get "type") "warning" }}background:#3A2E1E;border-left:4px solid #FFB347;{{ else }}background:#1E2E3A;border-left:4px solid #4A9EFF;{{ end }}">
+  {{ if .Get "title" }}<strong style="color:{{ if eq (.Get "type") "verdict" }}#00D4AA{{ else if eq (.Get "type") "warning" }}#FFB347{{ else }}#4A9EFF{{ end }};font-size:0.95rem;">{{ .Get "title" }}</strong><br>{{ end }}
+  <p style="color:#C8D6E8;font-size:0.9rem;margin:4px 0 0 0;">{{ .Inner | markdownify }}</p>
+</div>

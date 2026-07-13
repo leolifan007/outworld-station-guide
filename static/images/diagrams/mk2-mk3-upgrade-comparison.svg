@@ -1,0 +1,100 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162D4A;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="mk2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A5A3A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1E4A2E;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="mk3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3A2A5A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2A1E4A;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <text x="360" y="30" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">Mk 1 vs Mk 2 vs Mk 3 Factory Comparison</text>
+  
+  <!-- Header row -->
+  <text x="215" y="58" text-anchor="middle" fill="#00D4AA" font-size="12" font-weight="bold">Building</text>
+  <text x="355" y="58" text-anchor="middle" fill="#2A5A3A" font-size="12" font-weight="bold">Mk 2 Gain</text>
+  <text x="495" y="58" text-anchor="middle" fill="#3A2A5A" font-size="12" font-weight="bold">Mk 3 Gain</text>
+  <text x="635" y="58" text-anchor="middle" fill="#C8D6E8" font-size="12" font-weight="bold">Best Buy</text>
+  <line x1="30" y1="65" x2="690" y2="65" stroke="#6A8AAA" stroke-width="0.5"/>
+
+  <!-- Smelter -->
+  <text x="215" y="85" text-anchor="middle" fill="#C8D6E8" font-size="11">Smelter</text>
+  <text x="355" y="85" text-anchor="middle" fill="#00D4AA" font-size="11">2x ✅</text>
+  <text x="495" y="85" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="85" text-anchor="middle" fill="#00D4AA" font-size="11">Mk 2</text>
+  <line x1="30" y1="92" x2="690" y2="92" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Plasma Forge -->
+  <text x="215" y="107" text-anchor="middle" fill="#C8D6E8" font-size="11">Plasma Forge</text>
+  <text x="355" y="107" text-anchor="middle" fill="#00D4AA" font-size="11">2x ✅</text>
+  <text x="495" y="107" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="107" text-anchor="middle" fill="#00D4AA" font-size="11">Mk 2</text>
+  <line x1="30" y1="114" x2="690" y2="114" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Atomizer -->
+  <text x="215" y="129" text-anchor="middle" fill="#C8D6E8" font-size="11">Atomizer</text>
+  <text x="355" y="129" text-anchor="middle" fill="#00D4AA" font-size="11">2x</text>
+  <text x="495" y="129" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="129" text-anchor="middle" fill="#FFB347" font-size="11">Mk 2</text>
+  <line x1="30" y1="136" x2="690" y2="136" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Fabricator -->
+  <text x="215" y="151" text-anchor="middle" fill="#C8D6E8" font-size="11">Fabricator</text>
+  <text x="355" y="151" text-anchor="middle" fill="#00D4AA" font-size="11">2x</text>
+  <text x="495" y="151" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="151" text-anchor="middle" fill="#FFB347" font-size="11">Mk 2</text>
+  <line x1="30" y1="158" x2="690" y2="158" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Matter Printer -->
+  <text x="215" y="173" text-anchor="middle" fill="#C8D6E8" font-size="11">Matter Printer</text>
+  <text x="355" y="173" text-anchor="middle" fill="#00D4AA" font-size="11">2x</text>
+  <text x="495" y="173" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="173" text-anchor="middle" fill="#6A8AAA" font-size="11">Mk 2/Mk 3</text>
+  <line x1="30" y1="180" x2="690" y2="180" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Refinery -->
+  <text x="215" y="195" text-anchor="middle" fill="#C8D6E8" font-size="11">Refinery</text>
+  <text x="355" y="195" text-anchor="middle" fill="#00D4AA" font-size="11">2x</text>
+  <text x="495" y="195" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="195" text-anchor="middle" fill="#FFB347" font-size="11">Mk 2</text>
+  <line x1="30" y1="202" x2="690" y2="202" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Bio-extractor -->
+  <text x="215" y="217" text-anchor="middle" fill="#C8D6E8" font-size="11">Bio-extractor</text>
+  <text x="355" y="217" text-anchor="middle" fill="#FF6B6B" font-size="11">2x</text>
+  <text x="495" y="217" text-anchor="middle" fill="#00D4AA" font-size="11">5x ✅</text>
+  <text x="635" y="217" text-anchor="middle" fill="#00D4AA" font-size="11">Mk 3!</text>
+  <line x1="30" y1="224" x2="690" y2="224" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Fusion Reactor -->
+  <text x="215" y="239" text-anchor="middle" fill="#C8D6E8" font-size="11">Fusion Reactor</text>
+  <text x="355" y="239" text-anchor="middle" fill="#FF6B6B" font-size="11">2x ❌</text>
+  <text x="495" y="239" text-anchor="middle" fill="#FF6B6B" font-size="11">4x ❌</text>
+  <text x="635" y="239" text-anchor="middle" fill="#FF6B6B" font-size="11">Skip</text>
+  <line x1="30" y1="246" x2="690" y2="246" stroke="#2A3F55" stroke-width="0.5"/>
+
+  <!-- Energy Storage -->
+  <text x="215" y="261" text-anchor="middle" fill="#C8D6E8" font-size="11">Energy Storage</text>
+  <text x="355" y="261" text-anchor="middle" fill="#FFB347" font-size="11">2x</text>
+  <text x="495" y="261" text-anchor="middle" fill="#9A6ABA" font-size="11">4x</text>
+  <text x="635" y="261" text-anchor="middle" fill="#6A8AAA" font-size="11">Optional</text>
+  <line x1="30" y1="268" x2="690" y2="268" stroke="#6A8AAA" stroke-width="0.5"/>
+
+  <!-- Legend -->
+  <rect x="30" y="290" width="660" height="105" rx="8" fill="#1E3A5F" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="360" y="312" text-anchor="middle" fill="#C8D6E8" font-size="12" font-weight="bold">Decision Guide</text>
+  <text x="50" y="332" fill="#00D4AA" font-size="11">✅ Must build:</text>
+  <text x="145" y="332" fill="#8AACCD" font-size="11">Mk 2 Smelter, Mk 2 Plasma Forge, Mk 3 Bio-extractor</text>
+  <text x="50" y="350" fill="#FFB347" font-size="11">Consider:</text>
+  <text x="145" y="350" fill="#8AACCD" font-size="11">Mk 2 Atomizer, Mk 2 Fabricator, Mk 2 Refinery</text>
+  <text x="50" y="368" fill="#FF6B6B" font-size="11">Skip:</text>
+  <text x="145" y="368" fill="#FF6B6B" font-size="11">Mk 2 Fusion Reactor - two Mk 1 reactors with cooling are cheaper</text>
+  <text x="50" y="386" fill="#6A8AAA" font-size="11">Late game:</text>
+  <text x="145" y="386" fill="#8AACCD" font-size="11">Mk 3 upgrades when stable resource income from multiple outposts</text>
+  <text x="360" y="410" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide - Mk 2 &amp; Mk 3 Factory v1.1</text>
+</svg>

@@ -1,0 +1,15 @@
+﻿<div class="resourcegrid" style="margin:16px 0;overflow-x:auto;">
+  <table style="width:100%;border-collapse:collapse;background:#1E3A5F;border-radius:8px;font-size:0.88rem;">
+    <thead>
+      <tr style="background:#162D4A;">
+        <th style="padding:8px 12px;color:#00D4AA;text-align:left;border-bottom:1px solid #2A3F55;">{{ .Get "ingredient" | default "Ingredient" }}</th>
+        <th style="padding:8px 12px;color:#00D4AA;text-align:center;border-bottom:1px solid #2A3F55;">{{ .Get "input" | default "Input" }}</th>
+        <th style="padding:8px 12px;color:#00D4AA;text-align:center;border-bottom:1px solid #2A3F55;">{{ .Get "output" | default "Output" }}</th>
+        <th style="padding:8px 12px;color:#00D4AA;text-align:right;border-bottom:1px solid #2A3F55;">{{ .Get "ratio" | default "Ratio" }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ .Inner }}
+    </tbody>
+  </table>
+</div>

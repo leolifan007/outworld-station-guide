@@ -1,0 +1,73 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" style="background:#1A2533;border-radius:8px;font-family:'Segoe UI',Arial,sans-serif;">
+  <defs>
+    <linearGradient id="posGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4AA;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1E8A6A;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="negGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#CC4444;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="neutralGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A9EFF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3A7ECC;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <text x="360" y="30" text-anchor="middle" fill="#00D4AA" font-size="16" font-weight="bold">v1.1 Rebalance Impact - Factory Throughput Change</text>
+
+  <!-- Hub throughput +50% -->
+  <text x="130" y="65" text-anchor="end" fill="#C8D6E8" font-size="11">Hub Throughput</text>
+  <rect x="140" y="52" width="300" height="22" rx="4" fill="url(#posGrad)"/>
+  <text x="445" y="68" fill="#00D4AA" font-size="11" font-weight="bold">+50%</text>
+  <text x="510" y="68" fill="#8AACCD" font-size="10">60 → 90/min</text>
+
+  <!-- Oxygen +67% -->
+  <text x="130" y="95" text-anchor="end" fill="#C8D6E8" font-size="11">Oxygen Yield</text>
+  <rect x="140" y="82" width="400" height="22" rx="4" fill="url(#posGrad)"/>
+  <text x="545" y="98" fill="#00D4AA" font-size="11" font-weight="bold">+67%</text>
+  <text x="590" y="98" fill="#8AACCD" font-size="10">3→5/2H</text>
+
+  <!-- Diamond +33% -->
+  <text x="130" y="125" text-anchor="end" fill="#C8D6E8" font-size="11">Diamond Output</text>
+  <rect x="140" y="112" width="200" height="22" rx="4" fill="url(#posGrad)"/>
+  <text x="345" y="128" fill="#00D4AA" font-size="11" font-weight="bold">+33%</text>
+  <text x="510" y="128" fill="#FFB347" font-size="10">But requires Nitrox now</text>
+
+  <!-- Recycler Points ~3x -->
+  <text x="130" y="155" text-anchor="end" fill="#C8D6E8" font-size="11">Recycler Points</text>
+  <rect x="140" y="142" width="200" height="22" rx="4" fill="url(#posGrad)"/>
+  <text x="345" y="158" fill="#00D4AA" font-size="11" font-weight="bold">~3x</text>
+  <text x="510" y="158" fill="#8AACCD" font-size="10">Station-wide pool</text>
+
+  <!-- Servitor 2 levels earlier -->
+  <text x="130" y="185" text-anchor="end" fill="#C8D6E8" font-size="11">Servitor Unlock</text>
+  <rect x="140" y="172" width="120" height="22" rx="4" fill="url(#neutralGrad)"/>
+  <text x="265" y="188" fill="#4A9EFF" font-size="11" font-weight="bold">Level 8</text>
+  <text x="510" y="188" fill="#8AACCD" font-size="10">Was Level 10</text>
+
+  <!-- Blueprint limits -->
+  <text x="130" y="215" text-anchor="end" fill="#C8D6E8" font-size="11">Blueprint Size</text>
+  <rect x="140" y="202" width="150" height="22" rx="4" fill="url(#neutralGrad)"/>
+  <text x="295" y="218" fill="#4A9EFF" font-size="11" font-weight="bold">30×30</text>
+  <text x="510" y="218" fill="#8AACCD" font-size="10">Was 20×20</text>
+
+  <!-- Molecular Recombination -50% (negative) -->
+  <text x="130" y="245" text-anchor="end" fill="#C8D6E8" font-size="11">Mol. Recombination</text>
+  <rect x="140" y="232" width="300" height="22" rx="4" fill="url(#negGrad)"/>
+  <text x="445" y="248" fill="#FF6B6B" font-size="11" font-weight="bold">-50%</text>
+  <text x="510" y="248" fill="#FF6B6B" font-size="10">5/min → ~2/min</text>
+
+  <!-- Legend and footer -->
+  <rect x="30" y="270" width="660" height="50" rx="8" fill="#1E3A5F" stroke="#6A8AAA" stroke-width="1"/>
+  <text x="50" y="290" fill="#C8D6E8" font-size="11" font-weight="bold">Impact Key:</text>
+  <rect x="160" y="280" width="12" height="12" rx="2" fill="#00D4AA"/>
+  <text x="175" y="290" fill="#00D4AA" font-size="10">Pure Buff</text>
+  <rect x="250" y="280" width="12" height="12" rx="2" fill="#4A9EFF"/>
+  <text x="265" y="290" fill="#4A9EFF" font-size="10">Quality of Life</text>
+  <rect x="380" y="280" width="12" height="12" rx="2" fill="#FF6B6B"/>
+  <text x="395" y="290" fill="#FF6B6B" font-size="10">Nerf - Rebuild Needed</text>
+  <rect x="530" y="280" width="12" height="12" rx="2" fill="#FFB347"/>
+  <text x="545" y="290" fill="#FFB347" font-size="10">Caveat</text>
+
+  <text x="360" y="330" text-anchor="middle" fill="#4A6070" font-size="9">Outworld Station Guide - Recipe Changes v1.1</text>
+</svg>
