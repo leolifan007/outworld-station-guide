@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <rect width="600" height="420" fill="#1A2533"/>
+  <defs>
+    <linearGradient id="bioGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#009977"/>
+    </linearGradient>
+    <linearGradient id="reactorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#E09000"/>
+    </linearGradient>
+    <linearGradient id="refineryGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A9EFF"/>
+      <stop offset="100%" stop-color="#2A7EDF"/>
+    </linearGradient>
+    <linearGradient id="pressGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#D03030"/>
+    </linearGradient>
+    <linearGradient id="genGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#E09000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold">Biomass Production Chain</text>
+  <line x1="150" y1="40" x2="450" y2="40" stroke="#00D4AA" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Background grid -->
+  <g opacity="0.04" stroke="#fff" stroke-width="1">
+    <line x1="40" y1="80" x2="560" y2="80"/><line x1="40" y1="140" x2="560" y2="140"/>
+    <line x1="40" y1="200" x2="560" y2="200"/><line x1="40" y1="260" x2="560" y2="260"/>
+    <line x1="40" y1="320" x2="560" y2="320"/>
+  </g>
+
+  <!-- ===== ROW 1: Source -> Bioreactor -> Refinery ===== -->
+
+  <!-- Harvester -->
+  <g transform="translate(30, 65)">
+    <rect x="0" y="0" width="110" height="60" rx="6" fill="#0F1A26" stroke="#00D4AA" stroke-width="1.5"/>
+    <rect x="0" y="0" width="110" height="20" rx="6" fill="url(#bioGrad)"/>
+    <rect x="0" y="12" width="110" height="8" rx="0" fill="url(#bioGrad)"/>
+    <text x="55" y="15" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="bold">🌿 Harvester</text>
+    <text x="55" y="36" text-anchor="middle" fill="#B0C4DE" font-family="sans-serif" font-size="8">Collects organic waste</text>
+    <text x="55" y="50" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">Input: flora, food scraps</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(145,95)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#00D4AA" stroke-width="2"/>
+    <polygon points="25,0 19,-4 19,4" fill="#00D4AA"/>
+  </g>
+
+  <!-- Bioreactor -->
+  <g transform="translate(175, 65)">
+    <rect x="0" y="0" width="110" height="60" rx="6" fill="#0F1A26" stroke="#FFB300" stroke-width="1.5"/>
+    <rect x="0" y="0" width="110" height="20" rx="6" fill="url(#reactorGrad)"/>
+    <rect x="0" y="12" width="110" height="8" rx="0" fill="url(#reactorGrad)"/>
+    <text x="55" y="15" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="bold">🧪 Bioreactor</text>
+    <text x="55" y="36" text-anchor="middle" fill="#B0C4DE" font-family="sans-serif" font-size="8">Fermentation process</text>
+    <text x="55" y="50" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">Output: Biomass slurry</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(290,95)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#FFB300" stroke-width="2"/>
+    <polygon points="25,0 19,-4 19,4" fill="#FFB300"/>
+  </g>
+
+  <!-- Biofuel Refinery -->
+  <g transform="translate(320, 65)">
+    <rect x="0" y="0" width="110" height="60" rx="6" fill="#0F1A26" stroke="#4A9EFF" stroke-width="1.5"/>
+    <rect x="0" y="0" width="110" height="20" rx="6" fill="url(#refineryGrad)"/>
+    <rect x="0" y="12" width="110" height="8" rx="0" fill="url(#refineryGrad)"/>
+    <text x="55" y="15" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="bold">⛽ Biofuel Refinery</text>
+    <text x="55" y="36" text-anchor="middle" fill="#B0C4DE" font-family="sans-serif" font-size="8">Purification &amp; distilling</text>
+    <text x="55" y="50" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">Output: Refined biofuel</text>
+  </g>
+
+  <!-- Arrow down to split -->
+  <g transform="translate(375,125)">
+    <line x1="0" y1="0" x2="0" y2="25" stroke="#4A9EFF" stroke-width="2"/>
+    <polygon points="0,25 -4,19 4,19" fill="#4A9EFF"/>
+  </g>
+
+  <!-- Split line -->
+  <line x1="265" y1="150" x2="485" y2="150" stroke="#8A9BAE" stroke-width="1.5"/>
+
+  <!-- Label at split -->
+  <text x="375" y="148" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">Output split</text>
+
+  <!-- ===== ROW 2: Two outputs ===== -->
+
+  <!-- Left: Plastic Press -->
+  <g transform="translate(210, 160)">
+    <rect x="0" y="0" width="110" height="60" rx="6" fill="#0F1A26" stroke="#FF5252" stroke-width="1.5"/>
+    <rect x="0" y="0" width="110" height="20" rx="6" fill="url(#pressGrad)"/>
+    <rect x="0" y="12" width="110" height="8" rx="0" fill="url(#pressGrad)"/>
+    <text x="55" y="15" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="bold">🔧 Plastic Press</text>
+    <text x="55" y="36" text-anchor="middle" fill="#B0C4DE" font-family="sans-serif" font-size="8">Biomass → bioplastic</text>
+    <text x="55" y="50" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">→ Components, pipes</text>
+  </g>
+
+  <!-- Right: Generator -->
+  <g transform="translate(430, 160)">
+    <rect x="0" y="0" width="110" height="60" rx="6" fill="#0F1A26" stroke="#FFB300" stroke-width="1.5"/>
+    <rect x="0" y="0" width="110" height="20" rx="6" fill="url(#genGrad)"/>
+    <rect x="0" y="12" width="110" height="8" rx="0" fill="url(#genGrad)"/>
+    <text x="55" y="15" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9" font-weight="bold">⚡ Generator</text>
+    <text x="55" y="36" text-anchor="middle" fill="#B0C4DE" font-family="sans-serif" font-size="8">Burn biofuel → power</text>
+    <text x="55" y="50" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">→ 120 kW continuous</text>
+  </g>
+
+  <!-- Arrows from split to outputs -->
+  <g transform="translate(265,155)">
+    <line x1="0" y1="0" x2="55" y2="0" stroke="#FF5252" stroke-width="1.5"/>
+    <polygon points="55,0 49,-3 49,3" fill="#FF5252"/>
+  </g>
+  <g transform="translate(375,155)">
+    <line x1="0" y1="0" x2="55" y2="0" stroke="#FFB300" stroke-width="1.5"/>
+    <polygon points="55,0 49,-3 49,3" fill="#FFB300"/>
+  </g>
+
+  <!-- ===== FEEDBACK LOOP ===== -->
+
+  <!-- Fertilizer loop from Bioreactor back to Harvester -->
+  <path d="M 230,125 Q 230,175 85,175 Q 55,175 55,145 Q 55,125 85,125" 
+        fill="none" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+
+  <!-- Fertilizer label on loop -->
+  <rect x="105" y="158" width="60" height="14" rx="3" fill="#0F1A26" stroke="#00D4AA" stroke-width="0.5"/>
+  <text x="135" y="168" text-anchor="middle" fill="#00D4AA" font-family="sans-serif" font-size="7" font-weight="bold">♻ Fertilizer</text>
+
+  <!-- Loop arrow -->
+  <polygon points="55,130 59,138 51,138" fill="#00D4AA" opacity="0.6"/>
+
+  <!-- ===== BOTTOM SECTION: Flow stats ===== -->
+
+  <rect x="30" y="245" width="540" height="60" rx="6" fill="#0F1A26" stroke="#00D4AA" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- Flow yield -->
+  <text x="50" y="265" fill="#00D4AA" font-family="sans-serif" font-size="10" font-weight="bold">Yield per cycle (100 biomass)</text>
+
+  <rect x="50" y="275" width="100" height="20" rx="4" fill="#1A3D30"/>
+  <text x="100" y="289" text-anchor="middle" fill="#00D4AA" font-family="sans-serif" font-size="9">40 → Plastic</text>
+
+  <rect x="165" y="275" width="100" height="20" rx="4" fill="#3D301A"/>
+  <text x="215" y="289" text-anchor="middle" fill="#FFB300" font-family="sans-serif" font-size="9">35 → Power</text>
+
+  <rect x="280" y="275" width="100" height="20" rx="4" fill="#1A2A3D"/>
+  <text x="330" y="289" text-anchor="middle" fill="#4A9EFF" font-family="sans-serif" font-size="9">15 → Refinery</text>
+
+  <rect x="395" y="275" width="80" height="20" rx="4" fill="#1D2530"/>
+  <text x="435" y="289" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="9">10 → Lost</text>
+
+  <!-- Legend -->
+  <rect x="30" y="320" width="540" height="20" rx="4" fill="#0F1A26" opacity="0.5"/>
+  <rect x="40" y="325" width="12" height="10" rx="2" fill="#00D4AA" stroke="#00D4AA" stroke-width="1"/>
+  <text x="56" y="334" fill="#8A9BAE" font-family="sans-serif" font-size="8">Harvest</text>
+  <rect x="110" y="325" width="12" height="10" rx="2" fill="#FFB300" stroke="#FFB300" stroke-width="1"/>
+  <text x="126" y="334" fill="#8A9BAE" font-family="sans-serif" font-size="8">React/Refine</text>
+  <rect x="200" y="325" width="12" height="10" rx="2" fill="#4A9EFF" stroke="#4A9EFF" stroke-width="1"/>
+  <text x="216" y="334" fill="#8A9BAE" font-family="sans-serif" font-size="8">Refinery output</text>
+  <rect x="305" y="325" width="12" height="10" rx="2" fill="#FF5252" stroke="#FF5252" stroke-width="1"/>
+  <text x="321" y="334" fill="#8A9BAE" font-family="sans-serif" font-size="8">Press output</text>
+
+  <path d="M 420,328 L 432,328" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="4,2" fill="none"/>
+  <text x="436" y="334" fill="#8A9BAE" font-family="sans-serif" font-size="8">Fertilizer loop</text>
+</svg>

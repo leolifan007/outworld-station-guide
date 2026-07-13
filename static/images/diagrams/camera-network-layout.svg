@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <rect width="600" height="420" fill="#1A2533"/>
+  <defs>
+    <linearGradient id="camFixGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A9EFF"/>
+      <stop offset="100%" stop-color="#2A7EDF"/>
+    </linearGradient>
+    <linearGradient id="camPanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#E09000"/>
+    </linearGradient>
+    <linearGradient id="camPtzGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#D03030"/>
+    </linearGradient>
+    <linearGradient id="camDroneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#009977"/>
+    </linearGradient>
+    <linearGradient id="obsGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#E09000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold">Camera Monitoring Network</text>
+  <line x1="140" y1="40" x2="460" y2="40" stroke="#4A9EFF" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Station layout background -->
+  <rect x="30" y="60" width="540" height="270" rx="8" fill="#0F1A26" stroke="#4A9EFF" stroke-width="1" opacity="0.5"/>
+
+  <!-- Station structure lines -->
+  <g opacity="0.08" stroke="#fff" stroke-width="1">
+    <rect x="80" y="80" width="440" height="230" rx="4" fill="none"/>
+    <line x1="80" y1="120" x2="520" y2="120"/>
+    <line x1="80" y1="220" x2="520" y2="220"/>
+    <line x1="240" y1="80" x2="240" y2="310"/>
+    <line x1="400" y1="80" x2="400" y2="310"/>
+  </g>
+
+  <!-- Building structures -->
+  <!-- Left building -->
+  <rect x="100" y="90" width="110" height="80" rx="4" fill="#1A2533" stroke="#3A4D5F" stroke-width="1.5"/>
+  <rect x="100" y="90" width="110" height="18" rx="4" fill="#3A4D5F"/>
+  <text x="155" y="103" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="7">Fabrication Bay</text>
+
+  <!-- Center building -->
+  <rect x="270" y="90" width="100" height="80" rx="4" fill="#1A2533" stroke="#3A4D5F" stroke-width="1.5"/>
+  <rect x="270" y="90" width="100" height="18" rx="4" fill="#3A4D5F"/>
+  <text x="320" y="103" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="7">Production Line</text>
+
+  <!-- Right building -->
+  <rect x="420" y="90" width="90" height="80" rx="4" fill="#1A2533" stroke="#3A4D5F" stroke-width="1.5"/>
+  <rect x="420" y="90" width="90" height="18" rx="4" fill="#3A4D5F"/>
+  <text x="465" y="103" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="7">Storage</text>
+
+  <!-- Corridor -->
+  <rect x="100" y="185" width="410" height="25" rx="3" fill="#1A2533" stroke="#3A4D5F" stroke-width="1"/>
+  <text x="305" y="201" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="8">Main Corridor</text>
+
+  <!-- Lower area -->
+  <rect x="100" y="225" width="410" height="90" rx="4" fill="#1A2533" stroke="#3A4D5F" stroke-width="1.5"/>
+  <rect x="100" y="225" width="410" height="18" rx="4" fill="#3A4D5F"/>
+  <text x="305" y="238" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="7">Central Operations Area</text>
+
+  <!-- ===== OBSERVATION ROOM ===== -->
+  <g transform="translate(305, 260)">
+    <rect x="-45" y="-15" width="90" height="30" rx="6" fill="#0F1A26" stroke="#FFB300" stroke-width="2"/>
+    <rect x="-45" y="-15" width="90" height="10" rx="6" fill="url(#obsGrad)"/>
+    <rect x="-45" y="-9" width="90" height="4" rx="0" fill="url(#obsGrad)"/>
+    <text x="0" y="-7" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="7" font-weight="bold">Observation Room</text>
+    <text x="0" y="5" text-anchor="middle" fill="#FFB300" font-family="sans-serif" font-size="7">📺 All feeds here</text>
+  </g>
+
+  <!-- ===== CONNECTION LINES (network cables from cameras to obs room) ===== -->
+
+  <!-- Camera 1: Fixed on Fabrication Bay -->
+  <g transform="translate(130, 100)">
+    <path d="M 0,0 Q 50,-30 175,90" fill="none" stroke="#4A9EFF" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+  </g>
+
+  <!-- Camera 2: Pan on Production -->
+  <g transform="translate(290, 95)">
+    <path d="M 0,0 Q 10,40 18,100" fill="none" stroke="#FFB300" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+  </g>
+
+  <!-- Camera 3: PTZ on Storage -->
+  <g transform="translate(430, 95)">
+    <path d="M 0,0 Q -60,30 -108,90" fill="none" stroke="#FF5252" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+  </g>
+
+  <!-- Camera 4: Drone patrolling corridor -->
+  <g transform="translate(210, 195)">
+    <path d="M 0,0 Q 50,40 95,75" fill="none" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+  </g>
+
+  <!-- ===== CAMERA 1: Fixed ===== -->
+  <g transform="translate(155, 78)">
+    <rect x="-10" y="-10" width="20" height="20" rx="4" fill="url(#camFixGrad)" stroke="#4A9EFF" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="4" fill="#fff" opacity="0.8"/>
+    <line x1="0" y1="-10" x2="0" y2="-16" stroke="#fff" stroke-width="1"/>
+    <!-- Lens -->
+    <circle cx="4" cy="-2" r="1.5" fill="#fff" opacity="0.6"/>
+    <!-- Field of view -->
+    <polygon points="-10,-10 -14,8 -6,8" fill="#4A9EFF" opacity="0.08"/>
+    <text x="0" y="24" text-anchor="middle" fill="#4A9EFF" font-family="sans-serif" font-size="7" font-weight="bold">Fixed</text>
+    <text x="0" y="34" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="6">on building</text>
+  </g>
+
+  <!-- ===== CAMERA 2: Pan ===== -->
+  <g transform="translate(310, 82)">
+    <rect x="-9" y="-9" width="18" height="18" rx="4" fill="url(#camPanGrad)" stroke="#FFB300" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="3.5" fill="#fff" opacity="0.8"/>
+    <!-- Pan arrows -->
+    <path d="M -6,-9 L -6,-12 M -2,-9 L -2,-12 M 2,-9 L 2,-12 M 6,-9 L 6,-12" stroke="#FFB300" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="3" cy="-1.5" r="1.5" fill="#fff" opacity="0.6"/>
+    <polygon points="-9,-9 -14,6 -4,6" fill="#FFB300" opacity="0.08"/>
+    <text x="0" y="22" text-anchor="middle" fill="#FFB300" font-family="sans-serif" font-size="7" font-weight="bold">Pan/Tilt</text>
+    <text x="0" y="32" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="6">production line</text>
+  </g>
+
+  <!-- ===== CAMERA 3: PTZ ===== -->
+  <g transform="translate(440, 82)">
+    <rect x="-9" y="-9" width="18" height="18" rx="4" fill="url(#camPtzGrad)" stroke="#FF5252" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="3.5" fill="#fff" opacity="0.8"/>
+    <!-- Zoom indicator -->
+    <rect x="-2" y="-13" width="4" height="6" rx="1" fill="#FF5252" opacity="0.6"/>
+    <circle cx="3" cy="-1.5" r="1.5" fill="#fff" opacity="0.6"/>
+    <polygon points="-9,-9 -16,8 -2,8" fill="#FF5252" opacity="0.08"/>
+    <text x="0" y="22" text-anchor="middle" fill="#FF5252" font-family="sans-serif" font-size="7" font-weight="bold">PTZ</text>
+    <text x="0" y="32" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="6">storage watch</text>
+  </g>
+
+  <!-- ===== CAMERA 4: Drone ===== -->
+  <g transform="translate(245, 175)">
+    <rect x="-8" y="-8" width="16" height="16" rx="4" fill="url(#camDroneGrad)" stroke="#00D4AA" stroke-width="1.5"/>
+    <!-- Drone arms -->
+    <line x1="-4" y1="-8" x2="-8" y2="-14" stroke="#00D4AA" stroke-width="1" opacity="0.6"/>
+    <line x1="4" y1="-8" x2="8" y2="-14" stroke="#00D4AA" stroke-width="1" opacity="0.6"/>
+    <line x1="-4" y1="8" x2="-8" y2="14" stroke="#00D4AA" stroke-width="1" opacity="0.6"/>
+    <line x1="4" y1="8" x2="8" y2="14" stroke="#00D4AA" stroke-width="1" opacity="0.6"/>
+    <circle cx="0" cy="0" r="3" fill="#fff" opacity="0.8"/>
+    <!-- Motion trail -->
+    <path d="M 30,-5 Q 20,-10 16,0" fill="none" stroke="#00D4AA" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4"/>
+    <text x="0" y="26" text-anchor="middle" fill="#00D4AA" font-family="sans-serif" font-size="7" font-weight="bold">Camera Drone</text>
+    <text x="0" y="36" text-anchor="middle" fill="#8A9BAE" font-family="sans-serif" font-size="6">patrolling corridor</text>
+  </g>
+
+  <!-- Drone patrol path -->
+  <path d="M 120,193 Q 200,180 380,193 Q 480,200 500,193" fill="none" stroke="#00D4AA" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="30" y="340" width="540" height="70" rx="6" fill="#0F1A26" stroke="#4A9EFF" stroke-width="1" opacity="0.4"/>
+
+  <text x="50" y="360" fill="#4A9EFF" font-family="sans-serif" font-size="11" font-weight="bold">Camera Types</text>
+
+  <rect x="50" y="372" width="12" height="12" rx="3" fill="url(#camFixGrad)"/>
+  <text x="68" y="382" fill="#B0C4DE" font-family="sans-serif" font-size="10">Fixed (static view)</text>
+
+  <rect x="170" y="372" width="12" height="12" rx="3" fill="url(#camPanGrad)"/>
+  <text x="188" y="382" fill="#B0C4DE" font-family="sans-serif" font-size="10">Pan/Tilt (sweep)</text>
+
+  <rect x="290" y="372" width="12" height="12" rx="3" fill="url(#camPtzGrad)"/>
+  <text x="308" y="382" fill="#B0C4DE" font-family="sans-serif" font-size="10">PTZ (zoom + control)</text>
+
+  <rect x="410" y="372" width="12" height="12" rx="3" fill="url(#camDroneGrad)"/>
+  <text x="428" y="382" fill="#B0C4DE" font-family="sans-serif" font-size="10">Camera Drone (mobile)</text>
+
+  <text x="50" y="400" fill="#8A9BAE" font-family="sans-serif" font-size="9">Network: All cameras connect via station LAN to Observation Room. Drones use wireless relay.</text>
+</svg>
