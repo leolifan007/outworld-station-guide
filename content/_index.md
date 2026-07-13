@@ -1,11 +1,13 @@
 ---
 title: "Outworld Station Guide — Space Factory Automation"
-description: "Master Outworld Station with our complete strategy guide. Covers all buildings, automation logistics, power systems, and resource chains with step-by-step walkthroughs. Updated May 2026."
+description: "Master Outworld Station v1.1 with our complete strategy guide. Covers all buildings, automation logistics, power systems, and resource chains with step-by-step walkthroughs. Updated July 2026."
 keywords: ["Outworld Station guide", "Outworld Station tips", "space factory automation", "space station building", "factory game guide"]
 date: 2026-05-09
-lastmod: 2026-05-21
+lastmod: 2026-07-14
 draft: false
 type: "guide"
+version: "1.1"
+game_version: "v1.1.0"
 ---
 
 I bought this game thinking it was another Factorio clone. It's not. No conveyor belts. No belt balancers. No spaghetti. And that's exactly why it's worth your time.
@@ -21,7 +23,7 @@ Here's the pitch: You've got a tiny station. There's an asteroid 50 meters away.
 
 <div class="callout callout-verdict">
   <h4>Worth buying?</h4>
-  <p>Launch week -20% at ~US$12. Early access with 30-40 hours of content. If you liked Factorio or Satisfactory but swore you'd never build another conveyor belt — buy it. Tested on v1.0.0.2.</p>
+  <p>Launch week -20% at ~US$12. Early access with 30-40 hours of content. If you liked Factorio or Satisfactory but swore you'd never build another conveyor belt — buy it. <strong>All guides updated for v1.1 (patch 1.1.1.0)</strong>.</p>
 </div>
 
 ---
@@ -58,7 +60,7 @@ Stop guessing. Here's exactly what to do in your first hour:
     <tr><td>Developer</td><td>Trickjump Games Ltd</td></tr>
     <tr><td>EA Launch</td><td>May 5, 2026</td></tr>
     <tr><td>Multiplayer</td><td>Up to 4-player PVE co-op, dedicated saves per session</td></tr>
-    <tr><td>Guide Tested On</td><td>v1.0.0.2 (all guides verified on this patch)</td></tr>
+    <tr><td>Guide Tested On</td><td>v1.1.1.0 (all guides verified on this patch)</td></tr>
   </tbody>
 </table>
 
@@ -136,5 +138,5 @@ Scrolling through Steam discussions, tested in my own playthroughs, here's what 
 ---
 
 <small style="display:block;text-align:center;color:var(--cream-dark);">
-  <em>Fan-made guide. All game content belongs to Trickjump Games Ltd. Tested on v1.0.0.2.</em>
+  <em>Fan-made guide. All game content belongs to Trickjump Games Ltd. All guides updated for v1.1 (build 1.1.1.0).</em>
 </small>
