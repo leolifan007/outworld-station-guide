@@ -3,7 +3,6 @@ title: "Cargo Drone Network Optimization - Speed Up Cross-Station Deliveries"
 description: "Outworld Station cargo drone pathing, congestion fixes, and network topology design. Real throughput numbers for 10 to 50 drone networks."
 date: 2026-06-05
 publishedAt: 2026-06-18T13:45:00+08:00
-emoji: "馃殎"
 lastmod: 2026-06-07T19:15:31+08:00
 draft: false
 category: logistics

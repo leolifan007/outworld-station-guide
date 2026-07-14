@@ -5,10 +5,9 @@ date: 2026-06-09
 publishedAt: 2026-06-18T12:00:00+08:00
 lastmod: 2026-06-16T10:43:52+08:00
 draft: false
-category: exploration
+category: strategy
 version: 1.0.0.0
 breadcrumb: Endgame
-emoji: Ship
 
 ---
 

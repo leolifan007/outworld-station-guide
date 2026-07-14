@@ -5,10 +5,9 @@ date: 2026-06-09
 publishedAt: 2026-06-18T12:15:00+08:00
 lastmod: 2026-06-17T19:09:59+08:00
 draft: false
-category: economy
+category: defense
 version: 1.0.0.0
 breadcrumb: Equipment
-emoji: Gear
 
 ---
 

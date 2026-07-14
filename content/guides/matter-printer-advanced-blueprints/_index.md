@@ -1,4 +1,4 @@
----
+﻿---
 title: "Outworld Station Matter Printer Advanced Blueprints - Factory Blueprinting for Mass Production"
 description: "Outworld Station matter printer advanced usage including multi-blueprint chaining, parameterized blueprints, hotbar management for 50+ blueprints, and sharing blueprints between saves."
 date: 2026-07-13
@@ -8,7 +8,7 @@ version: "1.1"
 game_version: "v1.1.0"
 lastmod: 2026-07-14
 draft: false
-category: production
+category: reference
 tested: "Blueprint library of 40+ templates across 4 hotbars at Station Level 10."
 ---
 

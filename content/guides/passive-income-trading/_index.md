@@ -9,7 +9,6 @@ publishDate: 2026-06-11T00:45:00+08:00
 category: economy
 version: 1.0.0.0
 breadcrumb: Passive Income
-emoji: "馃挵"
 
 
 ---

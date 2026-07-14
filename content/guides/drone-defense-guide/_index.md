@@ -1,10 +1,9 @@
----
+﻿---
 title: "Drone Defense & Shield Guide: Protect Your Station"
 description: "Outworld Station drone shields, missile turrets, laser defense, and base protection strategies. Real loadouts that survived raids at Station Level 10+."
 date: 2026-05-17
 publishedAt: 2026-05-19T11:22:00+08:00
 breadcrumb: Drone Defense
-emoji: "🛡️"
 lastmod: 2026-05-19
 draft: false
 category: defense

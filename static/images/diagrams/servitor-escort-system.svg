@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 820" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2533"/>
+      <stop offset="100%" stop-color="#0f1a24"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#00b894"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3044"/>
+      <stop offset="100%" stop-color="#162535"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6a85"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="820" fill="url(#bg)" rx="8"/>
+  <rect x="20" y="20" width="760" height="44" rx="4" fill="url(#hdr)"/>
+  <text x="400" y="49" text-anchor="middle" fill="#0f1a24" font-weight="700" font-size="16">Servitor Bot Escort System Flow</text>
+  
+  <!-- Prerequisite -->
+  <rect x="250" y="80" width="300" height="50" rx="6" fill="url(#box)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="103" text-anchor="middle" fill="#4a90d9" font-weight="700" font-size="13">Prerequisite: Servitor Station at Lv8</text>
+  <text x="400" y="120" text-anchor="middle" fill="#8899aa" font-size="11">Was Lv10 - moved up in v1.1</text>
+  <line x1="400" y1="130" x2="400" y2="155" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: CPU Control -->
+  <rect x="225" y="155" width="350" height="50" rx="6" fill="url(#box)" stroke="#f0c040" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="178" text-anchor="middle" fill="#f0c040" font-weight="700" font-size="13">Unlock CPU Control at Lv9</text>
+  <text x="400" y="195" text-anchor="middle" fill="#8899aa" font-size="11">Fleet Command System - 2,000 Tech Points</text>
+  <line x1="400" y1="205" x2="400" y2="230" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: Craft Servitors -->
+  <rect x="225" y="230" width="350" height="50" rx="6" fill="url(#box)" stroke="#00D4AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="253" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="13">Craft Servitor Bots</text>
+  <text x="400" y="270" text-anchor="middle" fill="#8899aa" font-size="11">15 Steel + 5 Electronics per bot</text>
+  <line x1="400" y1="280" x2="400" y2="305" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4: Assign Ship to CPU -->
+  <rect x="225" y="305" width="350" height="50" rx="6" fill="url(#box)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="328" text-anchor="middle" fill="#e74c3c" font-weight="700" font-size="13">Assign Ship to CPU Task</text>
+  <text x="400" y="345" text-anchor="middle" fill="#8899aa" font-size="11">Auto-Trade, Resource Haul, Patrol, etc.</text>
+  <line x1="400" y1="355" x2="400" y2="380" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Step 5: Assign Escort -->
+  <rect x="200" y="380" width="400" height="50" rx="6" fill="url(#box)" stroke="#9b59b6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="403" text-anchor="middle" fill="#9b59b6" font-weight="700" font-size="13">Assign Servitor to Escort in Fleet Panel</text>
+  <text x="400" y="420" text-anchor="middle" fill="#8899aa" font-size="11">1 Servitor per CPU-controlled ship</text>
+  <line x1="400" y1="430" x2="400" y2="455" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Servitor follow -->
+  <rect x="225" y="455" width="350" height="50" rx="6" fill="url(#box)" stroke="#e67e22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="478" text-anchor="middle" fill="#e67e22" font-weight="700" font-size="13">Servitor Follows Ship</text>
+  <text x="400" y="495" text-anchor="middle" fill="#8899aa" font-size="11">~50m follow distance - icon indicates link</text>
+  <line x1="400" y1="505" x2="400" y2="530" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Combat split -->
+  <rect x="400" y="530" width="12" height="20" rx="2" fill="#4a6a85"/>
+  
+  <!-- Combat engaged -->
+  <line x1="220" y1="550" x2="220" y2="570" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="400" y1="550" x2="220" y2="550" stroke="#4a6a85" stroke-width="1.5"/>
+  <rect x="80" y="570" width="280" height="65" rx="6" fill="url(#box)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="220" y="593" text-anchor="middle" fill="#e74c3c" font-weight="700" font-size="13">Combat Engaged</text>
+  <text x="220" y="610" text-anchor="middle" fill="#aabbcc" font-size="11">Servitor stays behind ship</text>
+  <text x="220" y="625" text-anchor="middle" fill="#8899aa" font-size="10">Repair beam: 2-3% hull per tick</text>
+  
+  <!-- No combat -->
+  <line x1="400" y1="550" x2="580" y2="550" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="580" y1="550" x2="580" y2="570" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="440" y="570" width="280" height="65" rx="6" fill="url(#box)" stroke="#00D4AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="593" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="13">Routine Transit</text>
+  <text x="580" y="610" text-anchor="middle" fill="#aabbcc" font-size="11">Servitor follows silently</text>
+  <text x="580" y="625" text-anchor="middle" fill="#8899aa" font-size="10">No repair charges consumed</text>
+  
+  <!-- Merge -->
+  <line x1="220" y1="635" x2="220" y2="660" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="580" y1="635" x2="580" y2="660" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="220" y1="660" x2="580" y2="660" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="400" y1="660" x2="400" y2="680" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Recharge needed? -->
+  <rect x="400" y="680" width="12" height="20" rx="2" fill="#4a6a85"/>
+  
+  <line x1="220" y1="700" x2="220" y2="720" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="400" y1="700" x2="220" y2="700" stroke="#4a6a85" stroke-width="1.5"/>
+  <rect x="80" y="720" width="280" height="65" rx="6" fill="url(#box)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="220" y="743" text-anchor="middle" fill="#e74c3c" font-weight="700" font-size="13">Charges Depleted?</text>
+  <text x="220" y="760" text-anchor="middle" fill="#8899aa" font-size="11">Servitor returns to station</text>
+  <text x="220" y="775" text-anchor="middle" fill="#8899aa" font-size="10">~2 min recharge time</text>
+  
+  <line x1="400" y1="700" x2="580" y2="700" stroke="#4a6a85" stroke-width="1.5"/>
+  <line x1="580" y1="700" x2="580" y2="720" stroke="#4a6a85" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="440" y="720" width="280" height="65" rx="6" fill="url(#box)" stroke="#00D4AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="743" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="13">Charges Remaining</text>
+  <text x="580" y="760" text-anchor="middle" fill="#aabbcc" font-size="11">Continues escort mission</text>
+  <text x="580" y="775" text-anchor="middle" fill="#8899aa" font-size="10">10 charges per mission (Basic Servitor)</text>
+</svg>

@@ -3,7 +3,6 @@ title: "Module Component Manufacturing - Build Station Modules Faster"
 description: "Outworld Station component production chain from raw materials to finished modules. Automate module assembly and stop waiting for slow fabricators."
 date: 2026-06-05
 publishedAt: 2026-06-18T15:00:00+08:00
-emoji: 鈿欙笍
 lastmod: 2026-06-11T21:04:27+08:00
 draft: false
 category: production

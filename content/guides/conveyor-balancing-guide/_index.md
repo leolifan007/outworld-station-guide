@@ -10,7 +10,6 @@ version: 1.0.0.0
 breadcrumb: Conveyor Balancing
 
 
-
 ---
 
 Your second assembler is starving while the first one overflows with iron plates.

@@ -4,7 +4,6 @@ description: "Outworld Station pipe bottlenecks, connector throughput limits, an
 date: 2026-05-14
 publishedAt: 2026-06-05T13:00:00+08:00
 breadcrumb: Pipe Bottlenecks
-emoji: "馃敡"
 lastmod: 2026-05-14
 draft: false
 category: logistics

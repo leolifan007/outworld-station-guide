@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2533"/>
+      <stop offset="100%" stop-color="#0f1a24"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#00b894"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6a85"/>
+    </marker>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg)" rx="8"/>
+  <rect x="20" y="20" width="760" height="40" rx="4" fill="url(#hdr)"/>
+  <text x="400" y="47" text-anchor="middle" fill="#0f1a24" font-weight="700" font-size="15">First Hour Survival Walkthrough — 60-Minute Timeline</text>
+  
+  <!-- Timeline bar -->
+  <rect x="40" y="80" width="720" height="30" rx="4" fill="#00D4AA" opacity="0.15"/>
+  <rect x="40" y="80" width="120" height="30" rx="4" fill="#00D4AA" opacity="0.5"/>
+  <text x="100" y="100" text-anchor="middle" fill="#fff" font-weight="700" font-size="11">0-10 min: Setup</text>
+  <rect x="160" y="80" width="150" height="30" rx="4" fill="#4a90d9" opacity="0.5"/>
+  <text x="235" y="100" text-anchor="middle" fill="#fff" font-weight="700" font-size="11">10-25 min: Automation</text>
+  <rect x="310" y="80" width="200" height="30" rx="4" fill="#f0c040" opacity="0.5"/>
+  <text x="410" y="100" text-anchor="middle" fill="#fff" font-weight="700" font-size="11">25-45 min: Expansion</text>
+  <rect x="510" y="80" width="250" height="30" rx="4" fill="#e67e22" opacity="0.5"/>
+  <text x="635" y="100" text-anchor="middle" fill="#fff" font-weight="700" font-size="11">45-60 min: First Ship</text>
+  
+  <!-- Phase 1 details -->
+  <rect x="40" y="130" width="110" height="22" rx="3" fill="#1e3044" stroke="#00D4AA" stroke-width="1"/>
+  <text x="95" y="145" text-anchor="middle" fill="#00D4AA" font-size="10">Phase 1: Setup</text>
+  <text x="40" y="170" fill="#8899aa" font-size="10">0:00 Drag station to asteroid</text>
+  <text x="40" y="185" fill="#8899aa" font-size="10">1:00 Build 2 Solar Panels</text>
+  <text x="40" y="200" fill="#8899aa" font-size="10">2:00 Build 1 Battery</text>
+  <text x="40" y="215" fill="#8899aa" font-size="10">4:00 Build Mining Drill</text>
+  <text x="40" y="230" fill="#8899aa" font-size="10">8:00 Build Smelter</text>
+  <text x="40" y="250" fill="#00D4AA" font-size="11">Checkpoint 1: Power stable</text>
+  
+  <!-- Phase 2 details -->
+  <rect x="195" y="130" width="110" height="22" rx="3" fill="#1e3044" stroke="#4a90d9" stroke-width="1"/>
+  <text x="250" y="145" text-anchor="middle" fill="#4a90d9" font-size="10">Phase 2: Automation</text>
+  <text x="195" y="170" fill="#8899aa" font-size="10">10:00 Build 3rd Solar Panel</text>
+  <text x="195" y="185" fill="#8899aa" font-size="10">12:00 Build Assembler</text>
+  <text x="195" y="200" fill="#8899aa" font-size="10">13:00 Set Iron Plate recipe</text>
+  <text x="195" y="215" fill="#8899aa" font-size="10">15:00 Research Logistics I</text>
+  <text x="195" y="230" fill="#8899aa" font-size="10">22:00 Research Mining Eff.</text>
+  <text x="195" y="250" fill="#4a90d9" font-size="11">Checkpoint 2: Iron Plate auto</text>
+  
+  <!-- Phase 3 details -->
+  <rect x="350" y="130" width="110" height="22" rx="3" fill="#1e3044" stroke="#f0c040" stroke-width="1"/>
+  <text x="405" y="145" text-anchor="middle" fill="#f0c040" font-size="10">Phase 3: Expansion</text>
+  <text x="350" y="170" fill="#8899aa" font-size="10">25:00 Build Copper line</text>
+  <text x="350" y="185" fill="#8899aa" font-size="10">30:00 Research Adv Smelting</text>
+  <text x="350" y="200" fill="#8899aa" font-size="10">33:00 Circuit Board line</text>
+  <text x="350" y="215" fill="#8899aa" font-size="10">35:00 2 Defense Turrets</text>
+  <text x="350" y="230" fill="#8899aa" font-size="10">42:00 Research Lab</text>
+  <text x="350" y="250" fill="#f0c040" font-size="11">Checkpoint 3: Defenses online</text>
+  
+  <!-- Phase 4 details -->
+  <rect x="550" y="130" width="110" height="22" rx="3" fill="#1e3044" stroke="#e67e22" stroke-width="1"/>
+  <text x="605" y="145" text-anchor="middle" fill="#e67e22" font-size="10">Phase 4: First Ship</text>
+  <text x="550" y="170" fill="#8899aa" font-size="10">45:00 Research Shipyard I</text>
+  <text x="550" y="185" fill="#8899aa" font-size="10">48:00 Build Shipyard</text>
+  <text x="550" y="200" fill="#8899aa" font-size="10">50:00 Build Scout Ship</text>
+  <text x="550" y="215" fill="#8899aa" font-size="10">52:00 Launch to planet</text>
+  <text x="550" y="230" fill="#8899aa" font-size="10">58:00 Review supply chains</text>
+  <text x="550" y="250" fill="#e67e22" font-size="11">Goal: Self-sustaining station</text>
+  
+  <!-- Resources produced -->
+  <rect x="40" y="280" width="720" height="50" rx="6" fill="#0d5a4a" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="302" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="13">60-Minute Goal: Self-Sustaining Station</text>
+  <text x="400" y="320" text-anchor="middle" fill="#aabbcc" font-size="11">Iron Plates 40/min | Copper Wire 30/min | Circuit Boards 10/min | Power 32 MW | 2 Turrets | Scout Ship</text>
+  
+  <!-- Key numbers -->
+  <rect x="40" y="350" width="170" height="65" rx="6" fill="#1e3044" stroke="#4a6a85" stroke-width="1"/>
+  <text x="125" y="375" text-anchor="middle" fill="#00D4AA" font-size="22" font-weight="700">3</text>
+  <text x="125" y="395" text-anchor="middle" fill="#8899aa" font-size="10">Checkpoints to hit</text>
+  
+  <rect x="225" y="350" width="170" height="65" rx="6" fill="#1e3044" stroke="#4a6a85" stroke-width="1"/>
+  <text x="310" y="375" text-anchor="middle" fill="#4a90d9" font-size="22" font-weight="700">7</text>
+  <text x="310" y="395" text-anchor="middle" fill="#8899aa" font-size="10">Buildings needed</text>
+  
+  <rect x="410" y="350" width="170" height="65" rx="6" fill="#1e3044" stroke="#4a6a85" stroke-width="1"/>
+  <text x="495" y="375" text-anchor="middle" fill="#f0c040" font-size="22" font-weight="700">32 MW</text>
+  <text x="495" y="395" text-anchor="middle" fill="#8899aa" font-size="10">Target power level</text>
+  
+  <rect x="595" y="350" width="165" height="65" rx="6" fill="#1e3044" stroke="#4a6a85" stroke-width="1"/>
+  <text x="677" y="375" text-anchor="middle" fill="#e67e22" font-size="22" font-weight="700">52 min</text>
+  <text x="677" y="395" text-anchor="middle" fill="#8899aa" font-size="10">Average completion</text>
+  
+  <!-- Bottom bar -->
+  <rect x="40" y="435" width="720" height="44" rx="4" fill="#162535" stroke="#4a6a85" stroke-width="1"/>
+  <text x="400" y="455" text-anchor="middle" fill="#aabbcc" font-size="11">Tip: First wormhole invasion hits ~30-35 min. Have 2+ turrets ready or your station core takes heavy damage.</text>
+  <text x="400" y="470" text-anchor="middle" fill="#4a6a85" font-size="10">Timings measured on v1.1.1.0. +/- 5 min depending on asteroid distance.</text>
+  
+  <!-- Timeline markers -->
+  <line x1="40" y1="295" x2="760" y2="295" stroke="#4a6a85" stroke-width="0.5" stroke-dasharray="3,3"/>
+</svg>

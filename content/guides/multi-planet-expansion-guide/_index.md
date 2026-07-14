@@ -5,10 +5,9 @@ date: 2026-06-09
 publishedAt: 2026-06-18T12:30:00+08:00
 lastmod: 2026-06-17T19:55:08+08:00
 draft: false
-category: logistics
+category: strategy
 version: 1.0.0.0
 breadcrumb: Multi-Planet
-emoji: Globe
 
 ---
 

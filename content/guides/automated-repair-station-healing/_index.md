@@ -6,7 +6,6 @@ publishedAt: 2026-06-18T13:15:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Auto Repair
-emoji: "馃敡"
 lastmod: 2026-06-05
 draft: false
 category: defense

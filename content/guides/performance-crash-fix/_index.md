@@ -4,7 +4,6 @@ description: "Real crashes, real fixes. I spent 40 hours troubleshooting Outworl
 date: 2026-05-15
 publishedAt: 2026-06-05T10:30:00+08:00
 breadcrumb: Performance & Crash Fix
-emoji: "馃敡"
 lastmod: 2026-05-15
 draft: false
 category: troubleshooting

@@ -1,10 +1,9 @@
----
+﻿---
 title: "Wormhole Terminal Guide: Interplanetary Logistics"
 description: "Outworld Station wormhole terminal setup, channel configuration, inventory syncing across planets, and multi-station logistics. Everything the tutorial skipped."
 date: 2026-05-17
 publishedAt: 2026-05-20T20:48:00+08:00
 breadcrumb: Wormhole Terminal
-emoji: "🌀"
 lastmod: 2026-05-20
 draft: false
 category: logistics

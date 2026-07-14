@@ -1,0 +1,103 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1923"/>
+      <stop offset="100%" stop-color="#1a2533"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#00D4AA" font-size="18" font-weight="700">Pipe Throughput vs Distance by Pipe Type</text>
+
+  <!-- Legend -->
+  <rect x="30" y="62" width="16" height="10" rx="3" fill="#4FC3F7"/>
+  <text x="52" y="72" fill="#E0E0E0" font-size="11">Basic Pipe (60/min max)</text>
+  <rect x="200" y="62" width="16" height="10" rx="3" fill="#FFB74D"/>
+  <text x="222" y="72" fill="#E0E0E0" font-size="11">Reinforced Pipe (120/min max)</text>
+  <rect x="390" y="62" width="16" height="10" rx="3" fill="#81C784"/>
+  <text x="412" y="72" fill="#E0E0E0" font-size="11">Heavy Pipe (240/min max)</text>
+
+  <!-- Y axis label -->
+  <text x="22" y="280" text-anchor="middle" fill="#90A4AE" font-size="11" transform="rotate(-90,22,280)">Throughput (units/min)</text>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="110" x2="760" y2="110" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="114" text-anchor="end" fill="#90A4AE" font-size="10">240</text>
+  <line x1="80" y1="152" x2="760" y2="152" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="156" text-anchor="end" fill="#90A4AE" font-size="10">200</text>
+  <line x1="80" y1="194" x2="760" y2="194" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="198" text-anchor="end" fill="#90A4AE" font-size="10">160</text>
+  <line x1="80" y1="236" x2="760" y2="236" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="240" text-anchor="end" fill="#90A4AE" font-size="10">120</text>
+  <line x1="80" y1="278" x2="760" y2="278" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="282" text-anchor="end" fill="#90A4AE" font-size="10">80</text>
+  <line x1="80" y1="320" x2="760" y2="320" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="324" text-anchor="end" fill="#90A4AE" font-size="10">40</text>
+  <line x1="80" y1="362" x2="760" y2="362" stroke="#2A3A4A" stroke-width="1"/>
+  <text x="72" y="366" text-anchor="end" fill="#90A4AE" font-size="10">0</text>
+
+  <!-- X axis -->
+  <line x1="80" y1="110" x2="80" y2="362" stroke="#3A4A5A" stroke-width="1"/>
+  <line x1="80" y1="362" x2="760" y2="362" stroke="#3A4A5A" stroke-width="1"/>
+
+  <!-- X axis ticks + labels -->
+  <line x1="80" y1="362" x2="80" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="80" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">0</text>
+  <line x1="192" y1="362" x2="192" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="192" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">5</text>
+  <line x1="304" y1="362" x2="304" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="304" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">10</text>
+  <line x1="416" y1="362" x2="416" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="416" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">15</text>
+  <line x1="528" y1="362" x2="528" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="528" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">20</text>
+  <line x1="640" y1="362" x2="640" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="640" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">25</text>
+  <line x1="760" y1="362" x2="760" y2="370" stroke="#3A4A5A" stroke-width="1"/>
+  <text x="760" y="385" text-anchor="middle" fill="#90A4AE" font-size="11">30</text>
+  <text x="420" y="405" text-anchor="middle" fill="#90A4AE" font-size="11">Distance (tiles)</text>
+
+  <!-- Basic Pipe line: (0,60)=110, (5,60)=110, (10,60)=110, (15,45)=149, (20,30)=188, (30,15)=215 -->
+  <polyline points="80,110 192,110 304,110 416,149 528,188 640,202 760,215" stroke="#4FC3F7" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="110" r="4" fill="#4FC3F7"/>
+  <circle cx="192" cy="110" r="4" fill="#4FC3F7"/>
+  <circle cx="304" cy="110" r="4" fill="#4FC3F7"/>
+  <circle cx="416" cy="149" r="4" fill="#4FC3F7"/>
+  <circle cx="528" cy="188" r="4" fill="#4FC3F7"/>
+  <circle cx="640" cy="202" r="4" fill="#4FC3F7"/>
+  <circle cx="760" cy="215" r="4" fill="#4FC3F7"/>
+
+  <!-- Reinforced Pipe: (0,120)=236, (5,120)=236, (10,120)=236, (15,105)=170, (20,100)=158, (30,75)=126 -->
+  <polyline points="80,236 192,236 304,236 416,170 528,158 640,144 760,126" stroke="#FFB74D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="236" r="4" fill="#FFB74D"/>
+  <circle cx="192" cy="236" r="4" fill="#FFB74D"/>
+  <circle cx="304" cy="236" r="4" fill="#FFB74D"/>
+  <circle cx="416" cy="170" r="4" fill="#FFB74D"/>
+  <circle cx="528" cy="158" r="4" fill="#FFB74D"/>
+  <circle cx="640" cy="144" r="4" fill="#FFB74D"/>
+  <circle cx="760" cy="126" r="4" fill="#FFB74D"/>
+
+  <!-- Heavy Pipe: (0,240)=110, (5,240)=110, (10,240)=110, (15,230)=116, (20,220)=122, (30,200)=144 -->
+  <polyline points="80,110 192,110 304,110 416,116 528,122 640,135 760,144" stroke="#81C784" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="110" r="4" fill="#81C784"/>
+  <circle cx="192" cy="110" r="4" fill="#81C784"/>
+  <circle cx="304" cy="110" r="4" fill="#81C784"/>
+  <circle cx="416" cy="116" r="4" fill="#81C784"/>
+  <circle cx="528" cy="122" r="4" fill="#81C784"/>
+  <circle cx="640" cy="135" r="4" fill="#81C784"/>
+  <circle cx="760" cy="144" r="4" fill="#81C784"/>
+
+  <!-- Annotation: 10-tile rule -->
+  <line x1="304" y1="106" x2="304" y2="55" stroke="#FF5252" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="224" y="30" width="160" height="26" rx="6" fill="#FF5252" opacity="0.15" stroke="#FF5252" stroke-width="1"/>
+  <text x="304" y="47" text-anchor="middle" fill="#FF5252" font-size="10" font-weight="600">Basic Pipe drops hard after 10 tiles</text>
+
+  <!-- Annotation: Heavy best for long runs -->
+  <line x1="640" y1="132" x2="660" y2="60" stroke="#81C784" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="605" y="38" width="120" height="22" rx="5" fill="#81C784" opacity="0.15" stroke="#81C784" stroke-width="1"/>
+  <text x="665" y="52" text-anchor="middle" fill="#81C784" font-size="9">Heavy: 200/min @ 30 tiles</text>
+</svg>

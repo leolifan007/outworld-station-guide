@@ -4,11 +4,10 @@ description: "Ships confused me for hours. Here's everything I figured out about
 date: 2026-05-24
 publishedAt: 2026-06-05T18:20:00+08:00
 breadcrumb: Ship Building
-emoji: "馃殌"
 lastmod: 2026-05-15
 draft: false
 hidden: false
-category: advanced
+category: beginner
 tested: "Shipyard II tested across 20+ contracts. All ship types verified."
 ---
 
