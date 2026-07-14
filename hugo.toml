@@ -10,6 +10,7 @@ canonifyURLs = false
       unsafe = true
 
 [params]
+  game_version = 'v1.1'
   description = 'Complete Outworld Station guide: beginner tips, automation systems, building tutorials, resource management, and pro strategies.'
   keywords = 'Outworld Station guide, Outworld Station tips, space factory automation, space station building, building game guide'
   steam_url = 'https://store.steampowered.com/app/3242950/Outworld_Station/'
