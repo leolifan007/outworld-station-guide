@@ -4,7 +4,6 @@ description: "I tested three different tech paths from scratch. Here's the resea
 date: 2026-05-22
 publishedAt: 2026-06-05T15:45:00+08:00
 breadcrumb: Research Order
-emoji: "馃摉"
 lastmod: 2026-05-15
 draft: false
 hidden: false

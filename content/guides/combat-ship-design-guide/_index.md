@@ -1,4 +1,4 @@
----
+ï»¿---
 title: "Outworld Station Combat Ship Loadout - Best Weapons and Modules for Space Fighting"
 description: "Outworld Station combat ship weapons, shield modules, and thruster loadouts that actually work against drone raids and PvE enemies. Tested through Station Level 12."
 date: 2026-06-18
@@ -7,7 +7,7 @@ publishDate: 2026-06-18T21:00:00+08:00
 breadcrumb: Combat Ship
 lastmod: 2026-06-18
 draft: false
-category: combat
+category: defense
 tested: "Every loadout tested on Station Level 8-12 combat scenarios. Ship losses: 4."
 ---
 
@@ -25,7 +25,7 @@ Combat in Outworld Station is not about biggest gun wins. It is about matching w
 <hr>
 
 <details class="md-fold">
-<summary><span>How Ship Combat Actually Works (The Hidden Stats)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>How Ship Combat Actually Works (The Hidden Stats)</span><span class="fold-toggle">ï¿½?/span></summary>
 
 <div class="fold-body">
 
@@ -55,7 +55,7 @@ Every ship in Outworld Station has three combat-relevant stats that the in-game 
 <hr>
 
 <details class="md-fold">
-<summary><span>Three Loadouts That Work (Budget, All-Rounder, Heavy)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Three Loadouts That Work (Budget, All-Rounder, Heavy)</span><span class="fold-toggle">ï¿½?/span></summary>
 
 <div class="fold-body">
 
@@ -105,7 +105,7 @@ Every ship in Outworld Station has three combat-relevant stats that the in-game 
 <hr>
 
 <details class="md-fold">
-<summary><span>Module Placement and Ship Building Order</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Module Placement and Ship Building Order</span><span class="fold-toggle">ï¿½?/span></summary>
 
 <div class="fold-body">
 

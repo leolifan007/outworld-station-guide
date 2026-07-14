@@ -1,10 +1,11 @@
----
+﻿---
 title: "Co-op Multiplayer Guide: Play Outworld Station With Friends"
 description: "Everything you need to know about 4-player co-op in Outworld Station. How to host, join, share tasks, and avoid common multiplayer headaches."
 date: 2026-05-19
 publishedAt: 2026-05-19T19:42:00+08:00
 lastmod: 2026-05-19
 draft: false
+category: misc
 tested: "Co-op tested with 2-4 players across separate sessions."
 ---
 

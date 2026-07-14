@@ -8,7 +8,6 @@ draft: false
 category: production
 version: 1.0.0.0
 breadcrumb: Mining Outpost
-emoji: 鉀?
 
 
 ---

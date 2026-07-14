@@ -1,4 +1,4 @@
----
+﻿---
 title: "Outworld Station Prospector Ship and Asteroid Towing - Bring Asteroids to Your Station"
 description: "Outworld Station prospector ship setup, asteroid towing mechanics, optimal asteroid selection, and the tow-and-mine workflow that extends your asteroid belt indefinitely."
 date: 2026-07-13
@@ -8,7 +8,7 @@ lastmod: 2026-07-14
 draft: false
 version: "1.1"
 game_version: "v1.1.0"
-category: production
+category: exploration
 tested: "Asteroid towing tested with 20+ towed rocks across Station Level 6-12."
 ---
 

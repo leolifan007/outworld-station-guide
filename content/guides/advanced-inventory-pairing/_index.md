@@ -6,7 +6,6 @@ publishedAt: 2026-06-18T13:00:00+08:00
 publishDate: 2026-06-09T21:40:00+08:00
 hidden: false
 breadcrumb: Auto Logistics
-emoji: "馃摝"
 lastmod: 2026-06-05
 draft: false
 category: logistics

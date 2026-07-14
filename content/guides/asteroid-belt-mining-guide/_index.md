@@ -1,4 +1,4 @@
----
+﻿---
 title: "Asteroid Belt Mining Guide - Find Ore Nodes & Automate Your First Belt"
 description: "Your starting asteroid belt runs dry faster than you expect. Here is how to find high-yield ore nodes, build miners, and automate belt-to-base resource flow."
 date: 2026-06-09
@@ -9,7 +9,6 @@ publishedAt: 2026-06-09T23:15:00+08:00
 category: production
 version: 1.0.0.0
 breadcrumb: Asteroid Mining
-emoji: "&#9917;"
 ---
 
 Your first few hours in Outworld Station feel generous. Asteroids float by, your atomizer turns them into iron and copper, and life is good. Then station level 3 hits and suddenly your smelters are starving. That is because hand-atomizing asteroids is a tutorial mechanic, not a real strategy.

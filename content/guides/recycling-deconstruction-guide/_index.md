@@ -5,10 +5,9 @@ date: 2026-06-09
 publishedAt: 2026-06-18T11:00:00+08:00
 lastmod: 2026-06-14T09:52:22+08:00
 draft: false
-category: beginner
+category: production
 version: 1.0.0.0
 breadcrumb: Recycling
-emoji: 鈾?
 
 
 ---

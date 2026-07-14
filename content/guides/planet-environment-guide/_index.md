@@ -9,7 +9,6 @@ publishDate: 2026-06-11T01:10:00+08:00
 category: exploration
 version: 1.0.0.0
 breadcrumb: Planet Environment
-emoji: "馃實"
 
 
 ---

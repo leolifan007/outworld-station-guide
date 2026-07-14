@@ -32,21 +32,9 @@ The problem is not production. The problem is pipe flow. Outworld Station's pipe
 
 ### Pipe Type and Throughput
 
-| Pipe Type | Max Throughput | Max Length (efficient) | Cost per Tile |
-|-----------|:-------------:|:---------------------:|:------------:|
-| Basic Pipe | 60 units/min | 10 tiles | 2 Iron |
-| Reinforced Pipe | 120 units/min | 20 tiles | 4 Iron + 1 Copper |
-| Heavy Pipe | 240 units/min | 30 tiles | 6 Iron + 2 Titanium |
+The chart below shows actual throughput for each pipe type at every distance. Basic Pipe collapses hard past 10 tiles — Reinforced holds steady longer, and Heavy Pipe barely drops at all.
 
-**Throughput Drop by Distance:**
-
-| Distance | Basic Pipe | Reinforced | Heavy |
-|:--------:|:---------:|:----------:|:-----:|
-| 5 tiles | 60/min | 120/min | 240/min |
-| 10 tiles | 60/min | 120/min | 240/min |
-| 15 tiles | 45/min | 105/min | 230/min |
-| 20 tiles | 30/min | 100/min | 220/min |
-| 30 tiles | 15/min | 75/min | 200/min |
+{{< diagram src="pipe-throughput-chart.svg" caption="Actual throughput (units/min) by pipe type at 0, 5, 10, 15, 20, 25, and 30 tiles" >}}
 
 <div class="callout callout-tip">
   <h4>The 10-Tile Rule</h4>
@@ -64,35 +52,17 @@ The problem is not production. The problem is pipe flow. Outworld Station's pipe
 
 ### Pattern 1: Linear Feed (Simple, Single Consumer)
 
-```
-Miner -> Pipe (5 tiles) -> [Buffer Tank] -> Pipe (5 tiles) -> Reactor
-```
-
 Works for 1-2 consumers. Every consumer beyond 2 starves.
 
 ### Pattern 2: Loop Feed (Best for Multi-Consumer)
-
-```
-                        -> Reactor 1 ->
-                       |               |
-Miner -> Pipe -> Split -> Reactor 2 -> Merge -> Pipe -> [Buffer]
-                       |               |
-                        -> Reactor 3 ->
-```
 
 The loop balances pressure across all consumers. Every reactor gets equal flow.
 
 ### Pattern 3: Tiered Pressure (Large Networks)
 
-```
-Miner -> Heavy Pipe (10 tiles) -> [Buffer 2000]
-                                    |
-                        Reinforced Pipe (split)
-                       |                  |
-                -> Reactor Cluster A -> Reactor Cluster B
-```
-
 Use Heavy Pipe for the main trunk, Reinforced for branches. Each cluster gets its own buffer tank.
+
+See the diagrams below for all three patterns rendered visually.
 
 {{< diagram src="bottleneck-patterns.svg" caption="Three pipe layout patterns: Linear Feed, Loop Feed (best for multi-consumer), and Tiered Pressure (large networks)" >}}
 
@@ -109,13 +79,9 @@ Use Heavy Pipe for the main trunk, Reinforced for branches. Each cluster gets it
 
 One-way valves prevent backflow. Without them, pressure from a full buffer tank can push gas backward into your production line, causing the miner to jam.
 
-**Where to place valves:**
+Use this flowchart every time you route a pipe — if any condition is true, place a valve:
 
-1. Immediately after every buffer tank output (prevents backflow into the buffer)
-2. At the input of every reactor/consumer (prevents inter-consumer backflow)
-3. Before any T-junction in a dead-end branch
-
-**Valve cost:** 5 Iron Plates each. Cheap insurance.
+{{< diagram src="valve-placement-decision.svg" caption="Decision flowchart: check each condition at every pipe junction to determine valve placement" >}}
 
 </div></details>
 
@@ -123,13 +89,9 @@ One-way valves prevent backflow. Without them, pressure from a full buffer tank 
 
 ## Emergency Procedure: Pipe Network Diagnosis
 
-If a consumer is starving despite adequate production:
+If a consumer is starving despite adequate production, follow this decision tree:
 
-1. Check the pipe segment length between the last buffer and the consumer
-2. Look for unmarked T-junctions (a hidden branch you forgot about)
-3. Verify one-way valve direction (arrows must point toward consumer)
-4. Check if the buffer tank has gas (if empty, the problem is upstream)
-5. Add a Reinforced Pipe segment at the bottleneck
+{{< diagram src="pipe-emergency-diagnosis.svg" caption="Step-by-step diagnosis tree: check pipe length, hidden junctions, valve direction, and buffer gas level" >}}
 
 ### v1.1: Plan Pipe Capacity for Mk2/Mk3 Factories
 

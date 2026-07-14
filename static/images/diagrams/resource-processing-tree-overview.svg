@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2533"/>
+      <stop offset="100%" stop-color="#0f1a24"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#00b894"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)" rx="8"/>
+  <rect x="20" y="20" width="760" height="40" rx="4" fill="url(#hdr)"/>
+  <text x="400" y="47" text-anchor="middle" fill="#0f1a24" font-weight="700" font-size="15">Resource Processing Tree — Complete Material Chain</text>
+  
+  <!-- Mining Sources -->
+  <text x="400" y="80" text-anchor="middle" fill="#aabbcc" font-weight="700" font-size="12">MINING SOURCES</text>
+  
+  <rect x="30" y="92" width="170" height="60" rx="6" fill="#1e3044" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="115" y="114" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="11">Asteroid Mining</text>
+  <text x="115" y="132" text-anchor="middle" fill="#aabbcc" font-size="10">Iron, Copper, Titanium</text>
+  <text x="115" y="146" text-anchor="middle" fill="#8899aa" font-size="9">Silicon, Coal, Ice</text>
+  
+  <rect x="230" y="92" width="170" height="60" rx="6" fill="#1e3044" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="315" y="114" text-anchor="middle" fill="#4a90d9" font-weight="700" font-size="11">Gas Giant Mining</text>
+  <text x="315" y="132" text-anchor="middle" fill="#aabbcc" font-size="10">Hydrogen, Helium</text>
+  <text x="315" y="146" text-anchor="middle" fill="#8899aa" font-size="9">Methane, Sulfur Vapor</text>
+  
+  <rect x="430" y="92" width="170" height="60" rx="6" fill="#1e3044" stroke="#f0c040" stroke-width="1.5"/>
+  <text x="515" y="114" text-anchor="middle" fill="#f0c040" font-weight="700" font-size="11">Containment</text>
+  <text x="515" y="132" text-anchor="middle" fill="#aabbcc" font-size="10">Nitrox, Titanium</text>
+  <text x="515" y="146" text-anchor="middle" fill="#8899aa" font-size="9">H, Silicon (L13+)</text>
+  
+  <rect x="630" y="92" width="140" height="60" rx="6" fill="#1e3044" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="700" y="114" text-anchor="middle" fill="#e67e22" font-weight="700" font-size="11">Exo-Planet</text>
+  <text x="700" y="132" text-anchor="middle" fill="#aabbcc" font-size="10">Exotic Matter</text>
+  <text x="700" y="146" text-anchor="middle" fill="#8899aa" font-size="9">Helium-3, Pt (L15+)</text>
+  
+  <!-- Arrow down -->
+  <text x="400" y="170" text-anchor="middle" fill="#4a6a85" font-size="16">↓</text>
+  <text x="400" y="185" text-anchor="middle" fill="#4a6a85" font-size="12">Step 1: Smelting / Chemical Processing</text>
+  
+  <!-- Smelters row -->
+  <rect x="30" y="200" width="240" height="50" rx="6" fill="#1e3044" stroke="#00D4AA" stroke-width="1"/>
+  <text x="150" y="221" text-anchor="middle" fill="#00D4AA" font-size="11">Smelters → Ingots</text>
+  <text x="150" y="238" text-anchor="middle" fill="#8899aa" font-size="9">Iron (2:1), Copper (2:1), Titanium (3:1)</text>
+  
+  <rect x="290" y="200" width="220" height="50" rx="6" fill="#1e3044" stroke="#4a90d9" stroke-width="1"/>
+  <text x="400" y="221" text-anchor="middle" fill="#4a90d9" font-size="11">Chemical Processors → Compounds</text>
+  <text x="400" y="238" text-anchor="middle" fill="#8899aa" font-size="9">Water, Methane, Nitronic Acid</text>
+  
+  <rect x="530" y="200" width="240" height="50" rx="6" fill="#1e3044" stroke="#f0c040" stroke-width="1"/>
+  <text x="650" y="221" text-anchor="middle" fill="#f0c040" font-size="11">Plasma Forge → Alloys</text>
+  <text x="650" y="238" text-anchor="middle" fill="#8899aa" font-size="9">Superalloy, Nano Composite</text>
+  
+  <!-- Arrow down -->
+  <text x="400" y="268" text-anchor="middle" fill="#4a6a85" font-size="16">↓</text>
+  <text x="400" y="283" text-anchor="middle" fill="#4a6a85" font-size="12">Step 2: Assembly → Components</text>
+  
+  <!-- Assemblers row -->
+  <rect x="30" y="298" width="230" height="50" rx="6" fill="#1e3044" stroke="#00D4AA" stroke-width="1"/>
+  <text x="145" y="319" text-anchor="middle" fill="#00D4AA" font-size="11">Basic Components</text>
+  <text x="145" y="336" text-anchor="middle" fill="#8899aa" font-size="9">Iron Plate, Copper Wire, Circuit Board</text>
+  
+  <rect x="285" y="298" width="230" height="50" rx="6" fill="#1e3044" stroke="#f0c040" stroke-width="1"/>
+  <text x="400" y="319" text-anchor="middle" fill="#f0c040" font-size="11">Advanced Components</text>
+  <text x="400" y="336" text-anchor="middle" fill="#8899aa" font-size="9">Electronics, Steel Frame, Adv Circuit</text>
+  
+  <rect x="540" y="298" width="230" height="50" rx="6" fill="#1e3044" stroke="#e74c3c" stroke-width="1"/>
+  <text x="655" y="319" text-anchor="middle" fill="#e74c3c" font-size="11">Endgame Components</text>
+  <text x="655" y="336" text-anchor="middle" fill="#8899aa" font-size="9">Quantum Processor, Dark Matter Core</text>
+  
+  <!-- Bottleneck alert -->
+  <rect x="30" y="370" width="740" height="60" rx="6" fill="#0d5a4a" stroke="#00D4AA" stroke-width="1"/>
+  <text x="400" y="392" text-anchor="middle" fill="#00D4AA" font-size="12" font-weight="700">Three Endgame Resource Gates</text>
+  <text x="400" y="412" text-anchor="middle" fill="#aabbcc" font-size="11">Superalloy (Lv5+) — Plasma Forge | Electronics (Lv6+) — Assembler | Nitronic Acid (Lv9+) — Chemical Processor</text>
+  
+  <!-- Quick ref cards -->
+  <text x="400" y="455" text-anchor="middle" fill="#aabbcc" font-weight="700" font-size="12">Quick Reference Card</text>
+  
+  <rect x="30" y="470" width="170" height="70" rx="4" fill="#162535" stroke="#4a6a85" stroke-width="0.5"/>
+  <text x="115" y="488" text-anchor="middle" fill="#8899aa" font-size="9">IRON</text>
+  <text x="115" y="502" text-anchor="middle" fill="#4a6a85" font-size="8">Mine → Smelt → Plate</text>
+  <text x="115" y="516" text-anchor="middle" fill="#4a6a85" font-size="8">→ Buildings + Turrets</text>
+  
+  <rect x="215" y="470" width="170" height="70" rx="4" fill="#162535" stroke="#4a6a85" stroke-width="0.5"/>
+  <text x="300" y="488" text-anchor="middle" fill="#8899aa" font-size="9">COPPER</text>
+  <text x="300" y="502" text-anchor="middle" fill="#4a6a85" font-size="8">Mine → Smelt → Wire</text>
+  <text x="300" y="516" text-anchor="middle" fill="#4a6a85" font-size="8">→ Circuit → Electronics</text>
+  
+  <rect x="400" y="470" width="170" height="70" rx="4" fill="#162535" stroke="#4a6a85" stroke-width="0.5"/>
+  <text x="485" y="488" text-anchor="middle" fill="#8899aa" font-size="9">TITANIUM</text>
+  <text x="485" y="502" text-anchor="middle" fill="#4a6a85" font-size="8">Mine (3:1) → Ingot</text>
+  <text x="485" y="516" text-anchor="middle" fill="#4a6a85" font-size="8">→ Plasma Forge → SA</text>
+  
+  <rect x="585" y="470" width="185" height="70" rx="4" fill="#162535" stroke="#4a6a85" stroke-width="0.5"/>
+  <text x="677" y="488" text-anchor="middle" fill="#8899aa" font-size="9">GASES</text>
+  <text x="677" y="502" text-anchor="middle" fill="#4a6a85" font-size="8">H₂O, Methane, Nitronic</text>
+  <text x="677" y="516" text-anchor="middle" fill="#4a6a85" font-size="8">Fusion fuel + compounds</text>
+</svg>

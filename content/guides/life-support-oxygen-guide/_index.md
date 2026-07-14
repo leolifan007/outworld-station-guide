@@ -8,7 +8,6 @@ draft: false
 category: survival
 version: 1.0.0.0
 breadcrumb: Life Support
-emoji: O2
 
 
 ---

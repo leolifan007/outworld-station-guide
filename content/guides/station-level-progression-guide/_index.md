@@ -5,10 +5,9 @@ date: 2026-06-09
 publishedAt: 2026-06-18T11:45:00+08:00
 lastmod: 2026-06-15T17:23:12+08:00
 draft: false
-category: survival
+category: strategy
 version: 1.0.0.0
 breadcrumb: Level Guide
-emoji: Star
 
 ---
 

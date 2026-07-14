@@ -5,10 +5,9 @@ date: 2026-06-09
 publishedAt: 2026-06-18T11:30:00+08:00
 lastmod: 2026-06-15T17:08:31+08:00
 draft: false
-category: production
+category: reference
 version: 1.0.0.0
 breadcrumb: Blueprints
-emoji: Print
 
 ---
 

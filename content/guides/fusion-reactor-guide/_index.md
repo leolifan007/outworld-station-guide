@@ -1,10 +1,9 @@
----
+﻿---
 title: "Fusion Reactor Guide — Never Let Your Station Black Out Again"
 description: "Outworld Station fusion reactor fuel management, common failure scenarios, and step-by-step recovery. Real solutions from someone who lost a lv7 station to a fuel crisis."
 date: 2026-05-13
 publishedAt: 2026-06-05T08:15:00+08:00
 breadcrumb: Fusion Reactor
-emoji: ⚡
 lastmod: 2026-05-14
 draft: false
 category: power

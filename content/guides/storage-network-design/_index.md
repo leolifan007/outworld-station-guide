@@ -9,7 +9,6 @@ publishDate: 2026-06-11T01:35:00+08:00
 category: logistics
 version: 1.0.0.0
 breadcrumb: Storage Network
-emoji: ":package:"
 
 
 ---
