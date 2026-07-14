@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Exo-Planet Lifter Guide - Surface Extraction and Planetary Resource Operations"
 description: "The Exo-Planet Lifter tech in v1.1 lets you land ships on exo-planet surfaces and extract rare materials. Here is how to unlock it, which planets to prioritize, and how to run profitable surface operations."
 date: 2026-07-14
-lastmod: 2026-07-14T12:22:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-18T08:30:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Power Source Comparison - Solar vs Fusion vs Antimatter vs Hybrid"
 description: "Complete comparison of every power source in Outworld Station v1.1: Solar, Fusion, Antimatter, and hybrid configurations. Power output, build cost, fuel chain, and when each source makes sense."
 date: 2026-07-14
-lastmod: 2026-07-14T12:55:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-24T14:30:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

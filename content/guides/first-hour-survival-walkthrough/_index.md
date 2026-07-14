@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "First Hour Survival Walkthrough - Step-by-Step from Zero to Self-Sustaining Station"
 description: "Exact minute-by-minute walkthrough for your first hour in Outworld Station. Build order, research priority, and the three checkpoints that separate a thriving station from a dead one."
 date: 2026-07-14
-lastmod: 2026-07-14T12:35:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-20T10:30:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

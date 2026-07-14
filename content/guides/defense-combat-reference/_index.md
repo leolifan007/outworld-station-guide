@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Defense and Combat Reference - Turrets, Ships, and Threat Ratings"
 description: "Complete Outworld Station defense reference covering all turret types, ship weapon systems, enemy threat levels, and when each defense method is most effective."
 date: 2026-07-14
-lastmod: 2026-07-14T13:00:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-25T10:15:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

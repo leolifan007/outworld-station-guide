@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Enhanced Containment Guide - Captured Asteroids and Inorganic Resource Refinery"
 description: "The Enhanced Containment upgrade in v1.1 unlocks a captured asteroid system and inorganic resource refinery. Here is exactly how to unlock it, what it produces, and how to integrate it into your factory for a steady supply of rare gases and minerals."
 date: 2026-07-14
-lastmod: 2026-07-14T12:09:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-16T09:22:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

@@ -1,10 +1,9 @@
-﻿---
+﻿﻿---
 title: "Blueprint Expansion Guide - Designing for the New 30x30 and 200-Object Limits"
 description: "v1.1 doubled blueprint size to 30x30 tiles and 200 objects. Here is how to redesign your blueprints for the new limits and what to do with the extra space."
 date: 2026-07-14
-lastmod: 2026-07-14T12:29:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-19T15:15:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

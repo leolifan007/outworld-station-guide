@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Servitor Bot Escort Guide - Automated Repair and Ship Defense in v1.1"
 description: "v1.1 adds Servitor escort functionality. Here is how to unlock escort mode, assign Servitors to ships, and keep your fleet operational without manual repair."
 date: 2026-07-14
-lastmod: 2026-07-14T12:15:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-17T10:45:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

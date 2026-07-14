@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Station Level 13-20 Endgame Guide - v1.1 Endgame Unlock Progression"
 description: "Station Level 13 through 20 unlock progression in v1.1. What each level gives you, what to prep before leveling, and how the v1.1 expansion changed the endgame unlock order."
 date: 2026-07-14
-lastmod: 2026-07-14T12:45:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-22T16:00:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

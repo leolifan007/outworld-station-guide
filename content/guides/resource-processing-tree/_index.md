@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Resource Processing Tree - Complete Material Refining Chain Reference"
 description: "Full resource processing tree for Outworld Station v1.1. Every raw material, intermediate product, and endgame component mapped from asteroid to finished good with refining chain and usage notes."
 date: 2026-07-14
-lastmod: 2026-07-14T12:50:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-23T11:00:00+08:00
 version: "1.1"
 game_version: "v1.1.0"

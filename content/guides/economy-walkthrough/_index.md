@@ -1,10 +1,9 @@
----
+﻿﻿---
 title: "Economy Walkthrough - Money Progression from Scrap to Millions"
 description: "Complete Outworld Station economy guide covering every income stage: early scrap selling, mid-game CPU trading, late-game Exo-Planet extraction, and endgame market manipulation. How to hit 500K credits by Station Level 18."
 date: 2026-07-14
-lastmod: 2026-07-14T12:40:00+08:00
+lastmod: 2026-07-14T16:10:00+08:00
 draft: false
-hidden: true
 publishDate: 2026-07-21T14:00:00+08:00
 version: "1.1"
 game_version: "v1.1.0"
