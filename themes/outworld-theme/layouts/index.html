@@ -4,7 +4,7 @@
 <section class="hero">
   <div class="hero-bg" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')"></div>
   <div class="hero-content">
-    <div class="hero-badge">🛸 Updated June 2026 · Player-Tested Guide</div>
+    <div class="hero-badge">🛸 {{ len (where .Site.Pages "Section" "guides") }} articles · Player-Tested Guide</div>
     <h1>Outworld Station <span class="nobreak highlight">Guide</span> <span class="hero-version">{{ .Site.Params.game_version }}</span></h1>
     <p class="hero-sub">
       Real builds, real mistakes, real solutions. No conveyor belts, no hand-holding.
@@ -12,48 +12,62 @@
   </div>
 </section>
 
-{{/* ─── NEW GUIDES — image-less, accent-bar cards ─── */}}
-{{ $hotPages := slice }}
-{{ range where .Site.Pages "Params.publishedAt" "!=" nil }}
-  {{ $pubTime := time.AsTime .Params.publishedAt }}
-  {{ $daysSince := div (sub now.Unix $pubTime.Unix) 86400 }}
-  {{ if and (le $daysSince 365) (not .Params.hidden) }}
-    {{ $hotPages = $hotPages | append . }}
+{{/* ─── ALL GUIDES — show all, sorted by publish date ─── */}}
+{{ $allGuides := where .Site.Pages "Section" "==" "guides" }}
+{{ $allGuides = where $allGuides "RelPermalink" "ne" "/guides/" }}
+{{ $allGuides = where $allGuides "Params.hidden" "!=" true }}
+{{ $recentGuides := slice }}
+{{ range $allGuides }}
+  {{ if .Params.publishedAt }}
+    {{ $recentGuides = $recentGuides | append . }}
   {{ end }}
 {{ end }}
+{{ $pinned := where $allGuides "Params.publishedAt" "==" nil }}
+{{ $sorted := $recentGuides.ByDate.Reverse }}
+{{ $displayGuides := $sorted | append $pinned }}
 
-{{ if gt (len $hotPages) 0 }}
+{{ if gt (len $displayGuides) 0 }}
 <section class="hp-section">
   <div class="hp-section-head">
-    <h2 class="hp-section-title"><span class="hp-section-icon">🔥</span> New Guides</h2>
-    <span class="hp-section-count">{{ len $hotPages }} articles</span>
+    <h2 class="hp-section-title"><span class="hp-section-icon">📚</span> All Guides</h2>
+    <span class="hp-section-count">{{ len $displayGuides }} articles</span>
   </div>
   <div class="hp-card-grid">
-    {{ range first 6 $hotPages.ByDate.Reverse }}
+    {{ range $displayGuides }}
     {{ $catName := .Params.category | default "guide" }}
+    {{ $isNew := false }}
+    {{ if .Params.publishedAt }}
+      {{ $daysSince := div (sub now.Unix (time.AsTime .Params.publishedAt).Unix) 86400 }}
+      {{ if lt $daysSince 30 }}{{ $isNew = true }}{{ end }}
+    {{ end }}
     <a href="{{ .RelPermalink }}" class="hp-card">
       <div class="hp-card-bar"></div>
       <div class="hp-card-inner">
         <div class="hp-card-meta-line">
-          <span class="hp-card-cat">{{ $catName }}</span>
-          {{ if lt (div (sub now.Unix (time.AsTime .Params.publishedAt).Unix) 86400) 14 }}
-          <span class="hp-card-new">new</span>
-          {{ end }}
+          <span class="hp-card-cat">{{ $catName | title }}</span>
+          {{ if $isNew }}<span class="hp-card-new">new</span>{{ end }}
         </div>
         <h3 class="hp-card-title">{{ .Title }}</h3>
         <p class="hp-card-desc">{{ .Description | safeHTML | truncate 100 }}</p>
         <div class="hp-card-foot">
+          {{ if .Params.publishedAt }}
           <span class="hp-card-date">{{ (time.AsTime .Params.publishedAt).Format "Jan 2, 2006" }}</span>
+          {{ else if not .Lastmod.IsZero }}
+          <span class="hp-card-date">{{ .Lastmod.Format "Jan 2, 2006" }}</span>
+          {{ end }}
           <span class="hp-card-read">Read →</span>
         </div>
       </div>
     </a>
     {{ end }}
   </div>
+  <div style="text-align:center; margin-top: 2rem;">
+    <a href="/guides/" style="display:inline-block; padding: 0.75rem 2rem; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600;">View All {{ len $displayGuides }} Guides →</a>
+  </div>
 </section>
 {{ end }}
 
-{{/* ─── CATEGORY BLOCKS — ONE card per category ─── */}}
+{{/* ─── CATEGORY BLOCKS ─── */}}
 {{ $categories := slice
   (dict "id" "beginner"    "icon" "🚀" "name" "Beginner"       "desc" "Start here. 60 minutes to your first automation." "img" "/images/beginner-hero.webp")
   (dict "id" "power"       "icon" "⚡" "name" "Power & Energy" "desc" "Solar, reactors, fusion. Never black out."     "img" "/images/power-evolution.webp")

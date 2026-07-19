@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="--hero-bg: url('{{ "images/hero-bg.jpg" | absURL }}')"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🛸 {{ len .Data.Pages }} articles · Player-Tested Guide</div>
+    <h1>Outworld Station <span class="nobreak highlight">Guide</span></h1>
+    <p class="hero-sub">
+      Real builds, real mistakes, real solutions. Every guide based on actual gameplay testing.
+    </p>
+  </div>
+</section>
+
+{{/* ─── INTRO TEXT from _index.md ─── */}}
+<section class="hp-section" style="padding-top: 1rem;">
+  <article class="content-body content-body-fixed" style="max-width: 800px; margin: 0 auto;">
+    {{ .Content }}
+  </article>
+</section>
+
+{{/* ─── ALL GUIDES GRID ─── */}}
+{{ $allGuides := .Data.Pages }}
+{{ if gt (len $allGuides) 0 }}
+<section class="hp-section">
+  <div class="hp-section-head">
+    <h2 class="hp-section-title"><span class="hp-section-icon">📚</span> All Guides</h2>
+    <span class="hp-section-count">{{ len $allGuides }} articles</span>
+  </div>
+  <div class="hp-card-grid">
+    {{ range $allGuides.ByTitle }}
+    {{ if not .Params.hidden }}
+    {{ $catName := .Params.category | default "guide" }}
+    {{ $catDisplay := $catName }}
+    {{ with .Site.GetPage "section" "guides" }}
+      {{ $catPages := where (where .Site.Pages "Section" "guides") "Params.category" "==" $catName }}
+      {{ if $catPages }}
+        {{ $first := index $catPages 0 }}
+        {{ if $first }}
+          {{ $catDisplay = $first.Params.category | default $catName | title }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    <a href="{{ .RelPermalink }}" class="hp-card">
+      <div class="hp-card-bar"></div>
+      <div class="hp-card-inner">
+        <div class="hp-card-meta-line">
+          <span class="hp-card-cat">{{ $catDisplay | title }}</span>
+          {{ if .Params.version }}
+          <span class="hp-card-new">v{{ .Params.version }}</span>
+          {{ end }}
+        </div>
+        <h3 class="hp-card-title">{{ .Title }}</h3>
+        <p class="hp-card-desc">{{ .Description | safeHTML | truncate 100 }}</p>
+        <div class="hp-card-foot">
+          {{ if not .Lastmod.IsZero }}
+          <span class="hp-card-date">Updated {{ .Lastmod.Format "Jan 2, 2006" }}</span>
+          {{ else if not .Date.IsZero }}
+          <span class="hp-card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ end }}
+          <span class="hp-card-read">Read →</span>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
