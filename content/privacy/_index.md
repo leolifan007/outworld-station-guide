@@ -5,6 +5,8 @@ date: 2026-05-09
 breadcrumb: Privacy Policy
 lastmod: 2026-05-12
 draft: false
+aliases:
+  - /zh/privacy/
 ---
 
 ## Privacy Policy

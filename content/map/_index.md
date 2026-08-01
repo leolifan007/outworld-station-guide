@@ -5,6 +5,9 @@ date: 2026-05-09
 breadcrumb: Map Guide
 lastmod: 2026-05-12
 draft: false
+aliases:
+  - /zh/map/
+  - /en/map/
 ---
 
 ## Where Your Station Sits in the Galaxy

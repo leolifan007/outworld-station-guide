@@ -8,6 +8,9 @@ draft: false
 type: "guide"
 version: "1.1"
 game_version: "v1.1.0"
+aliases:
+  - /zh/
+  - /en/
 ---
 
 I bought this game thinking it was another Factorio clone. It's not. No conveyor belts. No belt balancers. No spaghetti. And that's exactly why it's worth your time.
