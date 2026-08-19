@@ -88,7 +88,7 @@
 
 {{ else }}
 {{/* ═══════════════════════════════════════════════════
-     ARTICLE PAGE LAYOUT — fixed L1 sidebar, hero, sub-nav below hero, content
+     ARTICLE PAGE LAYOUT — L1 full-height left, hero spans L2+main, L2 below hero
      ═══════════════════════════════════════════════════ */}}
 <div class="page-wrap page-wrap-article">
 
@@ -108,41 +108,43 @@
     </div>
   </aside>
 
-  <div class="hero-wrap">
-    {{ block "hero" . }}{{ end }}
-  </div>
-
-  <div class="content-row">
-
-    <aside class="sidebar sidebar-l2">
-      {{ partial "sidebar-l2" . }}
-    </aside>
-
-    <aside class="ad-col-right">
-      <div class="ad-sticky-wrap">
-        <script>
-        atOptions = {
-          'key' : '5b8f02a7812d2083deec73a49432e709',
-          'format' : 'iframe',
-          'height' : 600,
-          'width' : 160,
-          'params' : {}
-        };
-        </script>
-        <script src="https://www.highperformanceformat.com/5b8f02a7812d2083deec73a49432e709/invoke.js"></script>
-      </div>
-    </aside>
-
-    <div class="main-area">
-      <div class="content-body-fixed">
-        {{ partial "lang-bar" . }}
-        <main>
-          {{ block "main" . }}{{ end }}
-        </main>
-        {{ partial "footer" . }}
-      </div>
+  <div class="article-main">
+    <div class="hero-wrap">
+      {{ block "hero" . }}{{ end }}
     </div>
 
+    <div class="content-row">
+
+      <aside class="sidebar sidebar-l2">
+        {{ partial "sidebar-l2" . }}
+      </aside>
+
+      <aside class="ad-col-right">
+        <div class="ad-sticky-wrap">
+          <script>
+          atOptions = {
+            'key' : '5b8f02a7812d2083deec73a49432e709',
+            'format' : 'iframe',
+            'height' : 600,
+            'width' : 160,
+            'params' : {}
+          };
+          </script>
+          <script src="https://www.highperformanceformat.com/5b8f02a7812d2083deec73a49432e709/invoke.js"></script>
+        </div>
+      </aside>
+
+      <div class="main-area">
+        <div class="content-body-fixed">
+          {{ partial "lang-bar" . }}
+          <main>
+            {{ block "main" . }}{{ end }}
+          </main>
+          {{ partial "footer" . }}
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </div>
