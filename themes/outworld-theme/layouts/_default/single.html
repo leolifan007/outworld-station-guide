@@ -21,6 +21,10 @@
     <h1 class="hero-title-sub">{{ .Title }}{{ if .Params.version }}<span class="version-tag"> [Version {{ .Params.version }}]</span>{{ end }}</h1>
     {{ with .Description }}<p class="hero-desc-sub">{{ . }}</p>{{ end }}
   </div>
+  {{/* Sub-category navigation bar at bottom of hero (matches screenshot layout) */}}
+  <div class="hero-sub-nav">
+    {{ partial "sidebar-l2" . }}
+  </div>
 </section>
 
 {{ end }}
