@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2533"/>
+      <stop offset="100%" stop-color="#0f1a24"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#00b894"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3044"/>
+      <stop offset="100%" stop-color="#162535"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6a85"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="540" fill="url(#bg)" rx="8"/>
+  <rect x="20" y="20" width="760" height="44" rx="4" fill="url(#hdr)"/>
+  <text x="400" y="49" text-anchor="middle" fill="#0f1a24" font-weight="700" font-size="16">Advanced Freighter View - The Fleet Dashboard (v1.1.1.0)</text>
+
+  <!-- Panel mock -->
+  <rect x="30" y="84" width="740" height="180" rx="8" fill="url(#box)" stroke="#00D4AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="110" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="13" text-anchor="start">Fleet Overview - one screen, whole fleet</text>
+
+  <!-- Table header -->
+  <text x="60" y="140" fill="#00D4AA" font-size="10" font-weight="600">SHIP</text>
+  <text x="200" y="140" fill="#00D4AA" font-size="10" font-weight="600">ROUTE</text>
+  <text x="420" y="140" fill="#00D4AA" font-size="10" font-weight="600">CARGO</text>
+  <text x="560" y="140" fill="#00D4AA" font-size="10" font-weight="600">STATUS</text>
+  <line x1="50" y1="148" x2="740" y2="148" stroke="#2A3F55" stroke-width="1"/>
+
+  <text x="60" y="170" fill="#C8D6E8" font-size="11">FH-01</text>
+  <text x="200" y="170" fill="#C8D6E8" font-size="11">Station A - Planet B</text>
+  <text x="420" y="170" fill="#00D4AA" font-size="11">92%</text>
+  <text x="560" y="170" fill="#00D4AA" font-size="11">En route</text>
+
+  <text x="60" y="196" fill="#C8D6E8" font-size="11">FH-02</text>
+  <text x="200" y="196" fill="#C8D6E8" font-size="11">Station A - Planet C</text>
+  <text x="420" y="196" fill="#FFB347" font-size="11">41%</text>
+  <text x="560" y="196" fill="#FFB347" font-size="11">Loading</text>
+
+  <text x="60" y="222" fill="#C8D6E8" font-size="11">FH-03</text>
+  <text x="200" y="222" fill="#C8D6E8" font-size="11">Station A - Gas Giant</text>
+  <text x="420" y="222" fill="#e74c3c" font-size="11">0%</text>
+  <text x="560" y="222" fill="#e74c3c" font-size="11">Stuck!</text>
+
+  <text x="60" y="248" fill="#C8D6E8" font-size="11">FH-04</text>
+  <text x="200" y="248" fill="#C8D6E8" font-size="11">Planet B - Planet D</text>
+  <text x="420" y="248" fill="#00D4AA" font-size="11">88%</text>
+  <text x="560" y="248" fill="#00D4AA" font-size="11">Unloading</text>
+
+  <!-- Red flags -->
+  <rect x="30" y="284" width="740" height="100" rx="8" fill="url(#box)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="306" text-anchor="middle" fill="#e74c3c" font-weight="700" font-size="13">Three Red Flags</text>
+  <text x="400" y="328" text-anchor="middle" fill="#C8D6E8" font-size="11">1. 0% load > 2 min - source empty or filter excludes everything</text>
+  <text x="400" y="348" text-anchor="middle" fill="#C8D6E8" font-size="11">2. Stuck on route - destination storage full, add storage or re-route</text>
+  <text x="400" y="368" text-anchor="middle" fill="#C8D6E8" font-size="11">3. One ship doing all the work - add a second ship or bigger loads</text>
+
+  <!-- Rhythm -->
+  <rect x="200" y="404" width="400" height="112" rx="8" fill="url(#box)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="426" text-anchor="middle" fill="#4a90d9" font-weight="700" font-size="13">Monitoring Rhythm</text>
+  <text x="400" y="448" text-anchor="middle" fill="#C8D6E8" font-size="11">Every expansion - check ships on that line</text>
+  <text x="400" y="468" text-anchor="middle" fill="#C8D6E8" font-size="11">Every 10-15 min - quick red-flag scan</text>
+  <text x="400" y="488" text-anchor="middle" fill="#C8D6E8" font-size="11">Before save &amp; quit - glance at the fleet</text>
+  <text x="400" y="506" text-anchor="middle" fill="#6A8AAA" font-size="10">Healthy: full both legs. 540 cap still applies to belts!</text>
+</svg>
