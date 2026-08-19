@@ -1302,3 +1302,59 @@ details .content-figure svg {
   border-radius: 3px;
   text-transform: uppercase;
 }
+
+/* ============================================
+   SUB-NAVIGATION BAR (below hero) — screenshot layout fix
+   ============================================ */
+
+.sub-nav-wrap {
+  grid-column: 2;
+  background: rgba(11,20,34,0.85);
+  border-bottom: 1px solid rgba(0,212,170,0.15);
+  padding: 12px 24px;
+  backdrop-filter: blur(8px);
+}
+
+.sub-nav-wrap .sidebar-l2-inner {
+  max-width: var(--max-w, 1200px);
+  margin: 0 auto;
+}
+
+.sub-nav-wrap .l2-section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--space-cyan, #00D4AA);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.sub-nav-wrap nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.sub-nav-wrap .l2-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: var(--radius, 4px);
+  font-size: 0.875rem;
+  color: var(--space-text, #C8D6E8);
+  text-decoration: none;
+  background: rgba(0,212,170,0.08);
+  border: 1px solid rgba(0,212,170,0.15);
+  transition: all var(--transition, 0.25s);
+}
+
+.sub-nav-wrap .l2-link:hover,
+.sub-nav-wrap .l2-link.active {
+  background: rgba(0,212,170,0.2);
+  border-color: var(--space-cyan, #00D4AA);
+  color: var(--space-cyan, #00D4AA);
+}
+
+.sub-nav-wrap .l2-title {
+  white-space: nowrap;
+}

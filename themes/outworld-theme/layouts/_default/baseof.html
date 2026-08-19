@@ -88,7 +88,7 @@
 
 {{ else }}
 {{/* ═══════════════════════════════════════════════════
-     ARTICLE PAGE LAYOUT — fixed L1 sidebar, hero, content-row (L2 + ad + main)
+     ARTICLE PAGE LAYOUT — fixed L1 sidebar, hero, sub-nav below hero, content
      ═══════════════════════════════════════════════════ */}}
 <div class="page-wrap page-wrap-article">
 
@@ -112,11 +112,12 @@
     {{ block "hero" . }}{{ end }}
   </div>
 
-  <div class="content-row">
+  {{/* Sub-category navigation bar below hero (matches screenshot layout) */}}
+  <div class="sub-nav-wrap">
+    {{ partial "sidebar-l2" . }}
+  </div>
 
-    <aside class="sidebar sidebar-l2">
-      {{ partial "sidebar-l2" . }}
-    </aside>
+  <div class="content-row">
 
     <aside class="ad-col-right">
       <div class="ad-sticky-wrap">
