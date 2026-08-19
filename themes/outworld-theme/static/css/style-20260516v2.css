@@ -1304,55 +1304,64 @@ details .content-figure svg {
 }
 
 /* ============================================
-   SUB-NAVIGATION BAR (inside hero, bottom) — screenshot layout fix
+   SIDEBAR L2 — left sidebar below hero (per diagram)
    ============================================ */
 
-.hero-sub-nav {
-  max-width: var(--content-w, 780px);
-  margin: 24px auto 0;
-  padding-top: 16px;
-  border-top: 1px solid rgba(0,212,170,0.2);
+.sidebar-l2 {
+  width: 220px;
+  min-width: 220px;
+  background: rgba(11,20,34,0.85);
+  border-right: 1px solid rgba(0,212,170,0.15);
+  padding: 20px 16px;
+  backdrop-filter: blur(8px);
+  align-self: flex-start;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
-.hero-sub-nav .sidebar-l2-inner {
+.sidebar-l2 .sidebar-l2-inner {
   width: 100%;
 }
 
-.hero-sub-nav .l2-section-label {
+.sidebar-l2 .l2-section-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--space-cyan, #00D4AA);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0,212,170,0.2);
 }
 
-.hero-sub-nav nav {
+.sidebar-l2 nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 12px;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.hero-sub-nav .l2-link {
-  display: inline-flex;
+.sidebar-l2 .l2-link {
+  display: flex;
   align-items: center;
-  padding: 6px 14px;
+  padding: 8px 12px;
   border-radius: var(--radius, 4px);
   font-size: 0.875rem;
   color: var(--space-text, #C8D6E8);
   text-decoration: none;
-  background: rgba(0,212,170,0.08);
-  border: 1px solid rgba(0,212,170,0.15);
+  background: rgba(0,212,170,0.05);
+  border: 1px solid rgba(0,212,170,0.1);
   transition: all var(--transition, 0.25s);
 }
 
-.hero-sub-nav .l2-link:hover,
-.hero-sub-nav .l2-link.active {
-  background: rgba(0,212,170,0.2);
+.sidebar-l2 .l2-link:hover,
+.sidebar-l2 .l2-link.active {
+  background: rgba(0,212,170,0.15);
   border-color: var(--space-cyan, #00D4AA);
   color: var(--space-cyan, #00D4AA);
 }
 
-.hero-sub-nav .l2-title {
+.sidebar-l2 .l2-title {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
