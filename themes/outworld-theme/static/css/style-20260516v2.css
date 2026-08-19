@@ -1307,8 +1307,8 @@ details .content-figure svg {
    ARTICLE PAGE GRID LAYOUT — per diagram (L1 full-height, hero spans L2+main)
    ============================================ */
 
-.page-wrap-article {
-  display: grid;
+.page-wrap.page-wrap-article {
+  display: grid !important;
   grid-template-columns: var(--sidebar-w, 260px) 1fr;
   grid-template-rows: 1fr;
   min-height: 100vh;
@@ -1317,8 +1317,11 @@ details .content-figure svg {
 .page-wrap-article .sidebar-l1 {
   grid-column: 1;
   grid-row: 1 / -1;
-  position: sticky;
+  position: sticky !important;
   top: 0;
+  left: auto;
+  bottom: auto;
+  width: auto;
   height: 100vh;
   overflow-y: auto;
 }
