@@ -36,7 +36,7 @@
       <div class="hp-card-inner">
         <div class="hp-card-meta-line">
           <span class="hp-card-cat">{{ $catName }}</span>
-          {{ if lt (div (sub now.Unix (time.AsTime .Params.publishedAt).Unix) 86400) 14 }}
+          {{ if partial "is-new.html" . }}
           <span class="hp-card-new">new</span>
           {{ end }}
         </div>
