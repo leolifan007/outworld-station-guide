@@ -669,3 +669,59 @@
   text-align: center;
   flex-shrink: 0;
 }
+
+/* ═══════════════════════════════════════════════════
+   NAV "NEW" BADGE
+   Shown on L1 category titles and L2 article titles when
+   that section contains an article launched in the last
+   30 days. Driven by partials/is-new.html
+   ═══════════════════════════════════════════════════ */
+
+.nav-new {
+  display: inline-block;
+  flex-shrink: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #0f1a24;
+  background: linear-gradient(135deg, #FFC65C 0%, #E8983E 100%);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0 5px;
+  border-radius: 3px;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-shadow: 0 0 5px rgba(232,152,62,0.30);
+  animation: navNewPulse 2.6s ease-in-out infinite;
+}
+
+@keyframes navNewPulse {
+  0%, 100% { box-shadow: 0 0 4px rgba(232,152,62,0.22); }
+  50%      { box-shadow: 0 0 9px rgba(232,152,62,0.50); }
+}
+
+/* ── L1: badge sits between the label and the count pill ── */
+.l1-link .nav-new {
+  margin: 0 2px 0 4px;
+}
+
+/* ── L2 (sidebar): badge trails the article title ── */
+.l2-link .nav-new {
+  margin-left: 5px;
+}
+
+/* ── L2 (inline pill variant) ── */
+.l2-inline-pill .nav-new {
+  margin-left: 4px;
+}
+
+/* ── Homepage category card ── */
+.hp-cat-top .nav-new {
+  margin-left: 2px;
+}
+
+/* ── Respect reduced-motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .nav-new { animation: none; box-shadow: 0 0 5px rgba(232,152,62,0.30); }
+}

@@ -2,10 +2,9 @@
 title: "De-Energized Matter Guide -- New v1.1.1.0 Alternate Recipe"
 description: "The De-Energized Matter alternate recipe landed in v1.1.1.0. Here is where it unlocks, what it replaces, and how to weave it into your exotic matter production."
 date: 2026-08-19
-lastmod: 2026-08-19T10:05:00+08:00
+publishedAt: 2026-09-24T10:23:00+08:00
+lastmod: 2026-09-24T10:23:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: production

@@ -2,10 +2,9 @@
 title: "Freighter Overview & Logistics Monitoring Guide -- v1.1.1.0"
 description: "The advanced freighter view in v1.1.1.0 finally shows per-ship cargo, routes, and capacity at a glance. Here is how to use it to catch supply chain failures before they cascade."
 date: 2026-08-19
-lastmod: 2026-08-19T10:20:00+08:00
+publishedAt: 2026-09-24T12:09:00+08:00
+lastmod: 2026-09-24T12:09:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: logistics

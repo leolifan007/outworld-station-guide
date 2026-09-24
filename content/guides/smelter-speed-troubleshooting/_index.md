@@ -2,10 +2,9 @@
 title: "Smelter Speed Troubleshooting Guide -- When Smelters Refuse Full Speed"
 description: "A known bug in v1.1.1.0 makes smelters occasionally refuse to run at full speed. The developer is investigating. Here is how to diagnose it, work around it, and submit a save file that helps."
 date: 2026-08-19
-lastmod: 2026-08-19T10:35:00+08:00
+publishedAt: 2026-09-24T13:52:00+08:00
+lastmod: 2026-09-24T13:52:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: production

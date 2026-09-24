@@ -2,10 +2,9 @@
 title: "Blueprint Folder Management Guide -- Organize 30x30 Builds in v1.1.1.0"
 description: "v1.1.1.0 added blueprint folders and renaming. Here is how to organize your blueprint library, recover lost blueprints, and build a paste-ready catalog."
 date: 2026-08-19
-lastmod: 2026-08-19T10:15:00+08:00
+publishedAt: 2026-09-24T11:31:00+08:00
+lastmod: 2026-09-24T11:31:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: building

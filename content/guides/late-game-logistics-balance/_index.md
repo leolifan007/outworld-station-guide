@@ -2,10 +2,9 @@
 title: "Late-Game Logistics Balance Guide -- Surviving the 540 Output Cap"
 description: "The 540 items/min logistics cap is the #1 late-game complaint on Steam, and v1.1.1.0 did not fix it. Here is how to redesign around it: split lines, dedicated pipes, and tiered routing."
 date: 2026-08-19
-lastmod: 2026-08-19T10:30:00+08:00
+publishedAt: 2026-09-24T13:17:00+08:00
+lastmod: 2026-09-24T13:17:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: logistics

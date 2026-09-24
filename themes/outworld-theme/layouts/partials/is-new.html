@@ -1,0 +1,24 @@
+{{- /*
+   is-new.html — returns true when a page counts as "new".
+   Rule: visible for 30 days starting from the article's official launch date.
+   Launch date source, in priority order:
+     1. .Params.publishedAt   (custom field used by older guides)
+     2. .Params.publishDate   (Hugo built-in publishDate)
+     3. .PublishDate          (resolved built-in)
+     4. .Date                 (final fallback)
+   Pages whose launch date is still in the future are NOT new (not live yet).
+   Usage:  {{ $isNew := partial "is-new.html" . }}
+*/ -}}
+{{- $p := . -}}
+{{- $isNew := false -}}
+{{- $raw := "" -}}
+{{- with $p.Params.publishedAt -}}{{ $raw = . }}{{- end -}}
+{{- if not $raw -}}{{ with $p.Params.publishDate -}}{{ $raw = . }}{{- end -}}{{- end -}}
+{{- if not $raw -}}{{ with $p.PublishDate -}}{{ $raw = . }}{{- end -}}{{- end -}}
+{{- if not $raw -}}{{ with $p.Date -}}{{ $raw = . }}{{- end -}}{{- end -}}
+{{- if $raw -}}
+  {{- $t := time.AsTime $raw -}}
+  {{- $days := div (sub now.Unix $t.Unix) 86400 -}}
+  {{- if and (ge $days 0) (le $days 30) -}}{{ $isNew = true }}{{- end -}}
+{{- end -}}
+{{- return $isNew -}}

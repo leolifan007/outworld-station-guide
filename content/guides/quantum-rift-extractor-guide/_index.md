@@ -2,10 +2,9 @@
 title: "Quantum Rift Extractor Guide -- Safe Harvesting in v1.1.1.0"
 description: "v1.1.1.0 removed radiation from extractors built on quantum rifts. Here is how to build safe rift harvesters, what they produce, and why this unlocks a new resource tier."
 date: 2026-08-19
-lastmod: 2026-08-19T10:45:00+08:00
+publishedAt: 2026-09-24T15:03:00+08:00
+lastmod: 2026-09-24T15:03:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: exploration

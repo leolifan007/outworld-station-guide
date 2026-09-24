@@ -2,10 +2,9 @@
 title: "v1.1.1.0 Patch Notes Guide -- 17 Fixes and 9 New Features Explained"
 description: "The July 22 update fixed 17 bugs and added blueprint folders, an advanced freighter view, exclusion filters, and two new alternate recipes. Here is everything in v1.1.1.0 and what it means for your factory."
 date: 2026-08-19
-lastmod: 2026-08-19T10:00:00+08:00
+publishedAt: 2026-09-24T09:47:00+08:00
+lastmod: 2026-09-24T09:47:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: reference

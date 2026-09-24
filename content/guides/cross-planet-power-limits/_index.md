@@ -2,10 +2,9 @@
 title: "Cross-Planet Power Limits Guide -- Powering Outposts Without Transmission"
 description: "Outworld Station does not let you transmit power between planets. Here is the v1.1.1.0-verified playbook: local generation per planet, fuel logistics, and the outpost power checklist."
 date: 2026-08-19
-lastmod: 2026-08-19T10:40:00+08:00
+publishedAt: 2026-09-24T14:26:00+08:00
+lastmod: 2026-09-24T14:26:00+08:00
 draft: false
-hidden: true
-publishDate: 2026-08-20T09:00:00+08:00
 version: "1.1.1.0"
 game_version: "v1.1.1.0"
 category: power

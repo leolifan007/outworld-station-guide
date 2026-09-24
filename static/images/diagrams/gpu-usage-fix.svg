@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2533"/>
+      <stop offset="100%" stop-color="#0f1a24"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#00b894"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3044"/>
+      <stop offset="100%" stop-color="#162535"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6a85"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="620" fill="url(#bg)" rx="8"/>
+  <rect x="20" y="20" width="760" height="44" rx="4" fill="url(#hdr)"/>
+  <text x="400" y="49" text-anchor="middle" fill="#0f1a24" font-weight="700" font-size="16">GPU Usage Reduction - Uncapped Menu vs Capped Render Loop</text>
+
+  <!-- Wrong panel -->
+  <rect x="30" y="84" width="360" height="200" rx="8" fill="url(#box)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="210" y="110" text-anchor="middle" fill="#e74c3c" font-weight="700" font-size="14">Wrong: no frame cap</text>
+
+  <rect x="60" y="128" width="300" height="90" rx="6" fill="#22182A" stroke="#4a6a85" stroke-width="1.2"/>
+  <text x="210" y="152" text-anchor="middle" fill="#C8D6E8" font-size="11">Main menu render loop</text>
+  <text x="210" y="172" text-anchor="middle" fill="#6A8AAA" font-size="10">nothing to wait for, no limit</text>
+  <text x="210" y="196" text-anchor="middle" fill="#e74c3c" font-size="11">GPU races to max frames per second</text>
+
+  <rect x="60" y="232" width="300" height="34" rx="4" fill="#3A1E1E" stroke="#e74c3c" stroke-width="1.2"/>
+  <text x="210" y="254" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="600">GPU 90%+ on the title screen</text>
+  <text x="210" y="278" text-anchor="middle" fill="#6A8AAA" font-size="10">Fan noise, heat, wasted power</text>
+
+  <!-- Right panel -->
+  <rect x="410" y="84" width="360" height="200" rx="8" fill="url(#box)" stroke="#00D4AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="590" y="110" text-anchor="middle" fill="#00D4AA" font-weight="700" font-size="14">Right: capped render loop</text>
+
+  <rect x="440" y="128" width="300" height="90" rx="6" fill="#1E3A2E" stroke="#00D4AA" stroke-width="1.2"/>
+  <text x="590" y="152" text-anchor="middle" fill="#C8D6E8" font-size="11">Frame cap + VSync applied</text>
+  <text x="590" y="172" text-anchor="middle" fill="#6A8AAA" font-size="10">card waits between frames</text>
+  <text x="590" y="196" text-anchor="middle" fill="#00D4AA" font-size="11">GPU renders only what is needed</text>
+
+  <rect x="440" y="232" width="300" height="34" rx="4" fill="#1E3A2E" stroke="#00D4AA" stroke-width="1.2"/>
+  <text x="590" y="254" text-anchor="middle" fill="#00D4AA" font-size="12" font-weight="600">GPU ~20-40% on the menu</text>
+  <text x="590" y="278" text-anchor="middle" fill="#6A8AAA" font-size="10">Quiet fan, cool shell, less draw</text>
+
+  <line x1="330" y1="300" x2="470" y2="300" stroke="#4a6a85" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Layered fixes flow -->
+  <rect x="30" y="318" width="740" height="140" rx="8" fill="url(#box)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="344" text-anchor="middle" fill="#4a90d9" font-weight="700" font-size="13">Layered fixes - apply in order</text>
+
+  <rect x="50" y="358" width="130" height="80" rx="6" fill="#162535" stroke="#4a90d9" stroke-width="1.3"/>
+  <text x="115" y="382" text-anchor="middle" fill="#4a90d9" font-size="10" font-weight="600">1 In-game cap</text>
+  <text x="115" y="400" text-anchor="middle" fill="#6A8AAA" font-size="9">VSync +</text>
+  <text x="115" y="414" text-anchor="middle" fill="#6A8AAA" font-size="9">frame limit</text>
+
+  <line x1="182" y1="398" x2="200" y2="398" stroke="#4a6a85" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="202" y="358" width="130" height="80" rx="6" fill="#162535" stroke="#4a90d9" stroke-width="1.3"/>
+  <text x="267" y="382" text-anchor="middle" fill="#4a90d9" font-size="10" font-weight="600">2 Driver cap</text>
+  <text x="267" y="400" text-anchor="middle" fill="#6A8AAA" font-size="9">covers menus</text>
+  <text x="267" y="414" text-anchor="middle" fill="#6A8AAA" font-size="9">the game misses</text>
+
+  <line x1="334" y1="398" x2="352" y2="398" stroke="#4a6a85" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="354" y="358" width="130" height="80" rx="6" fill="#162535" stroke="#4a90d9" stroke-width="1.3"/>
+  <text x="419" y="382" text-anchor="middle" fill="#4a90d9" font-size="10" font-weight="600">3 Res scale</text>
+  <text x="419" y="400" text-anchor="middle" fill="#6A8AAA" font-size="9">one step below</text>
+  <text x="419" y="414" text-anchor="middle" fill="#6A8AAA" font-size="9">native</text>
+
+  <line x1="486" y1="398" x2="504" y2="398" stroke="#4a6a85" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="506" y="358" width="130" height="80" rx="6" fill="#162535" stroke="#4a90d9" stroke-width="1.3"/>
+  <text x="571" y="382" text-anchor="middle" fill="#4a90d9" font-size="10" font-weight="600">4 Effects off</text>
+  <text x="571" y="400" text-anchor="middle" fill="#6A8AAA" font-size="9">vignette +</text>
+  <text x="571" y="414" text-anchor="middle" fill="#6A8AAA" font-size="9">background</text>
+
+  <line x1="638" y1="398" x2="656" y2="398" stroke="#4a6a85" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="658" y="358" width="92" height="80" rx="6" fill="#162535" stroke="#00D4AA" stroke-width="1.3"/>
+  <text x="704" y="382" text-anchor="middle" fill="#00D4AA" font-size="10" font-weight="600">5 Window</text>
+  <text x="704" y="400" text-anchor="middle" fill="#6A8AAA" font-size="9">prefer</text>
+  <text x="704" y="414" text-anchor="middle" fill="#6A8AAA" font-size="9">fullscreen</text>
+
+  <!-- Confirm table -->
+  <rect x="30" y="474" width="740" height="124" rx="8" fill="url(#box)" stroke="#00D4AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="500" text-anchor="middle" fill="#C8D6E8" font-weight="700" font-size="13">Confirm the improvement</text>
+  <text x="60" y="526" fill="#6A8AAA" font-size="10">Menu GPU load ......... 90%+  ->  roughly 20-40%</text>
+  <text x="60" y="548" fill="#6A8AAA" font-size="10">Fan noise ............... audible  ->  quiet within a minute</text>
+  <text x="60" y="570" fill="#6A8AAA" font-size="10">Temperature ............ high  ->  several degrees cooler under load</text>
+  <text x="60" y="590" fill="#6A8AAA" font-size="10">Handheld battery ....... drains fast  ->  noticeably longer sessions</text>
+  <text x="600" y="526" fill="#FFB347" font-size="10">If load stays high, the cap</text>
+  <text x="600" y="544" fill="#FFB347" font-size="10">is not taking effect - check</text>
+  <text x="600" y="562" fill="#FFB347" font-size="10">the driver profile points</text>
+  <text x="600" y="580" fill="#FFB347" font-size="10">at the right executable.</text>
+</svg>

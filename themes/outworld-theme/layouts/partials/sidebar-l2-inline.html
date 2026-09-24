@@ -24,7 +24,7 @@
       {{- $variant := "short" }}{{- if $useLong }}{{- $variant = "long" }}{{- end -}}
       {{- $label := partial "title-short" (dict "title" .Title "variant" $variant) -}}
       <a href="{{ .RelPermalink }}" class="l2-inline-pill{{ if eq $current .RelPermalink }} active{{ end }}">
-        {{ $label }}
+        {{ $label }}{{ if partial "is-new.html" . }}<span class="nav-new" title="New guide published in the last 30 days">new</span>{{ end }}
       </a>
     {{- end -}}
   </nav>

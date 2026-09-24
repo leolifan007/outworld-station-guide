@@ -19,10 +19,17 @@
 
   {{- /* Count pages per category (exclude portal page itself) */ -}}
   {{- $catCounts := dict -}}
+  {{- /* Categories that contain at least one article published within the last 30 days */ -}}
+  {{- $catNew := dict -}}
   {{- range $c := $categories -}}
     {{- $pages := where $.Site.Pages "Params.category" "==" $c.id -}}
     {{- $pages = where $pages "RelPermalink" "ne" (printf "/%s/" $c.id) -}}
     {{- $catCounts = merge $catCounts (dict $c.id (len $pages)) -}}
+    {{- $hasNew := false -}}
+    {{- range $pages -}}
+      {{- if not $hasNew -}}{{ if partial "is-new.html" . }}{{ $hasNew = true }}{{ end }}{{- end -}}
+    {{- end -}}
+    {{- $catNew = merge $catNew (dict $c.id $hasNew) -}}
   {{- end -}}
 
   {{- range $i, $c := $categories -}}
@@ -37,6 +44,7 @@
     {{- if $firstPage }}{{ $targetUrl = $firstPage.RelPermalink }}{{ end -}}
     <a href="{{ $targetUrl }}" class="l1-link{{ if $isActive }} active{{ end }}" data-category="{{ $c.id }}">
       <span class="l1-name">{{ $c.name }}</span>
+      {{- if index $catNew $c.id }}<span class="nav-new" title="New guide published in the last 30 days">new</span>{{ end -}}
       <span class="l1-count">{{ index $catCounts $c.id }}</span>
     </a>
   {{- end -}}

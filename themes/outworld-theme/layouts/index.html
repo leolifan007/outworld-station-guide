@@ -79,6 +79,9 @@
       {{ $catPages = sort $catPages "Params.publishedAt" "desc" }}
       {{ $firstPage := index $catPages 0 }}
       {{ $catCount := len $catPages }}
+      {{- /* Does this category have an article published in the last 30 days? */ -}}
+      {{- $catHasNew := false -}}
+      {{- range $catPages -}}{{- if not $catHasNew -}}{{ if partial "is-new.html" . }}{{ $catHasNew = true }}{{ end }}{{- end -}}{{- end -}}
       {{ $targetUrl := printf "/%s/" $catId }}
       {{ if $firstPage }}{{ $targetUrl = $firstPage.RelPermalink }}{{ end }}
 
@@ -89,6 +92,7 @@
           <div class="hp-cat-top">
             <span class="hp-cat-icon">{{ .icon }}</span>
             <h3 class="hp-cat-name">{{ .name }}</h3>
+            {{- if $catHasNew }}<span class="nav-new" title="New guide published in the last 30 days">new</span>{{ end -}}
           </div>
           <p class="hp-cat-desc">{{ .desc }}</p>
           <div class="hp-cat-foot">
