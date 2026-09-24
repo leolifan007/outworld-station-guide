@@ -53,17 +53,17 @@ Rift extractors draw real power. Follow the [Cross-Planet Power Limits Guide](/g
 
 ### Step 4: Protect It
 
-The rift extractor is a building like any other -- hostiles will attack it. The [Remote Outpost Defense Guide](/guides/remote-outpost-defense-guide/) applies fully. A couple of turrets and a repair station ([Automated Repair Station Guide](/guides/automated-repair-station-healing/)) keep it alive unattended.
+The rift extractor is a building like any other -- hostiles will attack it. The [Remote Outpost Defense Guide](/guides/remote-outpost-defense-guide/) applies fully. A couple of turrets and a repair station (Automated Repair Station Guide) keep it alive unattended.
 
 ### Step 5: Collect the Output
 
-- Route output to a buffer ([Buffer Storage Strategy](/guides/buffer-storage-strategy/)).
+- Route output to a buffer (Buffer Storage Strategy).
 - Use the v1.1.1.0 **exclusion filters** ([guide](/guides/item-exclusion-filters/)) at the collection point so only rift products enter.
-- Ship it home via freighter, and monitor in the new [Freighter Overview](/guides/freighter-overview-monitoring/).
+- Ship it home via freighter, and monitor in the new Freighter Overview.
 
 ## What Rift Output Is Good For
 
-Rift materials feed the exotic/matter tier of recipes -- the same tier that the new v1.1.1.0 alternates touch ([De-Energized Matter](/guides/de-energized-matter-guide/) and [Carbon Nano-Conductors](/guides/carbon-nano-conductor-guide/)). A safe rift harvester plus the new alternates forms a complete exotic-tier supply chain:
+Rift materials feed the exotic/matter tier of recipes -- the same tier that the new v1.1.1.0 alternates touch ([De-Energized Matter](/guides/de-energized-matter-guide/) and Carbon Nano-Conductors). A safe rift harvester plus the new alternates forms a complete exotic-tier supply chain:
 
 ```
 Rift extractor → exotic material → Matter Printer / advanced recipes
@@ -76,7 +76,7 @@ Carbon line → Carbon Nano-Conductors → circuits (bulk)
 The most interesting consequence of this change is **timing**. Before v1.1.1.0, rift harvesting was locked behind radiation research and containment tech. Now:
 
 - A player who finds a rift in the early-mid game can harvest it immediately.
-- The exotic materials arrive earlier, which accelerates the Matter tree and the [Relic & Artifact System](/guides/relic-artifact-system-guide/).
+- The exotic materials arrive earlier, which accelerates the Matter tree and the Relic & Artifact System.
 - Your research order changes: you can deprioritize radiation/containment nodes. See [Research Order Guide](/guides/research-order/) for the updated sequence.
 
 {{< callout type="warning" title="One Caveat" >}}

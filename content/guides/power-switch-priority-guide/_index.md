@@ -80,7 +80,9 @@ The "manual bypass" part means you always keep a path to restart it:
 - Never route a shed-able production block in series with the critical bus, or you turn one disconnect into a station-killing mistake.
 - Rehearse the recovery: if the critical bus does drop, you want the restart path to be one reconnect, not a hunt.
 
-This is where [power source selection](/guides/power-source-comparison/) matters: a steady source dedicated to life support is worth more than raw capacity when the grid is stressed, and on remote colonies the [cross-planet power limits](/guides/cross-planet-power-limits/) constrain how far you can push that dedicated bus.
+This is where [power source selection](/guides/power-source-comparison/) matters: a steady source dedicated to life support is worth more than raw capacity when the grid is stressed.
+
+On remote colonies, the [cross-planet power limits](/guides/cross-planet-power-limits/) constrain how far you can push that dedicated bus.
 
 ## Workaround 5: Simulate Priority With Layout
 

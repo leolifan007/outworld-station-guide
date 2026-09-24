@@ -59,7 +59,7 @@ Each belt stays under the cap and the total throughput scales. This is the "one 
 
 ### 2. Dedicated Pipes for Fluids & Gas
 
-Gas and fluid lines hit the same cap. The [Pipe Bottleneck Guide](/guides/pipe-bottleneck-guide/) and [Liquid Gas Pipe Network Design](/guides/liquid-gas-pipe-network-design/) cover the mechanics; the late-game rule is simpler:
+Gas and fluid lines hit the same cap. The [Pipe Bottleneck Guide](/guides/pipe-bottleneck-guide/) and Liquid Gas Pipe Network Design cover the mechanics; the late-game rule is simpler:
 
 - **One gas type per pipe.** Never mix Nitrox and Hydrogen on the same trunk.
 - **Parallel pipes for high-demand consumers.** A smelter block wanting 800/min of gas gets two pipes, not one.
@@ -88,8 +88,8 @@ For a station core at level 11+:
 1. **Map your top 5 high-volume items** (usually plates, circuits, gas, alloy, and one exotic).
 2. **Give each a dedicated direct channel** from producer to consumer.
 3. **Route everything else on a tiered shared bus** with strict filters (see [Item Exclusion Filters](/guides/item-exclusion-filters/)).
-4. **Use the freighter overview** ([guide](/guides/freighter-overview-monitoring/)) to verify nothing is starving.
-5. **Let buffers absorb spikes** ([Buffer Storage Strategy](/guides/buffer-storage-strategy/)) instead of expecting belts to.
+4. **Use the freighter overview** (guide) to verify nothing is starving.
+5. **Let buffers absorb spikes** (Buffer Storage Strategy) instead of expecting belts to.
 
 ## What NOT To Do
 

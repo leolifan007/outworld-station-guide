@@ -67,7 +67,9 @@ This rhythm catches 90% of logistics failures while they are still cheap to fix.
 
 ## Connecting It to Your Network
 
-The freighter view is the monitoring half; the [Cargo Drone Network](/guides/cargo-drone-network/) and [Interplanetary Logistics Guide](/guides/interplanetary-logistics-guide/) are the execution half. A complete setup:
+The freighter view is the monitoring half; the [Cargo Drone Network](/guides/cargo-drone-network/) is the short-range execution half.
+
+For long-range hauling, the [Interplanetary Logistics Guide](/guides/interplanetary-logistics-guide/) covers the routing side. A complete setup:
 
 - **Freighters** for bulk interplanetary hauling (ore, plates, gas)
 - **Drones** for short-range station logistics

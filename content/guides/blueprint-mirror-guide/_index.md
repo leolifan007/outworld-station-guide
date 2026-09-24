@@ -62,7 +62,9 @@ The advantage is precision; the disadvantage is time, and it gets worse the more
 
 If you stop chasing perfect symmetry, the problem mostly disappears. Two production blocks can have equal throughput with completely different internal shapes, as long as their inputs and outputs meet in the middle.
 
-Use this when the two halves serve different roles anyway. A left block that smelts and a right block that assembles does not need to be a mirror image - it needs to be balanced. The technique is the same one used for [conveyor balancing](/guides/conveyor-balancing-guide/): make the output rates match, not the geometry. This is also the smarter default when your station grows irregularly, as covered in the [Station Layout Guide](/guides/station-layout-guide/).
+Use this when the two halves serve different roles anyway. A left block that smelts and a right block that assembles does not need to be a mirror image - it needs to be balanced. The technique is the same one used for [conveyor balancing](/guides/conveyor-balancing-guide/): make the output rates match, not the geometry.
+
+This is also the smarter default when your station grows irregularly, as covered in the [Station Layout Guide](/guides/station-layout-guide/).
 
 ## Workaround 3: Pre-Bake Mirrored Halves As Separate Blueprints
 
@@ -90,7 +92,11 @@ The rule of thumb: paste it more than twice, split it into halves. One-off, grin
 
 ## Keeping Mirrored Variants Organized
 
-Once you have `-L` and `-R` pairs plus a few angle variants, a flat blueprint list becomes unusable. This is exactly what the v1.1.1.0 blueprint folders solve: one folder per pair, both renamed with the same stem plus suffix. The [Blueprint Folder Management Guide](/guides/blueprint-folder-management/) walks through the workflow, and [advanced blueprint tricks](/guides/matter-printer-advanced-blueprints/) build on the same paste-ready catalog idea.
+Once you have `-L` and `-R` pairs plus a few angle variants, a flat blueprint list becomes unusable. This is exactly what the v1.1.1.0 blueprint folders solve: one folder per pair, both renamed with the same stem plus suffix.
+
+The [Blueprint Folder Management Guide](/guides/blueprint-folder-management/) walks through the workflow.
+
+[Advanced blueprint tricks](/guides/matter-printer-advanced-blueprints/) build on the same paste-ready catalog idea.
 
 {{< callout type="verdict" title="Bottom Line" >}}
 There is no mirror button and none you can rely on, so stop designing in mirrored pairs. Either build the second half by hand from a rotated copy, or - better for anything repeatable - pre-bake an `-L` and `-R` pair and keep them in one folder. Plan the handedness before you place the first building and you save hours of port-fixing later.

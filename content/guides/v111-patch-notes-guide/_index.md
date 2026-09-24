@@ -88,7 +88,7 @@ The in-game calculator now has a copy button. Small, but it ends the "screenshot
 - **De-Energized Matter** -- a new alternate recipe that changes how you convert exotic matter
 - **Carbon Nano-Conductors** -- a new circuit-tier recipe that reduces dependency on rare conductors
 
-Both are covered in depth in their own guides ([De-Energized Matter](/guides/de-energized-matter-guide/) and [Carbon Nano-Conductors](/guides/carbon-nano-conductor-guide/)).
+Both are covered in depth in their own guides ([De-Energized Matter](/guides/de-energized-matter-guide/) and Carbon Nano-Conductors).
 
 ### 7. Italian Language
 
@@ -112,17 +112,17 @@ Building extractors on quantum rifts no longer causes radiation. This unlocks sa
 | Station level curve | Unchanged |
 | 540 output cap on logistics | **Still present** (see workarounds below) |
 
-Your v1.1-era factory ratios remain correct. The [v1.1 Recipe Changes Guide](/guides/v1-1-recipe-changes-guide/) is still the source of truth for recipe numbers.
+Your v1.1-era factory ratios remain correct. The v1.1 Recipe Changes Guide is still the source of truth for recipe numbers.
 
 {{< callout type="warning" title="One Thing The Patch Did Not Fix" >}}
-The **540 items/min logistics cap** and the **smelter speed bug** (smelters occasionally refusing to run at full speed) are both still present in v1.1.1.0. The developer has acknowledged the smelter issue and asked for save files. Until a hotfix lands, see our [Late-Game Logistics Balance Guide](/guides/late-game-logistics-balance/) and [Smelter Speed Troubleshooting Guide](/guides/smelter-speed-troubleshooting/) for practical workarounds.
+The **540 items/min logistics cap** and the **smelter speed bug** (smelters occasionally refusing to run at full speed) are both still present in v1.1.1.0. The developer has acknowledged the smelter issue and asked for save files. Until a hotfix lands, see our [Late-Game Logistics Balance Guide](/guides/late-game-logistics-balance/) and Smelter Speed Troubleshooting Guide for practical workarounds.
 {{< /callout >}}
 
 ## Should You Update?
 
 **Yes, without hesitation.** v1.1.1.0 fixes save-corruption-adjacent bugs, improves co-op reliability, and adds tools that make blueprint management and fleet monitoring dramatically easier. There are no known regressions from this patch -- no recipe changes, no nerfs, no progression resets.
 
-One caveat: if you are mid-way through a 100-hour save and everything is stable, update anyway, but back up your save first. Our [Save Backup Guide](/guides/save-backup-guide/) has the safe procedure. The save/load fixes in this patch are exactly the kind of change that works best on a fresh load anyway.
+One caveat: if you are mid-way through a 100-hour save and everything is stable, update anyway, but back up your save first. Our Save Backup Guide has the safe procedure. The save/load fixes in this patch are exactly the kind of change that works best on a fresh load anyway.
 
 ## What's Next
 

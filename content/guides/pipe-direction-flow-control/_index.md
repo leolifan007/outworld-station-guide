@@ -18,7 +18,11 @@ tested: "Direction and distribution behavior tested on v1.1.1.0 with multi-sourc
 
 You came from belts, where one direction, a balancer, and roughly even distribution are normal. You assume pipes work the same, build one shared fluid manifold with four outlets, and expect a quarter of the flow at each.
 
-Then the far outlet gets nothing, the near outlet gets everything, and reversing your source changes things again. Outworld Station pipes are a pressure system, not a belt. This guide is about direction and distribution control; for throughput limits see the [pipe and connector bottleneck guide](/guides/pipe-bottleneck-guide/), and for routing and valves see the [liquid and gas pipe network design guide](/guides/liquid-gas-pipe-network-design/).
+Then the far outlet gets nothing, the near outlet gets everything, and reversing your source changes things again. Outworld Station pipes are a pressure system, not a belt. This guide is about direction and distribution control.
+
+For throughput limits see the [pipe and connector bottleneck guide](/guides/pipe-bottleneck-guide/).
+
+For routing and valves, the [liquid and gas pipe network design guide](/guides/liquid-gas-pipe-network-design/) picks up the distribution side.
 
 {{< callout type="verdict" title="The Short Version" >}}
 A pipe takes a direction when you place it, flow follows pressure from source to destination, and you cannot force a pipe to run backwards. Distribution is never balanced like a belt balancer - it is decided by pressure and path, so the shortest, lowest-resistance run wins almost everything. To control it you give each fluid dedicated source-to-sink runs, keep distinct sources so flows do not fight, use buffer tanks as flow gates, and split by building parallel dedicated lines instead of one shared manifold.

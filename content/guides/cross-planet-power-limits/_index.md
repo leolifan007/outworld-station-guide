@@ -33,7 +33,7 @@ Match generators to what the planet has:
 | Planet type | Best generation |
 |-------------|-----------------|
 | Sun-rich | Solar fields ([Power Source Comparison](/guides/power-source-comparison/)) |
-| Gas giant | Gas-based reactors (see [Deep Space Gas Giant Mining](/guides/deep-space-gas-giant-mining/)) |
+| Gas giant | Gas-based reactors (see Deep Space Gas Giant Mining) |
 | Asteroid/rock | Ship fuel in; run compact reactors |
 
 The rule: **generate from local abundance, import only what the planet lacks.**
@@ -48,7 +48,7 @@ Fuel per freighter trip = capacity
 → Trips per hour = demand / capacity
 ```
 
-A freighter route that delivers fuel every 20 minutes works only if the outpost's buffer covers 20+ minutes of demand. Build the buffer first, then tune the route. See [Freighter & Mining Guide](/guides/freighter-mining-guide/) for route tuning and the [Freighter Overview](/guides/freighter-overview-monitoring/) to monitor it.
+A freighter route that delivers fuel every 20 minutes works only if the outpost's buffer covers 20+ minutes of demand. Build the buffer first, then tune the route. See [Freighter & Mining Guide](/guides/freighter-mining-guide/) for route tuning and the Freighter Overview to monitor it.
 
 ### 3. Fallback Bank (The Safety Net)
 
