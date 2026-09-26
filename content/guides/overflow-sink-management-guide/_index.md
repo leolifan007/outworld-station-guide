@@ -15,7 +15,7 @@ tested: "Overflow sink strategies tested with 20+ item types across 5 storage zo
 
 You have 3,000 Iron Plates. Your factory only needs 1,500. The excess sits in storage, filling every available container. Then a Full Storage event triggers: your Smelters cannot output because the buffer is full. Your Drills stop because the silo filled. Your Assemblers stop because they cannot receive the components blocked behind the full storage.
 
-This is the overflow deadlock. It is the most common cause of "factory stopped for no reason" in Outworld Station. The fix is not more storage. The fix is a resource sink â€?a way to consume, convert, or discard surplus materials before they block production.
+This is the overflow deadlock. It is the most common cause of "factory stopped for no reason" in Outworld Station. The fix is not more storage. The fix is a resource sink â€”a way to consume, convert, or discard surplus materials before they block production.
 
 <div class="callout callout-verdict">
   <h4>The Short Version</h4>
@@ -25,7 +25,7 @@ This is the overflow deadlock. It is the most common cause of "factory stopped f
 <hr>
 
 <details class="md-fold">
-<summary><span>The Three Sink Methods (Pick One Per Material)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>The Three Sink Methods (Pick One Per Material)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -67,7 +67,7 @@ Feed surplus basic materials into advanced production chains that output higher-
 <hr>
 
 <details class="md-fold">
-<summary><span>Setting Up Priority Gates (The Key Component)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Setting Up Priority Gates (The Key Component)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

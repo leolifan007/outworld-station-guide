@@ -25,7 +25,7 @@ Cargo Drones fix this. They fly over everything, ignore range limits, and delive
 <hr>
 
 <details class="md-fold">
-<summary><span>How Cargo Drones Work (The Mechanic)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>How Cargo Drones Work (The Mechanic)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -64,7 +64,7 @@ Drones have a battery that depletes with each flight. If a drone runs out of bat
 <hr>
 
 <details class="md-fold">
-<summary><span>Step-by-Step Setup (First Drone Network)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Step-by-Step Setup (First Drone Network)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -111,7 +111,7 @@ Check the Drone Station interface. You should see:
 <hr>
 
 <details class="md-fold">
-<summary><span>Advanced: Multiple Drone Stations and Sector Coverage</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Advanced: Multiple Drone Stations and Sector Coverage</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

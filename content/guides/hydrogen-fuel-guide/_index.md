@@ -25,7 +25,7 @@ The problem: you did not account for pipe throughput, storage buffers, and the d
 <hr>
 
 <details class="md-fold">
-<summary><span>The Hydrogen Chain from Cloud to Power</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>The Hydrogen Chain from Cloud to Power</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -60,7 +60,7 @@ Cloud Miner (46 H2/min)
 <hr>
 
 <details class="md-fold">
-<summary><span>Reactor Ratios That Work</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Reactor Ratios That Work</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -94,7 +94,7 @@ Cloud Miner (46 H2/min)
 <hr>
 
 <details class="md-fold">
-<summary><span>The Fuel Starvation Spiral (And How to Prevent It)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>The Fuel Starvation Spiral (And How to Prevent It)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

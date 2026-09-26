@@ -27,7 +27,7 @@ Buffers are not just "extra storage." They are the shock absorbers of your produ
 <hr>
 
 <details class="md-fold">
-<summary><span>Three Buffer Patterns (And When to Use Each)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Three Buffer Patterns (And When to Use Each)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -73,7 +73,7 @@ Smelter Zone -> [Buffer 300] -> Connector (long) -> [Buffer 300] -> Assembler Zo
 <hr>
 
 <details class="md-fold">
-<summary><span>Buffer Sizing by Material Type</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Buffer Sizing by Material Type</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

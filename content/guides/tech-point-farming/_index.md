@@ -27,7 +27,7 @@ Tech Points are the gate that controls your entire progression. If you run out, 
 <hr>
 
 <details class="md-fold">
-<summary><span>How Tech Points Are Generated (The Recipe System)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>How Tech Points Are Generated (The Recipe System)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -56,7 +56,7 @@ The most common reason a lab stops: you ran out of the specific component it was
 <hr>
 
 <details class="md-fold">
-<summary><span>Five Tech Point Farming Methods Ranked</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Five Tech Point Farming Methods Ranked</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

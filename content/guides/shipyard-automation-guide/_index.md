@@ -25,7 +25,7 @@ The game supports full automated ship production. You feed materials into a Ship
 <hr>
 
 <details class="md-fold">
-<summary><span>How Automated Ship Production Works</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>How Automated Ship Production Works</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -58,7 +58,7 @@ A Shipyard has four material input slots that accept connector links:
 <hr>
 
 <details class="md-fold">
-<summary><span>Setting Up the Auto Shipyard (Step by Step)</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Setting Up the Auto Shipyard (Step by Step)</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

@@ -25,7 +25,7 @@ Asteroid strikes and pirate raids do not discriminate between your main station 
 <hr>
 
 <details class="md-fold">
-<summary><span>What Your Remote Outpost Is Up Against</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>What Your Remote Outpost Is Up Against</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -49,7 +49,7 @@ Your main station has built-in armor, shield generators, and repair nanobots. Pl
 <hr>
 
 <details class="md-fold">
-<summary><span>Building the Three-Layer Defense System</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Building the Three-Layer Defense System</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 

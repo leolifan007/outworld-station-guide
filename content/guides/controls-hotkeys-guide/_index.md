@@ -25,7 +25,7 @@ Knowing the hotkeys does not just save seconds. It changes how you build. When y
 <hr>
 
 <details class="md-fold">
-<summary><span>Building and Placement Shortcuts</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Building and Placement Shortcuts</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -51,7 +51,7 @@ Place one Smelter. Hold Shift, click 5 more times. Five Smelters placed in 5 sec
 <hr>
 
 <details class="md-fold">
-<summary><span>Camera and Navigation</span><span class="fold-toggle">â–?/span></summary>
+<summary><span>Camera and Navigation</span><span class="fold-toggle">â–¼/span></summary>
 
 <div class="fold-body">
 
@@ -76,7 +76,7 @@ Place one Smelter. Hold Shift, click 5 more times. Five Smelters placed in 5 sec
 <hr>
 
 <details class="md-fold">
-<summary><span>Connector and Inventory Shortcuts</span><span class="fold-fold">â–?/span></summary>
+<summary><span>Connector and Inventory Shortcuts</span><span class="fold-fold">â–¼/span></summary>
 
 <div class="fold-body">
 
